@@ -1,0 +1,16 @@
+torch==2.4.0
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+seaborn
+pyBigWig
+pysam
+pyfaidx
+transformers
+wandb
+tqdm
+pyyaml
+# Install separately from source:
+# pip install git+https://github.com/saprmarks/dictionary_learning.git
