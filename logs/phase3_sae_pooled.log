@@ -1,0 +1,428 @@
+04:01:21 [INFO] train_sae: 
+============================================================
+04:01:21 [INFO] train_sae: Training SAE: layer=early, regime=pooled
+04:01:21 [INFO] train_sae: ============================================================
+04:01:21 [INFO] train_sae: Training SAE [early/pooled] on 6 condition files
+04:01:21 [INFO] sae: ActivationDataset: torch.Size([60000, 1024]) samples loaded
+04:01:22 [INFO] train_sae:   SAE: d_input=1024, d_latent=8192, k=64
+04:01:22 [INFO] train_sae:   Dataset: 60000 samples, batch=4096
+04:01:22 [INFO] train_sae:   Steps: 50000 (warmup=1000)
+04:01:22 [INFO] train_sae:   Device: cuda
+04:01:22 [INFO] train_sae:   Activation data size: 0.25 GB
+04:01:22 [INFO] train_sae:   Loaded all activations to GPU
+04:01:34 [INFO] train_sae:   step=500/50000 | mse=12.3437 | norm_mse=0.0117 | l0=64.0 | dead=0.000 | lr=1.50e-04 | t=12s
+04:01:45 [INFO] train_sae:   step=1000/50000 | mse=5.5250 | norm_mse=0.0052 | l0=64.0 | dead=0.000 | lr=3.00e-04 | t=23s
+04:01:56 [INFO] train_sae:   step=1500/50000 | mse=4.1601 | norm_mse=0.0039 | l0=64.0 | dead=0.000 | lr=3.00e-04 | t=35s
+04:02:08 [INFO] train_sae:   step=2000/50000 | mse=3.4633 | norm_mse=0.0033 | l0=64.0 | dead=0.000 | lr=3.00e-04 | t=46s
+04:02:19 [INFO] train_sae:   step=2500/50000 | mse=2.9918 | norm_mse=0.0029 | l0=64.0 | dead=0.000 | lr=3.00e-04 | t=58s
+04:02:19 [INFO] train_sae:     Step 2500: resampled 1429 dead features
+04:02:31 [INFO] train_sae:   step=3000/50000 | mse=2.7474 | norm_mse=0.0026 | l0=64.0 | dead=0.401 | lr=3.00e-04 | t=69s
+04:02:42 [INFO] train_sae:   step=3500/50000 | mse=2.4833 | norm_mse=0.0024 | l0=64.0 | dead=0.603 | lr=3.00e-04 | t=80s
+04:02:54 [INFO] train_sae:   step=4000/50000 | mse=2.3008 | norm_mse=0.0022 | l0=64.0 | dead=0.651 | lr=3.00e-04 | t=92s
+04:03:05 [INFO] train_sae:   step=4500/50000 | mse=2.1363 | norm_mse=0.0020 | l0=64.0 | dead=0.707 | lr=3.00e-04 | t=103s
+04:03:16 [INFO] train_sae:   step=5000/50000 | mse=2.0073 | norm_mse=0.0019 | l0=64.0 | dead=0.739 | lr=3.00e-04 | t=115s
+04:03:17 [INFO] train_sae:     Step 5000: resampled 6051 dead features
+04:03:28 [INFO] train_sae:   step=5500/50000 | mse=1.9142 | norm_mse=0.0018 | l0=64.0 | dead=0.190 | lr=3.00e-04 | t=126s
+04:03:39 [INFO] train_sae:   step=6000/50000 | mse=1.8625 | norm_mse=0.0017 | l0=64.0 | dead=0.200 | lr=3.00e-04 | t=138s
+04:03:51 [INFO] train_sae:   step=6500/50000 | mse=1.7827 | norm_mse=0.0017 | l0=64.0 | dead=0.213 | lr=3.00e-04 | t=149s
+04:04:02 [INFO] train_sae:   step=7000/50000 | mse=1.7569 | norm_mse=0.0017 | l0=64.0 | dead=0.223 | lr=3.00e-04 | t=160s
+04:04:14 [INFO] train_sae:   step=7500/50000 | mse=1.6980 | norm_mse=0.0016 | l0=64.0 | dead=0.233 | lr=3.00e-04 | t=172s
+04:04:14 [INFO] train_sae:     Step 7500: resampled 1909 dead features
+04:04:25 [INFO] train_sae:   step=8000/50000 | mse=1.6971 | norm_mse=0.0016 | l0=64.0 | dead=0.749 | lr=3.00e-04 | t=183s
+04:04:36 [INFO] train_sae:   step=8500/50000 | mse=1.6294 | norm_mse=0.0015 | l0=64.0 | dead=0.750 | lr=3.00e-04 | t=195s
+04:04:48 [INFO] train_sae:   step=9000/50000 | mse=1.6228 | norm_mse=0.0015 | l0=64.0 | dead=0.750 | lr=3.00e-04 | t=206s
+04:04:59 [INFO] train_sae:   step=9500/50000 | mse=1.5860 | norm_mse=0.0015 | l0=64.0 | dead=0.751 | lr=3.00e-04 | t=217s
+04:05:11 [INFO] train_sae:   step=10000/50000 | mse=1.5707 | norm_mse=0.0015 | l0=64.0 | dead=0.752 | lr=3.00e-04 | t=229s
+04:05:11 [INFO] sae: Saved SAE → /workspace/project/saes/early/pooled.pt
+04:05:11 [INFO] train_sae:     Step 10000: resampled 6157 dead features
+04:05:22 [INFO] train_sae:   step=10500/50000 | mse=1.5700 | norm_mse=0.0015 | l0=64.0 | dead=0.234 | lr=3.00e-04 | t=241s
+04:05:34 [INFO] train_sae:   step=11000/50000 | mse=1.5532 | norm_mse=0.0015 | l0=64.0 | dead=0.234 | lr=3.00e-04 | t=252s
+04:05:45 [INFO] train_sae:   step=11500/50000 | mse=1.5323 | norm_mse=0.0015 | l0=64.0 | dead=0.234 | lr=3.00e-04 | t=263s
+04:05:57 [INFO] train_sae:   step=12000/50000 | mse=1.5342 | norm_mse=0.0014 | l0=64.0 | dead=0.234 | lr=3.00e-04 | t=275s
+04:06:08 [INFO] train_sae:   step=12500/50000 | mse=1.5137 | norm_mse=0.0014 | l0=64.0 | dead=0.234 | lr=3.00e-04 | t=286s
+04:06:08 [INFO] train_sae:     Step 12500: resampled 1921 dead features
+04:06:19 [INFO] train_sae:   step=13000/50000 | mse=1.5139 | norm_mse=0.0014 | l0=64.0 | dead=0.753 | lr=3.00e-04 | t=298s
+04:06:31 [INFO] train_sae:   step=13500/50000 | mse=1.5135 | norm_mse=0.0014 | l0=64.0 | dead=0.753 | lr=3.00e-04 | t=309s
+04:06:42 [INFO] train_sae:   step=14000/50000 | mse=1.4960 | norm_mse=0.0014 | l0=64.0 | dead=0.753 | lr=3.00e-04 | t=320s
+04:06:54 [INFO] train_sae:   step=14500/50000 | mse=1.5021 | norm_mse=0.0014 | l0=64.0 | dead=0.753 | lr=3.00e-04 | t=332s
+04:07:05 [INFO] train_sae:   step=15000/50000 | mse=1.4914 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=343s
+04:07:05 [INFO] train_sae:     Step 15000: resampled 6174 dead features
+04:07:16 [INFO] train_sae:   step=15500/50000 | mse=1.4990 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=355s
+04:07:28 [INFO] train_sae:   step=16000/50000 | mse=1.4682 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=366s
+04:07:39 [INFO] train_sae:   step=16500/50000 | mse=1.4683 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=377s
+04:07:51 [INFO] train_sae:   step=17000/50000 | mse=1.4824 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=389s
+04:08:02 [INFO] train_sae:   step=17500/50000 | mse=1.4765 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=400s
+04:08:02 [INFO] train_sae:     Step 17500: resampled 1922 dead features
+04:08:13 [INFO] train_sae:   step=18000/50000 | mse=1.4595 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=412s
+04:08:25 [INFO] train_sae:   step=18500/50000 | mse=1.4675 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=423s
+04:08:36 [INFO] train_sae:   step=19000/50000 | mse=1.4673 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=435s
+04:08:48 [INFO] train_sae:   step=19500/50000 | mse=1.4495 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=446s
+04:08:59 [INFO] train_sae:   step=20000/50000 | mse=1.4497 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=457s
+04:08:59 [INFO] sae: Saved SAE → /workspace/project/saes/early/pooled.pt
+04:08:59 [INFO] train_sae:     Step 20000: resampled 6174 dead features
+04:09:11 [INFO] train_sae:   step=20500/50000 | mse=1.4572 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=469s
+04:09:22 [INFO] train_sae:   step=21000/50000 | mse=1.4491 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=480s
+04:09:33 [INFO] train_sae:   step=21500/50000 | mse=1.4464 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=492s
+04:09:45 [INFO] train_sae:   step=22000/50000 | mse=1.4419 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=503s
+04:09:56 [INFO] train_sae:   step=22500/50000 | mse=1.4264 | norm_mse=0.0013 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=515s
+04:09:56 [INFO] train_sae:     Step 22500: resampled 1924 dead features
+04:10:08 [INFO] train_sae:   step=23000/50000 | mse=1.4188 | norm_mse=0.0013 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=526s
+04:10:19 [INFO] train_sae:   step=23500/50000 | mse=1.4429 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=537s
+04:10:31 [INFO] train_sae:   step=24000/50000 | mse=1.4425 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=549s
+04:10:42 [INFO] train_sae:   step=24500/50000 | mse=1.4393 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=560s
+04:10:53 [INFO] train_sae:   step=25000/50000 | mse=1.4223 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=572s
+04:10:53 [INFO] train_sae:     Step 25000: resampled 6174 dead features
+04:11:05 [INFO] train_sae:   step=25500/50000 | mse=1.4355 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=583s
+04:11:16 [INFO] train_sae:   step=26000/50000 | mse=1.4394 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=594s
+04:11:28 [INFO] train_sae:   step=26500/50000 | mse=1.4145 | norm_mse=0.0013 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=606s
+04:11:39 [INFO] train_sae:   step=27000/50000 | mse=1.4314 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=617s
+04:11:50 [INFO] train_sae:   step=27500/50000 | mse=1.4617 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=629s
+04:11:50 [INFO] train_sae:     Step 27500: resampled 1924 dead features
+04:12:02 [INFO] train_sae:   step=28000/50000 | mse=1.4631 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=640s
+04:12:13 [INFO] train_sae:   step=28500/50000 | mse=1.4542 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=651s
+04:12:25 [INFO] train_sae:   step=29000/50000 | mse=1.4473 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=663s
+04:12:36 [INFO] train_sae:   step=29500/50000 | mse=1.4525 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=674s
+04:12:47 [INFO] train_sae:   step=30000/50000 | mse=1.4366 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=686s
+04:12:48 [INFO] sae: Saved SAE → /workspace/project/saes/early/pooled.pt
+04:12:48 [INFO] train_sae:     Step 30000: resampled 6174 dead features
+04:12:59 [INFO] train_sae:   step=30500/50000 | mse=1.4347 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=697s
+04:13:10 [INFO] train_sae:   step=31000/50000 | mse=1.4313 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=709s
+04:13:22 [INFO] train_sae:   step=31500/50000 | mse=1.4280 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=720s
+04:13:33 [INFO] train_sae:   step=32000/50000 | mse=1.4366 | norm_mse=0.0013 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=732s
+04:13:45 [INFO] train_sae:   step=32500/50000 | mse=1.4312 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=743s
+04:13:45 [INFO] train_sae:     Step 32500: resampled 1926 dead features
+04:13:56 [INFO] train_sae:   step=33000/50000 | mse=1.4418 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=754s
+04:14:07 [INFO] train_sae:   step=33500/50000 | mse=1.4376 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=766s
+04:14:19 [INFO] train_sae:   step=34000/50000 | mse=1.4465 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=777s
+04:14:30 [INFO] train_sae:   step=34500/50000 | mse=1.4292 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=789s
+04:14:42 [INFO] train_sae:   step=35000/50000 | mse=1.4412 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=800s
+04:14:42 [INFO] train_sae:     Step 35000: resampled 6174 dead features
+04:14:53 [INFO] train_sae:   step=35500/50000 | mse=1.4512 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=811s
+04:15:05 [INFO] train_sae:   step=36000/50000 | mse=1.4359 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=823s
+04:15:16 [INFO] train_sae:   step=36500/50000 | mse=1.4383 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=834s
+04:15:27 [INFO] train_sae:   step=37000/50000 | mse=1.4220 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=846s
+04:15:39 [INFO] train_sae:   step=37500/50000 | mse=1.4228 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=857s
+04:15:39 [INFO] train_sae:     Step 37500: resampled 1925 dead features
+04:15:50 [INFO] train_sae:   step=38000/50000 | mse=1.4204 | norm_mse=0.0013 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=868s
+04:16:02 [INFO] train_sae:   step=38500/50000 | mse=1.4181 | norm_mse=0.0013 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=880s
+04:16:13 [INFO] train_sae:   step=39000/50000 | mse=1.4295 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=891s
+04:16:24 [INFO] train_sae:   step=39500/50000 | mse=1.4389 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=903s
+04:16:36 [INFO] train_sae:   step=40000/50000 | mse=1.4298 | norm_mse=0.0014 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=914s
+04:16:36 [INFO] sae: Saved SAE → /workspace/project/saes/early/pooled.pt
+04:16:36 [INFO] train_sae:     Step 40000: resampled 6175 dead features
+04:16:48 [INFO] train_sae:   step=40500/50000 | mse=1.4267 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=926s
+04:16:59 [INFO] train_sae:   step=41000/50000 | mse=1.4222 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=937s
+04:17:10 [INFO] train_sae:   step=41500/50000 | mse=1.4149 | norm_mse=0.0013 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=949s
+04:17:22 [INFO] train_sae:   step=42000/50000 | mse=1.4095 | norm_mse=0.0013 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=960s
+04:17:33 [INFO] train_sae:   step=42500/50000 | mse=1.4210 | norm_mse=0.0013 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=971s
+04:17:33 [INFO] train_sae:     Step 42500: resampled 1926 dead features
+04:17:45 [INFO] train_sae:   step=43000/50000 | mse=1.4035 | norm_mse=0.0013 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=983s
+04:17:56 [INFO] train_sae:   step=43500/50000 | mse=1.4153 | norm_mse=0.0013 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=994s
+04:18:07 [INFO] train_sae:   step=44000/50000 | mse=1.4176 | norm_mse=0.0013 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=1006s
+04:18:19 [INFO] train_sae:   step=44500/50000 | mse=1.4130 | norm_mse=0.0013 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=1017s
+04:18:30 [INFO] train_sae:   step=45000/50000 | mse=1.4064 | norm_mse=0.0013 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=1028s
+04:18:30 [INFO] train_sae:     Step 45000: resampled 6175 dead features
+04:18:42 [INFO] train_sae:   step=45500/50000 | mse=1.4544 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=1040s
+04:18:53 [INFO] train_sae:   step=46000/50000 | mse=1.4200 | norm_mse=0.0013 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=1051s
+04:19:04 [INFO] train_sae:   step=46500/50000 | mse=1.4102 | norm_mse=0.0013 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=1063s
+04:19:16 [INFO] train_sae:   step=47000/50000 | mse=1.3854 | norm_mse=0.0013 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=1074s
+04:19:27 [INFO] train_sae:   step=47500/50000 | mse=1.4184 | norm_mse=0.0014 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=1086s
+04:19:27 [INFO] train_sae:     Step 47500: resampled 1926 dead features
+04:19:39 [INFO] train_sae:   step=48000/50000 | mse=1.4153 | norm_mse=0.0013 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=1097s
+04:19:50 [INFO] train_sae:   step=48500/50000 | mse=1.4038 | norm_mse=0.0013 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=1108s
+04:20:02 [INFO] train_sae:   step=49000/50000 | mse=1.4198 | norm_mse=0.0013 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=1120s
+04:20:13 [INFO] train_sae:   step=49500/50000 | mse=1.4174 | norm_mse=0.0013 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=1131s
+04:20:24 [INFO] train_sae:   step=50000/50000 | mse=1.4015 | norm_mse=0.0013 | l0=64.0 | dead=0.754 | lr=3.00e-04 | t=1143s
+04:20:25 [INFO] sae: Saved SAE → /workspace/project/saes/early/pooled.pt
+04:20:25 [INFO] sae: Saved SAE → /workspace/project/saes/early/pooled.pt
+04:20:25 [INFO] train_sae:   Training complete in 19.1 min
+04:20:25 [INFO] train_sae:   QC: norm_mse=0.0013, l0=64.0, dead_frac=0.754
+04:20:25 [WARNING] train_sae:   [QC FAIL] early/pooled: {'norm_mse': 0.0013191584730520844, 'l0': 64.0, 'l2_loss': 1.3934553861618042, 'dead_frac': 0.7537841796875, 'pass': False}
+04:20:25 [INFO] train_sae: 
+============================================================
+04:20:25 [INFO] train_sae: Training SAE: layer=mid, regime=pooled
+04:20:25 [INFO] train_sae: ============================================================
+04:20:25 [INFO] train_sae: Training SAE [mid/pooled] on 6 condition files
+04:20:26 [INFO] sae: ActivationDataset: torch.Size([60000, 1024]) samples loaded
+04:20:26 [INFO] train_sae:   SAE: d_input=1024, d_latent=8192, k=64
+04:20:26 [INFO] train_sae:   Dataset: 60000 samples, batch=4096
+04:20:26 [INFO] train_sae:   Steps: 50000 (warmup=1000)
+04:20:26 [INFO] train_sae:   Device: cuda
+04:20:26 [INFO] train_sae:   Activation data size: 0.25 GB
+04:20:26 [INFO] train_sae:   Loaded all activations to GPU
+04:20:38 [INFO] train_sae:   step=500/50000 | mse=25.5726 | norm_mse=0.0168 | l0=64.0 | dead=0.000 | lr=1.50e-04 | t=11s
+04:20:49 [INFO] train_sae:   step=1000/50000 | mse=11.5072 | norm_mse=0.0077 | l0=64.0 | dead=0.000 | lr=3.00e-04 | t=23s
+04:21:00 [INFO] train_sae:   step=1500/50000 | mse=9.2428 | norm_mse=0.0062 | l0=64.0 | dead=0.000 | lr=3.00e-04 | t=34s
+04:21:12 [INFO] train_sae:   step=2000/50000 | mse=7.9289 | norm_mse=0.0053 | l0=64.0 | dead=0.000 | lr=3.00e-04 | t=46s
+04:21:23 [INFO] train_sae:   step=2500/50000 | mse=7.2443 | norm_mse=0.0049 | l0=64.0 | dead=0.000 | lr=3.00e-04 | t=57s
+04:21:23 [INFO] train_sae:     Step 2500: resampled 79 dead features
+04:21:35 [INFO] train_sae:   step=3000/50000 | mse=6.6140 | norm_mse=0.0044 | l0=64.0 | dead=0.264 | lr=3.00e-04 | t=69s
+04:21:46 [INFO] train_sae:   step=3500/50000 | mse=6.1335 | norm_mse=0.0041 | l0=64.0 | dead=0.500 | lr=3.00e-04 | t=80s
+04:21:58 [INFO] train_sae:   step=4000/50000 | mse=5.7609 | norm_mse=0.0039 | l0=64.0 | dead=0.594 | lr=3.00e-04 | t=91s
+04:22:09 [INFO] train_sae:   step=4500/50000 | mse=5.5344 | norm_mse=0.0037 | l0=64.0 | dead=0.692 | lr=3.00e-04 | t=103s
+04:22:20 [INFO] train_sae:   step=5000/50000 | mse=5.4451 | norm_mse=0.0036 | l0=64.0 | dead=0.734 | lr=3.00e-04 | t=114s
+04:22:20 [INFO] train_sae:     Step 5000: resampled 6020 dead features
+04:22:32 [INFO] train_sae:   step=5500/50000 | mse=5.3348 | norm_mse=0.0036 | l0=64.0 | dead=0.104 | lr=3.00e-04 | t=126s
+04:22:43 [INFO] train_sae:   step=6000/50000 | mse=5.1146 | norm_mse=0.0034 | l0=64.0 | dead=0.125 | lr=3.00e-04 | t=137s
+04:22:55 [INFO] train_sae:   step=6500/50000 | mse=5.0741 | norm_mse=0.0035 | l0=64.0 | dead=0.145 | lr=3.00e-04 | t=149s
+04:23:06 [INFO] train_sae:   step=7000/50000 | mse=4.9291 | norm_mse=0.0033 | l0=64.0 | dead=0.171 | lr=3.00e-04 | t=160s
+04:23:17 [INFO] train_sae:   step=7500/50000 | mse=4.8210 | norm_mse=0.0032 | l0=64.0 | dead=0.192 | lr=3.00e-04 | t=171s
+04:23:17 [INFO] train_sae:     Step 7500: resampled 1571 dead features
+04:23:29 [INFO] train_sae:   step=8000/50000 | mse=4.8112 | norm_mse=0.0032 | l0=64.0 | dead=0.736 | lr=3.00e-04 | t=183s
+04:23:40 [INFO] train_sae:   step=8500/50000 | mse=4.6985 | norm_mse=0.0032 | l0=64.0 | dead=0.740 | lr=3.00e-04 | t=194s
+04:23:52 [INFO] train_sae:   step=9000/50000 | mse=4.6188 | norm_mse=0.0031 | l0=64.0 | dead=0.744 | lr=3.00e-04 | t=206s
+04:24:03 [INFO] train_sae:   step=9500/50000 | mse=4.5518 | norm_mse=0.0031 | l0=64.0 | dead=0.758 | lr=3.00e-04 | t=217s
+04:24:15 [INFO] train_sae:   step=10000/50000 | mse=4.4983 | norm_mse=0.0031 | l0=64.0 | dead=0.763 | lr=3.00e-04 | t=228s
+04:24:15 [INFO] sae: Saved SAE → /workspace/project/saes/mid/pooled.pt
+04:24:15 [INFO] train_sae:     Step 10000: resampled 6250 dead features
+04:24:26 [INFO] train_sae:   step=10500/50000 | mse=4.5844 | norm_mse=0.0031 | l0=64.0 | dead=0.203 | lr=3.00e-04 | t=240s
+04:24:38 [INFO] train_sae:   step=11000/50000 | mse=4.4715 | norm_mse=0.0030 | l0=64.0 | dead=0.204 | lr=3.00e-04 | t=252s
+04:24:49 [INFO] train_sae:   step=11500/50000 | mse=4.4494 | norm_mse=0.0030 | l0=64.0 | dead=0.205 | lr=3.00e-04 | t=263s
+04:25:01 [INFO] train_sae:   step=12000/50000 | mse=4.3893 | norm_mse=0.0029 | l0=64.0 | dead=0.209 | lr=3.00e-04 | t=274s
+04:25:12 [INFO] train_sae:   step=12500/50000 | mse=4.4511 | norm_mse=0.0030 | l0=64.0 | dead=0.210 | lr=3.00e-04 | t=286s
+04:25:12 [INFO] train_sae:     Step 12500: resampled 1721 dead features
+04:25:23 [INFO] train_sae:   step=13000/50000 | mse=4.3830 | norm_mse=0.0030 | l0=64.0 | dead=0.757 | lr=3.00e-04 | t=297s
+04:25:35 [INFO] train_sae:   step=13500/50000 | mse=4.3683 | norm_mse=0.0029 | l0=64.0 | dead=0.758 | lr=3.00e-04 | t=309s
+04:25:46 [INFO] train_sae:   step=14000/50000 | mse=4.2992 | norm_mse=0.0029 | l0=64.0 | dead=0.758 | lr=3.00e-04 | t=320s
+04:25:58 [INFO] train_sae:   step=14500/50000 | mse=4.3227 | norm_mse=0.0029 | l0=64.0 | dead=0.760 | lr=3.00e-04 | t=331s
+04:26:09 [INFO] train_sae:   step=15000/50000 | mse=4.2481 | norm_mse=0.0029 | l0=64.0 | dead=0.762 | lr=3.00e-04 | t=343s
+04:26:09 [INFO] train_sae:     Step 15000: resampled 6240 dead features
+04:26:20 [INFO] train_sae:   step=15500/50000 | mse=4.2035 | norm_mse=0.0029 | l0=64.0 | dead=0.209 | lr=3.00e-04 | t=354s
+04:26:32 [INFO] train_sae:   step=16000/50000 | mse=4.2114 | norm_mse=0.0029 | l0=64.0 | dead=0.211 | lr=3.00e-04 | t=366s
+04:26:43 [INFO] train_sae:   step=16500/50000 | mse=4.2046 | norm_mse=0.0029 | l0=64.0 | dead=0.211 | lr=3.00e-04 | t=377s
+04:26:55 [INFO] train_sae:   step=17000/50000 | mse=4.1944 | norm_mse=0.0028 | l0=64.0 | dead=0.212 | lr=3.00e-04 | t=389s
+04:27:06 [INFO] train_sae:   step=17500/50000 | mse=4.1592 | norm_mse=0.0028 | l0=64.0 | dead=0.213 | lr=3.00e-04 | t=400s
+04:27:06 [INFO] train_sae:     Step 17500: resampled 1747 dead features
+04:27:18 [INFO] train_sae:   step=18000/50000 | mse=4.2067 | norm_mse=0.0028 | l0=64.0 | dead=0.755 | lr=3.00e-04 | t=411s
+04:27:29 [INFO] train_sae:   step=18500/50000 | mse=4.1448 | norm_mse=0.0028 | l0=64.0 | dead=0.755 | lr=3.00e-04 | t=423s
+04:27:40 [INFO] train_sae:   step=19000/50000 | mse=4.1062 | norm_mse=0.0028 | l0=64.0 | dead=0.755 | lr=3.00e-04 | t=434s
+04:27:52 [INFO] train_sae:   step=19500/50000 | mse=4.1353 | norm_mse=0.0028 | l0=64.0 | dead=0.755 | lr=3.00e-04 | t=446s
+04:28:03 [INFO] train_sae:   step=20000/50000 | mse=4.1370 | norm_mse=0.0028 | l0=64.0 | dead=0.756 | lr=3.00e-04 | t=457s
+04:28:03 [INFO] sae: Saved SAE → /workspace/project/saes/mid/pooled.pt
+04:28:03 [INFO] train_sae:     Step 20000: resampled 6191 dead features
+04:28:15 [INFO] train_sae:   step=20500/50000 | mse=4.1269 | norm_mse=0.0028 | l0=64.0 | dead=0.218 | lr=3.00e-04 | t=469s
+04:28:26 [INFO] train_sae:   step=21000/50000 | mse=4.0991 | norm_mse=0.0028 | l0=64.0 | dead=0.219 | lr=3.00e-04 | t=480s
+04:28:38 [INFO] train_sae:   step=21500/50000 | mse=4.1088 | norm_mse=0.0027 | l0=64.0 | dead=0.220 | lr=3.00e-04 | t=492s
+04:28:49 [INFO] train_sae:   step=22000/50000 | mse=4.0853 | norm_mse=0.0028 | l0=64.0 | dead=0.221 | lr=3.00e-04 | t=503s
+04:29:01 [INFO] train_sae:   step=22500/50000 | mse=4.0893 | norm_mse=0.0028 | l0=64.0 | dead=0.222 | lr=3.00e-04 | t=514s
+04:29:01 [INFO] train_sae:     Step 22500: resampled 1817 dead features
+04:29:12 [INFO] train_sae:   step=23000/50000 | mse=4.1336 | norm_mse=0.0028 | l0=64.0 | dead=0.743 | lr=3.00e-04 | t=526s
+04:29:23 [INFO] train_sae:   step=23500/50000 | mse=4.1036 | norm_mse=0.0028 | l0=64.0 | dead=0.744 | lr=3.00e-04 | t=537s
+04:29:35 [INFO] train_sae:   step=24000/50000 | mse=4.0713 | norm_mse=0.0027 | l0=64.0 | dead=0.744 | lr=3.00e-04 | t=549s
+04:29:46 [INFO] train_sae:   step=24500/50000 | mse=4.0599 | norm_mse=0.0028 | l0=64.0 | dead=0.744 | lr=3.00e-04 | t=560s
+04:29:58 [INFO] train_sae:   step=25000/50000 | mse=4.0284 | norm_mse=0.0027 | l0=64.0 | dead=0.744 | lr=3.00e-04 | t=572s
+04:29:58 [INFO] train_sae:     Step 25000: resampled 6096 dead features
+04:30:09 [INFO] train_sae:   step=25500/50000 | mse=4.0254 | norm_mse=0.0027 | l0=64.0 | dead=0.230 | lr=3.00e-04 | t=583s
+04:30:21 [INFO] train_sae:   step=26000/50000 | mse=4.0360 | norm_mse=0.0027 | l0=64.0 | dead=0.231 | lr=3.00e-04 | t=595s
+04:30:32 [INFO] train_sae:   step=26500/50000 | mse=4.0444 | norm_mse=0.0028 | l0=64.0 | dead=0.231 | lr=3.00e-04 | t=606s
+04:30:43 [INFO] train_sae:   step=27000/50000 | mse=4.0517 | norm_mse=0.0027 | l0=64.0 | dead=0.231 | lr=3.00e-04 | t=617s
+04:30:55 [INFO] train_sae:   step=27500/50000 | mse=4.0459 | norm_mse=0.0027 | l0=64.0 | dead=0.232 | lr=3.00e-04 | t=629s
+04:30:55 [INFO] train_sae:     Step 27500: resampled 1897 dead features
+04:31:06 [INFO] train_sae:   step=28000/50000 | mse=4.0245 | norm_mse=0.0027 | l0=64.0 | dead=0.739 | lr=3.00e-04 | t=640s
+04:31:18 [INFO] train_sae:   step=28500/50000 | mse=4.0413 | norm_mse=0.0027 | l0=64.0 | dead=0.739 | lr=3.00e-04 | t=652s
+04:31:29 [INFO] train_sae:   step=29000/50000 | mse=4.0512 | norm_mse=0.0027 | l0=64.0 | dead=0.740 | lr=3.00e-04 | t=663s
+04:31:41 [INFO] train_sae:   step=29500/50000 | mse=3.9939 | norm_mse=0.0027 | l0=64.0 | dead=0.740 | lr=3.00e-04 | t=674s
+04:31:52 [INFO] train_sae:   step=30000/50000 | mse=4.0392 | norm_mse=0.0027 | l0=64.0 | dead=0.740 | lr=3.00e-04 | t=686s
+04:31:52 [INFO] sae: Saved SAE → /workspace/project/saes/mid/pooled.pt
+04:31:52 [INFO] train_sae:     Step 30000: resampled 6061 dead features
+04:32:04 [INFO] train_sae:   step=30500/50000 | mse=3.9357 | norm_mse=0.0027 | l0=64.0 | dead=0.234 | lr=3.00e-04 | t=698s
+04:32:15 [INFO] train_sae:   step=31000/50000 | mse=3.9931 | norm_mse=0.0027 | l0=64.0 | dead=0.234 | lr=3.00e-04 | t=709s
+04:32:27 [INFO] train_sae:   step=31500/50000 | mse=3.9570 | norm_mse=0.0027 | l0=64.0 | dead=0.234 | lr=3.00e-04 | t=720s
+04:32:38 [INFO] train_sae:   step=32000/50000 | mse=3.9314 | norm_mse=0.0027 | l0=64.0 | dead=0.236 | lr=3.00e-04 | t=732s
+04:32:49 [INFO] train_sae:   step=32500/50000 | mse=3.9707 | norm_mse=0.0027 | l0=64.0 | dead=0.236 | lr=3.00e-04 | t=743s
+04:32:49 [INFO] train_sae:     Step 32500: resampled 1934 dead features
+04:33:01 [INFO] train_sae:   step=33000/50000 | mse=4.0331 | norm_mse=0.0027 | l0=64.0 | dead=0.742 | lr=3.00e-04 | t=755s
+04:33:12 [INFO] train_sae:   step=33500/50000 | mse=4.0096 | norm_mse=0.0027 | l0=64.0 | dead=0.742 | lr=3.00e-04 | t=766s
+04:33:24 [INFO] train_sae:   step=34000/50000 | mse=4.0475 | norm_mse=0.0027 | l0=64.0 | dead=0.743 | lr=3.00e-04 | t=778s
+04:33:35 [INFO] train_sae:   step=34500/50000 | mse=3.9219 | norm_mse=0.0027 | l0=64.0 | dead=0.743 | lr=3.00e-04 | t=789s
+04:33:46 [INFO] train_sae:   step=35000/50000 | mse=4.0015 | norm_mse=0.0027 | l0=64.0 | dead=0.743 | lr=3.00e-04 | t=800s
+04:33:47 [INFO] train_sae:     Step 35000: resampled 6086 dead features
+04:33:58 [INFO] train_sae:   step=35500/50000 | mse=8.1396 | norm_mse=0.0032 | l0=64.0 | dead=0.234 | lr=3.00e-04 | t=812s
+04:34:09 [INFO] train_sae:   step=36000/50000 | mse=3.9763 | norm_mse=0.0027 | l0=64.0 | dead=0.234 | lr=3.00e-04 | t=823s
+04:34:21 [INFO] train_sae:   step=36500/50000 | mse=3.9412 | norm_mse=0.0027 | l0=64.0 | dead=0.234 | lr=3.00e-04 | t=835s
+04:34:32 [INFO] train_sae:   step=37000/50000 | mse=3.9480 | norm_mse=0.0027 | l0=64.0 | dead=0.234 | lr=3.00e-04 | t=846s
+04:34:44 [INFO] train_sae:   step=37500/50000 | mse=3.9185 | norm_mse=0.0026 | l0=64.0 | dead=0.234 | lr=3.00e-04 | t=857s
+04:34:44 [INFO] train_sae:     Step 37500: resampled 1918 dead features
+04:34:55 [INFO] train_sae:   step=38000/50000 | mse=4.0143 | norm_mse=0.0027 | l0=64.0 | dead=0.740 | lr=3.00e-04 | t=869s
+04:35:06 [INFO] train_sae:   step=38500/50000 | mse=3.9298 | norm_mse=0.0027 | l0=64.0 | dead=0.740 | lr=3.00e-04 | t=880s
+04:35:18 [INFO] train_sae:   step=39000/50000 | mse=3.9716 | norm_mse=0.0027 | l0=64.0 | dead=0.741 | lr=3.00e-04 | t=892s
+04:35:29 [INFO] train_sae:   step=39500/50000 | mse=3.9469 | norm_mse=0.0027 | l0=64.0 | dead=0.741 | lr=3.00e-04 | t=903s
+04:35:41 [INFO] train_sae:   step=40000/50000 | mse=3.9215 | norm_mse=0.0027 | l0=64.0 | dead=0.741 | lr=3.00e-04 | t=915s
+04:35:41 [INFO] sae: Saved SAE → /workspace/project/saes/mid/pooled.pt
+04:35:41 [INFO] train_sae:     Step 40000: resampled 6068 dead features
+04:35:52 [INFO] train_sae:   step=40500/50000 | mse=3.9668 | norm_mse=0.0027 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=926s
+04:36:04 [INFO] train_sae:   step=41000/50000 | mse=3.9422 | norm_mse=0.0027 | l0=64.0 | dead=0.235 | lr=3.00e-04 | t=938s
+04:36:15 [INFO] train_sae:   step=41500/50000 | mse=3.9432 | norm_mse=0.0027 | l0=64.0 | dead=0.236 | lr=3.00e-04 | t=949s
+04:36:27 [INFO] train_sae:   step=42000/50000 | mse=3.9237 | norm_mse=0.0027 | l0=64.0 | dead=0.236 | lr=3.00e-04 | t=961s
+04:36:38 [INFO] train_sae:   step=42500/50000 | mse=3.9330 | norm_mse=0.0027 | l0=64.0 | dead=0.236 | lr=3.00e-04 | t=972s
+04:36:38 [INFO] train_sae:     Step 42500: resampled 1934 dead features
+04:36:50 [INFO] train_sae:   step=43000/50000 | mse=3.8885 | norm_mse=0.0026 | l0=64.0 | dead=0.732 | lr=3.00e-04 | t=983s
+04:37:01 [INFO] train_sae:   step=43500/50000 | mse=3.9286 | norm_mse=0.0026 | l0=64.0 | dead=0.733 | lr=3.00e-04 | t=995s
+04:37:12 [INFO] train_sae:   step=44000/50000 | mse=3.8831 | norm_mse=0.0027 | l0=64.0 | dead=0.735 | lr=3.00e-04 | t=1006s
+04:37:24 [INFO] train_sae:   step=44500/50000 | mse=3.9714 | norm_mse=0.0027 | l0=64.0 | dead=0.736 | lr=3.00e-04 | t=1018s
+04:37:35 [INFO] train_sae:   step=45000/50000 | mse=3.9440 | norm_mse=0.0027 | l0=64.0 | dead=0.736 | lr=3.00e-04 | t=1029s
+04:37:35 [INFO] train_sae:     Step 45000: resampled 6028 dead features
+04:37:47 [INFO] train_sae:   step=45500/50000 | mse=3.9522 | norm_mse=0.0027 | l0=64.0 | dead=0.238 | lr=3.00e-04 | t=1041s
+04:37:58 [INFO] train_sae:   step=46000/50000 | mse=3.9129 | norm_mse=0.0026 | l0=64.0 | dead=0.238 | lr=3.00e-04 | t=1052s
+04:38:10 [INFO] train_sae:   step=46500/50000 | mse=3.9034 | norm_mse=0.0026 | l0=64.0 | dead=0.238 | lr=3.00e-04 | t=1063s
+04:38:21 [INFO] train_sae:   step=47000/50000 | mse=3.9147 | norm_mse=0.0026 | l0=64.0 | dead=0.239 | lr=3.00e-04 | t=1075s
+04:38:32 [INFO] train_sae:   step=47500/50000 | mse=3.9198 | norm_mse=0.0027 | l0=64.0 | dead=0.239 | lr=3.00e-04 | t=1086s
+04:38:32 [INFO] train_sae:     Step 47500: resampled 1956 dead features
+04:38:44 [INFO] train_sae:   step=48000/50000 | mse=3.9480 | norm_mse=0.0027 | l0=64.0 | dead=0.728 | lr=3.00e-04 | t=1098s
+04:38:55 [INFO] train_sae:   step=48500/50000 | mse=3.8943 | norm_mse=0.0026 | l0=64.0 | dead=0.729 | lr=3.00e-04 | t=1109s
+04:39:07 [INFO] train_sae:   step=49000/50000 | mse=3.9378 | norm_mse=0.0026 | l0=64.0 | dead=0.730 | lr=3.00e-04 | t=1121s
+04:39:18 [INFO] train_sae:   step=49500/50000 | mse=3.9119 | norm_mse=0.0026 | l0=64.0 | dead=0.731 | lr=3.00e-04 | t=1132s
+04:39:29 [INFO] train_sae:   step=50000/50000 | mse=3.9392 | norm_mse=0.0027 | l0=64.0 | dead=0.735 | lr=3.00e-04 | t=1143s
+04:39:30 [INFO] sae: Saved SAE → /workspace/project/saes/mid/pooled.pt
+04:39:30 [INFO] sae: Saved SAE → /workspace/project/saes/mid/pooled.pt
+04:39:30 [INFO] train_sae:   Training complete in 19.1 min
+04:39:30 [INFO] train_sae:   QC: norm_mse=0.0026, l0=64.0, dead_frac=0.735
+04:39:30 [WARNING] train_sae:   [QC FAIL] mid/pooled: {'norm_mse': 0.0026145526207983494, 'l0': 64.0, 'l2_loss': 3.867497444152832, 'dead_frac': 0.734619140625, 'pass': False}
+04:39:30 [INFO] train_sae: 
+============================================================
+04:39:30 [INFO] train_sae: Training SAE: layer=late, regime=pooled
+04:39:30 [INFO] train_sae: ============================================================
+04:39:30 [INFO] train_sae: Training SAE [late/pooled] on 6 condition files
+04:39:31 [INFO] sae: ActivationDataset: torch.Size([60000, 1024]) samples loaded
+04:39:31 [INFO] train_sae:   SAE: d_input=1024, d_latent=8192, k=64
+04:39:31 [INFO] train_sae:   Dataset: 60000 samples, batch=4096
+04:39:31 [INFO] train_sae:   Steps: 50000 (warmup=1000)
+04:39:31 [INFO] train_sae:   Device: cuda
+04:39:31 [INFO] train_sae:   Activation data size: 0.25 GB
+04:39:31 [INFO] train_sae:   Loaded all activations to GPU
+04:39:43 [INFO] train_sae:   step=500/50000 | mse=223.5157 | norm_mse=0.0250 | l0=64.0 | dead=0.000 | lr=1.50e-04 | t=11s
+04:39:54 [INFO] train_sae:   step=1000/50000 | mse=132.0270 | norm_mse=0.0120 | l0=64.0 | dead=0.000 | lr=3.00e-04 | t=23s
+04:40:05 [INFO] train_sae:   step=1500/50000 | mse=112.9423 | norm_mse=0.0092 | l0=64.0 | dead=0.000 | lr=3.00e-04 | t=34s
+04:40:17 [INFO] train_sae:   step=2000/50000 | mse=94.2412 | norm_mse=0.0077 | l0=64.0 | dead=0.000 | lr=3.00e-04 | t=46s
+04:40:28 [INFO] train_sae:   step=2500/50000 | mse=100.7812 | norm_mse=0.0070 | l0=64.0 | dead=0.000 | lr=3.00e-04 | t=57s
+04:40:40 [INFO] train_sae:   step=3000/50000 | mse=69.8575 | norm_mse=0.0057 | l0=64.0 | dead=0.010 | lr=3.00e-04 | t=69s
+04:40:51 [INFO] train_sae:   step=3500/50000 | mse=65.2895 | norm_mse=0.0056 | l0=64.0 | dead=0.059 | lr=3.00e-04 | t=80s
+04:41:03 [INFO] train_sae:   step=4000/50000 | mse=45.1878 | norm_mse=0.0045 | l0=64.0 | dead=0.110 | lr=3.00e-04 | t=91s
+04:41:14 [INFO] train_sae:   step=4500/50000 | mse=73.6949 | norm_mse=0.0050 | l0=64.0 | dead=0.138 | lr=3.00e-04 | t=103s
+04:41:25 [INFO] train_sae:   step=5000/50000 | mse=38.5778 | norm_mse=0.0041 | l0=64.0 | dead=0.194 | lr=3.00e-04 | t=114s
+04:41:25 [INFO] train_sae:     Step 5000: resampled 1593 dead features
+04:41:37 [INFO] train_sae:   step=5500/50000 | mse=75.0358 | norm_mse=0.0050 | l0=64.0 | dead=0.086 | lr=3.00e-04 | t=126s
+04:41:48 [INFO] train_sae:   step=6000/50000 | mse=83.3049 | norm_mse=0.0052 | l0=64.0 | dead=0.079 | lr=3.00e-04 | t=137s
+04:42:00 [INFO] train_sae:   step=6500/50000 | mse=35.0377 | norm_mse=0.0037 | l0=64.0 | dead=0.112 | lr=3.00e-04 | t=149s
+04:42:11 [INFO] train_sae:   step=7000/50000 | mse=37.4721 | norm_mse=0.0036 | l0=64.0 | dead=0.157 | lr=3.00e-04 | t=160s
+04:42:22 [INFO] train_sae:   step=7500/50000 | mse=33.5851 | norm_mse=0.0034 | l0=64.0 | dead=0.205 | lr=3.00e-04 | t=171s
+04:42:22 [INFO] train_sae:     Step 7500: resampled 1679 dead features
+04:42:34 [INFO] train_sae:   step=8000/50000 | mse=83.9209 | norm_mse=0.0053 | l0=64.0 | dead=0.036 | lr=3.00e-04 | t=183s
+04:42:45 [INFO] train_sae:   step=8500/50000 | mse=96.4189 | norm_mse=0.0050 | l0=64.0 | dead=0.318 | lr=3.00e-04 | t=194s
+04:42:57 [INFO] train_sae:   step=9000/50000 | mse=32.6443 | norm_mse=0.0033 | l0=64.0 | dead=0.519 | lr=3.00e-04 | t=206s
+04:43:08 [INFO] train_sae:   step=9500/50000 | mse=28.4175 | norm_mse=0.0031 | l0=64.0 | dead=0.552 | lr=3.00e-04 | t=217s
+04:43:20 [INFO] train_sae:   step=10000/50000 | mse=165.9544 | norm_mse=0.0043 | l0=64.0 | dead=0.475 | lr=3.00e-04 | t=228s
+04:43:20 [INFO] sae: Saved SAE → /workspace/project/saes/late/pooled.pt
+04:43:20 [INFO] train_sae:     Step 10000: resampled 3894 dead features
+04:43:31 [INFO] train_sae:   step=10500/50000 | mse=305.4020 | norm_mse=0.0136 | l0=64.0 | dead=0.017 | lr=3.00e-04 | t=240s
+04:43:43 [INFO] train_sae:   step=11000/50000 | mse=108.6611 | norm_mse=0.0069 | l0=64.0 | dead=0.103 | lr=3.00e-04 | t=252s
+04:43:54 [INFO] train_sae:   step=11500/50000 | mse=62.1899 | norm_mse=0.0049 | l0=64.0 | dead=0.214 | lr=3.00e-04 | t=263s
+04:44:06 [INFO] train_sae:   step=12000/50000 | mse=71.5277 | norm_mse=0.0044 | l0=64.0 | dead=0.236 | lr=3.00e-04 | t=275s
+04:44:17 [INFO] train_sae:   step=12500/50000 | mse=168.3418 | norm_mse=0.0063 | l0=64.0 | dead=0.409 | lr=3.00e-04 | t=286s
+04:44:17 [INFO] train_sae:     Step 12500: resampled 3361 dead features
+04:44:28 [INFO] train_sae:   step=13000/50000 | mse=217.2316 | norm_mse=0.0123 | l0=64.0 | dead=0.029 | lr=3.00e-04 | t=297s
+04:44:40 [INFO] train_sae:   step=13500/50000 | mse=129.3905 | norm_mse=0.0072 | l0=64.0 | dead=0.063 | lr=3.00e-04 | t=309s
+04:44:51 [INFO] train_sae:   step=14000/50000 | mse=1468.6113 | norm_mse=0.0158 | l0=64.0 | dead=0.144 | lr=3.00e-04 | t=320s
+04:45:03 [INFO] train_sae:   step=14500/50000 | mse=350.0814 | norm_mse=0.0113 | l0=64.0 | dead=0.188 | lr=3.00e-04 | t=332s
+04:45:14 [INFO] train_sae:   step=15000/50000 | mse=389.2626 | norm_mse=0.0101 | l0=64.0 | dead=0.301 | lr=3.00e-04 | t=343s
+04:45:14 [INFO] train_sae:     Step 15000: resampled 2470 dead features
+04:45:26 [INFO] train_sae:   step=15500/50000 | mse=436.5338 | norm_mse=0.0124 | l0=64.0 | dead=0.022 | lr=3.00e-04 | t=354s
+04:45:37 [INFO] train_sae:   step=16000/50000 | mse=87.9750 | norm_mse=0.0056 | l0=64.0 | dead=0.073 | lr=3.00e-04 | t=366s
+04:45:48 [INFO] train_sae:   step=16500/50000 | mse=215.4436 | norm_mse=0.0061 | l0=64.0 | dead=0.138 | lr=3.00e-04 | t=377s
+04:46:00 [INFO] train_sae:   step=17000/50000 | mse=162.0755 | norm_mse=0.0072 | l0=64.0 | dead=0.279 | lr=3.00e-04 | t=389s
+04:46:11 [INFO] train_sae:   step=17500/50000 | mse=226.2664 | norm_mse=0.0070 | l0=64.0 | dead=0.292 | lr=3.00e-04 | t=400s
+04:46:11 [INFO] train_sae:     Step 17500: resampled 2392 dead features
+04:46:23 [INFO] train_sae:   step=18000/50000 | mse=161.5003 | norm_mse=0.0084 | l0=64.0 | dead=0.031 | lr=3.00e-04 | t=412s
+04:46:34 [INFO] train_sae:   step=18500/50000 | mse=129.7709 | norm_mse=0.0063 | l0=64.0 | dead=0.107 | lr=3.00e-04 | t=423s
+04:46:46 [INFO] train_sae:   step=19000/50000 | mse=69.3150 | norm_mse=0.0046 | l0=64.0 | dead=0.151 | lr=3.00e-04 | t=434s
+04:46:57 [INFO] train_sae:   step=19500/50000 | mse=46.0786 | norm_mse=0.0041 | l0=64.0 | dead=0.267 | lr=3.00e-04 | t=446s
+04:47:08 [INFO] train_sae:   step=20000/50000 | mse=40.8361 | norm_mse=0.0039 | l0=64.0 | dead=0.417 | lr=3.00e-04 | t=457s
+04:47:09 [INFO] sae: Saved SAE → /workspace/project/saes/late/pooled.pt
+04:47:09 [INFO] train_sae:     Step 20000: resampled 3418 dead features
+04:47:20 [INFO] train_sae:   step=20500/50000 | mse=100.5460 | norm_mse=0.0077 | l0=64.0 | dead=0.019 | lr=3.00e-04 | t=469s
+04:47:32 [INFO] train_sae:   step=21000/50000 | mse=77.8786 | norm_mse=0.0058 | l0=64.0 | dead=0.125 | lr=3.00e-04 | t=480s
+04:47:43 [INFO] train_sae:   step=21500/50000 | mse=338.4128 | norm_mse=0.0077 | l0=64.0 | dead=0.215 | lr=3.00e-04 | t=492s
+04:47:54 [INFO] train_sae:   step=22000/50000 | mse=88.7937 | norm_mse=0.0045 | l0=64.0 | dead=0.268 | lr=3.00e-04 | t=503s
+04:48:06 [INFO] train_sae:   step=22500/50000 | mse=53.1505 | norm_mse=0.0043 | l0=64.0 | dead=0.307 | lr=3.00e-04 | t=515s
+04:48:06 [INFO] train_sae:     Step 22500: resampled 2520 dead features
+04:48:17 [INFO] train_sae:   step=23000/50000 | mse=303.3958 | norm_mse=0.0094 | l0=64.0 | dead=0.024 | lr=3.00e-04 | t=526s
+04:48:29 [INFO] train_sae:   step=23500/50000 | mse=181.0368 | norm_mse=0.0058 | l0=64.0 | dead=0.109 | lr=3.00e-04 | t=538s
+04:48:40 [INFO] train_sae:   step=24000/50000 | mse=82.5066 | norm_mse=0.0050 | l0=64.0 | dead=0.186 | lr=3.00e-04 | t=549s
+04:48:52 [INFO] train_sae:   step=24500/50000 | mse=514.8788 | norm_mse=0.0095 | l0=64.0 | dead=0.188 | lr=3.00e-04 | t=560s
+04:49:03 [INFO] train_sae:   step=25000/50000 | mse=140.5410 | norm_mse=0.0048 | l0=64.0 | dead=0.209 | lr=3.00e-04 | t=572s
+04:49:03 [INFO] train_sae:     Step 25000: resampled 1715 dead features
+04:49:14 [INFO] train_sae:   step=25500/50000 | mse=73.9639 | norm_mse=0.0059 | l0=64.0 | dead=0.037 | lr=3.00e-04 | t=583s
+04:49:26 [INFO] train_sae:   step=26000/50000 | mse=51.7018 | norm_mse=0.0043 | l0=64.0 | dead=0.116 | lr=3.00e-04 | t=595s
+04:49:37 [INFO] train_sae:   step=26500/50000 | mse=42.8341 | norm_mse=0.0036 | l0=64.0 | dead=0.223 | lr=3.00e-04 | t=606s
+04:49:49 [INFO] train_sae:   step=27000/50000 | mse=38.6307 | norm_mse=0.0033 | l0=64.0 | dead=0.330 | lr=3.00e-04 | t=618s
+04:50:00 [INFO] train_sae:   step=27500/50000 | mse=32.6462 | norm_mse=0.0032 | l0=64.0 | dead=0.527 | lr=3.00e-04 | t=629s
+04:50:00 [INFO] train_sae:     Step 27500: resampled 4317 dead features
+04:50:12 [INFO] train_sae:   step=28000/50000 | mse=720.9976 | norm_mse=0.0187 | l0=64.0 | dead=0.030 | lr=3.00e-04 | t=640s
+04:50:23 [INFO] train_sae:   step=28500/50000 | mse=164.8812 | norm_mse=0.0071 | l0=64.0 | dead=0.128 | lr=3.00e-04 | t=652s
+04:50:34 [INFO] train_sae:   step=29000/50000 | mse=206.3820 | norm_mse=0.0063 | l0=64.0 | dead=0.249 | lr=3.00e-04 | t=663s
+04:50:46 [INFO] train_sae:   step=29500/50000 | mse=217.0264 | norm_mse=0.0064 | l0=64.0 | dead=0.293 | lr=3.00e-04 | t=675s
+04:50:57 [INFO] train_sae:   step=30000/50000 | mse=161.1147 | norm_mse=0.0056 | l0=64.0 | dead=0.294 | lr=3.00e-04 | t=686s
+04:50:58 [INFO] sae: Saved SAE → /workspace/project/saes/late/pooled.pt
+04:50:58 [INFO] train_sae:     Step 30000: resampled 2410 dead features
+04:51:09 [INFO] train_sae:   step=30500/50000 | mse=73.7349 | norm_mse=0.0072 | l0=64.0 | dead=0.013 | lr=3.00e-04 | t=698s
+04:51:20 [INFO] train_sae:   step=31000/50000 | mse=206.9134 | norm_mse=0.0074 | l0=64.0 | dead=0.073 | lr=3.00e-04 | t=709s
+04:51:32 [INFO] train_sae:   step=31500/50000 | mse=80.0344 | norm_mse=0.0051 | l0=64.0 | dead=0.135 | lr=3.00e-04 | t=721s
+04:51:43 [INFO] train_sae:   step=32000/50000 | mse=258.4260 | norm_mse=0.0069 | l0=64.0 | dead=0.204 | lr=3.00e-04 | t=732s
+04:51:55 [INFO] train_sae:   step=32500/50000 | mse=148.4591 | norm_mse=0.0061 | l0=64.0 | dead=0.286 | lr=3.00e-04 | t=744s
+04:51:55 [INFO] train_sae:     Step 32500: resampled 2346 dead features
+04:52:06 [INFO] train_sae:   step=33000/50000 | mse=836.6167 | norm_mse=0.0155 | l0=64.0 | dead=0.042 | lr=3.00e-04 | t=755s
+04:52:18 [INFO] train_sae:   step=33500/50000 | mse=107.7496 | norm_mse=0.0063 | l0=64.0 | dead=0.108 | lr=3.00e-04 | t=766s
+04:52:29 [INFO] train_sae:   step=34000/50000 | mse=115.9017 | norm_mse=0.0056 | l0=64.0 | dead=0.208 | lr=3.00e-04 | t=778s
+04:52:40 [INFO] train_sae:   step=34500/50000 | mse=101.6861 | norm_mse=0.0051 | l0=64.0 | dead=0.373 | lr=3.00e-04 | t=789s
+04:52:52 [INFO] train_sae:   step=35000/50000 | mse=147.8661 | norm_mse=0.0061 | l0=64.0 | dead=0.515 | lr=3.00e-04 | t=801s
+04:52:52 [INFO] train_sae:     Step 35000: resampled 4221 dead features
+04:53:03 [INFO] train_sae:   step=35500/50000 | mse=454.0665 | norm_mse=0.0197 | l0=64.0 | dead=0.030 | lr=3.00e-04 | t=812s
+04:53:15 [INFO] train_sae:   step=36000/50000 | mse=1169.7207 | norm_mse=0.0251 | l0=64.0 | dead=0.068 | lr=3.00e-04 | t=824s
+04:53:26 [INFO] train_sae:   step=36500/50000 | mse=214.1555 | norm_mse=0.0098 | l0=64.0 | dead=0.100 | lr=3.00e-04 | t=835s
+04:53:38 [INFO] train_sae:   step=37000/50000 | mse=249.5314 | norm_mse=0.0090 | l0=64.0 | dead=0.165 | lr=3.00e-04 | t=846s
+04:53:49 [INFO] train_sae:   step=37500/50000 | mse=281.1011 | norm_mse=0.0085 | l0=64.0 | dead=0.328 | lr=3.00e-04 | t=858s
+04:53:49 [INFO] train_sae:     Step 37500: resampled 2695 dead features
+04:54:00 [INFO] train_sae:   step=38000/50000 | mse=132.4452 | norm_mse=0.0095 | l0=64.0 | dead=0.014 | lr=3.00e-04 | t=869s
+04:54:12 [INFO] train_sae:   step=38500/50000 | mse=143.6179 | norm_mse=0.0073 | l0=64.0 | dead=0.043 | lr=3.00e-04 | t=881s
+04:54:23 [INFO] train_sae:   step=39000/50000 | mse=503.1111 | norm_mse=0.0128 | l0=64.0 | dead=0.069 | lr=3.00e-04 | t=892s
+04:54:35 [INFO] train_sae:   step=39500/50000 | mse=1226.3621 | norm_mse=0.0199 | l0=64.0 | dead=0.134 | lr=3.00e-04 | t=904s
+04:54:46 [INFO] train_sae:   step=40000/50000 | mse=138.7370 | norm_mse=0.0067 | l0=64.0 | dead=0.209 | lr=3.00e-04 | t=915s
+04:54:46 [INFO] sae: Saved SAE → /workspace/project/saes/late/pooled.pt
+04:54:46 [INFO] train_sae:     Step 40000: resampled 1713 dead features
+04:54:58 [INFO] train_sae:   step=40500/50000 | mse=144.7530 | norm_mse=0.0104 | l0=64.0 | dead=0.040 | lr=3.00e-04 | t=927s
+04:55:09 [INFO] train_sae:   step=41000/50000 | mse=79.0242 | norm_mse=0.0059 | l0=64.0 | dead=0.204 | lr=3.00e-04 | t=938s
+04:55:21 [INFO] train_sae:   step=41500/50000 | mse=65.9370 | norm_mse=0.0047 | l0=64.0 | dead=0.303 | lr=3.00e-04 | t=950s
+04:55:32 [INFO] train_sae:   step=42000/50000 | mse=178.5140 | norm_mse=0.0080 | l0=64.0 | dead=0.405 | lr=3.00e-04 | t=961s
+04:55:44 [INFO] train_sae:   step=42500/50000 | mse=359.1224 | norm_mse=0.0090 | l0=64.0 | dead=0.454 | lr=3.00e-04 | t=972s
+04:55:44 [INFO] train_sae:     Step 42500: resampled 3719 dead features
+04:55:55 [INFO] train_sae:   step=43000/50000 | mse=155.8017 | norm_mse=0.0121 | l0=64.0 | dead=0.010 | lr=3.00e-04 | t=984s
+04:56:06 [INFO] train_sae:   step=43500/50000 | mse=90.7495 | norm_mse=0.0072 | l0=64.0 | dead=0.070 | lr=3.00e-04 | t=995s
+04:56:18 [INFO] train_sae:   step=44000/50000 | mse=313.4303 | norm_mse=0.0100 | l0=64.0 | dead=0.126 | lr=3.00e-04 | t=1007s
+04:56:29 [INFO] train_sae:   step=44500/50000 | mse=85.2572 | norm_mse=0.0062 | l0=64.0 | dead=0.215 | lr=3.00e-04 | t=1018s
+04:56:41 [INFO] train_sae:   step=45000/50000 | mse=145.3841 | norm_mse=0.0060 | l0=64.0 | dead=0.363 | lr=3.00e-04 | t=1030s
+04:56:41 [INFO] train_sae:     Step 45000: resampled 2979 dead features
+04:56:52 [INFO] train_sae:   step=45500/50000 | mse=122.0820 | norm_mse=0.0098 | l0=64.0 | dead=0.013 | lr=3.00e-04 | t=1041s
+04:57:04 [INFO] train_sae:   step=46000/50000 | mse=129.7654 | norm_mse=0.0081 | l0=64.0 | dead=0.077 | lr=3.00e-04 | t=1052s
+04:57:15 [INFO] train_sae:   step=46500/50000 | mse=70.9580 | norm_mse=0.0060 | l0=64.0 | dead=0.110 | lr=3.00e-04 | t=1064s
+04:57:26 [INFO] train_sae:   step=47000/50000 | mse=205.9841 | norm_mse=0.0112 | l0=64.0 | dead=0.221 | lr=3.00e-04 | t=1075s
+04:57:38 [INFO] train_sae:   step=47500/50000 | mse=270.5345 | norm_mse=0.0080 | l0=64.0 | dead=0.286 | lr=3.00e-04 | t=1087s
+04:57:38 [INFO] train_sae:     Step 47500: resampled 2344 dead features
+04:57:49 [INFO] train_sae:   step=48000/50000 | mse=111.2820 | norm_mse=0.0084 | l0=64.0 | dead=0.010 | lr=3.00e-04 | t=1098s
+04:58:01 [INFO] train_sae:   step=48500/50000 | mse=131.6926 | norm_mse=0.0080 | l0=64.0 | dead=0.136 | lr=3.00e-04 | t=1109s
+04:58:12 [INFO] train_sae:   step=49000/50000 | mse=69.3334 | norm_mse=0.0054 | l0=64.0 | dead=0.220 | lr=3.00e-04 | t=1121s
+04:58:23 [INFO] train_sae:   step=49500/50000 | mse=224.0459 | norm_mse=0.0073 | l0=64.0 | dead=0.346 | lr=3.00e-04 | t=1132s
+04:58:35 [INFO] train_sae:   step=50000/50000 | mse=175.8383 | norm_mse=0.0073 | l0=64.0 | dead=0.414 | lr=3.00e-04 | t=1144s
+04:58:35 [INFO] sae: Saved SAE → /workspace/project/saes/late/pooled.pt
+04:58:35 [INFO] sae: Saved SAE → /workspace/project/saes/late/pooled.pt
+04:58:35 [INFO] train_sae:   Training complete in 19.1 min
+04:58:36 [INFO] train_sae:   QC: norm_mse=0.0069, l0=64.0, dead_frac=0.414
+04:58:36 [WARNING] train_sae:   [QC FAIL] late/pooled: {'norm_mse': 0.006859230808913708, 'l0': 64.0, 'l2_loss': 147.1220703125, 'dead_frac': 0.4144287109375, 'pass': False}
+04:58:36 [INFO] train_sae: QC table saved: /workspace/project/results/sae_qc.tsv
+04:58:36 [INFO] train_sae: 
+============================================================
+04:58:36 [INFO] train_sae: SAE Training Summary
+04:58:36 [INFO] train_sae: ============================================================
+04:58:36 [INFO] train_sae:   [FAIL] early/pooled: norm_mse=0.0013, l0=64.0, dead=0.754
+04:58:36 [INFO] train_sae:   [FAIL] mid/pooled: norm_mse=0.0026, l0=64.0, dead=0.735
+04:58:36 [INFO] train_sae:   [FAIL] late/pooled: norm_mse=0.0069, l0=64.0, dead=0.414
+04:58:36 [WARNING] train_sae: Some SAEs failed QC! Check logs and consider retraining with adjusted k.

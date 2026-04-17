@@ -1,0 +1,11 @@
+test	layer	metric	value	pval	pval_bh
+permutation_bonferroni	early	frac_significant	0.0069580078125		
+permutation_bonferroni	mid	frac_significant	0.010009765625		
+permutation_bonferroni	late	frac_significant	0.0262451171875		
+wilcoxon_targeted_vs_random	mid	k25_pval	1.7885663439509796	2.9802322387695312e-08	1.1920928955078125e-07
+bootstrap_gc_ci	mid	median_gap_closure	0.0410050451755523		
+bootstrap_gc_ci	mid	ci_lo	2.384185791015625e-07		
+bootstrap_gc_ci	mid	ci_hi	0.1382828950881958		
+hypergeometric_cross_layer	early_vs_mid	overlap_jaccard	0.02040816326530612	0.03713207316986764	0.07426414633973528
+hypergeometric_cross_layer	early_vs_late	overlap_jaccard	0.0	1.0	1.0
+hypergeometric_cross_layer	mid_vs_late	overlap_jaccard	0.0	1.0	1.0

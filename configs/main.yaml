@@ -1,0 +1,131 @@
+## EpiBERT Contrastive SAE — Single source of truth for all hyperparameters
+## Edit here; never hard-code values in scripts.
+
+# ── Reproducibility ────────────────────────────────────────────────────────────
+seed: 42
+
+# ── Paths ─────────────────────────────────────────────────────────────────────
+paths:
+  workspace:    /workspace
+  project:      /workspace/project
+  data:         /workspace/project/data
+  atac_raw:     /workspace/project/data/atac         # bigWig files (placeholder)
+  atac_processed: /workspace/project/data/atac_processed  # .npy arrays
+  genome:       /workspace/project/data/genome
+  windows_bed:  /workspace/project/data/windows.bed
+  eval_genes:   /workspace/project/data/eval_genes.tsv
+  activations:  /workspace/project/activations
+  saes:         /workspace/project/saes
+  results:      /workspace/project/results
+  outputs:      /workspace/outputs
+  logs:         /workspace/project/logs
+  checkpoint:   /workspace/epibert_models/pretrained/model1/ckpt-45
+  checkpoint_m2: /workspace/epibert_models/pretrained/model2/ckpt-45
+  checkpoint_ft: /workspace/epibert_models/fine_tuned/ckpt-16
+
+# ── BAM file mapping ─────────────────────────────────────────────────────────
+bam_files:
+  K562:         "/workspace/K562-ATAC.bam"
+  HepG2:        "/workspace/HepG2-ATAC.bam"
+  GM12878:      "/workspace/GM12878-ATAC.bam"
+  HSC:          "/workspace/Hemapoetic Stem Cell-ATAC.bam"
+  Liver:        "/workspace/Liver Tissue-ATAC.bam"
+  NaiveB:       "/workspace/Naive B Cell-ATAC.bam"
+
+# ── Context pairs ─────────────────────────────────────────────────────────────
+pairs:
+  blood:
+    vitro: K562
+    vivo:  HSC
+  liver:
+    vitro: HepG2
+    vivo:  Liver
+  lymph:
+    vitro: GM12878
+    vivo:  NaiveB
+
+conditions:
+  vitro: [K562, HepG2, GM12878]
+  vivo:  [HSC, Liver, NaiveB]
+
+all_conditions: [K562, HepG2, GM12878, HSC, Liver, NaiveB]
+
+# ── Genomic windows ───────────────────────────────────────────────────────────
+windows:
+  chromosomes: [chr8, chr9]
+  n_windows: 10000
+  window_bp: 131072        # 128 * 1024; divisible by 128 → 1024 output bins
+  blacklist_url: "https://github.com/Boyle-Lab/Blacklist/raw/master/lists/hg38-blacklist.v2.bed.gz"
+
+# ── Model architecture ────────────────────────────────────────────────────────
+model:
+  num_tracks: 170
+  num_performer_layers: 8    # L
+  hidden_dim: 1024            # d
+  num_heads: 8
+  head_dim: 128
+  ffn_dim: 2048
+  num_motifs: 693
+  downsample_factor: 128      # seq_len → seq_len // 128 bins
+  # Layer indices for activation capture (0-indexed)
+  hook_layers:
+    early: 2    # L//4
+    mid:   4    # L//2
+    late:  6    # 3*L//4
+
+# ── ATAC normalization ────────────────────────────────────────────────────────
+atac:
+  normalize: rpm              # reads per million per bp
+  smoothing_bp: 150           # gaussian smoothing window (bp)
+  log1p: true                 # apply log1p after RPM normalization
+
+# ── Activation collection ─────────────────────────────────────────────────────
+activation:
+  batch_size: 4              # windows per batch (start conservative, increase if mem ok)
+  checkpoint_every: 1000     # save incremental checkpoint every N windows
+  n_test_windows: 100        # for smoke-test run
+
+# ── SAE hyperparameters (frozen — do not tune after Phase 4) ─────────────────
+sae:
+  expansion: 8               # latent_dim = expansion * hidden_dim
+  k: 64                      # BatchTopK active features
+  lr: 3.0e-4
+  batch_size: 4096
+  steps: 50000
+  warmup_steps: 1000
+  dead_feature_threshold_steps: 2500
+  dead_feature_resample: true
+  # QC gates
+  qc:
+    max_norm_mse: 0.05
+    l0_min: 50
+    l0_max: 100
+    max_dead_frac: 0.05
+
+# ── Analysis ──────────────────────────────────────────────────────────────────
+analysis:
+  n_permutations: 10000      # permutation test for null CDS distribution
+  cds_shared_pct: 25         # < 25th percentile CDS → "shared"
+  cds_vivo_pct: 90           # > 90th percentile → "vivo-enriched"
+  cds_vitro_pct: 10          # < 10th percentile → "vitro-enriched"
+  jaccard_switch_threshold: 0.3  # < 0.3 Jaccard → "context-switched"
+  top_n_features: 50         # features to export per layer
+  top_windows_n: 500         # windows to export per feature
+
+# ── Ablation ─────────────────────────────────────────────────────────────────
+ablation:
+  target_layer: mid          # which layer to ablate (early/mid/late)
+  k_sweep: [5, 10, 25, 50, 100]
+  random_ablation_seeds: 5
+  n_eval_genes: 200
+
+# ── Steering ─────────────────────────────────────────────────────────────────
+steering:
+  alpha_sweep: [1.5, 2.0, 3.0, 5.0]
+  beta_sweep:  [0.0, 0.25, 0.5]
+  target_layer: mid
+
+# ── Figures ───────────────────────────────────────────────────────────────────
+figures:
+  dpi: 300
+  formats: [pdf, png]
