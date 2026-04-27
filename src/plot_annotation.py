@@ -54,14 +54,20 @@ def load_homer_top_motifs(homer_dir: Path, layer, side, pair, n=5):
 
 
 def load_chromhmm_fractions(chromhmm_dir: Path, layer, side, pair):
-    """Return dict state_name -> fraction for a given combination."""
+    """Return dict state_name -> fraction (normalised by total intersections)."""
     tsv = chromhmm_dir / f'{layer}_{side}_{pair}_states.tsv'
     if not tsv.exists():
         return {}
     try:
         df = pd.read_csv(tsv, sep='\t')
-        df['state_name'] = df['state'].astype(str).map(CHROMHMM_STATE_NAMES).fillna(df['state'].astype(str))
-        return dict(zip(df['state_name'], df['fraction']))
+        df['state_name'] = (df['state'].astype(str)
+                            .map(CHROMHMM_STATE_NAMES)
+                            .fillna(df['state'].astype(str)))
+        total = df['count'].sum()
+        if total == 0:
+            return {}
+        df['norm_fraction'] = df['count'] / total
+        return dict(zip(df['state_name'], df['norm_fraction']))
     except Exception:
         return {}
 
@@ -169,102 +175,102 @@ def figure3_annotation_heatmap(annotation_dir: Path, figures_dir: Path, layers, 
 
 def figure6_case_studies(annotation_dir: Path, figures_dir: Path, layers, pairs=None):
     """
-    Fig 6 case studies: for each layer, show the top HOMER motifs (vivo vs vitro)
-    and ChromHMM state breakdown side-by-side for the most divergent context pair.
+    Fig 6 case studies: ChromHMM state composition of top-feature windows,
+    vivo vs vitro, for each layer × context pair.
+
+    Layout: rows = layers, columns = context pairs (blood / liver / lymph).
+    Each cell shows a grouped stacked bar: vivo (left) vs vitro (right).
+    Y-axis is normalised fraction of total ChromHMM intersections (0–1).
     """
     if pairs is None:
         pairs = ['blood', 'liver', 'lymph']
 
-    homer_dir    = annotation_dir / 'homer'
     chromhmm_dir = annotation_dir / 'chromhmm'
-    go_dir       = annotation_dir / 'go'
 
-    # One row per layer; 3 columns: motifs (vivo), motifs (vitro), ChromHMM bars
+    show_states = ['TssA', 'TssAFlnk', 'Enh', 'EnhG', 'TxFlnk', 'Tx', 'TxWk',
+                   'ZNF/Rpts', 'Het', 'TssBiv', 'BivFlnk', 'EnhBiv',
+                   'ReprPC', 'ReprPCWk', 'Quies']
+    state_colors = {
+        'TssA':     '#E41A1C',
+        'TssAFlnk': '#FF7F00',
+        'TxFlnk':   '#B2DF8A',
+        'Tx':       '#4DAF4A',
+        'TxWk':     '#A6D96A',
+        'EnhG':     '#F781BF',
+        'Enh':      '#FFFF33',
+        'ZNF/Rpts': '#A65628',
+        'Het':      '#984EA3',
+        'TssBiv':   '#E6AB02',
+        'BivFlnk':  '#FDB462',
+        'EnhBiv':   '#B3DE69',
+        'ReprPC':   '#377EB8',
+        'ReprPCWk': '#6BAED6',
+        'Quies':    '#CCCCCC',
+    }
+
+    pair_labels = {'blood': 'Blood\n(K562 / HSC)',
+                   'liver': 'Liver\n(HepG2 / Liver)',
+                   'lymph': 'Lymph\n(GM12878 / NaiveB)'}
+    x = np.array([0.0, 0.6])  # vivo at 0, vitro at 0.6
+
     n_layers = len(layers)
-    fig, axes = plt.subplots(n_layers, 3, figsize=(16, 4.5 * n_layers))
+    n_pairs  = len(pairs)
+    fig, axes = plt.subplots(n_layers, n_pairs,
+                             figsize=(5 * n_pairs, 4.5 * n_layers),
+                             sharey='row')
     if n_layers == 1:
         axes = axes[None, :]
-
-    # Pair with most ChromHMM signal per layer (use lymph as default — highest CDS)
-    priority_pairs = ['lymph', 'liver', 'blood']
+    if n_pairs == 1:
+        axes = axes[:, None]
 
     for ri, layer in enumerate(layers):
-        # Pick the pair with most chromhmm data
-        chosen_pair = next(
-            (p for p in priority_pairs
-             if (chromhmm_dir / f'{layer}_vivo_{p}_states.tsv').exists()),
-            pairs[0]
-        )
+        for ci, pair in enumerate(pairs):
+            ax = axes[ri][ci]
 
-        # ── Motifs: vivo ──────────────────────────────────────────────────────
-        ax_mv = axes[ri][0]
-        vivo_motifs = load_homer_top_motifs(homer_dir, layer, 'vivo', chosen_pair, n=8)
-        if vivo_motifs:
-            y = range(len(vivo_motifs))
-            ax_mv.barh(y, [1.0] * len(vivo_motifs), color='#D65F5F', alpha=0.7)
-            ax_mv.set_yticks(y)
-            ax_mv.set_yticklabels(vivo_motifs, fontsize=8)
-            ax_mv.set_xlim(0, 1.5)
-            ax_mv.set_xticks([])
-        else:
-            ax_mv.text(0.5, 0.5, 'No HOMER results\n(run Step 2 first)',
-                       ha='center', va='center', fontsize=9, transform=ax_mv.transAxes,
-                       color='gray')
-        ax_mv.set_title(f'{layer} / {chosen_pair} — vivo top motifs', fontsize=9)
-        ax_mv.invert_yaxis()
+            fracs_vivo  = load_chromhmm_fractions(chromhmm_dir, layer, 'vivo',  pair)
+            fracs_vitro = load_chromhmm_fractions(chromhmm_dir, layer, 'vitro', pair)
 
-        # ── Motifs: vitro ─────────────────────────────────────────────────────
-        ax_mc = axes[ri][1]
-        vitro_motifs = load_homer_top_motifs(homer_dir, layer, 'vitro', chosen_pair, n=8)
-        if vitro_motifs:
-            y = range(len(vitro_motifs))
-            ax_mc.barh(y, [1.0] * len(vitro_motifs), color='#4878CF', alpha=0.7)
-            ax_mc.set_yticks(y)
-            ax_mc.set_yticklabels(vitro_motifs, fontsize=8)
-            ax_mc.set_xlim(0, 1.5)
-            ax_mc.set_xticks([])
-        else:
-            ax_mc.text(0.5, 0.5, 'No HOMER results\n(run Step 2 first)',
-                       ha='center', va='center', fontsize=9, transform=ax_mc.transAxes,
-                       color='gray')
-        ax_mc.set_title(f'{layer} / {chosen_pair} — vitro top motifs', fontsize=9)
-        ax_mc.invert_yaxis()
+            if not fracs_vivo and not fracs_vitro:
+                ax.text(0.5, 0.5, 'No data', ha='center', va='center',
+                        fontsize=9, transform=ax.transAxes, color='gray')
+                continue
 
-        # ── ChromHMM: vivo vs vitro stacked bars ──────────────────────────────
-        ax_ch = axes[ri][2]
-        show_states = ['TssA', 'TssAFlnk', 'Enh', 'EnhG', 'Tx', 'TxWk',
-                       'ReprPC', 'ReprPCWk', 'Het', 'Quies']
-        state_colors = {
-            'TssA': '#E41A1C', 'TssAFlnk': '#FF7F00', 'Enh': '#FFFF33',
-            'EnhG': '#F781BF', 'Tx': '#4DAF4A', 'TxWk': '#A6D96A',
-            'ReprPC': '#377EB8', 'ReprPCWk': '#6BAED6',
-            'Het': '#984EA3', 'Quies': '#CCCCCC', 'TxFlnk': '#B2DF8A',
-        }
-        fracs_vivo  = load_chromhmm_fractions(chromhmm_dir, layer, 'vivo',  chosen_pair)
-        fracs_vitro = load_chromhmm_fractions(chromhmm_dir, layer, 'vitro', chosen_pair)
-
-        if fracs_vivo or fracs_vitro:
-            x       = np.arange(2)
-            labels  = ['vivo', 'vitro']
-            bottoms = [0.0, 0.0]
+            bottoms = np.zeros(2)
+            handles, labels_leg = [], []
             for state in show_states:
-                vals = [fracs_vivo.get(state, 0), fracs_vitro.get(state, 0)]
-                ax_ch.bar(x, vals, bottom=bottoms,
-                          color=state_colors.get(state, '#AAAAAA'),
-                          label=state, alpha=0.85)
-                bottoms = [bottoms[i] + vals[i] for i in range(2)]
-            ax_ch.set_xticks(x)
-            ax_ch.set_xticklabels(labels, fontsize=9)
-            ax_ch.set_ylabel('Fraction of windows', fontsize=8)
-            ax_ch.legend(fontsize=6, loc='upper right', ncol=2)
-        else:
-            ax_ch.text(0.5, 0.5, 'No ChromHMM data\n(run Step 3 first)',
-                       ha='center', va='center', fontsize=9, transform=ax_ch.transAxes,
-                       color='gray')
-        ax_ch.set_title(f'{layer} / {chosen_pair} — ChromHMM states', fontsize=9)
+                vals = np.array([fracs_vivo.get(state, 0.0),
+                                 fracs_vitro.get(state, 0.0)])
+                color = state_colors.get(state, '#AAAAAA')
+                bars = ax.bar(x, vals, bottom=bottoms,
+                              color=color, width=0.5, alpha=0.9,
+                              label=state)
+                if vals.max() > 0.01:
+                    handles.append(bars)
+                    labels_leg.append(state)
+                bottoms += vals
 
-    fig.suptitle('Case Studies: Motif Enrichment & Chromatin State Annotation\nof Top Context-Divergent SAE Features',
-                 fontsize=11, weight='bold')
+            ax.set_xticks(x)
+            ax.set_xticklabels(['in vivo\n(tissue)', 'in vitro\n(cell line)'], fontsize=8)
+            ax.set_ylim(0, 1.0)
+            ax.set_xlim(-0.4, 1.1)
+
+            if ci == 0:
+                ax.set_ylabel(f'Layer: {layer}\nProportion of intersections', fontsize=8)
+            if ri == 0:
+                ax.set_title(pair_labels.get(pair, pair), fontsize=9, weight='bold')
+
+            # Compact legend only on last column of each row
+            if ci == n_pairs - 1:
+                ax.legend(handles=[b[0] for b in handles],
+                          labels=labels_leg,
+                          fontsize=6, loc='upper left',
+                          bbox_to_anchor=(1.02, 1), borderaxespad=0)
+
+    fig.suptitle(
+        'ChromHMM Chromatin State Composition of Top Context-Divergent SAE Features\n'
+        'In vivo (tissue) vs In vitro (cell line) — normalised proportion of state intersections',
+        fontsize=11, weight='bold',
+    )
     plt.tight_layout()
     _save(fig, figures_dir, 'fig6_case_studies')
     print(f"  Saved fig6_case_studies")
