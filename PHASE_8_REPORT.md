@@ -17,12 +17,12 @@ for the top-50 context-divergent SAE features per layer.
 
 | Pair | Side | State | Fraction |
 |------|------|-------|----------|
-| blood | vivo | Enh | 70.301 |
-| blood | vitro | Enh | 62.647 |
-| liver | vivo | Enh | 83.806 |
-| liver | vitro | Enh | 78.817 |
-| lymph | vivo | Quies | 53.815 |
-| lymph | vitro | Quies | 82.233 |
+| blood | vivo | Enh | 120.400 |
+| blood | vitro | Enh | 120.400 |
+| liver | vivo | Enh | 90.400 |
+| liver | vitro | Enh | 90.400 |
+| lymph | vivo | Enh | 85.800 |
+| lymph | vitro | Enh | 85.800 |
 
 ### Top GO:BP Terms
 
@@ -44,12 +44,12 @@ for the top-50 context-divergent SAE features per layer.
 
 | Pair | Side | State | Fraction |
 |------|------|-------|----------|
-| blood | vivo | Enh | 70.301 |
-| blood | vitro | Enh | 62.647 |
-| liver | vivo | Enh | 83.806 |
-| liver | vitro | Enh | 78.817 |
-| lymph | vivo | Quies | 53.815 |
-| lymph | vitro | Quies | 82.233 |
+| blood | vivo | Enh | 290.720 |
+| blood | vitro | Enh | 208.143 |
+| liver | vivo | Enh | 480.053 |
+| liver | vitro | Enh | 285.000 |
+| lymph | vivo | Quies | 85.677 |
+| lymph | vitro | Quies | 222.658 |
 
 ### Top GO:BP Terms
 

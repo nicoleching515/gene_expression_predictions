@@ -113,7 +113,7 @@ for layer in $LAYERS; do
       if [[ ! -f "$MERGED_BED" ]]; then
         # Pool top windows across all features for this layer/side/pair
         # (pipefail suppressed here: head exits early and causes SIGPIPE in sort)
-        { find "$TOP_FEATURES_DIR" -name "top_windows_${side}_${pair}.bed" \
+        { find "$TOP_FEATURES_DIR/layer_${layer}" -name "top_windows_${side}_${pair}.bed" \
           | head -n "$N_TOP" \
           | xargs cat \
           | sort -k1,1 -k2,2n \
