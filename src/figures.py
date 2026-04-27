@@ -87,14 +87,13 @@ def figure2_cds(feature_dfs, null_cds_dict):
         ax.set_title(f'Layer: {layer}', fontsize=10)
         ax.legend(fontsize=8)
 
-        # Vertical lines for category thresholds
-        for pct, color, label in [
-            (cfg('analysis', 'cds_vivo_pct'),  'red',   '90th pct'),
-            (cfg('analysis', 'cds_vitro_pct'), 'green', '10th pct'),
-        ]:
-            thresh = np.percentile(np.abs(cds), pct)
-            ax.axvline(thresh,  color=color, ls='--', lw=1, alpha=0.7)
-            ax.axvline(-thresh, color=color, ls='--', lw=1, alpha=0.7)
+        # Vertical lines for category thresholds (raw CDS, not |CDS|)
+        vivo_pct  = cfg('analysis', 'cds_vivo_pct')
+        vitro_pct = cfg('analysis', 'cds_vitro_pct')
+        vivo_thresh  = np.percentile(cds, vivo_pct)
+        vitro_thresh = np.percentile(cds, vitro_pct)
+        ax.axvline(vivo_thresh,  color='red',   ls='--', lw=1, alpha=0.7, label=f'vivo {vivo_pct}th pct')
+        ax.axvline(vitro_thresh, color='green', ls='--', lw=1, alpha=0.7, label=f'vitro {vitro_pct}th pct')
 
         # Bottom row: stacked bar of feature categories
         ax2 = axes[1, col]
@@ -151,7 +150,9 @@ def figure4_ablation(effects_df):
         labels.append(at.replace('_', ' ').title())
 
     x = np.arange(len(abl_types))
-    bars = ax1.bar(x, means, yerr=stds, capsize=4,
+    # Clip error bars so lower bound never goes below zero (|Δŷ| is non-negative)
+    err_lo = [min(s, m) for m, s in zip(means, stds)]
+    bars = ax1.bar(x, means, yerr=[err_lo, stds], capsize=4,
                    color=[colors[at] for at in abl_types], alpha=0.8)
     ax1.set_xticks(x)
     ax1.set_xticklabels(labels, fontsize=9)
@@ -207,8 +208,9 @@ def figure5_steering(gc_df):
     steering = gc_df[gc_df['ablation_type'] == 'steering'].copy()
     if not steering.empty:
         pivot = steering.pivot(index='alpha', columns='beta', values='gap_closure_median')
+        vmax_data = pivot.values[~np.isnan(pivot.values)].max() if pivot.size > 0 else 0.2
         sns.heatmap(pivot, annot=True, fmt='.3f', cmap='RdYlGn', ax=ax1,
-                    vmin=0, vmax=1, linewidths=0.5)
+                    vmin=0, vmax=max(vmax_data, 0.01), linewidths=0.5)
         ax1.set_title('Gap Closure by (α, β)', fontsize=10)
         ax1.set_xlabel('β (vitro suppression)', fontsize=9)
         ax1.set_ylabel('α (vivo amplification)', fontsize=9)
@@ -242,7 +244,9 @@ def figure5_steering(gc_df):
         ax2.set_xticks(x)
         ax2.set_xticklabels(list(baseline_data.keys()), fontsize=8)
         ax2.set_ylabel('Median Gap Closure', fontsize=9)
-        ax2.set_ylim(0, 1.1)
+        all_vals = list(baseline_data.values())
+        y_min = min(0, min(all_vals) - 0.05)
+        ax2.set_ylim(y_min, 1.1)
         ax2.axhline(1.0, color='gray', ls='--', lw=1, alpha=0.5, label='Perfect')
         ax2.set_title('Gap Closure vs. Baselines', fontsize=10)
         ax2.legend(fontsize=8)
