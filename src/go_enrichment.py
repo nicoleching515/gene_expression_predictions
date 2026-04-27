@@ -103,7 +103,7 @@ def main():
                     print(f"  [SKIP] {layer}/{side}/{pair}")
                     continue
 
-                homer_txt = homer_dir / f"{layer}_{side}_{pair}" / "homerResults" / "knownResults.txt"
+                homer_txt = homer_dir / f"{layer}_{side}_{pair}" / "knownResults.txt"
                 genes = extract_tf_genes_from_homer(homer_txt)
                 print(f"  {layer}/{side}/{pair}: {len(genes)} TF genes from HOMER")
 

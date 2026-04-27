@@ -37,11 +37,11 @@ REPRESSED_STATES = {'Het', 'TssBiv', 'BivFlnk', 'EnhBiv', 'ReprPC', 'ReprPCWk', 
 
 def load_homer_top_motifs(homer_dir: Path, layer, side, pair, n=5):
     """Return top-n known motifs by p-value for a given combination."""
-    result_file = homer_dir / f'{layer}_{side}_{pair}' / 'homerResults' / 'knownResults.txt'
+    result_file = homer_dir / f'{layer}_{side}_{pair}' / 'knownResults.txt'
     if not result_file.exists():
         return []
     try:
-        df = pd.read_csv(result_file, sep='\t', comment='#')
+        df = pd.read_csv(result_file, sep='\t')
         # Column names vary; find p-value column
         pval_col = next((c for c in df.columns if 'p-value' in c.lower() or 'pvalue' in c.lower()), None)
         name_col = df.columns[0]
