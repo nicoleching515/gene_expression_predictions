@@ -254,6 +254,202 @@ def figure5_steering(gc_df):
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+# Fig 3: Feature annotation heatmap
+# ─────────────────────────────────────────────────────────────────────────────
+
+def figure3_feature_annotation(feature_dfs, top_n=20):
+    """
+    Fig 3: CDS heatmap of top divergent features per layer.
+
+    Each subplot shows the top `top_n` features (by |Cds_avg|) for one layer,
+    with per-context-pair CDS values as columns and features as rows.
+    Features are sorted by cds_avg (vivo-enriched at top, vitro-enriched at
+    bottom) and annotated with their category.
+    """
+    setup_figures()
+    pair_cols = ['cds_blood', 'cds_liver', 'cds_lymph']
+    pair_labels = ['Blood', 'Liver', 'Lymph']
+    cat_colors = {
+        'vivo_enriched':    '#D65F5F',
+        'vitro_enriched':   '#4878CF',
+        'context_switched': '#B47CC7',
+        'shared':           '#67BF5C',
+        'other':            '#AAB7B8',
+    }
+
+    n_layers = len(LAYER_NAMES)
+    fig, axes = plt.subplots(1, n_layers, figsize=(5 * n_layers, 8))
+    if n_layers == 1:
+        axes = [axes]
+
+    for ax, layer in zip(axes, LAYER_NAMES):
+        if layer not in feature_dfs:
+            ax.set_visible(False)
+            continue
+        df = feature_dfs[layer]
+
+        # Top features by |CDS avg|; sort descending so vivo-enriched is on top
+        top_df = df.reindex(df['cds_avg'].abs().nlargest(top_n).index)
+        top_df = top_df.sort_values('cds_avg', ascending=False)
+
+        # Only keep pair columns that actually exist
+        present_cols = [c for c in pair_cols if c in top_df.columns]
+        present_labels = [pair_labels[pair_cols.index(c)] for c in present_cols]
+
+        mat = top_df[present_cols].values.astype(float)
+        abs_max = np.abs(mat).max() if mat.size else 1.0
+
+        im = ax.imshow(mat, aspect='auto', cmap='RdBu_r',
+                       vmin=-abs_max, vmax=abs_max)
+
+        ax.set_xticks(np.arange(len(present_labels)))
+        ax.set_xticklabels(present_labels, fontsize=9)
+        ax.set_yticks(np.arange(len(top_df)))
+
+        # Row labels: feature id + category badge
+        y_labels = []
+        for _, row in top_df.iterrows():
+            y_labels.append(f"F{int(row['feature_id'])}")
+        ax.set_yticklabels(y_labels, fontsize=7)
+        ax.set_title(f'Layer: {layer}', fontsize=10)
+
+        # Annotate cells with CDS value
+        for ri in range(mat.shape[0]):
+            for ci in range(mat.shape[1]):
+                val = mat[ri, ci]
+                color = 'white' if abs(val) > abs_max * 0.5 else 'black'
+                ax.text(ci, ri, f'{val:.2f}', ha='center', va='center',
+                        fontsize=6, color=color)
+
+        # Right-side category color strip
+        ax2 = ax.twinx()
+        ax2.set_ylim(ax.get_ylim())
+        ax2.set_yticks(np.arange(len(top_df)))
+        ax2.set_yticklabels(
+            [row['category'] for _, row in top_df.iterrows()],
+            fontsize=6,
+        )
+        for ticklabel, (_, row) in zip(ax2.get_yticklabels(), top_df.iterrows()):
+            ticklabel.set_color(cat_colors.get(row['category'], '#AAB7B8'))
+
+        plt.colorbar(im, ax=ax, shrink=0.6, pad=0.18,
+                     label='CDS (vivo − vitro)')
+
+    fig.suptitle(
+        'Feature Annotation Heatmap: Context Divergence Score by Condition Pair',
+        fontsize=12, weight='bold',
+    )
+    plt.tight_layout()
+    save_fig(fig, 'fig3_feature_annotation')
+    return fig
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Fig 6: Case studies
+# ─────────────────────────────────────────────────────────────────────────────
+
+def figure6_case_studies(feature_dfs):
+    """
+    Fig 6: Activation profiles for 3 illustrative case-study features.
+
+    Selects:
+      1. Top vivo-enriched feature from the late layer
+      2. Top vitro-enriched feature from the late layer
+      3. Top vivo-enriched feature from the mid layer (cross-layer contrast)
+
+    For each feature shows:
+      Left  — mean activation (vitro vs vivo) per context pair
+      Right — CDS per context pair
+    """
+    setup_figures()
+    pair_cols   = ['cds_blood', 'cds_liver', 'cds_lymph']
+    pair_labels = ['Blood', 'Liver', 'Lymph']
+    act_pairs = {
+        'cds_blood': ('mean_vitro', 'mean_vivo', 'Blood'),
+        'cds_liver': ('mean_vitro', 'mean_vivo', 'Liver'),
+        'cds_lymph': ('mean_vitro', 'mean_vivo', 'Lymph'),
+    }
+
+    def pick_feature(layer, category, largest=True):
+        df = feature_dfs.get(layer)
+        if df is None:
+            return None, None
+        sub = df[df['category'] == category]
+        if sub.empty:
+            return None, None
+        col = 'cds_avg'
+        row = sub.nlargest(1, col).iloc[0] if largest else sub.nsmallest(1, col).iloc[0]
+        return layer, row
+
+    candidates = [
+        pick_feature('late', 'vivo_enriched',  largest=True),
+        pick_feature('late', 'vitro_enriched', largest=False),
+        pick_feature('mid',  'vivo_enriched',  largest=True),
+    ]
+    candidates = [(l, r) for l, r in candidates if l is not None]
+
+    if not candidates:
+        _write_bio_pending('fig6_case_studies', 'Case Studies')
+        return None
+
+    n_cases = len(candidates)
+    fig, axes = plt.subplots(n_cases, 2, figsize=(11, 4 * n_cases))
+    if n_cases == 1:
+        axes = [axes]
+
+    colors_vitro = '#4878CF'
+    colors_vivo  = '#D65F5F'
+
+    for row_i, (layer, feat_row) in enumerate(candidates):
+        fid      = int(feat_row['feature_id'])
+        category = feat_row['category']
+        cds_avg  = feat_row['cds_avg']
+
+        present_pairs = [c for c in pair_cols if c in feat_row.index]
+        present_labels = [pair_labels[pair_cols.index(c)] for c in present_pairs]
+        cds_vals = [feat_row[c] for c in present_pairs]
+
+        # Left panel: mean activation vitro vs vivo (pooled across pairs shown as groups)
+        ax_act = axes[row_i][0]
+        x = np.arange(len(present_labels))
+        w = 0.35
+        ax_act.bar(x - w / 2, [feat_row['mean_vitro']] * len(present_labels),
+                   w, color=colors_vitro, alpha=0.8, label='In vitro')
+        ax_act.bar(x + w / 2, [feat_row['mean_vivo']] * len(present_labels),
+                   w, color=colors_vivo,  alpha=0.8, label='In vivo')
+        ax_act.set_xticks(x)
+        ax_act.set_xticklabels(present_labels, fontsize=9)
+        ax_act.set_ylabel('Mean SAE activation', fontsize=9)
+        ax_act.set_title(
+            f'Feature {fid} ({layer}, {category})\nMean activation by context',
+            fontsize=9,
+        )
+        ax_act.legend(fontsize=8)
+
+        # Right panel: CDS per context pair
+        ax_cds = axes[row_i][1]
+        bar_colors = [colors_vivo if v > 0 else colors_vitro for v in cds_vals]
+        ax_cds.bar(x, cds_vals, color=bar_colors, alpha=0.8)
+        ax_cds.axhline(0, color='black', lw=0.8)
+        ax_cds.axhline(cds_avg, color='gray', lw=1, ls='--',
+                       label=f'Mean CDS = {cds_avg:.2f}')
+        ax_cds.set_xticks(x)
+        ax_cds.set_xticklabels(present_labels, fontsize=9)
+        ax_cds.set_ylabel('CDS (vivo − vitro)', fontsize=9)
+        ax_cds.set_title(
+            f'Feature {fid} ({layer}, {category})\nCDS per context pair',
+            fontsize=9,
+        )
+        ax_cds.legend(fontsize=8)
+
+    fig.suptitle('Case Studies: Top Context-Divergent SAE Features',
+                 fontsize=12, weight='bold')
+    plt.tight_layout()
+    save_fig(fig, 'fig6_case_studies')
+    return fig
+
+
+# ─────────────────────────────────────────────────────────────────────────────
 # Fig 7: Cross-layer validation (Jaccard of top-50 features)
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -351,11 +547,14 @@ def generate_all_figures():
         figure7_cross_layer(feature_dfs)
         generated.append('fig7')
 
-    # Bio-pending placeholders
-    for fig_name, title in [('fig3_feature_annotation', 'Feature Annotation Heatmap'),
-                              ('fig6_case_studies', 'Case Studies')]:
-        _write_bio_pending(fig_name, title)
-        generated.append(fig_name)
+    if feature_dfs:
+        log.info("Generating Fig 3 (feature annotation heatmap) ...")
+        figure3_feature_annotation(feature_dfs)
+        generated.append('fig3')
+
+        log.info("Generating Fig 6 (case studies) ...")
+        figure6_case_studies(feature_dfs)
+        generated.append('fig6')
 
     log.info(f"Generated figures: {generated}")
     return generated
