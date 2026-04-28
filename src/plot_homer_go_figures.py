@@ -78,7 +78,8 @@ def parse_homer_known(homer_dir: str, n: int = 10) -> pd.DataFrame:
     if not path.exists():
         return pd.DataFrame(columns=["motif_name", "neg_log_p"])
     try:
-        df = pd.read_csv(path, sep="\t", comment="#")
+        # comment=None so column names containing "#" are not truncated
+        df = pd.read_csv(path, sep="\t", comment=None)
         # Normalise column names (HOMER uses varying capitalisations)
         df.columns = [c.strip().lower().replace(" ", "_") for c in df.columns]
         # Find the p-value column
@@ -89,6 +90,7 @@ def parse_homer_known(homer_dir: str, n: int = 10) -> pd.DataFrame:
         namecol = df.columns[0]
         df = df[[namecol, pcol]].copy()
         df.columns = ["motif_name", "pval"]
+        df["motif_name"] = df["motif_name"].astype(str)
         df["pval"] = pd.to_numeric(df["pval"], errors="coerce")
         df = df.dropna().sort_values("pval").head(n)
         # Clean motif name: keep only the TF name before the first "/"

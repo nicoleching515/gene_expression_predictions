@@ -1,0 +1,5 @@
+Motif Name	Consensus	P-value	Log P-value	q-value (Benjamini)	# of Target Sequences with Motif(of 200)	% of Target Sequences with Motif	# of Background Sequences with Motif(of 1000)	% of Background Sequences with Motif
+Factor: POU3F1; motif: RNYBCATTTGCATTWCAA; match class: 1	N	0.02021	-1.694	0.02021	50	25.00%	100	10.00%
+Factor: PMX1; motif: TAATHA; match class: 1	N	0.03028	-1.519	0.03028	50	25.00%	100	10.00%
+Factor: Prx2; motif: TYAWAKTAA	N	0.03028	-1.519	0.03028	50	25.00%	100	10.00%
+Factor: Sox-9; motif: AANGGNNNCWTTGTTY	N	0.03028	-1.519	0.03028	50	25.00%	100	10.00%

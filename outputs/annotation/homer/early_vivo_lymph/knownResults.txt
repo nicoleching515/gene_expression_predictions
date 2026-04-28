@@ -1,0 +1,19 @@
+Motif Name	Consensus	P-value	Log P-value	q-value (Benjamini)	# of Target Sequences with Motif(of 200)	% of Target Sequences with Motif	# of Background Sequences with Motif(of 1000)	% of Background Sequences with Motif
+Factor: Sall1; motif: NAKKCGKAAAKG; match class: 1	N	0.0008868	-3.052	0.0008868	50	25.00%	100	10.00%
+Factor: POU2F2; motif: NWTRMATATKCAWN; match class: 1	N	0.002135	-2.671	0.002135	50	25.00%	100	10.00%
+Factor: POU2F3; motif: ATGMATATKCAW	N	0.005944	-2.226	0.005944	50	25.00%	100	10.00%
+Factor: ZNF647; motif: NCGAGAATAGGA	N	0.005944	-2.226	0.005944	50	25.00%	100	10.00%
+Factor: ZNF225; motif: KGRWGCWAANGM	N	0.006239	-2.205	0.006239	50	25.00%	100	10.00%
+Factor: MR; motif: NGNACRNNNYGTNCN; match class: 1	N	0.01118	-1.952	0.01118	50	25.00%	100	10.00%
+Factor: MR; motif: NGNACRNNNYGTNCN	N	0.01736	-1.76	0.01736	50	25.00%	100	10.00%
+Factor: AR; motif: NGNACANNNTGTTCYNN; match class: 1	N	0.02258	-1.646	0.02258	50	25.00%	100	10.00%
+Factor: AR; motif: NNNGNRRGNACANNGTGTTCTNNNNNN	N	0.04181	-1.379	0.04181	50	25.00%	100	10.00%
+Factor: HOXA10; motif: NGYMATAAANN	N	0.04181	-1.379	0.04181	50	25.00%	100	10.00%
+Factor: Six-1; motif: NCGTATCRNN; match class: 1	N	0.04181	-1.379	0.04181	50	25.00%	100	10.00%
+Factor: PR; motif: CNNNNTGTTCT	N	0.04181	-1.379	0.04181	50	25.00%	100	10.00%
+Factor: HOXA10; motif: NGYMATAAANN	N	0.04181	-1.379	0.04181	50	25.00%	100	10.00%
+Factor: MOP4; motif: RMCAYGYGYN	N	0.04181	-1.379	0.04181	50	25.00%	100	10.00%
+Factor: POU2F2; motif: NWTRMATATKCAWN	N	0.04181	-1.379	0.04181	50	25.00%	100	10.00%
+Factor: HOXC11; motif: NGYMATWAANN	N	0.04181	-1.379	0.04181	50	25.00%	100	10.00%
+Factor: FOXO1; motif: TGTTKAC; match class: 1	N	0.04553	-1.342	0.04553	50	25.00%	100	10.00%
+Factor: Churchill; motif: CGGGNN; match class: 1	N	0.04961	-1.304	0.04961	50	25.00%	100	10.00%

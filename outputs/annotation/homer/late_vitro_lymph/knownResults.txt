@@ -1,0 +1,2 @@
+Motif Name	Consensus	P-value	Log P-value	q-value (Benjamini)	# of Target Sequences with Motif(of 200)	% of Target Sequences with Motif	# of Background Sequences with Motif(of 1000)	% of Background Sequences with Motif
+Factor: MOP4; motif: RMCAYGYGYN	N	0.0128	-1.893	0.0128	50	25.00%	100	10.00%

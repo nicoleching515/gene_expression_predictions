@@ -1,0 +1,3 @@
+term_id	description	p_value	p_adjust	term_size	query_size	intersection_size	fold_enrichment
+GO:0036462	TRAIL-activated apoptotic signaling pathway	0.010548757498454289	0.010548757498454289	11	70	3	77.922
+GO:0140991	piRNA-mediated gene silencing by mRNA destabilization	0.030080884915288618	0.030080884915288618	3	70	2	190.476
