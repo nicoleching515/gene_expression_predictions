@@ -1,7 +1,7 @@
-Motif Name	Consensus	P-value	Log P-value	q-value (Benjamini)	# of Target Sequences with Motif(of 200)	% of Target Sequences with Motif	# of Background Sequences with Motif(of 1000)	% of Background Sequences with Motif
-Factor: ZNF333; motif: ATAAT; match class: 1	N	0.006737	-2.172	0.006737	50	25.00%	100	10.00%
-Factor: PMX1; motif: TAATHA; match class: 1	N	0.00805	-2.094	0.00805	50	25.00%	100	10.00%
-Factor: HOXA10; motif: NGTCGTAAAAN	N	0.0121	-1.917	0.0121	50	25.00%	100	10.00%
-Factor: FOXO1; motif: NRWAAACAAN; match class: 1	N	0.04858	-1.314	0.04858	50	25.00%	100	10.00%
-Factor: PMX1; motif: TAATHA	N	0.04858	-1.314	0.04858	50	25.00%	100	10.00%
-Factor: HOXA7; motif: GYMATTAN	N	0.04858	-1.314	0.04858	50	25.00%	100	10.00%
+Motif Name	Consensus	P-value	Log P-value	q-value (Benjamini)	Num Target	Pct Target	Num Background	Pct Background
+ZNF333	N	6.7370e-03	-2.172	6.7370e-03	50	25.00%	100	10.00%
+PMX1	N	8.0500e-03	-2.094	8.0500e-03	50	25.00%	100	10.00%
+HOXA10	N	1.2100e-02	-1.917	1.2100e-02	50	25.00%	100	10.00%
+FOXO1	N	4.8580e-02	-1.314	4.8580e-02	50	25.00%	100	10.00%
+PMX1	N	4.8580e-02	-1.314	4.8580e-02	50	25.00%	100	10.00%
+HOXA7	N	4.8580e-02	-1.314	4.8580e-02	50	25.00%	100	10.00%

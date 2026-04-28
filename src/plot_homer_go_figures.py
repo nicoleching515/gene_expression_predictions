@@ -92,10 +92,18 @@ def parse_homer_known(homer_dir: str, n: int = 10) -> pd.DataFrame:
         df.columns = ["motif_name", "pval"]
         df["motif_name"] = df["motif_name"].astype(str)
         df["pval"] = pd.to_numeric(df["pval"], errors="coerce")
-        df = df.dropna().sort_values("pval").head(n)
-        # Clean motif name: keep only the TF name before the first "/"
-        df["motif_name"] = df["motif_name"].str.split("(").str[0].str.strip()
-        df["motif_name"] = df["motif_name"].str.split("/").str[0].str.strip()
+        df = df.dropna().sort_values("pval")
+        # Clean motif name: handle both HOMER format (SP1(Zf)/...) and
+        # g:Profiler format (Factor: SP1; motif: ...)
+        def _clean(name):
+            import re
+            m = re.match(r'Factor:\s*([^;]+)', name)
+            if m:
+                return m.group(1).strip()
+            return name.split("(")[0].split("/")[0].strip()
+        df["motif_name"] = df["motif_name"].apply(_clean)
+        # Deduplicate: keep best p-value per TF name
+        df = df.drop_duplicates(subset="motif_name").head(n)
         # Guard against log(0)
         df["pval"] = df["pval"].clip(lower=1e-300)
         df["neg_log_p"] = -np.log10(df["pval"])
