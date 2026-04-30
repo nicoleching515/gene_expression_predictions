@@ -1,22 +1,158 @@
-term_id	description	p_value	p_adjust	term_size	query_size	intersection_size	fold_enrichment
-GO:0140975	disruption of cellular anatomical structure in another organism	5.8608344649032226e-05	5.8608344649032226e-05	6	155	4	86.022
-GO:0051673	disruption of plasma membrane integrity in another organism	5.8608344649032226e-05	5.8608344649032226e-05	6	155	4	86.022
-GO:0002227	innate immune response in mucosa	0.001343375698872062	0.001343375698872062	27	155	5	23.895
-GO:0002385	mucosal immune response	0.005351865019808535	0.005351865019808535	39	155	5	16.543
-GO:0050829	defense response to Gram-negative bacterium	0.005351865019808535	0.005351865019808535	100	155	7	9.032
-GO:0002251	organ or tissue specific immune response	0.007281013562138996	0.007281013562138996	43	155	5	15.004
-GO:0046712	GDP catabolic process	0.021135236652959806	0.021135236652959806	2	155	2	129.032
-GO:0050832	defense response to fungus	0.021135236652959806	0.021135236652959806	58	155	5	11.123
-GO:0036462	TRAIL-activated apoptotic signaling pathway	0.021135236652959806	0.021135236652959806	11	155	3	35.191
-GO:0009620	response to fungus	0.03374236862193363	0.03374236862193363	69	155	5	9.35
-GO:0016311	dephosphorylation	0.03374236862193363	0.03374236862193363	212	155	8	4.869
-GO:0140991	piRNA-mediated gene silencing by mRNA destabilization	0.03374236862193363	0.03374236862193363	3	155	2	86.022
-GO:0050896	response to stimulus	0.03374236862193363	0.03374236862193363	9051	155	90	1.283
-GO:0042742	defense response to bacterium	0.03374236862193363	0.03374236862193363	334	155	10	3.863
-GO:0019731	antibacterial humoral response	0.03374236862193363	0.03374236862193363	68	155	5	9.488
-GO:0043067	regulation of programmed cell death	0.03374236862193363	0.03374236862193363	1467	155	24	2.111
-GO:0031640	killing of cells of another organism	0.04347876104837906	0.04347876104837906	79	155	5	8.167
-GO:0050830	defense response to Gram-positive bacterium	0.04347876104837906	0.04347876104837906	121	155	6	6.398
-GO:0141061	disruption of cell in another organism	0.04347876104837906	0.04347876104837906	79	155	5	8.167
-GO:0042981	regulation of apoptotic process	0.045524228641003237	0.045524228641003237	1426	155	23	2.081
-GO:0141060	disruption of anatomical structure in another organism	0.049492625500239855	0.049492625500239855	83	155	5	7.773
+term_id	description	p_adjust	fold_enrichment	term_size	query_size	intersection_size
+GO:0006357	regulation of transcription by RNA polymerase II	4.4936435215906623e-07	7.4405	2688	10	10
+GO:0006366	transcription by RNA polymerase II	4.4936435215906623e-07	7.0746	2827	10	10
+GO:0006355	regulation of DNA-templated transcription	1.4139315033264354e-06	5.9084	3385	10	10
+GO:2001141	regulation of RNA biosynthetic process	1.4139315033264354e-06	5.8875	3397	10	10
+GO:0006351	DNA-templated transcription	1.6289038798951645e-06	5.677	3523	10	10
+GO:0051252	regulation of RNA metabolic process	1.9564666079050373e-06	5.4735	3654	10	10
+GO:0000122	negative regulation of transcription by RNA polymerase II	2.3651003004658485e-06	15.0054	933	10	7
+GO:0019219	regulation of nucleobase-containing compound metabolic process	3.233116855124507e-06	5.0582	3954	10	10
+GO:0045944	positive regulation of transcription by RNA polymerase II	1.2801189175225838e-05	11.3177	1237	10	7
+GO:1902679	negative regulation of RNA biosynthetic process	1.352216655195271e-05	10.9034	1284	10	7
+GO:0045892	negative regulation of DNA-templated transcription	1.352216655195271e-05	10.9804	1275	10	7
+GO:0051253	negative regulation of RNA metabolic process	2.1218936916091157e-05	10.0792	1389	10	7
+GO:0080090	regulation of primary metabolic process	3.177908185944563e-05	3.8351	5215	10	10
+GO:0045934	negative regulation of nucleobase-containing compound metabolic process	3.2154459134752005e-05	9.2715	1510	10	7
+GO:0010556	regulation of macromolecule biosynthetic process	5.0901896697802124e-05	3.5417	5647	10	10
+GO:0045893	positive regulation of DNA-templated transcription	5.0901896697802124e-05	8.3732	1672	10	7
+GO:1902680	positive regulation of RNA biosynthetic process	5.0901896697802124e-05	8.3632	1674	10	7
+GO:0010468	regulation of gene expression	5.0901896697802124e-05	3.6043	5549	10	10
+GO:0009889	regulation of biosynthetic process	6.533630190288228e-05	3.4358	5821	10	10
+GO:0051254	positive regulation of RNA metabolic process	7.533842242786973e-05	7.7605	1804	10	7
+GO:0060255	regulation of macromolecule metabolic process	0.00015079285126713213	3.1289	6392	10	10
+GO:0032774	RNA biosynthetic process	0.00020657983962554094	3.018	6627	10	10
+GO:0141187	nucleic acid biosynthetic process	0.00023229315357449642	2.9696	6735	10	10
+GO:0016070	RNA metabolic process	0.0002576136217705113	2.9265	6834	10	10
+GO:0019222	regulation of metabolic process	0.00027227552125937853	2.8986	6900	10	10
+GO:0034654	nucleobase-containing compound biosynthetic process	0.00031781893709841675	2.8429	7035	10	10
+GO:0090304	nucleic acid metabolic process	0.0004911082704427176	2.7023	7401	10	10
+GO:0003002	regionalization	0.0004911082704427176	18.9573	422	10	4
+GO:0007498	mesoderm development	0.0004911082704427176	44.1176	136	10	3
+GO:0010557	positive regulation of macromolecule biosynthetic process	0.0004971046581283836	5.5162	2538	10	7
+GO:0001829	trophectodermal cell differentiation	0.0005170085659601531	210.5263	19	10	2
+GO:0048568	embryonic organ development	0.0005946279363893034	17.5055	457	10	4
+GO:0009891	positive regulation of biosynthetic process	0.0005946279363893034	5.293	2645	10	7
+GO:0007389	pattern specification process	0.0006251800732936471	17.094	468	10	4
+GO:0010558	negative regulation of macromolecule biosynthetic process	0.0006965238570008917	5.1226	2733	10	7
+GO:0009890	negative regulation of biosynthetic process	0.0007770756849428884	4.9964	2802	10	7
+GO:0006139	nucleobase-containing compound metabolic process	0.0007770756849428884	2.5113	7964	10	10
+GO:0009790	embryo development	0.0010752439999883432	8.881	1126	10	5
+GO:0072359	circulatory system development	0.0010882670209530995	8.8106	1135	10	5
+GO:0009888	tissue development	0.0012471809014549396	5.9583	2014	10	6
+GO:0010605	negative regulation of macromolecule metabolic process	0.0012471809014549396	4.5455	3080	10	7
+GO:0048646	anatomical structure formation involved in morphogenesis	0.0012471809014549396	8.4034	1190	10	5
+GO:0009952	anterior/posterior pattern specification	0.0012471809014549396	28.436	211	10	3
+GO:0010604	positive regulation of macromolecule metabolic process	0.0014183617367755366	4.4416	3152	10	7
+GO:0048598	embryonic morphogenesis	0.001435378109176511	12.8411	623	10	4
+GO:0009892	negative regulation of metabolic process	0.0017464444438852116	4.2735	3276	10	7
+GO:0001825	blastocyst formation	0.002049853417799161	86.9565	46	10	2
+GO:0009893	positive regulation of metabolic process	0.002173901311205794	4.1056	3410	10	7
+GO:0035987	endodermal cell differentiation	0.0024190340238411418	78.4314	51	10	2
+GO:0010467	gene expression	0.002507042402971243	2.1664	9232	10	10
+GO:0001706	endoderm formation	0.0032191153560131654	66.6667	60	10	2
+GO:0009059	macromolecule biosynthetic process	0.003582831114216628	2.0822	9605	10	10
+GO:0002302	CD8-positive, alpha-beta T cell differentiation involved in immune response	0.004061853194028533	2000.0	1	10	1
+GO:0048645	animal organ formation	0.004061853194028533	57.971	69	10	2
+GO:0007517	muscle organ development	0.0046778661684224124	16.5746	362	10	3
+GO:0048523	negative regulation of cellular process	0.0049204942603999855	2.9038	5510	10	8
+GO:0001892	embryonic placenta development	0.005889179655726165	46.5116	86	10	2
+GO:0014706	striated muscle tissue development	0.005889179655726165	15.0376	399	10	3
+GO:0007492	endoderm development	0.005975295630351626	45.4545	88	10	2
+GO:0048522	positive regulation of cellular process	0.006202929895765718	2.7879	5739	10	8
+GO:0048519	negative regulation of biological process	0.006211705536345452	2.7812	5753	10	8
+GO:0060537	muscle tissue development	0.006438385134176751	14.2518	421	10	3
+GO:2000382	positive regulation of mesoderm development	0.006961682731334749	1000.0	2	10	1
+GO:0048513	animal organ development	0.007910836134736022	3.9761	3018	10	6
+GO:0009058	biosynthetic process	0.007971656862702722	1.8799	10639	10	10
+GO:0035295	tube development	0.008365750089499174	7.3126	1094	10	4
+GO:0048518	positive regulation of biological process	0.009225925699269388	2.6016	6150	10	8
+GO:0035054	embryonic heart tube anterior/posterior pattern specification	0.009263913446489727	666.6667	3	10	1
+GO:0010159	specification of animal organ position	0.009263913446489727	666.6667	3	10	1
+GO:0001824	blastocyst development	0.009263913446489727	33.6134	119	10	2
+GO:0060809	mesodermal to mesenchymal transition involved in gastrulation	0.009263913446489727	666.6667	3	10	1
+GO:0001704	formation of primary germ layer	0.010291298717623265	31.25	128	10	2
+GO:0048565	digestive tract development	0.011111161049892748	29.8507	134	10	2
+GO:0021563	glossopharyngeal nerve development	0.011690608483426188	500.0	4	10	1
+GO:0021615	glossopharyngeal nerve morphogenesis	0.011690608483426188	500.0	4	10	1
+GO:0055123	digestive system development	0.01264353478433847	27.2109	147	10	2
+GO:0001890	placenta development	0.01264353478433847	27.2109	147	10	2
+GO:0007507	heart development	0.01358938296950587	10.1523	591	10	3
+GO:2000380	regulation of mesoderm development	0.016432864496205846	333.3333	6	10	1
+GO:0014807	regulation of somitogenesis	0.016432864496205846	333.3333	6	10	1
+GO:0007519	skeletal muscle tissue development	0.017313065883951605	22.5989	177	10	2
+GO:0019827	stem cell population maintenance	0.017674744106834447	22.2222	180	10	2
+GO:0043009	chordate embryonic development	0.01783661763505819	8.9686	669	10	3
+GO:0098727	maintenance of cell number	0.01783661763505819	21.6216	185	10	2
+GO:0061061	muscle structure development	0.01783661763505819	8.9153	673	10	3
+GO:0021796	cerebral cortex regionalization	0.01783661763505819	285.7143	7	10	1
+GO:0009792	embryo development ending in birth or egg hatching	0.018494179526636893	8.7336	687	10	3
+GO:0043170	macromolecule metabolic process	0.018494179526636893	1.6748	11942	10	10
+GO:0060538	skeletal muscle organ development	0.018494179526636893	20.9424	191	10	2
+GO:0050794	regulation of cellular process	0.018597416447940746	1.672	11962	10	10
+GO:0007369	gastrulation	0.018628516747714995	20.5128	195	10	2
+GO:0060017	parathyroid gland development	0.018839643756435164	250.0	8	10	1
+GO:0001714	endodermal cell fate specification	0.018839643756435164	250.0	8	10	1
+GO:0001568	blood vessel development	0.020296767124927045	8.2531	727	10	3
+GO:0044238	primary metabolic process	0.020503081161755636	1.6434	12170	10	10
+GO:0048318	axial mesoderm development	0.020503081161755636	222.2222	9	10	1
+GO:0003140	determination of left/right asymmetry in lateral mesoderm	0.020503081161755636	222.2222	9	10	1
+GO:0001944	vasculature development	0.02189691726696896	7.9156	758	10	3
+GO:0048382	mesendoderm development	0.022112818706844284	200.0	10	10	1
+GO:0009653	anatomical structure morphogenesis	0.023251702522303828	3.7051	2699	10	5
+GO:0003139	secondary heart field specification	0.023374460293400585	181.8182	11	10	1
+GO:0039530	MDA-5 signaling pathway	0.023374460293400585	181.8182	11	10	1
+GO:0050789	regulation of biological process	0.023374460293400585	1.6133	12397	10	10
+GO:0071888	macrophage apoptotic process	0.025008342801493874	166.6667	12	10	1
+GO:0035666	TRIF-dependent toll-like receptor signaling pathway	0.025008342801493874	166.6667	12	10	1
+GO:0048863	stem cell differentiation	0.026334155922031498	15.8103	253	10	2
+GO:0021978	telencephalon regionalization	0.026334155922031498	153.8462	13	10	1
+GO:1901533	negative regulation of hematopoietic progenitor cell differentiation	0.026334155922031498	153.8462	13	10	1
+GO:0045348	positive regulation of MHC class II biosynthetic process	0.02709918568378558	142.8571	14	10	1
+GO:0003222	ventricular trabecula myocardium morphogenesis	0.02709918568378558	142.8571	14	10	1
+GO:0042074	cell migration involved in gastrulation	0.02709918568378558	142.8571	14	10	1
+GO:0070365	hepatocyte differentiation	0.02709918568378558	142.8571	14	10	1
+GO:0033147	negative regulation of intracellular estrogen receptor signaling pathway	0.02709918568378558	142.8571	14	10	1
+GO:0060766	negative regulation of androgen receptor signaling pathway	0.028494648487041325	133.3333	15	10	1
+GO:0001711	endodermal cell fate commitment	0.028494648487041325	133.3333	15	10	1
+GO:0065007	biological regulation	0.028494648487041325	1.562	12804	10	10
+GO:0043374	CD8-positive, alpha-beta T cell differentiation	0.029898848739322692	125.0	16	10	1
+GO:0002756	MyD88-independent toll-like receptor signaling pathway	0.031226920601220294	117.6471	17	10	1
+GO:0048368	lateral mesoderm development	0.031226920601220294	117.6471	17	10	1
+GO:0010002	cardioblast differentiation	0.032243838039794095	111.1111	18	10	1
+GO:0045346	regulation of MHC class II biosynthetic process	0.032243838039794095	111.1111	18	10	1
+GO:0003128	heart field specification	0.032243838039794095	111.1111	18	10	1
+GO:0048562	embryonic organ morphogenesis	0.03284655391135891	13.1148	305	10	2
+GO:0003215	cardiac right ventricle morphogenesis	0.03294761433452238	105.2632	19	10	1
+GO:0045342	MHC class II biosynthetic process	0.03294761433452238	105.2632	19	10	1
+GO:0038092	nodal signaling pathway	0.03294761433452238	105.2632	19	10	1
+GO:0060340	positive regulation of type I interferon-mediated signaling pathway	0.03413247721201846	100.0	20	10	1
+GO:0071360	cellular response to exogenous dsRNA	0.03413247721201846	100.0	20	10	1
+GO:0060485	mesenchyme development	0.03414298289156106	12.5392	319	10	2
+GO:0009887	animal organ morphogenesis	0.035667791279597884	6.0	1000	10	3
+GO:0006925	inflammatory cell apoptotic process	0.03667016881655206	90.9091	22	10	1
+GO:0060706	cell differentiation involved in embryonic placenta development	0.03803840561489679	86.9565	23	10	1
+GO:0021871	forebrain regionalization	0.03938536557722721	83.3333	24	10	1
+GO:0060575	intestinal epithelial cell differentiation	0.040409958462451545	80.0	25	10	1
+GO:0140896	cGAS/STING signaling pathway	0.040409958462451545	80.0	25	10	1
+GO:0032727	positive regulation of interferon-alpha production	0.04140395539257281	76.9231	26	10	1
+GO:0071359	cellular response to dsRNA	0.04140395539257281	76.9231	26	10	1
+GO:0021895	cerebral cortex neuron differentiation	0.04236867731259199	74.0741	27	10	1
+GO:1900017	positive regulation of cytokine production involved in inflammatory response	0.04236867731259199	74.0741	27	10	1
+GO:0023019	signal transduction involved in regulation of gene expression	0.043614694293195866	71.4286	28	10	1
+GO:0036037	CD8-positive, alpha-beta T cell activation	0.044842376511876225	68.9655	29	10	1
+GO:0030878	thyroid gland development	0.04573006883510866	66.6667	30	10	1
+GO:0021602	cranial nerve morphogenesis	0.04573006883510866	66.6667	30	10	1
+GO:0030522	intracellular receptor signaling pathway	0.04659263105077741	10.0251	399	10	2
+GO:0060765	regulation of androgen receptor signaling pathway	0.04659263105077741	64.5161	31	10	1
+GO:0001701	in utero embryonic development	0.047110608787608955	9.8765	405	10	2
+GO:0032607	interferon-alpha production	0.047110608787608955	62.5	32	10	1
+GO:0032647	regulation of interferon-alpha production	0.047110608787608955	62.5	32	10	1
+GO:0060914	heart formation	0.04760738856677989	60.6061	33	10	1
+GO:0061384	heart trabecula morphogenesis	0.04760738856677989	60.6061	33	10	1
+GO:0060795	cell fate commitment involved in formation of primary germ layer	0.04760738856677989	60.6061	33	10	1
+GO:0021772	olfactory bulb development	0.04839848533959333	58.8235	34	10	1
+GO:0035909	aorta morphogenesis	0.04839848533959333	58.8235	34	10	1
+GO:0048732	gland development	0.049452034817700295	9.4118	425	10	2
+GO:0033146	regulation of intracellular estrogen receptor signaling pathway	0.0499184369227989	55.5556	36	10	1
+GO:0033144	negative regulation of intracellular steroid hormone receptor signaling pathway	0.0499184369227989	55.5556	36	10	1
+GO:0021988	olfactory lobe development	0.0499184369227989	55.5556	36	10	1

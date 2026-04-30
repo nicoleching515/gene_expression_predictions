@@ -1,23 +1,333 @@
-term_id	description	p_value	p_adjust	term_size	query_size	intersection_size	fold_enrichment
-GO:0007270	neuron-neuron synaptic transmission	0.040204406320445474	0.040204406320445474	8	206	3	36.408
-GO:0097150	neuronal stem cell population maintenance	0.040204406320445474	0.040204406320445474	24	206	4	16.181
-GO:2000145	regulation of cell motility	0.040204406320445474	0.040204406320445474	1005	206	23	2.222
-GO:0050896	response to stimulus	0.040204406320445474	0.040204406320445474	9051	206	119	1.276
-GO:0050794	regulation of cellular process	0.040204406320445474	0.040204406320445474	11962	206	143	1.161
-GO:0050789	regulation of biological process	0.040204406320445474	0.040204406320445474	12397	206	147	1.151
-GO:0048518	positive regulation of biological process	0.040204406320445474	0.040204406320445474	6150	206	87	1.373
-GO:0051716	cellular response to stimulus	0.040204406320445474	0.040204406320445474	7425	206	99	1.294
-GO:0048870	cell motility	0.040204406320445474	0.040204406320445474	1794	206	34	1.84
-GO:0048522	positive regulation of cellular process	0.040204406320445474	0.040204406320445474	5739	206	81	1.37
-GO:0019538	protein metabolic process	0.040204406320445474	0.040204406320445474	4467	206	68	1.478
-GO:0036462	TRAIL-activated apoptotic signaling pathway	0.040204406320445474	0.040204406320445474	11	206	3	26.478
-GO:0040011	locomotion	0.040204406320445474	0.040204406320445474	1236	206	28	2.199
-GO:0046712	GDP catabolic process	0.040204406320445474	0.040204406320445474	2	206	2	97.087
-GO:0140991	piRNA-mediated gene silencing by mRNA destabilization	0.0464585105941104	0.0464585105941104	3	206	2	64.725
-GO:0016311	dephosphorylation	0.0464585105941104	0.0464585105941104	212	206	9	4.122
-GO:0007274	neuromuscular synaptic transmission	0.0464585105941104	0.0464585105941104	31	206	4	12.527
-GO:0065007	biological regulation	0.0464585105941104	0.0464585105941104	12804	206	150	1.137
-GO:0043067	regulation of programmed cell death	0.0464585105941104	0.0464585105941104	1467	206	29	1.919
-GO:0033693	neurofilament bundle assembly	0.0464585105941104	0.0464585105941104	3	206	2	64.725
-GO:0040012	regulation of locomotion	0.0464585105941104	0.0464585105941104	1046	206	23	2.135
-GO:0007167	enzyme-linked receptor protein signaling pathway	0.04665079332017615	0.04665079332017615	988	206	22	2.162
+term_id	description	p_adjust	fold_enrichment	term_size	query_size	intersection_size
+GO:2001141	regulation of RNA biosynthetic process	5.99047063678861e-10	5.8875	3397	15	15
+GO:0006355	regulation of DNA-templated transcription	5.99047063678861e-10	5.9084	3385	15	15
+GO:0006351	DNA-templated transcription	6.904108058911836e-10	5.677	3523	15	15
+GO:0006357	regulation of transcription by RNA polymerase II	7.3483423132401e-10	6.9444	2688	15	14
+GO:0051252	regulation of RNA metabolic process	7.3483423132401e-10	5.4735	3654	15	15
+GO:0006366	transcription by RNA polymerase II	1.233736734484e-09	6.603	2827	15	14
+GO:0019219	regulation of nucleobase-containing compound metabolic process	1.6765083089080492e-09	5.0582	3954	15	15
+GO:1902680	positive regulation of RNA biosynthetic process	2.3030039996758817e-09	9.5579	1674	15	12
+GO:0045893	positive regulation of DNA-templated transcription	2.3030039996758817e-09	9.5694	1672	15	12
+GO:0051254	positive regulation of RNA metabolic process	5.005926205463006e-09	8.8692	1804	15	12
+GO:0080090	regulation of primary metabolic process	6.826065694624309e-08	3.8351	5215	15	15
+GO:0045944	positive regulation of transcription by RNA polymerase II	8.31867906884737e-08	10.7788	1237	15	10
+GO:0010468	regulation of gene expression	1.4674159889967472e-07	3.6043	5549	15	15
+GO:0010556	regulation of macromolecule biosynthetic process	1.7723821590225505e-07	3.5417	5647	15	15
+GO:0010557	positive regulation of macromolecule biosynthetic process	1.822143245521645e-07	6.3042	2538	15	12
+GO:0009889	regulation of biosynthetic process	2.446269987986158e-07	3.4358	5821	15	15
+GO:0009891	positive regulation of biosynthetic process	2.600022211811504e-07	6.0491	2645	15	12
+GO:0060255	regulation of macromolecule metabolic process	8.864215067769057e-07	3.1289	6392	15	15
+GO:0032774	RNA biosynthetic process	1.4441609925662138e-06	3.018	6627	15	15
+GO:0010604	positive regulation of macromolecule metabolic process	1.6655967355613975e-06	5.0761	3152	15	12
+GO:0141187	nucleic acid biosynthetic process	1.6655967355613975e-06	2.9696	6735	15	15
+GO:0016070	RNA metabolic process	1.9793623925009272e-06	2.9265	6834	15	15
+GO:0019222	regulation of metabolic process	2.1872368733422816e-06	2.8986	6900	15	15
+GO:0034654	nucleobase-containing compound biosynthetic process	2.803913274696611e-06	2.8429	7035	15	15
+GO:0009893	positive regulation of metabolic process	3.336950412904324e-06	4.6921	3410	15	12
+GO:0048869	cellular developmental process	3.817533993320019e-06	3.9004	4444	15	13
+GO:0030154	cell differentiation	3.817533993320019e-06	3.9013	4443	15	13
+GO:0090304	nucleic acid metabolic process	5.1467527726883276e-06	2.7023	7401	15	15
+GO:0021953	central nervous system neuron differentiation	9.781886335320413e-06	30.581	218	15	5
+GO:0006139	nucleobase-containing compound metabolic process	1.4441719748297589e-05	2.5113	7964	15	15
+GO:0021772	olfactory bulb development	5.001246193975649e-05	117.6471	34	15	3
+GO:0021988	olfactory lobe development	5.7759520951960397e-05	111.1111	36	15	3
+GO:0048522	positive regulation of cellular process	7.515447724659777e-05	3.0203	5739	15	13
+GO:0048468	cell development	8.395208725541921e-05	4.6915	2842	15	10
+GO:0007517	muscle organ development	9.839123859254123e-05	18.4162	362	15	5
+GO:0010467	gene expression	0.00011058422134772331	2.1664	9232	15	15
+GO:0048513	animal organ development	0.00013483125193721918	4.4179	3018	15	10
+GO:0007519	skeletal muscle tissue development	0.00014531544090733335	30.1318	177	15	4
+GO:0048518	positive regulation of biological process	0.00014890257867903925	2.8184	6150	15	13
+GO:0009059	macromolecule biosynthetic process	0.00018036459447656075	2.0822	9605	15	15
+GO:0060538	skeletal muscle organ development	0.0001820046549033802	27.9232	191	15	4
+GO:0022008	neurogenesis	0.0001997257471474424	6.0298	1769	15	8
+GO:0032502	developmental process	0.0002838610139641078	2.6524	6535	15	13
+GO:0007399	nervous system development	0.00032993587874411155	4.6207	2597	15	9
+GO:0048663	neuron fate commitment	0.00032993587874411155	56.338	71	15	3
+GO:0009653	anatomical structure morphogenesis	0.00043408737136238664	4.4461	2699	15	9
+GO:0035914	skeletal muscle cell differentiation	0.00043408737136238664	50.6329	79	15	3
+GO:0021879	forebrain neuron differentiation	0.00043479739050983807	50.0	80	15	3
+GO:0009888	tissue development	0.0004476136808798772	5.2963	2014	15	8
+GO:0021889	olfactory bulb interneuron differentiation	0.00046024675558152236	242.4242	11	15	2
+GO:0001501	skeletal system development	0.00046024675558152236	12.3916	538	15	5
+GO:0030182	neuron differentiation	0.00048523902066982414	6.4635	1444	15	7
+GO:0021872	forebrain generation of neurons	0.0005421922537533063	44.9438	89	15	3
+GO:0009058	biosynthetic process	0.0006086421831729119	1.8799	10639	15	15
+GO:0032352	positive regulation of hormone metabolic process	0.0006086421831729119	205.1282	13	15	2
+GO:0048699	generation of neurons	0.0006255041633037978	6.1283	1523	15	7
+GO:0009887	animal organ morphogenesis	0.0006255041633037978	8.0	1000	15	6
+GO:0002087	regulation of respiratory gaseous exchange by nervous system process	0.0006612157643948697	190.4762	14	15	2
+GO:0045165	cell fate commitment	0.0007151529127754946	17.9574	297	15	4
+GO:0048935	peripheral nervous system neuron development	0.0007251198146645815	177.7778	15	15	2
+GO:0048856	anatomical structure development	0.0007251198146645815	2.69	5948	15	12
+GO:0048562	embryonic organ morphogenesis	0.0007547389768584413	17.4863	305	15	4
+GO:0048934	peripheral nervous system neuron differentiation	0.0008020686036197444	166.6667	16	15	2
+GO:0044065	regulation of respiratory system process	0.0008944380546438925	156.8627	17	15	2
+GO:0043009	chordate embryonic development	0.0010219739801858685	9.9651	669	15	5
+GO:0061061	muscle structure development	0.0010353533873729368	9.9059	673	15	5
+GO:0009792	embryo development ending in birth or egg hatching	0.0011244316503975214	9.704	687	15	5
+GO:0097154	GABAergic neuron differentiation	0.0011746205151513779	133.3333	20	15	2
+GO:0048706	embryonic skeletal system development	0.0013793467393273936	30.0752	133	15	3
+GO:0048485	sympathetic nervous system development	0.001386142525274202	121.2121	22	15	2
+GO:0043576	regulation of respiratory gaseous exchange	0.0017726314747559166	106.6667	25	15	2
+GO:0014706	striated muscle tissue development	0.0018378389699603048	13.3668	399	15	4
+GO:0021544	subpallium development	0.0020154911232619322	98.7654	27	15	2
+GO:0060537	muscle tissue development	0.0021975664279605895	12.6683	421	15	4
+GO:0043170	macromolecule metabolic process	0.002527990380149238	1.6748	11942	15	15
+GO:0050794	regulation of cellular process	0.002558176152830707	1.672	11962	15	15
+GO:0071772	response to BMP	0.002564297596561943	23.3918	171	15	3
+GO:0071773	cellular response to BMP stimulus	0.002564297596561943	23.3918	171	15	3
+GO:0045597	positive regulation of cell differentiation	0.002623588978906657	7.8247	852	15	5
+GO:0007409	axonogenesis	0.0026682784510446665	11.7994	452	15	4
+GO:0048568	embryonic organ development	0.002748464356754639	11.6703	457	15	4
+GO:0048665	neuron fate specification	0.0029593665567198327	76.1905	35	15	2
+GO:0009954	proximal/distal pattern formation	0.0029593665567198327	76.1905	35	15	2
+GO:0032350	regulation of hormone metabolic process	0.0029593665567198327	76.1905	35	15	2
+GO:0044238	primary metabolic process	0.00296272963442547	1.6434	12170	15	15
+GO:0071353	cellular response to interleukin-4	0.003059311853002682	74.0741	36	15	2
+GO:0070670	response to interleukin-4	0.0035525674440078053	68.3761	39	15	2
+GO:0050789	regulation of biological process	0.0037764808299979263	1.6133	12397	15	15
+GO:0061564	axon development	0.003884180180625107	10.3964	513	15	4
+GO:0048839	inner ear development	0.00400471891303823	19.1388	209	15	3
+GO:0048713	regulation of oligodendrocyte differentiation	0.004132111912854776	62.0155	43	15	2
+GO:0051216	cartilage development	0.0041409264706959515	18.7793	213	15	3
+GO:0048483	autonomic nervous system development	0.004429137383627874	59.2593	45	15	2
+GO:0097485	neuron projection guidance	0.005087039953782615	17.0213	235	15	3
+GO:0003016	respiratory system process	0.005087039953782615	54.4218	49	15	2
+GO:0007411	axon guidance	0.005087039953782615	17.094	234	15	3
+GO:0021515	cell differentiation in spinal cord	0.005087039953782615	53.3333	50	15	2
+GO:0043583	ear development	0.005087039953782615	16.9492	236	15	3
+GO:0048731	system development	0.005087039953782615	2.9828	4023	15	9
+GO:0048705	skeletal system morphogenesis	0.005087039953782615	17.2414	232	15	3
+GO:0007417	central nervous system development	0.005087039953782615	6.4412	1035	15	5
+GO:0065007	biological regulation	0.005290817279553017	1.562	12804	15	15
+GO:0048667	cell morphogenesis involved in neuron differentiation	0.0054771905334148096	9.1324	584	15	4
+GO:2000683	regulation of cellular response to X-ray	0.00561431255158243	1333.3333	1	15	1
+GO:0048892	lateral line nerve development	0.00561431255158243	1333.3333	1	15	1
+GO:0061451	retrotrapezoid nucleus development	0.00561431255158243	1333.3333	1	15	1
+GO:0071244	cellular response to carbon dioxide	0.00561431255158243	1333.3333	1	15	1
+GO:0048894	efferent axon development in a lateral line nerve	0.00561431255158243	1333.3333	1	15	1
+GO:0001545	primary ovarian follicle growth	0.00561431255158243	1333.3333	1	15	1
+GO:0061452	retrotrapezoid nucleus neuron differentiation	0.00561431255158243	1333.3333	1	15	1
+GO:0010001	glial cell differentiation	0.00561431255158243	16.0643	249	15	3
+GO:0021723	medullary reticular formation development	0.00561431255158243	1333.3333	1	15	1
+GO:0141064	zygotic genome activation	0.00561431255158243	1333.3333	1	15	1
+GO:0048598	embryonic morphogenesis	0.0063076763868449145	8.5607	623	15	4
+GO:0007423	sensory organ development	0.006328317228931176	8.5333	625	15	4
+GO:0009790	embryo development	0.006458437278052884	5.9207	1126	15	5
+GO:0021537	telencephalon development	0.006631016468865189	14.7059	272	15	3
+GO:0048812	neuron projection morphogenesis	0.007059636169313596	8.2305	648	15	4
+GO:0048666	neuron development	0.007404920976989561	5.7127	1167	15	5
+GO:0045596	negative regulation of cell differentiation	0.007582735559352058	8.0201	665	15	4
+GO:0120039	plasma membrane bounded cell projection morphogenesis	0.007582735559352058	8.0321	664	15	4
+GO:0048858	cell projection morphogenesis	0.007604665442549773	7.9721	669	15	4
+GO:0061448	connective tissue development	0.007604665442549773	13.7457	291	15	3
+GO:0048511	rhythmic process	0.007604665442549773	13.7457	291	15	3
+GO:0045685	regulation of glial cell differentiation	0.008118191173660024	37.5587	71	15	2
+GO:0045665	negative regulation of neuron differentiation	0.008118191173660024	37.5587	71	15	2
+GO:0031948	positive regulation of glucocorticoid biosynthetic process	0.009609175052309632	666.6667	2	15	1
+GO:2001049	regulation of tendon cell differentiation	0.009609175052309632	666.6667	2	15	1
+GO:2001051	positive regulation of tendon cell differentiation	0.009609175052309632	666.6667	2	15	1
+GO:0021893	cerebral cortex GABAergic interneuron fate commitment	0.009609175052309632	666.6667	2	15	1
+GO:0010037	response to carbon dioxide	0.009609175052309632	666.6667	2	15	1
+GO:0060163	subpallium neuron fate commitment	0.009609175052309632	666.6667	2	15	1
+GO:0007420	brain development	0.010051389441463887	7.2464	736	15	4
+GO:0007585	respiratory gaseous exchange by respiratory system	0.01011671251532449	32.5203	82	15	2
+GO:0042063	gliogenesis	0.01011671251532449	12.0846	331	15	3
+GO:0051094	positive regulation of developmental process	0.010713555542447047	5.1086	1305	15	5
+GO:0007422	peripheral nervous system development	0.011166105721686177	30.6513	87	15	2
+GO:0007275	multicellular organism development	0.011758035243320161	2.5586	4690	15	9
+GO:0045666	positive regulation of neuron differentiation	0.011767507787521607	29.6296	90	15	2
+GO:0050678	regulation of epithelial cell proliferation	0.012014735953257812	11.236	356	15	3
+GO:0060322	head development	0.012134669982139074	6.7768	787	15	4
+GO:0048704	embryonic skeletal system morphogenesis	0.012288854920467326	28.6738	93	15	2
+GO:0048925	lateral line system development	0.012650369072192642	444.4444	3	15	1
+GO:0046649	lymphocyte activation	0.012650369072192642	6.5762	811	15	4
+GO:0035898	parathyroid hormone secretion	0.012650369072192642	444.4444	3	15	1
+GO:0140001	morula formation	0.012650369072192642	444.4444	3	15	1
+GO:1902871	positive regulation of amacrine cell differentiation	0.012650369072192642	444.4444	3	15	1
+GO:0014013	regulation of gliogenesis	0.012650369072192642	28.0702	95	15	2
+GO:1904691	negative regulation of type B pancreatic cell proliferation	0.012650369072192642	444.4444	3	15	1
+GO:0002572	pro-T cell differentiation	0.012650369072192642	444.4444	3	15	1
+GO:0060166	olfactory pit development	0.012650369072192642	444.4444	3	15	1
+GO:0021510	spinal cord development	0.012985873373653058	26.936	99	15	2
+GO:0008593	regulation of Notch signaling pathway	0.013419148138457024	26.4026	101	15	2
+GO:0008152	metabolic process	0.01389684089812852	1.425	14035	15	15
+GO:0048709	oligodendrocyte differentiation	0.014031244010635241	25.641	104	15	2
+GO:0035992	tendon formation	0.01491252438168981	333.3333	4	15	1
+GO:0021550	medulla oblongata development	0.01491252438168981	333.3333	4	15	1
+GO:0035799	ureter maturation	0.01491252438168981	333.3333	4	15	1
+GO:0032501	multicellular organismal process	0.01491252438168981	1.999	7337	15	11
+GO:0030900	forebrain development	0.01491252438168981	9.9256	403	15	3
+GO:0033600	negative regulation of mammary gland epithelial cell proliferation	0.01491252438168981	333.3333	4	15	1
+GO:0035990	tendon cell differentiation	0.01491252438168981	333.3333	4	15	1
+GO:2000611	positive regulation of thyroid hormone generation	0.01491252438168981	333.3333	4	15	1
+GO:0061217	regulation of mesonephros development	0.01491252438168981	333.3333	4	15	1
+GO:0072106	regulation of ureteric bud formation	0.01491252438168981	333.3333	4	15	1
+GO:0072107	positive regulation of ureteric bud formation	0.01491252438168981	333.3333	4	15	1
+GO:0097376	interneuron axon guidance	0.01491252438168981	333.3333	4	15	1
+GO:0160021	maternal-to-zygotic transition of gene expression	0.01491252438168981	333.3333	4	15	1
+GO:0090031	positive regulation of steroid hormone biosynthetic process	0.01491252438168981	333.3333	4	15	1
+GO:0061113	pancreas morphogenesis	0.01491252438168981	333.3333	4	15	1
+GO:0042472	inner ear morphogenesis	0.014970791215601739	23.5988	113	15	2
+GO:0001708	cell fate specification	0.015143283346521546	23.3918	114	15	2
+GO:0003002	regionalization	0.01576206027309841	9.4787	422	15	3
+GO:0030098	lymphocyte differentiation	0.01620156266067514	9.3677	427	15	3
+GO:0048880	sensory system development	0.01632286642495352	9.324	429	15	3
+GO:0051093	negative regulation of developmental process	0.016806689443406228	5.8224	916	15	4
+GO:0050673	epithelial cell proliferation	0.016806689443406228	9.1954	435	15	3
+GO:0035113	embryonic appendage morphogenesis	0.017216597385669195	21.3333	125	15	2
+GO:0003358	noradrenergic neuron development	0.017216597385669195	266.6667	5	15	1
+GO:0090425	acinar cell differentiation	0.017216597385669195	266.6667	5	15	1
+GO:0021934	hindbrain tangential cell migration	0.017216597385669195	266.6667	5	15	1
+GO:0045595	regulation of cell differentiation	0.017216597385669195	4.3039	1549	15	5
+GO:0030326	embryonic limb morphogenesis	0.017216597385669195	21.3333	125	15	2
+GO:0072179	nephric duct formation	0.017216597385669195	266.6667	5	15	1
+GO:0050680	negative regulation of epithelial cell proliferation	0.019037717616357863	20.0501	133	15	2
+GO:0042471	ear morphogenesis	0.0192143366883545	19.9005	134	15	2
+GO:0002913	positive regulation of lymphocyte anergy	0.019388552105232562	222.2222	6	15	1
+GO:0002669	positive regulation of T cell anergy	0.019388552105232562	222.2222	6	15	1
+GO:0007389	pattern specification process	0.019388552105232562	8.547	468	15	3
+GO:0060374	mast cell differentiation	0.019388552105232562	222.2222	6	15	1
+GO:0045321	leukocyte activation	0.019388552105232562	5.4701	975	15	4
+GO:0001806	type IV hypersensitivity	0.019388552105232562	222.2222	6	15	1
+GO:1901166	neural crest cell migration involved in autonomic nervous system development	0.019388552105232562	222.2222	6	15	1
+GO:1902869	regulation of amacrine cell differentiation	0.019388552105232562	222.2222	6	15	1
+GO:2000609	regulation of thyroid hormone generation	0.019388552105232562	222.2222	6	15	1
+GO:0046533	negative regulation of photoreceptor cell differentiation	0.019388552105232562	222.2222	6	15	1
+GO:0008584	male gonad development	0.02003590489693582	18.9125	141	15	2
+GO:0046546	development of primary male sexual characteristics	0.020211157923382725	18.7793	142	15	2
+GO:0000902	cell morphogenesis	0.02034820685492258	5.344	998	15	4
+GO:0031175	neuron projection development	0.021130500193405937	5.2805	1010	15	4
+GO:0072197	ureter morphogenesis	0.02151473926132765	190.4762	7	15	1
+GO:0014016	neuroblast differentiation	0.02151473926132765	190.4762	7	15	1
+GO:0060676	ureteric bud formation	0.02151473926132765	190.4762	7	15	1
+GO:0021798	forebrain dorsal/ventral pattern formation	0.02151473926132765	190.4762	7	15	1
+GO:0035989	tendon development	0.02151473926132765	190.4762	7	15	1
+GO:0042421	norepinephrine biosynthetic process	0.02151473926132765	190.4762	7	15	1
+GO:0035108	limb morphogenesis	0.022245931808854244	17.4292	153	15	2
+GO:0035107	appendage morphogenesis	0.022245931808854244	17.4292	153	15	2
+GO:0030902	hindbrain development	0.023277729065368378	16.9851	157	15	2
+GO:1903131	mononuclear cell differentiation	0.023697493207359848	7.6482	523	15	3
+GO:0060017	parathyroid gland development	0.023772274208435924	166.6667	8	15	1
+GO:0046886	positive regulation of hormone biosynthetic process	0.023772274208435924	166.6667	8	15	1
+GO:0003360	brainstem development	0.023772274208435924	166.6667	8	15	1
+GO:0046661	male sex differentiation	0.024741553568361416	16.2602	164	15	2
+GO:0002667	regulation of T cell anergy	0.02508603889857158	148.1481	9	15	1
+GO:0050728	negative regulation of inflammatory response	0.02508603889857158	15.7791	169	15	2
+GO:0002870	T cell anergy	0.02508603889857158	148.1481	9	15	1
+GO:1905276	regulation of epithelial tube formation	0.02508603889857158	148.1481	9	15	1
+GO:0002911	regulation of lymphocyte anergy	0.02508603889857158	148.1481	9	15	1
+GO:0001826	inner cell mass cell differentiation	0.02508603889857158	148.1481	9	15	1
+GO:2000553	positive regulation of T-helper 2 cell cytokine production	0.02508603889857158	148.1481	9	15	1
+GO:0061549	sympathetic ganglion development	0.02508603889857158	148.1481	9	15	1
+GO:0071481	cellular response to X-ray	0.02508603889857158	148.1481	9	15	1
+GO:0040016	embryonic cleavage	0.02508603889857158	148.1481	9	15	1
+GO:0002249	lymphocyte anergy	0.02508603889857158	148.1481	9	15	1
+GO:1905278	positive regulation of epithelial tube formation	0.02508603889857158	148.1481	9	15	1
+GO:0031017	exocrine pancreas development	0.02508603889857158	148.1481	9	15	1
+GO:0001775	cell activation	0.027004594110512783	4.7492	1123	15	4
+GO:0035457	cellular response to interferon-alpha	0.0271465485840331	133.3333	10	15	1
+GO:0031946	regulation of glucocorticoid biosynthetic process	0.0271465485840331	133.3333	10	15	1
+GO:0048755	branching morphogenesis of a nerve	0.0271465485840331	133.3333	10	15	1
+GO:0072172	mesonephric tubule formation	0.0271465485840331	133.3333	10	15	1
+GO:0002666	positive regulation of T cell tolerance induction	0.0271465485840331	133.3333	10	15	1
+GO:0007219	Notch signaling pathway	0.029162912988388082	14.2602	187	15	2
+GO:0046532	regulation of photoreceptor cell differentiation	0.029224116126341078	121.2121	11	15	1
+GO:0021520	spinal cord motor neuron cell fate specification	0.029224116126341078	121.2121	11	15	1
+GO:0021892	cerebral cortex GABAergic interneuron differentiation	0.029224116126341078	121.2121	11	15	1
+GO:0003357	noradrenergic neuron differentiation	0.029224116126341078	121.2121	11	15	1
+GO:0045664	regulation of neuron differentiation	0.029442374145024413	14.0351	190	15	2
+GO:0060173	limb development	0.02966993845130998	13.8889	192	15	2
+GO:0001764	neuron migration	0.02966993845130998	13.8889	192	15	2
+GO:0048736	appendage development	0.02966993845130998	13.8889	192	15	2
+GO:0048484	enteric nervous system development	0.030462299378134848	111.1111	12	15	1
+GO:0021527	spinal cord association neuron differentiation	0.030462299378134848	111.1111	12	15	1
+GO:0002645	positive regulation of tolerance induction	0.030462299378134848	111.1111	12	15	1
+GO:0072178	nephric duct morphogenesis	0.030462299378134848	111.1111	12	15	1
+GO:0035881	amacrine cell differentiation	0.030462299378134848	111.1111	12	15	1
+GO:0010628	positive regulation of gene expression	0.030462299378134848	4.5045	1184	15	4
+GO:0031943	regulation of glucocorticoid metabolic process	0.030462299378134848	111.1111	12	15	1
+GO:0072182	regulation of nephron tubule epithelial cell differentiation	0.03207116378489048	102.5641	13	15	1
+GO:0002521	leukocyte differentiation	0.03207116378489048	6.3694	628	15	3
+GO:2000551	regulation of T-helper 2 cell cytokine production	0.03207116378489048	102.5641	13	15	1
+GO:0002520	immune system development	0.03207116378489048	13.0081	205	15	2
+GO:0021978	telencephalon regionalization	0.03207116378489048	102.5641	13	15	1
+GO:0014816	skeletal muscle satellite cell differentiation	0.03207116378489048	102.5641	13	15	1
+GO:0035745	T-helper 2 cell cytokine production	0.03207116378489048	102.5641	13	15	1
+GO:0032754	positive regulation of interleukin-5 production	0.03207116378489048	102.5641	13	15	1
+GO:0002664	regulation of T cell tolerance induction	0.03349771466178598	95.2381	14	15	1
+GO:0097475	motor neuron migration	0.03349771466178598	95.2381	14	15	1
+GO:0048853	forebrain morphogenesis	0.03349771466178598	95.2381	14	15	1
+GO:0060009	Sertoli cell development	0.03349771466178598	95.2381	14	15	1
+GO:0048715	negative regulation of oligodendrocyte differentiation	0.03349771466178598	95.2381	14	15	1
+GO:0007638	mechanosensory behavior	0.03349771466178598	95.2381	14	15	1
+GO:0071495	cellular response to endogenous stimulus	0.03349771466178598	4.308	1238	15	4
+GO:0090030	regulation of steroid hormone biosynthetic process	0.03482319268696864	88.8889	15	15	1
+GO:0060541	respiratory system development	0.03482319268696864	12.0664	221	15	2
+GO:0072160	nephron tubule epithelial cell differentiation	0.03482319268696864	88.8889	15	15	1
+GO:0032736	positive regulation of interleukin-13 production	0.03482319268696864	88.8889	15	15	1
+GO:0061469	regulation of type B pancreatic cell proliferation	0.03482319268696864	88.8889	15	15	1
+GO:2000679	positive regulation of transcription regulatory region DNA binding	0.03482319268696864	88.8889	15	15	1
+GO:0042415	norepinephrine metabolic process	0.03482319268696864	88.8889	15	15	1
+GO:0071599	otic vesicle development	0.03482319268696864	88.8889	15	15	1
+GO:0008406	gonad development	0.03626667809065604	11.7474	227	15	2
+GO:0002517	T cell tolerance induction	0.036330936271381654	83.3333	16	15	1
+GO:0072176	nephric duct development	0.036330936271381654	83.3333	16	15	1
+GO:0043584	nose development	0.036330936271381654	83.3333	16	15	1
+GO:0033599	regulation of mammary gland epithelial cell proliferation	0.036330936271381654	83.3333	16	15	1
+GO:0061548	ganglion development	0.036330936271381654	83.3333	16	15	1
+GO:0045137	development of primary sexual characteristics	0.036994549801871494	11.4943	232	15	2
+GO:2000696	regulation of epithelial cell differentiation involved in kidney development	0.03831311624621572	78.4314	17	15	1
+GO:0042445	hormone metabolic process	0.03942682454048602	11.065	241	15	2
+GO:0072189	ureter development	0.03942682454048602	74.0741	18	15	1
+GO:0045064	T-helper 2 cell differentiation	0.03942682454048602	74.0741	18	15	1
+GO:0002830	positive regulation of type 2 immune response	0.03942682454048602	74.0741	18	15	1
+GO:0048486	parasympathetic nervous system development	0.03942682454048602	74.0741	18	15	1
+GO:0021535	cell migration in hindbrain	0.03942682454048602	74.0741	18	15	1
+GO:0071363	cellular response to growth factor stimulus	0.03942682454048602	5.6657	706	15	3
+GO:0006704	glucocorticoid biosynthetic process	0.03942682454048602	74.0741	18	15	1
+GO:0002524	hypersensitivity	0.04117443058339496	70.1754	19	15	1
+GO:0003215	cardiac right ventricle morphogenesis	0.04117443058339496	70.1754	19	15	1
+GO:0035743	CD4-positive, alpha-beta T cell cytokine production	0.04117443058339496	70.1754	19	15	1
+GO:0048762	mesenchymal cell differentiation	0.04137687143421797	10.582	252	15	2
+GO:0048863	stem cell differentiation	0.04154712037667539	10.5402	253	15	2
+GO:0050870	positive regulation of T cell activation	0.04202972597296275	10.4575	255	15	2
+GO:0060231	mesenchymal to epithelial transition	0.04216780704107128	66.6667	20	15	1
+GO:0002643	regulation of tolerance induction	0.04216780704107128	66.6667	20	15	1
+GO:0070848	response to growth factor	0.04216780704107128	5.4496	734	15	3
+GO:0072079	nephron tubule formation	0.04216780704107128	66.6667	20	15	1
+GO:0021516	dorsal spinal cord development	0.04216780704107128	66.6667	20	15	1
+GO:2000026	regulation of multicellular organismal development	0.04319381095643671	3.8314	1392	15	4
+GO:0030855	epithelial cell differentiation	0.04338606304915955	5.3691	745	15	3
+GO:0031348	negative regulation of defense response	0.04338606304915955	10.1394	263	15	2
+GO:0001779	natural killer cell differentiation	0.04339072375103351	63.4921	21	15	1
+GO:0035455	response to interferon-alpha	0.04339072375103351	63.4921	21	15	1
+GO:0046885	regulation of hormone biosynthetic process	0.04339072375103351	63.4921	21	15	1
+GO:0060008	Sertoli cell differentiation	0.04428034784613706	60.6061	22	15	1
+GO:0032634	interleukin-5 production	0.04428034784613706	60.6061	22	15	1
+GO:0006590	thyroid hormone generation	0.04428034784613706	60.6061	22	15	1
+GO:0032616	interleukin-13 production	0.04428034784613706	60.6061	22	15	1
+GO:0009713	catechol-containing compound biosynthetic process	0.04428034784613706	60.6061	22	15	1
+GO:0032674	regulation of interleukin-5 production	0.04428034784613706	60.6061	22	15	1
+GO:0032656	regulation of interleukin-13 production	0.04428034784613706	60.6061	22	15	1
+GO:0042423	catecholamine biosynthetic process	0.04428034784613706	60.6061	22	15	1
+GO:2000114	regulation of establishment of cell polarity	0.045693719117281574	57.971	23	15	1
+GO:2000738	positive regulation of stem cell differentiation	0.045693719117281574	57.971	23	15	1
+GO:0021533	cell differentiation in hindbrain	0.045693719117281574	57.971	23	15	1
+GO:1903039	positive regulation of leukocyte cell-cell adhesion	0.045693719117281574	9.6618	276	15	2
+GO:0035162	embryonic hemopoiesis	0.046924382784153854	55.5556	24	15	1
+GO:0045061	thymic T cell selection	0.046924382784153854	55.5556	24	15	1
+GO:0021871	forebrain regionalization	0.046924382784153854	55.5556	24	15	1
+GO:0002320	lymphoid progenitor cell differentiation	0.046924382784153854	55.5556	24	15	1
+GO:0045686	negative regulation of glial cell differentiation	0.046924382784153854	55.5556	24	15	1
+GO:0009719	response to endogenous stimulus	0.0479210821314778	3.6355	1467	15	4
+GO:0007548	sex differentiation	0.0480134199241587	9.2593	288	15	2
+GO:0048714	positive regulation of oligodendrocyte differentiation	0.04841223392022264	53.3333	25	15	1
+GO:0010165	response to X-ray	0.04927073350007845	51.2821	26	15	1
+GO:0060065	uterus development	0.04927073350007845	51.2821	26	15	1
+GO:0008211	glucocorticoid metabolic process	0.04927073350007845	51.2821	26	15	1
+GO:0032878	regulation of establishment or maintenance of cell polarity	0.04927073350007845	51.2821	26	15	1
+GO:0032753	positive regulation of interleukin-4 production	0.04927073350007845	51.2821	26	15	1
+GO:0032331	negative regulation of chondrocyte differentiation	0.04927073350007845	51.2821	26	15	1
+GO:0090596	sensory organ morphogenesis	0.04927073350007845	9.0703	294	15	2

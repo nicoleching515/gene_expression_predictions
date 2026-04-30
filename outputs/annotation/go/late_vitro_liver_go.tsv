@@ -1,3 +1,445 @@
-term_id	description	p_value	p_adjust	term_size	query_size	intersection_size	fold_enrichment
-GO:0036462	TRAIL-activated apoptotic signaling pathway	0.010548757498454289	0.010548757498454289	11	70	3	77.922
-GO:0140991	piRNA-mediated gene silencing by mRNA destabilization	0.030080884915288618	0.030080884915288618	3	70	2	190.476
+term_id	description	p_adjust	fold_enrichment	term_size	query_size	intersection_size
+GO:0006366	transcription by RNA polymerase II	1.1775716969099192e-07	7.0746	2827	11	11
+GO:0006357	regulation of transcription by RNA polymerase II	1.1775716969099192e-07	7.4405	2688	11	11
+GO:0045944	positive regulation of transcription by RNA polymerase II	1.240646051872014e-07	13.2285	1237	11	9
+GO:2001141	regulation of RNA biosynthetic process	3.5639815679591337e-07	5.8875	3397	11	11
+GO:0006355	regulation of DNA-templated transcription	3.5639815679591337e-07	5.9084	3385	11	11
+GO:0006351	DNA-templated transcription	4.4360277699487475e-07	5.677	3523	11	11
+GO:0051252	regulation of RNA metabolic process	5.684678570386535e-07	5.4735	3654	11	11
+GO:0045893	positive regulation of DNA-templated transcription	6.094630032188183e-07	9.7869	1672	11	9
+GO:1902680	positive regulation of RNA biosynthetic process	6.094630032188183e-07	9.7752	1674	11	9
+GO:0019219	regulation of nucleobase-containing compound metabolic process	9.489649884320823e-07	5.0582	3954	11	11
+GO:0051254	positive regulation of RNA metabolic process	9.673191788272358e-07	9.0708	1804	11	9
+GO:0031016	pancreas development	4.508234387877407e-06	92.0598	79	11	4
+GO:0003228	atrial cardiac muscle tissue development	1.1344510448190837e-05	247.9339	22	11	3
+GO:0080090	regulation of primary metabolic process	1.4288258240550274e-05	3.8351	5215	11	11
+GO:0010557	positive regulation of macromolecule biosynthetic process	1.4372713407755612e-05	6.4475	2538	11	9
+GO:0009891	positive regulation of biosynthetic process	1.935017334646971e-05	6.1866	2645	11	9
+GO:0010468	regulation of gene expression	2.3307676914391702e-05	3.6043	5549	11	11
+GO:0010556	regulation of macromolecule biosynthetic process	2.6692170775057044e-05	3.5417	5647	11	11
+GO:0009889	regulation of biosynthetic process	3.53189122315341e-05	3.4358	5821	11	11
+GO:0048732	gland development	6.25585136936972e-05	21.3904	425	11	5
+GO:0060913	cardiac cell fate determination	6.40633338698293e-05	909.0909	4	11	2
+GO:0010604	positive regulation of macromolecule metabolic process	6.504728449910482e-05	5.1915	3152	11	9
+GO:0060255	regulation of macromolecule metabolic process	8.173929854316303e-05	3.1289	6392	11	11
+GO:0009893	positive regulation of metabolic process	0.00011335192708656234	4.7987	3410	11	9
+GO:0032774	RNA biosynthetic process	0.00011335192708656234	3.018	6627	11	11
+GO:0141187	nucleic acid biosynthetic process	0.00012449632052150334	2.9696	6735	11	11
+GO:0060921	sinoatrial node cell differentiation	0.00012449632052150334	606.0606	6	11	2
+GO:0016070	RNA metabolic process	0.00014017254114966575	2.9265	6834	11	11
+GO:0019222	regulation of metabolic process	0.0001504429100721005	2.8986	6900	11	11
+GO:0034654	nucleobase-containing compound biosynthetic process	0.00018000314263747174	2.8429	7035	11	11
+GO:0048863	stem cell differentiation	0.00018478075442326507	28.746	253	11	4
+GO:0048729	tissue morphogenesis	0.00023302804732054042	14.8544	612	11	5
+GO:0090304	nucleic acid metabolic process	0.0002859860181896253	2.7023	7401	11	11
+GO:0045596	negative regulation of cell differentiation	0.0003283891419668273	13.6705	665	11	5
+GO:0003139	secondary heart field specification	0.0003418753693273694	330.5785	11	11	2
+GO:0060920	cardiac pacemaker cell differentiation	0.0003418753693273694	330.5785	11	11	2
+GO:0060485	mesenchyme development	0.00038630295079498283	22.7985	319	11	4
+GO:0003163	sinoatrial node development	0.00038854711054354415	303.0303	12	11	2
+GO:0045892	negative regulation of DNA-templated transcription	0.00040678632171699703	8.5561	1275	11	6
+GO:1902679	negative regulation of RNA biosynthetic process	0.0004129496528596299	8.4962	1284	11	6
+GO:0060911	cardiac cell fate commitment	0.0004254708503865416	279.7203	13	11	2
+GO:0006139	nucleobase-containing compound metabolic process	0.0005036016385628529	2.5113	7964	11	11
+GO:0001708	cell fate specification	0.0005216049863512646	47.8469	114	11	3
+GO:0001889	liver development	0.0005811112135356831	45.4545	120	11	3
+GO:0051253	negative regulation of RNA metabolic process	0.0005811112135356831	7.8539	1389	11	6
+GO:0061008	hepaticobiliary system development	0.000612040759421618	44.3459	123	11	3
+GO:0003128	heart field specification	0.0007269946944481957	202.0202	18	11	2
+GO:0035270	endocrine system development	0.0007917800115858285	40.107	136	11	3
+GO:0045934	negative regulation of nucleobase-containing compound metabolic process	0.0008508132123426755	7.2246	1510	11	6
+GO:0003002	regionalization	0.0008554205117315903	17.234	422	11	4
+GO:0007224	smoothened signaling pathway	0.000978235624271374	36.6077	149	11	3
+GO:0051093	negative regulation of developmental process	0.0010053643381707652	9.9246	916	11	5
+GO:0007389	pattern specification process	0.0012072964884133608	15.54	468	11	4
+GO:0002070	epithelial cell maturation	0.0012382125697230947	145.4545	25	11	2
+GO:0009887	animal organ morphogenesis	0.0014450968981626507	9.0909	1000	11	5
+GO:0003209	cardiac atrium morphogenesis	0.0014767664596611033	129.8701	28	11	2
+GO:0002009	morphogenesis of an epithelium	0.0014767664596611033	14.5164	501	11	4
+GO:0003309	type B pancreatic cell differentiation	0.001669196944283458	121.2121	30	11	2
+GO:0010467	gene expression	0.0018226642895534737	2.1664	9232	11	11
+GO:0060914	heart formation	0.0019568437631556214	110.1928	33	11	2
+GO:0035295	tube development	0.001996642425475714	8.3098	1094	11	5
+GO:0048665	neuron fate specification	0.0021328003257476834	103.8961	35	11	2
+GO:0009790	embryo development	0.00215341550614356	8.0736	1126	11	5
+GO:0003230	cardiac atrium development	0.00215341550614356	101.0101	36	11	2
+GO:0033146	regulation of intracellular estrogen receptor signaling pathway	0.00215341550614356	101.0101	36	11	2
+GO:0007166	cell surface receptor signaling pathway	0.0021754128052696867	4.4909	2834	11	7
+GO:0035883	enteroendocrine cell differentiation	0.0021754128052696867	98.2801	37	11	2
+GO:0003161	cardiac conduction system development	0.0021754128052696867	98.2801	37	11	2
+GO:0010092	specification of animal organ identity	0.0022300231432337736	95.6938	38	11	2
+GO:0002067	glandular epithelial cell differentiation	0.0022300231432337736	95.6938	38	11	2
+GO:0009059	macromolecule biosynthetic process	0.002342168877316655	2.0822	9605	11	11
+GO:0048738	cardiac muscle tissue development	0.002350567847647409	24.2424	225	11	3
+GO:0032735	positive regulation of interleukin-12 production	0.002615985069107627	86.5801	42	11	2
+GO:0009888	tissue development	0.0028477943479282477	5.4166	2014	11	6
+GO:0060429	epithelium development	0.0028669531076248953	7.367	1234	11	5
+GO:0001709	cell fate determination	0.0028867138470871617	80.8081	45	11	2
+GO:0009966	regulation of signal transduction	0.002939703987641945	4.199	3031	11	7
+GO:0031018	endocrine pancreas development	0.002939703987641945	79.0514	46	11	2
+GO:0048522	positive regulation of cellular process	0.003020188886509688	2.8513	5739	11	9
+GO:0042593	glucose homeostasis	0.003020188886509688	21.4746	254	11	3
+GO:0060828	regulation of canonical Wnt signaling pathway	0.003020188886509688	21.3904	255	11	3
+GO:0033500	carbohydrate homeostasis	0.0030599800917855773	21.1416	258	11	3
+GO:0043009	chordate embryonic development	0.0030599800917855773	10.871	669	11	4
+GO:0003007	heart morphogenesis	0.0031889220249713248	20.7397	263	11	3
+GO:1902532	negative regulation of intracellular signal transduction	0.003198245353328942	10.6795	681	11	4
+GO:0009792	embryo development ending in birth or egg hatching	0.0032688476897846552	10.5862	687	11	4
+GO:0044331	cell-cell adhesion mediated by cadherin	0.003502013928194935	68.6106	53	11	2
+GO:0009968	negative regulation of signal transduction	0.003608005041011903	6.7792	1341	11	5
+GO:0030520	estrogen receptor signaling pathway	0.0038224849391121033	64.9351	56	11	2
+GO:0051146	striated muscle cell differentiation	0.003844836116562001	19.0054	287	11	3
+GO:0045165	cell fate commitment	0.0041175504572027455	18.3655	297	11	3
+GO:0007165	signal transduction	0.0041175504572027455	2.6989	6063	11	9
+GO:0030855	epithelial cell differentiation	0.0041175504572027455	9.7621	745	11	4
+GO:0009948	anterior/posterior axis specification	0.004154926716958416	60.6061	60	11	2
+GO:0032615	interleukin-12 production	0.004205072946147009	59.6125	61	11	2
+GO:0032655	regulation of interleukin-12 production	0.004205072946147009	59.6125	61	11	2
+GO:0048545	response to steroid hormone	0.00427713141331304	17.4825	312	11	3
+GO:0010648	negative regulation of cell communication	0.00427713141331304	6.2739	1449	11	5
+GO:0042664	negative regulation of endodermal cell fate specification	0.00427713141331304	1818.1818	1	11	1
+GO:0060975	cardioblast migration to the midline involved in heart field formation	0.00427713141331304	1818.1818	1	11	1
+GO:0048518	positive regulation of biological process	0.00427713141331304	2.6608	6150	11	9
+GO:0003236	sinus venosus morphogenesis	0.00427713141331304	1818.1818	1	11	1
+GO:0060070	canonical Wnt signaling pathway	0.00427713141331304	17.5953	310	11	3
+GO:0003260	cardioblast migration	0.00427713141331304	1818.1818	1	11	1
+GO:0070368	positive regulation of hepatocyte differentiation	0.00427713141331304	1818.1818	1	11	1
+GO:0003235	sinus venosus development	0.00427713141331304	1818.1818	1	11	1
+GO:0023057	negative regulation of signaling	0.00427713141331304	6.2739	1449	11	5
+GO:0001947	heart looping	0.00427713141331304	55.9441	65	11	2
+GO:0003259	cardioblast anterior-lateral migration	0.00427713141331304	1818.1818	1	11	1
+GO:0003318	cell migration to the midline involved in heart development	0.00427713141331304	1818.1818	1	11	1
+GO:0061371	determination of heart left/right asymmetry	0.004556926532138639	51.2164	71	11	2
+GO:0010646	regulation of cell communication	0.004556926532138639	3.6573	3480	11	7
+GO:0003143	embryonic heart tube morphogenesis	0.004556926532138639	51.2164	71	11	2
+GO:0009058	biosynthetic process	0.004556926532138639	1.8799	10639	11	11
+GO:0048663	neuron fate commitment	0.004556926532138639	51.2164	71	11	2
+GO:0003208	cardiac ventricle morphogenesis	0.004556926532138639	51.2164	71	11	2
+GO:0023051	regulation of signaling	0.004556926532138639	3.6646	3473	11	7
+GO:0030111	regulation of Wnt signaling pathway	0.004556926532138639	16.479	331	11	3
+GO:0048645	animal organ formation	0.004556926532138639	52.7009	69	11	2
+GO:0060562	epithelial tube morphogenesis	0.004556926532138639	16.38	333	11	3
+GO:0033143	regulation of intracellular steroid hormone receptor signaling pathway	0.004905884038081217	49.14	74	11	2
+GO:0045595	regulation of cell differentiation	0.0050851314484392255	5.8689	1549	11	5
+GO:0009880	embryonic pattern specification	0.005223654475979588	47.2255	77	11	2
+GO:0035239	tube morphogenesis	0.005727093898281936	8.2927	877	11	4
+GO:0023052	signaling	0.005817140306240887	2.4952	6558	11	9
+GO:0007154	cell communication	0.006066879989059095	2.4801	6598	11	9
+GO:0035050	embryonic heart tube development	0.00611039464854913	42.7807	85	11	2
+GO:0051153	regulation of striated muscle cell differentiation	0.00611039464854913	42.7807	85	11	2
+GO:0032024	positive regulation of insulin secretion	0.006445650604437622	41.3223	88	11	2
+GO:0042692	muscle cell differentiation	0.006445650604437622	14.0581	388	11	3
+GO:0014706	striated muscle tissue development	0.00662496169644496	13.6705	399	11	3
+GO:1902691	respiratory basal cell differentiation	0.00662496169644496	909.0909	2	11	1
+GO:0060974	cell migration involved in heart formation	0.00662496169644496	909.0909	2	11	1
+GO:0070366	regulation of hepatocyte differentiation	0.00662496169644496	909.0909	2	11	1
+GO:0010157	response to chlorate	0.00662496169644496	909.0909	2	11	1
+GO:0035545	determination of left/right asymmetry in nervous system	0.00662496169644496	909.0909	2	11	1
+GO:0042663	regulation of endodermal cell fate specification	0.00662496169644496	909.0909	2	11	1
+GO:0048585	negative regulation of response to stimulus	0.00662496169644496	5.3697	1693	11	5
+GO:0003210	cardiac atrium formation	0.00662496169644496	909.0909	2	11	1
+GO:0060739	mesenchymal-epithelial cell signaling involved in prostate gland development	0.00662496169644496	909.0909	2	11	1
+GO:0061144	alveolar secondary septum development	0.00662496169644496	909.0909	2	11	1
+GO:0000122	negative regulation of transcription by RNA polymerase II	0.00662496169644496	7.795	933	11	4
+GO:0009798	axis specification	0.007350890013031621	36.7309	99	11	2
+GO:0060537	muscle tissue development	0.007350890013031621	12.9562	421	11	3
+GO:0010558	negative regulation of macromolecule biosynthetic process	0.007740067329413861	3.9916	2733	11	6
+GO:0022008	neurogenesis	0.007814833237031166	5.139	1769	11	5
+GO:0010647	positive regulation of cell communication	0.007856695538729119	5.113	1778	11	5
+GO:0035282	segmentation	0.007856695538729119	34.965	104	11	2
+GO:0023056	positive regulation of signaling	0.007856695538729119	5.1101	1779	11	5
+GO:1904340	positive regulation of dopaminergic neuron differentiation	0.008550184318667498	606.0606	3	11	1
+GO:0060528	secretory columnal luminar epithelial cell differentiation involved in prostate glandular acinus development	0.008550184318667498	606.0606	3	11	1
+GO:0048583	regulation of response to stimulus	0.008550184318667498	3.1874	3993	11	7
+GO:0002793	positive regulation of peptide secretion	0.008550184318667498	32.4675	112	11	2
+GO:1903225	negative regulation of endodermal cell differentiation	0.008550184318667498	606.0606	3	11	1
+GO:0002065	columnar/cuboidal epithelial cell differentiation	0.008550184318667498	31.8979	114	11	2
+GO:0009890	negative regulation of biosynthetic process	0.008550184318667498	3.8933	2802	11	6
+GO:0051384	response to glucocorticoid	0.008550184318667498	32.1802	113	11	2
+GO:0060741	prostate gland stromal morphogenesis	0.008550184318667498	606.0606	3	11	1
+GO:0055007	cardiac muscle cell differentiation	0.008550184318667498	32.1802	113	11	2
+GO:0042662	negative regulation of mesodermal cell fate specification	0.008550184318667498	606.0606	3	11	1
+GO:0016055	Wnt signaling pathway	0.008550184318667498	11.8577	460	11	3
+GO:0021524	visceral motor neuron differentiation	0.008550184318667498	606.0606	3	11	1
+GO:0090277	positive regulation of peptide hormone secretion	0.008550184318667498	33.0579	110	11	2
+GO:1905771	negative regulation of mesodermal cell differentiation	0.008550184318667498	606.0606	3	11	1
+GO:0060743	epithelial cell maturation involved in prostate gland development	0.008550184318667498	606.0606	3	11	1
+GO:0048523	negative regulation of cellular process	0.00912100877382058	2.6398	5510	11	8
+GO:0003206	cardiac chamber morphogenesis	0.010309234735089715	28.6328	127	11	2
+GO:0035556	intracellular signal transduction	0.010309234735089715	3.6818	2963	11	6
+GO:1902531	regulation of intracellular signal transduction	0.010346701960978996	4.674	1945	11	5
+GO:0003231	cardiac ventricle development	0.010346701960978996	28.4091	128	11	2
+GO:0030718	germ-line stem cell population maintenance	0.010390011639611244	454.5455	4	11	1
+GO:0043170	macromolecule metabolic process	0.010390011639611244	1.6748	11942	11	11
+GO:0009996	negative regulation of cell fate specification	0.010390011639611244	454.5455	4	11	1
+GO:0050794	regulation of cellular process	0.010390011639611244	1.672	11962	11	11
+GO:0048936	peripheral nervous system neuron axonogenesis	0.010390011639611244	454.5455	4	11	1
+GO:0071657	positive regulation of granulocyte colony-stimulating factor production	0.010390011639611244	454.5455	4	11	1
+GO:0031960	response to corticosteroid	0.010390011639611244	27.7585	131	11	2
+GO:1901258	positive regulation of macrophage colony-stimulating factor production	0.010390011639611244	454.5455	4	11	1
+GO:0072560	type B pancreatic cell maturation	0.010390011639611244	454.5455	4	11	1
+GO:0003241	growth involved in heart morphogenesis	0.010390011639611244	454.5455	4	11	1
+GO:0035283	central nervous system segmentation	0.010390011639611244	454.5455	4	11	1
+GO:0048513	animal organ development	0.010482146502337749	3.6147	3018	11	6
+GO:0048565	digestive tract development	0.01051954311730573	27.137	134	11	2
+GO:0051147	regulation of muscle cell differentiation	0.010695973914640335	26.5428	137	11	2
+GO:0007368	determination of left/right symmetry	0.010695973914640335	26.5428	137	11	2
+GO:0007498	mesoderm development	0.010695973914640335	26.738	136	11	2
+GO:0090090	negative regulation of canonical Wnt signaling pathway	0.010695973914640335	26.5428	137	11	2
+GO:0051716	cellular response to stimulus	0.010695973914640335	2.2039	7425	11	9
+GO:0048519	negative regulation of biological process	0.010871298475920114	2.5283	5753	11	8
+GO:0030518	nuclear receptor-mediated steroid hormone signaling pathway	0.01098639877848447	25.974	140	11	2
+GO:0043401	steroid hormone receptor signaling pathway	0.01098639877848447	25.974	140	11	2
+GO:0010605	negative regulation of macromolecule metabolic process	0.011067621001560826	3.5419	3080	11	6
+GO:0045590	negative regulation of regulatory T cell differentiation	0.011191332093706045	363.6364	5	11	1
+GO:0055123	digestive system development	0.011191332093706045	24.7372	147	11	2
+GO:1904692	positive regulation of type B pancreatic cell proliferation	0.011191332093706045	363.6364	5	11	1
+GO:0048646	anatomical structure formation involved in morphogenesis	0.011191332093706045	6.1115	1190	11	4
+GO:0060029	convergent extension involved in organogenesis	0.011191332093706045	363.6364	5	11	1
+GO:0009855	determination of bilateral symmetry	0.011191332093706045	24.9066	146	11	2
+GO:0071655	regulation of granulocyte colony-stimulating factor production	0.011191332093706045	363.6364	5	11	1
+GO:0035051	cardiocyte differentiation	0.011191332093706045	24.7372	147	11	2
+GO:0010817	regulation of hormone levels	0.011191332093706045	9.9717	547	11	3
+GO:0071611	granulocyte colony-stimulating factor production	0.011191332093706045	363.6364	5	11	1
+GO:0060931	sinoatrial node cell development	0.011191332093706045	363.6364	5	11	1
+GO:0035469	determination of pancreatic left/right asymmetry	0.011191332093706045	363.6364	5	11	1
+GO:0009799	specification of symmetry	0.011191332093706045	24.9066	146	11	2
+GO:0034124	regulation of MyD88-dependent toll-like receptor signaling pathway	0.011191332093706045	363.6364	5	11	1
+GO:0050714	positive regulation of protein secretion	0.011191332093706045	24.7372	147	11	2
+GO:0044238	primary metabolic process	0.011191332093706045	1.6434	12170	11	11
+GO:0046887	positive regulation of hormone secretion	0.011191332093706045	25.4291	143	11	2
+GO:0060972	left/right pattern formation	0.011191332093706045	25.2525	144	11	2
+GO:0048869	cellular developmental process	0.011822096609712429	2.8639	4444	11	7
+GO:0030154	cell differentiation	0.011822096609712429	2.8646	4443	11	7
+GO:0043409	negative regulation of MAPK cascade	0.01264369241023627	22.7273	160	11	2
+GO:0071910	determination of liver left/right asymmetry	0.01264369241023627	303.0303	6	11	1
+GO:0042661	regulation of mesodermal cell fate specification	0.01264369241023627	303.0303	6	11	1
+GO:0050789	regulation of biological process	0.01264369241023627	1.6133	12397	11	11
+GO:0036301	macrophage colony-stimulating factor production	0.01264369241023627	303.0303	6	11	1
+GO:2000675	negative regulation of type B pancreatic cell apoptotic process	0.01264369241023627	303.0303	6	11	1
+GO:1901256	regulation of macrophage colony-stimulating factor production	0.01264369241023627	303.0303	6	11	1
+GO:0007507	heart development	0.01264369241023627	9.2293	591	11	3
+GO:0051674	localization of cell	0.01264369241023627	303.0303	6	11	1
+GO:0008078	mesodermal cell migration	0.01264369241023627	303.0303	6	11	1
+GO:0010040	response to iron(II) ion	0.01264369241023627	303.0303	6	11	1
+GO:0009892	negative regulation of metabolic process	0.013130918011650611	3.33	3276	11	6
+GO:0030178	negative regulation of Wnt signaling pathway	0.013651200991545705	21.3904	170	11	2
+GO:0003205	cardiac chamber development	0.013747700941014108	21.2653	171	11	2
+GO:0007267	cell-cell signaling	0.014087217752518344	5.5264	1316	11	4
+GO:0002071	glandular epithelial cell maturation	0.01411452019881796	259.7403	7	11	1
+GO:1903224	regulation of endodermal cell differentiation	0.01411452019881796	259.7403	7	11	1
+GO:0050796	regulation of insulin secretion	0.01411452019881796	20.6612	176	11	2
+GO:0071907	determination of digestive tract left/right asymmetry	0.01411452019881796	259.7403	7	11	1
+GO:0032730	positive regulation of interleukin-1 alpha production	0.01411452019881796	259.7403	7	11	1
+GO:0048598	embryonic morphogenesis	0.01411452019881796	8.7553	623	11	3
+GO:0007275	multicellular organism development	0.014859337000699727	2.7137	4690	11	7
+GO:0060290	transdifferentiation	0.015463371326369177	227.2727	8	11	1
+GO:0042473	outer ear morphogenesis	0.015463371326369177	227.2727	8	11	1
+GO:0007219	Notch signaling pathway	0.015463371326369177	19.4458	187	11	2
+GO:0048312	intracellular distribution of mitochondria	0.015463371326369177	227.2727	8	11	1
+GO:0060947	cardiac vascular smooth muscle cell differentiation	0.015463371326369177	227.2727	8	11	1
+GO:1905770	regulation of mesodermal cell differentiation	0.015463371326369177	227.2727	8	11	1
+GO:0001714	endodermal cell fate specification	0.015463371326369177	227.2727	8	11	1
+GO:0003129	heart induction	0.015463371326369177	227.2727	8	11	1
+GO:0003211	cardiac ventricle formation	0.015463371326369177	227.2727	8	11	1
+GO:0045664	regulation of neuron differentiation	0.015644365883945674	19.1388	190	11	2
+GO:0048584	positive regulation of response to stimulus	0.015713224148340435	3.9185	2320	11	5
+GO:0080134	regulation of response to stress	0.015948270118864027	5.158	1410	11	4
+GO:2000674	regulation of type B pancreatic cell apoptotic process	0.015948270118864027	202.0202	9	11	1
+GO:2000564	regulation of CD8-positive, alpha-beta T cell proliferation	0.015948270118864027	202.0202	9	11	1
+GO:0032610	interleukin-1 alpha production	0.015948270118864027	202.0202	9	11	1
+GO:0030324	lung development	0.015948270118864027	18.7441	194	11	2
+GO:0065007	biological regulation	0.015948270118864027	1.562	12804	11	11
+GO:0032873	negative regulation of stress-activated MAPK cascade	0.015948270118864027	202.0202	9	11	1
+GO:2000826	regulation of heart morphogenesis	0.015948270118864027	202.0202	9	11	1
+GO:0141193	nuclear receptor-mediated signaling pathway	0.015948270118864027	18.7441	194	11	2
+GO:0003266	regulation of secondary heart field cardioblast proliferation	0.015948270118864027	202.0202	9	11	1
+GO:0048318	axial mesoderm development	0.015948270118864027	202.0202	9	11	1
+GO:0031017	exocrine pancreas development	0.015948270118864027	202.0202	9	11	1
+GO:0032650	regulation of interleukin-1 alpha production	0.015948270118864027	202.0202	9	11	1
+GO:0030323	respiratory tube development	0.015948270118864027	18.3655	198	11	2
+GO:0035740	CD8-positive, alpha-beta T cell proliferation	0.015948270118864027	202.0202	9	11	1
+GO:0060926	cardiac pacemaker cell development	0.015948270118864027	202.0202	9	11	1
+GO:0060430	lung saccule development	0.015948270118864027	202.0202	9	11	1
+GO:0007369	gastrulation	0.015948270118864027	18.648	195	11	2
+GO:0060638	mesenchymal-epithelial cell signaling	0.015948270118864027	202.0202	9	11	1
+GO:0061061	muscle structure development	0.015948270118864027	8.1048	673	11	3
+GO:0090276	regulation of peptide hormone secretion	0.016483036793693312	17.8253	204	11	2
+GO:1904338	regulation of dopaminergic neuron differentiation	0.016530846302567286	181.8182	10	11	1
+GO:0009757	hexose mediated signaling	0.016530846302567286	181.8182	10	11	1
+GO:0009952	anterior/posterior pattern specification	0.016530846302567286	17.234	211	11	2
+GO:0010255	glucose mediated signaling pathway	0.016530846302567286	181.8182	10	11	1
+GO:0002791	regulation of peptide secretion	0.016530846302567286	17.567	207	11	2
+GO:0002069	columnar/cuboidal epithelial cell maturation	0.016530846302567286	181.8182	10	11	1
+GO:0001840	neural plate development	0.016530846302567286	181.8182	10	11	1
+GO:0003263	cardioblast proliferation	0.016530846302567286	181.8182	10	11	1
+GO:0030073	insulin secretion	0.016530846302567286	17.3989	209	11	2
+GO:0097050	type B pancreatic cell apoptotic process	0.016530846302567286	181.8182	10	11	1
+GO:0003264	regulation of cardioblast proliferation	0.016530846302567286	181.8182	10	11	1
+GO:0030182	neuron differentiation	0.016530846302567286	5.0365	1444	11	4
+GO:0071383	cellular response to steroid hormone stimulus	0.016530846302567286	17.316	210	11	2
+GO:0090087	regulation of peptide transport	0.016530846302567286	17.3989	209	11	2
+GO:0010182	sugar mediated signaling pathway	0.016530846302567286	181.8182	10	11	1
+GO:0048469	cell maturation	0.016530846302567286	17.567	207	11	2
+GO:0060525	prostate glandular acinus development	0.016530846302567286	181.8182	10	11	1
+GO:0070303	negative regulation of stress-activated protein kinase signaling cascade	0.016530846302567286	181.8182	10	11	1
+GO:0050793	regulation of developmental process	0.016583663196022964	3.7396	2431	11	5
+GO:0002064	epithelial cell development	0.016825863373747668	16.9924	214	11	2
+GO:0060742	epithelial cell differentiation involved in prostate gland development	0.01780346770204256	165.2893	11	11	1
+GO:0021520	spinal cord motor neuron cell fate specification	0.01780346770204256	165.2893	11	11	1
+GO:0090009	primitive streak formation	0.01780346770204256	165.2893	11	11	1
+GO:0060541	respiratory system development	0.01780346770204256	16.4541	221	11	2
+GO:0048699	generation of neurons	0.01862149594886428	4.7753	1523	11	4
+GO:0009755	hormone-mediated signaling pathway	0.018637522867760842	15.949	228	11	2
+GO:0032525	somite rostral/caudal axis specification	0.018896065531698064	151.5152	12	11	1
+GO:0009756	carbohydrate mediated signaling	0.018896065531698064	151.5152	12	11	1
+GO:2000035	regulation of stem cell division	0.018896065531698064	151.5152	12	11	1
+GO:0003207	cardiac chamber formation	0.018896065531698064	151.5152	12	11	1
+GO:0060379	cardiac muscle cell myoblast differentiation	0.018896065531698064	151.5152	12	11	1
+GO:2000049	positive regulation of cell-cell adhesion mediated by cadherin	0.018896065531698064	151.5152	12	11	1
+GO:0001667	ameboidal-type cell migration	0.020128139044261254	15.0886	241	11	2
+GO:0021559	trigeminal nerve development	0.020128139044261254	139.8601	13	11	1
+GO:0033148	positive regulation of intracellular estrogen receptor signaling pathway	0.020128139044261254	139.8601	13	11	1
+GO:0002068	glandular epithelial cell development	0.020128139044261254	139.8601	13	11	1
+GO:0007501	mesodermal cell fate specification	0.020128139044261254	139.8601	13	11	1
+GO:0007399	nervous system development	0.020722989481819356	3.5005	2597	11	5
+GO:0051222	positive regulation of protein transport	0.020997806599035038	14.6628	248	11	2
+GO:0030072	peptide hormone secretion	0.021092617630258357	14.6039	249	11	2
+GO:0043201	response to L-leucine	0.021113831303445067	129.8701	14	11	1
+GO:0032725	positive regulation of granulocyte macrophage colony-stimulating factor production	0.021113831303445067	129.8701	14	11	1
+GO:0033147	negative regulation of intracellular estrogen receptor signaling pathway	0.021113831303445067	129.8701	14	11	1
+GO:0033145	positive regulation of intracellular steroid hormone receptor signaling pathway	0.021113831303445067	129.8701	14	11	1
+GO:0070365	hepatocyte differentiation	0.021113831303445067	129.8701	14	11	1
+GO:0048762	mesenchymal cell differentiation	0.021171312025744713	14.43	252	11	2
+GO:0002790	peptide secretion	0.02175539053069725	14.2045	256	11	2
+GO:0061469	regulation of type B pancreatic cell proliferation	0.021790969732893527	121.2121	15	11	1
+GO:0070986	left/right axis specification	0.021790969732893527	121.2121	15	11	1
+GO:0001711	endodermal cell fate commitment	0.021790969732893527	121.2121	15	11	1
+GO:0048935	peripheral nervous system neuron development	0.021790969732893527	121.2121	15	11	1
+GO:0010832	negative regulation of myotube differentiation	0.021790969732893527	121.2121	15	11	1
+GO:0060413	atrial septum morphogenesis	0.021790969732893527	121.2121	15	11	1
+GO:0060026	convergent extension	0.021790969732893527	121.2121	15	11	1
+GO:0042127	regulation of cell population proliferation	0.021790969732893527	4.4373	1639	11	4
+GO:0061323	cell proliferation involved in heart morphogenesis	0.021790969732893527	121.2121	15	11	1
+GO:2000136	regulation of cell proliferation involved in heart morphogenesis	0.021790969732893527	121.2121	15	11	1
+GO:0046883	regulation of hormone secretion	0.021977704287291355	13.8793	262	11	2
+GO:0050708	regulation of protein secretion	0.02239645130382601	13.7221	265	11	2
+GO:0010454	negative regulation of cell fate commitment	0.02266127836142685	113.6364	16	11	1
+GO:0048934	peripheral nervous system neuron differentiation	0.02266127836142685	113.6364	16	11	1
+GO:0009653	anatomical structure morphogenesis	0.02266127836142685	3.3683	2699	11	5
+GO:0032604	granulocyte macrophage colony-stimulating factor production	0.02266127836142685	113.6364	16	11	1
+GO:0043374	CD8-positive, alpha-beta T cell differentiation	0.02266127836142685	113.6364	16	11	1
+GO:0032645	regulation of granulocyte macrophage colony-stimulating factor production	0.02266127836142685	113.6364	16	11	1
+GO:0071695	anatomical structure maturation	0.023053830674832958	13.369	272	11	2
+GO:0034976	response to endoplasmic reticulum stress	0.023241343167863974	13.2714	274	11	2
+GO:0045597	positive regulation of cell differentiation	0.023241343167863974	6.402	852	11	3
+GO:0048368	lateral mesoderm development	0.023713659305112753	106.9519	17	11	1
+GO:0021904	dorsal/ventral neural tube patterning	0.023713659305112753	106.9519	17	11	1
+GO:1904951	positive regulation of establishment of protein localization	0.024273879146438186	12.8949	282	11	2
+GO:0015833	peptide transport	0.024273879146438186	12.8949	282	11	2
+GO:0010002	cardioblast differentiation	0.02475057325924196	101.0101	18	11	1
+GO:0048731	system development	0.02475057325924196	2.7117	4023	11	6
+GO:0033993	response to lipid	0.02475057325924196	6.1983	880	11	3
+GO:0001710	mesodermal cell fate commitment	0.02475057325924196	101.0101	18	11	1
+GO:1903532	positive regulation of secretion by cell	0.025241093628350007	12.5392	290	11	2
+GO:0003215	cardiac right ventricle morphogenesis	0.025799808575329108	95.6938	19	11	1
+GO:0048339	paraxial mesoderm development	0.025799808575329108	95.6938	19	11	1
+GO:0009725	response to hormone	0.02633258761435221	6.0338	904	11	3
+GO:0060973	cell migration involved in heart development	0.02676334912268541	90.9091	20	11	1
+GO:1902236	negative regulation of endoplasmic reticulum stress-induced intrinsic apoptotic signaling pathway	0.02676334912268541	90.9091	20	11	1
+GO:2001185	regulation of CD8-positive, alpha-beta T cell activation	0.02676334912268541	90.9091	20	11	1
+GO:0048311	mitochondrion distribution	0.02676334912268541	90.9091	20	11	1
+GO:0048562	embryonic organ morphogenesis	0.02717121253499011	11.9225	305	11	2
+GO:0050896	response to stimulus	0.027296913236989642	1.8079	9051	11	9
+GO:0008284	positive regulation of cell population proliferation	0.027322728570707163	5.9096	923	11	3
+GO:0002755	MyD88-dependent toll-like receptor signaling pathway	0.027777366950711407	86.5801	21	11	1
+GO:0051047	positive regulation of secretion	0.028058187733109977	11.655	312	11	2
+GO:0046879	hormone secretion	0.029192485695688112	11.3993	319	11	2
+GO:0048878	chemical homeostasis	0.029313644488817497	5.7356	951	11	3
+GO:0003283	atrial septum development	0.029736331816536916	79.0514	23	11	1
+GO:0042659	regulation of cell fate specification	0.029736331816536916	79.0514	23	11	1
+GO:0031290	retinal ganglion cell axon guidance	0.029736331816536916	79.0514	23	11	1
+GO:2000047	regulation of cell-cell adhesion mediated by cadherin	0.029736331816536916	79.0514	23	11	1
+GO:0001759	organ induction	0.029736331816536916	79.0514	23	11	1
+GO:0008152	metabolic process	0.02975917485505933	1.425	14035	11	11
+GO:0098609	cell-cell adhesion	0.029917611326013106	5.6524	965	11	3
+GO:0009914	hormone transport	0.030377607780025923	11.0193	330	11	2
+GO:0003323	type B pancreatic cell development	0.030682789120444393	75.7576	24	11	1
+GO:0006851	mitochondrial calcium ion transmembrane transport	0.031866559601873366	72.7273	25	11	1
+GO:0006915	apoptotic process	0.03200002745619132	3.8318	1898	11	4
+GO:0003148	outflow tract septum morphogenesis	0.032776096712793766	69.9301	26	11	1
+GO:0035886	vascular associated smooth muscle cell differentiation	0.032776096712793766	69.9301	26	11	1
+GO:0021700	developmental maturation	0.032776096712793766	10.5097	346	11	2
+GO:0001702	gastrulation with mouth forming second	0.033665638488449216	67.3401	27	11	1
+GO:0060740	prostate gland epithelium morphogenesis	0.033665638488449216	67.3401	27	11	1
+GO:0002066	columnar/cuboidal epithelial cell development	0.033665638488449216	67.3401	27	11	1
+GO:0060333	type II interferon-mediated signaling pathway	0.033665638488449216	67.3401	27	11	1
+GO:0012501	programmed cell death	0.034422044103029695	3.7144	1958	11	4
+GO:0060384	innervation	0.034422044103029695	64.9351	28	11	1
+GO:0010039	response to iron ion	0.034422044103029695	64.9351	28	11	1
+GO:0035458	cellular response to interferon-beta	0.034422044103029695	64.9351	28	11	1
+GO:1904036	negative regulation of epithelial cell apoptotic process	0.034422044103029695	64.9351	28	11	1
+GO:0023019	signal transduction involved in regulation of gene expression	0.034422044103029695	64.9351	28	11	1
+GO:0008219	cell death	0.034484249233033594	3.7068	1962	11	4
+GO:0008283	cell population proliferation	0.034484249233033594	3.7087	1961	11	4
+GO:0060487	lung epithelial cell differentiation	0.034625886072991205	62.6959	29	11	1
+GO:0060479	lung cell differentiation	0.034625886072991205	62.6959	29	11	1
+GO:0071692	protein localization to extracellular region	0.034625886072991205	9.9354	366	11	2
+GO:0003156	regulation of animal organ formation	0.034625886072991205	62.6959	29	11	1
+GO:0044342	type B pancreatic cell proliferation	0.034625886072991205	62.6959	29	11	1
+GO:0036037	CD8-positive, alpha-beta T cell activation	0.034625886072991205	62.6959	29	11	1
+GO:0035592	establishment of protein localization to extracellular region	0.034625886072991205	9.9083	367	11	2
+GO:0060512	prostate gland morphogenesis	0.034625886072991205	62.6959	29	11	1
+GO:0009306	protein secretion	0.034625886072991205	9.99	364	11	2
+GO:0021522	spinal cord motor neuron differentiation	0.03557698305040608	60.6061	30	11	1
+GO:0060441	epithelial tube branching involved in lung morphogenesis	0.03557698305040608	60.6061	30	11	1
+GO:0048856	anatomical structure development	0.03567114354761769	2.1398	5948	11	7
+GO:0010575	positive regulation of vascular endothelial growth factor production	0.03647639045994743	58.651	31	11	1
+GO:0060037	pharyngeal system development	0.03647639045994743	58.651	31	11	1
+GO:0051726	regulation of cell cycle	0.0378472383265284	5.0134	1088	11	3
+GO:0060795	cell fate commitment involved in formation of primary germ layer	0.03832849267974732	55.0964	33	11	1
+GO:0021532	neural tube patterning	0.03832849267974732	55.0964	33	11	1
+GO:0048333	mesodermal cell differentiation	0.03832849267974732	55.0964	33	11	1
+GO:0017145	stem cell division	0.03832849267974732	55.0964	33	11	1
+GO:0021772	olfactory bulb development	0.03887739515112639	53.4759	34	11	1
+GO:0010574	regulation of vascular endothelial growth factor production	0.03887739515112639	53.4759	34	11	1
+GO:0031128	developmental induction	0.03887739515112639	53.4759	34	11	1
+GO:0045589	regulation of regulatory T cell differentiation	0.03887739515112639	53.4759	34	11	1
+GO:1902235	regulation of endoplasmic reticulum stress-induced intrinsic apoptotic signaling pathway	0.03887739515112639	53.4759	34	11	1
+GO:0030522	intracellular receptor signaling pathway	0.03887739515112639	9.1137	399	11	2
+GO:0035774	positive regulation of insulin secretion involved in cellular response to glucose stimulus	0.03887739515112639	53.4759	34	11	1
+GO:0030900	forebrain development	0.03951980991264992	9.0232	403	11	2
+GO:0110110	positive regulation of animal organ morphogenesis	0.03974232592193547	51.9481	35	11	1
+GO:0035456	response to interferon-beta	0.040474181227749456	50.5051	36	11	1
+GO:0021988	olfactory lobe development	0.040474181227749456	50.5051	36	11	1
+GO:0034121	regulation of toll-like receptor signaling pathway	0.040474181227749456	50.5051	36	11	1
+GO:0033144	negative regulation of intracellular steroid hormone receptor signaling pathway	0.040474181227749456	50.5051	36	11	1
+GO:0072359	circulatory system development	0.04055245997859375	4.8058	1135	11	3
+GO:0045880	positive regulation of smoothened signaling pathway	0.04119153571210118	49.14	37	11	1
+GO:0010573	vascular endothelial growth factor production	0.04119153571210118	49.14	37	11	1
+GO:0051154	negative regulation of striated muscle cell differentiation	0.04119153571210118	49.14	37	11	1
+GO:0032872	regulation of stress-activated MAPK cascade	0.04209382615317761	47.8469	38	11	1
+GO:0045066	regulatory T cell differentiation	0.04209382615317761	47.8469	38	11	1
+GO:1903829	positive regulation of protein localization	0.04385027476891225	8.3981	433	11	2
+GO:0051223	regulation of protein transport	0.04385027476891225	8.3981	433	11	2
+GO:0070302	regulation of stress-activated protein kinase signaling cascade	0.04397484236878884	45.4545	40	11	1
+GO:0010719	negative regulation of epithelial to mesenchymal transition	0.04485192103512915	44.3459	41	11	1
+GO:0003203	endocardial cushion morphogenesis	0.04485192103512915	44.3459	41	11	1
+GO:0071542	dopaminergic neuron differentiation	0.04540204879466229	43.29	42	11	1
+GO:0032728	positive regulation of interferon-beta production	0.04540204879466229	43.29	42	11	1
+GO:0086091	regulation of heart rate by cardiac conduction	0.04540204879466229	43.29	42	11	1
+GO:0021983	pituitary gland development	0.04540204879466229	43.29	42	11	1
+GO:0000578	embryonic axis specification	0.04540204879466229	43.29	42	11	1
+GO:0031100	animal organ regeneration	0.046150754073267256	42.2833	43	11	1
+GO:0051155	positive regulation of striated muscle cell differentiation	0.046150754073267256	42.2833	43	11	1
+GO:0010830	regulation of myotube differentiation	0.046150754073267256	42.2833	43	11	1
+GO:0046640	regulation of alpha-beta T cell proliferation	0.04707112138722121	41.3223	44	11	1
+GO:0048568	embryonic organ development	0.04707112138722121	7.957	457	11	2
+GO:0010453	regulation of cell fate commitment	0.04772449846200012	40.404	45	11	1
+GO:0021517	ventral spinal cord development	0.04772449846200012	40.404	45	11	1
+GO:0060428	lung epithelium development	0.04772449846200012	40.404	45	11	1
+GO:0035094	response to nicotine	0.04866258712275683	39.5257	46	11	1
+GO:0055010	ventricular cardiac muscle tissue morphogenesis	0.04937201306979921	38.6847	47	11	1
+GO:0046633	alpha-beta T cell proliferation	0.04937201306979921	38.6847	47	11	1
+GO:0042789	mRNA transcription by RNA polymerase II	0.04937201306979921	38.6847	47	11	1
+GO:0031667	response to nutrient levels	0.049683628422679406	7.6555	475	11	2

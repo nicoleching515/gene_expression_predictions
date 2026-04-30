@@ -1,24 +1,263 @@
-term_id	description	p_value	p_adjust	term_size	query_size	intersection_size	fold_enrichment
-GO:0002323	natural killer cell activation involved in immune response	4.5864261726203407e-05	4.5864261726203407e-05	32	58	5	53.879
-GO:0098586	cellular response to virus	6.714918331318675e-05	6.714918331318675e-05	78	58	6	26.525
-GO:0043330	response to exogenous dsRNA	0.00012850298419292126	0.00012850298419292126	51	58	5	33.807
-GO:0030101	natural killer cell activation	0.00012850298419292126	0.00012850298419292126	97	58	6	21.33
-GO:0140888	interferon-mediated signaling pathway	0.00018393746897368057	0.00018393746897368057	111	58	6	18.639
-GO:0043331	response to dsRNA	0.00018393746897368057	0.00018393746897368057	59	58	5	29.223
-GO:0042110	T cell activation	0.000786561258324201	0.000786561258324201	581	58	10	5.935
-GO:0071357	cellular response to type I interferon	0.000786561258324201	0.000786561258324201	86	58	5	20.048
-GO:0060337	type I interferon-mediated signaling pathway	0.000786561258324201	0.000786561258324201	85	58	5	20.284
-GO:0034340	response to type I interferon	0.0009870648115670678	0.0009870648115670678	92	58	5	18.741
-GO:0002312	B cell activation involved in immune response	0.001795471854743807	0.001795471854743807	106	58	5	16.265
-GO:0002286	T cell activation involved in immune response	0.003520721272503382	0.003520721272503382	124	58	5	13.904
-GO:0045321	leukocyte activation	0.008665340027228883	0.008665340027228883	975	58	11	3.89
-GO:0046649	lymphocyte activation	0.00870541181151238	0.00870541181151238	811	58	10	4.252
-GO:0042113	B cell activation	0.015430824077124915	0.015430824077124915	286	58	6	7.234
-GO:0007162	negative regulation of cell adhesion	0.015430824077124915	0.015430824077124915	287	58	6	7.209
-GO:0014075	response to amine	0.021685665350647886	0.021685665350647886	42	58	3	24.631
-GO:1901698	response to nitrogen compound	0.021685665350647886	0.021685665350647886	941	58	10	3.664
-GO:0001775	cell activation	0.021685665350647886	0.021685665350647886	1123	58	11	3.378
-GO:0030155	regulation of cell adhesion	0.02401171026730944	0.02401171026730944	780	58	9	3.979
-GO:0002285	lymphocyte activation involved in immune response	0.02639079077578357	0.02639079077578357	214	58	5	8.057
-GO:1903037	regulation of leukocyte cell-cell adhesion	0.0469047513787829	0.0469047513787829	375	58	6	5.517
-GO:0010812	negative regulation of cell-substrate adhesion	0.04747899290468786	0.04747899290468786	60	58	3	17.241
+term_id	description	p_adjust	fold_enrichment	term_size	query_size	intersection_size
+GO:0006366	transcription by RNA polymerase II	1.606818028727653e-07	6.5304	2827	13	12
+GO:0006357	regulation of transcription by RNA polymerase II	1.606818028727653e-07	6.8681	2688	13	12
+GO:0006355	regulation of DNA-templated transcription	7.099904633472857e-07	5.4539	3385	13	12
+GO:2001141	regulation of RNA biosynthetic process	7.099904633472857e-07	5.4347	3397	13	12
+GO:0006351	DNA-templated transcription	8.741958148205948e-07	5.2403	3523	13	12
+GO:0051252	regulation of RNA metabolic process	1.122061352895808e-06	5.0524	3654	13	12
+GO:0019219	regulation of nucleobase-containing compound metabolic process	2.443404078636377e-06	4.6691	3954	13	12
+GO:0080090	regulation of primary metabolic process	5.5482902875776606e-05	3.5401	5215	13	12
+GO:0010468	regulation of gene expression	0.0001019754734297082	3.327	5549	13	12
+GO:0010556	regulation of macromolecule biosynthetic process	0.00011261048277849628	3.2693	5647	13	12
+GO:0009889	regulation of biosynthetic process	0.00014589708676858654	3.1715	5821	13	12
+GO:0060255	regulation of macromolecule metabolic process	0.00039759350459884075	2.8882	6392	13	12
+GO:0072197	ureter morphogenesis	0.00045758527553961943	439.5604	7	13	2
+GO:0032774	RNA biosynthetic process	0.0005182241506485682	2.7858	6627	13	12
+GO:0141187	nucleic acid biosynthetic process	0.0005833736416852753	2.7411	6735	13	12
+GO:0016070	RNA metabolic process	0.0006476345151381727	2.7014	6834	13	12
+GO:0019222	regulation of metabolic process	0.0006812748788262921	2.6756	6900	13	12
+GO:0034654	nucleobase-containing compound biosynthetic process	0.0008050752157452291	2.6242	7035	13	12
+GO:0030154	cell differentiation	0.0010931115001404784	3.4627	4443	13	10
+GO:0048869	cellular developmental process	0.0010931115001404784	3.4619	4444	13	10
+GO:0090304	nucleic acid metabolic process	0.0012392302688726269	2.4945	7401	13	12
+GO:0045944	positive regulation of transcription by RNA polymerase II	0.0018119377749980133	7.4622	1237	13	6
+GO:0072189	ureter development	0.001877106467779173	170.9402	18	13	2
+GO:0006139	nucleobase-containing compound metabolic process	0.0025191909173459498	2.3181	7964	13	12
+GO:0007519	skeletal muscle tissue development	0.00506265858577673	26.0756	177	13	3
+GO:0000122	negative regulation of transcription by RNA polymerase II	0.00506265858577673	8.2447	933	13	5
+GO:0060538	skeletal muscle organ development	0.005891651410431743	24.1643	191	13	3
+GO:1902680	positive regulation of RNA biosynthetic process	0.007423621075717451	5.5142	1674	13	6
+GO:0045893	positive regulation of DNA-templated transcription	0.007423621075717451	5.5208	1672	13	6
+GO:0048483	autonomic nervous system development	0.00922441559429407	68.3761	45	13	2
+GO:0010467	gene expression	0.010180447709096247	1.9997	9232	13	12
+GO:0051254	positive regulation of RNA metabolic process	0.010180447709096247	5.1168	1804	13	6
+GO:0021594	rhombomere formation	0.011807126054694382	1538.4615	1	13	1
+GO:0021660	rhombomere 3 formation	0.011807126054694382	1538.4615	1	13	1
+GO:0021664	rhombomere 5 morphogenesis	0.011807126054694382	1538.4615	1	13	1
+GO:0009653	anatomical structure morphogenesis	0.011807126054694382	3.9901	2699	13	7
+GO:0021595	rhombomere structural organization	0.011807126054694382	1538.4615	1	13	1
+GO:0061005	cell differentiation involved in kidney development	0.011807126054694382	51.2821	60	13	2
+GO:2000683	regulation of cellular response to X-ray	0.011807126054694382	1538.4615	1	13	1
+GO:0021659	rhombomere 3 structural organization	0.011807126054694382	1538.4615	1	13	1
+GO:0021666	rhombomere 5 formation	0.011807126054694382	1538.4615	1	13	1
+GO:0021665	rhombomere 5 structural organization	0.011807126054694382	1538.4615	1	13	1
+GO:0009059	macromolecule biosynthetic process	0.011852431853866939	1.9221	9605	13	12
+GO:0045892	negative regulation of DNA-templated transcription	0.012775800653201802	6.0332	1275	13	5
+GO:1902679	negative regulation of RNA biosynthetic process	0.012901265110729422	5.9909	1284	13	5
+GO:0060675	ureteric bud morphogenesis	0.01373183602528742	45.2489	68	13	2
+GO:0072171	mesonephric tubule morphogenesis	0.013836015858076816	44.5931	69	13	2
+GO:0032502	developmental process	0.015153184136165038	2.3542	6535	13	10
+GO:0160194	stereocilium bundle organization	0.01599217460815748	769.2308	2	13	1
+GO:0061333	renal tubule morphogenesis	0.01599217460815748	37.5235	82	13	2
+GO:0072078	nephron tubule morphogenesis	0.01599217460815748	39.96	77	13	2
+GO:0072001	renal system development	0.01599217460815748	13.9438	331	13	3
+GO:0060284	regulation of cell development	0.01599217460815748	7.5415	816	13	4
+GO:0072028	nephron morphogenesis	0.01599217460815748	37.9867	81	13	2
+GO:0035914	skeletal muscle cell differentiation	0.01599217460815748	38.9484	79	13	2
+GO:0021593	rhombomere morphogenesis	0.01599217460815748	769.2308	2	13	1
+GO:0014040	positive regulation of Schwann cell differentiation	0.01599217460815748	769.2308	2	13	1
+GO:0021658	rhombomere 3 morphogenesis	0.01599217460815748	769.2308	2	13	1
+GO:0072088	nephron epithelium morphogenesis	0.01599217460815748	38.9484	79	13	2
+GO:0030182	neuron differentiation	0.01599217460815748	5.3271	1444	13	5
+GO:0051253	negative regulation of RNA metabolic process	0.01599217460815748	5.538	1389	13	5
+GO:0014043	negative regulation of neuron maturation	0.01599217460815748	769.2308	2	13	1
+GO:0007517	muscle organ development	0.016287810303680882	12.7497	362	13	3
+GO:0072164	mesonephric tubule development	0.017383440810143647	30.7692	100	13	2
+GO:0072163	mesonephric epithelium development	0.017383440810143647	30.7692	100	13	2
+GO:0045934	negative regulation of nucleobase-containing compound metabolic process	0.017383440810143647	5.0942	1510	13	5
+GO:0035284	brain segmentation	0.017383440810143647	512.8205	3	13	1
+GO:0021571	rhombomere 5 development	0.017383440810143647	512.8205	3	13	1
+GO:0072275	metanephric glomerulus morphogenesis	0.017383440810143647	512.8205	3	13	1
+GO:0001657	ureteric bud development	0.017383440810143647	31.08	99	13	2
+GO:0014038	regulation of Schwann cell differentiation	0.017383440810143647	512.8205	3	13	1
+GO:0072277	metanephric glomerular capillary formation	0.017383440810143647	512.8205	3	13	1
+GO:0072276	metanephric glomerulus vasculature morphogenesis	0.017383440810143647	512.8205	3	13	1
+GO:0035898	parathyroid hormone secretion	0.017383440810143647	512.8205	3	13	1
+GO:0014707	branchiomeric skeletal muscle development	0.017383440810143647	512.8205	3	13	1
+GO:0001823	mesonephros development	0.017383440810143647	29.5858	104	13	2
+GO:0002572	pro-T cell differentiation	0.017383440810143647	512.8205	3	13	1
+GO:0048534	hematopoietic or lymphoid organ development	0.017383440810143647	29.5858	104	13	2
+GO:0072080	nephron tubule development	0.017383440810143647	30.7692	100	13	2
+GO:0048699	generation of neurons	0.017383440810143647	5.0508	1523	13	5
+GO:0061326	renal tubule development	0.017383440810143647	29.304	105	13	2
+GO:0060993	kidney morphogenesis	0.017383440810143647	31.3972	98	13	2
+GO:0014706	striated muscle tissue development	0.017383440810143647	11.5674	399	13	3
+GO:0021569	rhombomere 3 development	0.017383440810143647	512.8205	3	13	1
+GO:0035282	segmentation	0.017383440810143647	29.5858	104	13	2
+GO:0120036	plasma membrane bounded cell projection organization	0.017383440810143647	4.8624	1582	13	5
+GO:0009058	biosynthetic process	0.018003139962881894	1.7353	10639	13	12
+GO:0060537	muscle tissue development	0.018003139962881894	10.9629	421	13	3
+GO:0003002	regionalization	0.018003139962881894	10.9369	422	13	3
+GO:0010975	regulation of neuron projection development	0.01818071066701183	10.8342	426	13	3
+GO:0010720	positive regulation of cell development	0.01846681856988769	10.7335	430	13	3
+GO:0030030	cell projection organization	0.018470624814662225	4.725	1628	13	5
+GO:0072106	regulation of ureteric bud formation	0.01988476631869881	384.6154	4	13	1
+GO:0010557	positive regulation of macromolecule biosynthetic process	0.01988476631869881	3.637	2538	13	6
+GO:0032501	multicellular organismal process	0.01988476631869881	2.0969	7337	13	10
+GO:2000611	positive regulation of thyroid hormone generation	0.01988476631869881	384.6154	4	13	1
+GO:0061217	regulation of mesonephros development	0.01988476631869881	384.6154	4	13	1
+GO:0072107	positive regulation of ureteric bud formation	0.01988476631869881	384.6154	4	13	1
+GO:0035799	ureter maturation	0.01988476631869881	384.6154	4	13	1
+GO:0033600	negative regulation of mammary gland epithelial cell proliferation	0.01988476631869881	384.6154	4	13	1
+GO:0035283	central nervous system segmentation	0.01988476631869881	384.6154	4	13	1
+GO:0072009	nephron epithelium development	0.020008722995217342	25.0156	123	13	2
+GO:0048856	anatomical structure development	0.020373881845442903	2.3279	5948	13	9
+GO:0031175	neuron projection development	0.02053668418606561	6.0929	1010	13	4
+GO:0007389	pattern specification process	0.02053668418606561	9.8619	468	13	3
+GO:0007399	nervous system development	0.02135135948341522	3.5544	2597	13	6
+GO:0072162	metanephric mesenchymal cell differentiation	0.022622670638775624	307.6923	5	13	1
+GO:0009891	positive regulation of biosynthetic process	0.022622670638775624	3.4899	2645	13	6
+GO:0022008	neurogenesis	0.022622670638775624	4.3484	1769	13	5
+GO:0072179	nephric duct formation	0.022622670638775624	307.6923	5	13	1
+GO:0008584	male gonad development	0.024035188812210374	21.8221	141	13	2
+GO:0046546	development of primary male sexual characteristics	0.024152443833072874	21.6685	142	13	2
+GO:0072103	glomerulus vasculature morphogenesis	0.02475951915333304	256.4103	6	13	1
+GO:0072104	glomerular capillary formation	0.02475951915333304	256.4103	6	13	1
+GO:0010558	negative regulation of macromolecule biosynthetic process	0.02475951915333304	3.3775	2733	13	6
+GO:0060435	bronchiole development	0.02475951915333304	256.4103	6	13	1
+GO:2000609	regulation of thyroid hormone generation	0.02475951915333304	256.4103	6	13	1
+GO:0060374	mast cell differentiation	0.02475951915333304	256.4103	6	13	1
+GO:0001806	type IV hypersensitivity	0.02475951915333304	256.4103	6	13	1
+GO:0014041	regulation of neuron maturation	0.02475951915333304	256.4103	6	13	1
+GO:0072073	kidney epithelium development	0.025538163667471546	20.2429	152	13	2
+GO:0042421	norepinephrine biosynthetic process	0.02686311043955876	219.7802	7	13	1
+GO:0009890	negative regulation of biosynthetic process	0.02686311043955876	3.2944	2802	13	6
+GO:0021546	rhombomere development	0.02686311043955876	219.7802	7	13	1
+GO:0072161	mesenchymal cell differentiation involved in kidney development	0.02686311043955876	219.7802	7	13	1
+GO:0021796	cerebral cortex regionalization	0.02686311043955876	219.7802	7	13	1
+GO:0072006	nephron development	0.02686311043955876	19.3517	159	13	2
+GO:0060676	ureteric bud formation	0.02686311043955876	219.7802	7	13	1
+GO:1903430	negative regulation of cell maturation	0.02686311043955876	219.7802	7	13	1
+GO:0048468	cell development	0.027477026913156923	3.248	2842	13	6
+GO:0046661	male sex differentiation	0.027477026913156923	18.7617	164	13	2
+GO:0048666	neuron development	0.02757034003836734	5.2732	1167	13	4
+GO:0050728	negative regulation of inflammatory response	0.028570643278849468	18.2066	169	13	2
+GO:0061439	kidney vasculature morphogenesis	0.02889968849748505	192.3077	8	13	1
+GO:0061438	renal system vasculature morphogenesis	0.02889968849748505	192.3077	8	13	1
+GO:0048646	anatomical structure formation involved in morphogenesis	0.02889968849748505	5.1713	1190	13	4
+GO:0060017	parathyroid gland development	0.02889968849748505	192.3077	8	13	1
+GO:0048667	cell morphogenesis involved in neuron differentiation	0.028913604884912486	7.9031	584	13	3
+GO:0001866	NK T cell proliferation	0.029685937861216278	170.9402	9	13	1
+GO:0071481	cellular response to X-ray	0.029685937861216278	170.9402	9	13	1
+GO:0048731	system development	0.029685937861216278	2.6769	4023	13	7
+GO:1905278	positive regulation of epithelial tube formation	0.029685937861216278	170.9402	9	13	1
+GO:2000553	positive regulation of T-helper 2 cell cytokine production	0.029685937861216278	170.9402	9	13	1
+GO:1905276	regulation of epithelial tube formation	0.029685937861216278	170.9402	9	13	1
+GO:0072102	glomerulus morphogenesis	0.029685937861216278	170.9402	9	13	1
+GO:0021612	facial nerve structural organization	0.029685937861216278	170.9402	9	13	1
+GO:0060539	diaphragm development	0.029685937861216278	170.9402	9	13	1
+GO:0060426	lung vasculature development	0.029685937861216278	170.9402	9	13	1
+GO:0072239	metanephric glomerulus vasculature development	0.029685937861216278	170.9402	9	13	1
+GO:0009888	tissue development	0.029685937861216278	3.8194	2014	13	5
+GO:0048729	tissue morphogenesis	0.030111898557213287	7.5415	612	13	3
+GO:0120035	regulation of plasma membrane bounded cell projection organization	0.031228304519591302	7.4083	623	13	3
+GO:0048598	embryonic morphogenesis	0.031228304519591302	7.4083	623	13	3
+GO:0001764	neuron migration	0.031615583143260635	16.0256	192	13	2
+GO:0072172	mesonephric tubule formation	0.031706676026525084	153.8462	10	13	1
+GO:0035457	cellular response to interferon-alpha	0.031706676026525084	153.8462	10	13	1
+GO:0046631	alpha-beta T cell activation	0.03227540936200615	15.6986	196	13	2
+GO:0031344	regulation of cell projection organization	0.032446464069145524	7.2228	639	13	3
+GO:0010605	negative regulation of macromolecule metabolic process	0.033369998866903096	2.997	3080	13	6
+GO:0021610	facial nerve morphogenesis	0.033369998866903096	139.8601	11	13	1
+GO:0048812	neuron projection morphogenesis	0.033369998866903096	7.1225	648	13	3
+GO:0021561	facial nerve development	0.033369998866903096	139.8601	11	13	1
+GO:0021604	cranial nerve structural organization	0.033369998866903096	139.8601	11	13	1
+GO:0002520	immune system development	0.03370203774867319	15.0094	205	13	2
+GO:0072178	nephric duct morphogenesis	0.03409250513159325	128.2051	12	13	1
+GO:0050794	regulation of cellular process	0.03409250513159325	1.5433	11962	13	12
+GO:1901653	cellular response to peptide	0.03409250513159325	128.2051	12	13	1
+GO:0061061	muscle structure development	0.03409250513159325	6.8579	673	13	3
+GO:0120039	plasma membrane bounded cell projection morphogenesis	0.03409250513159325	6.9509	664	13	3
+GO:0043170	macromolecule metabolic process	0.03409250513159325	1.5459	11942	13	12
+GO:0032525	somite rostral/caudal axis specification	0.03409250513159325	128.2051	12	13	1
+GO:0048858	cell projection morphogenesis	0.03409250513159325	6.8989	669	13	3
+GO:0009952	anterior/posterior pattern specification	0.03409250513159325	14.5826	211	13	2
+GO:0048469	cell maturation	0.03409250513159325	14.8644	207	13	2
+GO:0010604	positive regulation of macromolecule metabolic process	0.03469158997544299	2.9285	3152	13	6
+GO:0035745	T-helper 2 cell cytokine production	0.03472756670840415	118.3432	13	13	1
+GO:0007501	mesodermal cell fate specification	0.03472756670840415	118.3432	13	13	1
+GO:0032352	positive regulation of hormone metabolic process	0.03472756670840415	118.3432	13	13	1
+GO:0032754	positive regulation of interleukin-5 production	0.03472756670840415	118.3432	13	13	1
+GO:0050769	positive regulation of neurogenesis	0.03472756670840415	13.9227	221	13	2
+GO:2000551	regulation of T-helper 2 cell cytokine production	0.03472756670840415	118.3432	13	13	1
+GO:0021978	telencephalon regionalization	0.03472756670840415	118.3432	13	13	1
+GO:0014816	skeletal muscle satellite cell differentiation	0.03472756670840415	118.3432	13	13	1
+GO:0097499	protein localization to non-motile cilium	0.03472756670840415	118.3432	13	13	1
+GO:0072182	regulation of nephron tubule epithelial cell differentiation	0.03472756670840415	118.3432	13	13	1
+GO:0008406	gonad development	0.03617443677167799	13.5547	227	13	2
+GO:0072075	metanephric mesenchyme development	0.03698835191363805	109.8901	14	13	1
+GO:0044238	primary metabolic process	0.03719079583528297	1.517	12170	13	12
+GO:0045137	development of primary sexual characteristics	0.03719079583528297	13.2626	232	13	2
+GO:0032736	positive regulation of interleukin-13 production	0.037229959503938204	102.5641	15	13	1
+GO:0072160	nephron tubule epithelial cell differentiation	0.037229959503938204	102.5641	15	13	1
+GO:0071599	otic vesicle development	0.037229959503938204	102.5641	15	13	1
+GO:0042415	norepinephrine metabolic process	0.037229959503938204	102.5641	15	13	1
+GO:0001787	natural killer cell proliferation	0.037229959503938204	102.5641	15	13	1
+GO:0060766	negative regulation of androgen receptor signaling pathway	0.037229959503938204	102.5641	15	13	1
+GO:0009892	negative regulation of metabolic process	0.037229959503938204	2.8177	3276	13	6
+GO:0097485	neuron projection guidance	0.037229959503938204	13.0933	235	13	2
+GO:0007411	axon guidance	0.037229959503938204	13.1492	234	13	2
+GO:2000679	positive regulation of transcription regulatory region DNA binding	0.037229959503938204	102.5641	15	13	1
+GO:0021783	preganglionic parasympathetic fiber development	0.03911099202616403	96.1538	16	13	1
+GO:0072176	nephric duct development	0.03911099202616403	96.1538	16	13	1
+GO:0033599	regulation of mammary gland epithelial cell proliferation	0.03911099202616403	96.1538	16	13	1
+GO:2000696	regulation of epithelial cell differentiation involved in kidney development	0.04034517932554733	90.4977	17	13	1
+GO:0072074	kidney mesenchyme development	0.04034517932554733	90.4977	17	13	1
+GO:0048557	embryonic digestive tract morphogenesis	0.04034517932554733	90.4977	17	13	1
+GO:0048762	mesenchymal cell differentiation	0.04034517932554733	12.21	252	13	2
+GO:0048532	anatomical structure arrangement	0.04034517932554733	90.4977	17	13	1
+GO:0072224	metanephric glomerulus development	0.04034517932554733	90.4977	17	13	1
+GO:0050789	regulation of biological process	0.04108267178106942	1.4892	12397	13	12
+GO:0048486	parasympathetic nervous system development	0.041671970614730505	85.4701	18	13	1
+GO:0045064	T-helper 2 cell differentiation	0.041671970614730505	85.4701	18	13	1
+GO:0001710	mesodermal cell fate commitment	0.041671970614730505	85.4701	18	13	1
+GO:0031348	negative regulation of defense response	0.041671970614730505	11.6993	263	13	2
+GO:0002830	positive regulation of type 2 immune response	0.041671970614730505	85.4701	18	13	1
+GO:0009893	positive regulation of metabolic process	0.041671970614730505	2.707	3410	13	6
+GO:0051132	NK T cell activation	0.04260775954062187	80.9717	19	13	1
+GO:0002524	hypersensitivity	0.04260775954062187	80.9717	19	13	1
+GO:0003215	cardiac right ventricle morphogenesis	0.04260775954062187	80.9717	19	13	1
+GO:0031643	positive regulation of myelination	0.04260775954062187	80.9717	19	13	1
+GO:0035743	CD4-positive, alpha-beta T cell cytokine production	0.04260775954062187	80.9717	19	13	1
+GO:0051962	positive regulation of nervous system development	0.042761434298192944	11.354	271	13	2
+GO:0071695	anatomical structure maturation	0.042869179387827666	11.3122	272	13	2
+GO:0060231	mesenchymal to epithelial transition	0.04370168820020799	76.9231	20	13	1
+GO:0045595	regulation of cell differentiation	0.04370168820020799	3.9728	1549	13	4
+GO:0046649	lymphocyte activation	0.04370168820020799	5.691	811	13	3
+GO:0072079	nephron tubule formation	0.04370168820020799	76.9231	20	13	1
+GO:0032674	regulation of interleukin-5 production	0.04518526649334387	69.9301	22	13	1
+GO:0007530	sex determination	0.04518526649334387	73.2601	21	13	1
+GO:0009713	catechol-containing compound biosynthetic process	0.04518526649334387	69.9301	22	13	1
+GO:0035455	response to interferon-alpha	0.04518526649334387	73.2601	21	13	1
+GO:0042423	catecholamine biosynthetic process	0.04518526649334387	69.9301	22	13	1
+GO:0007548	sex differentiation	0.04518526649334387	10.6838	288	13	2
+GO:0032616	interleukin-13 production	0.04518526649334387	69.9301	22	13	1
+GO:0032656	regulation of interleukin-13 production	0.04518526649334387	69.9301	22	13	1
+GO:0007275	multicellular organism development	0.04518526649334387	2.2962	4690	13	7
+GO:0006590	thyroid hormone generation	0.04518526649334387	69.9301	22	13	1
+GO:0060008	Sertoli cell differentiation	0.04518526649334387	69.9301	22	13	1
+GO:1903429	regulation of cell maturation	0.04518526649334387	69.9301	22	13	1
+GO:0048485	sympathetic nervous system development	0.04518526649334387	69.9301	22	13	1
+GO:0032634	interleukin-5 production	0.04518526649334387	69.9301	22	13	1
+GO:0001818	negative regulation of cytokine production	0.046092198986619384	10.4302	295	13	2
+GO:0045165	cell fate commitment	0.04635920848093326	10.36	297	13	2
+GO:0045597	positive regulation of cell differentiation	0.04635920848093326	5.4171	852	13	3
+GO:2000114	regulation of establishment of cell polarity	0.04645145387086147	66.8896	23	13	1
+GO:0048608	reproductive structure development	0.04733622872131574	10.1885	302	13	2
+GO:0048562	embryonic organ morphogenesis	0.04733622872131574	10.0883	305	13	2
+GO:0002320	lymphoid progenitor cell differentiation	0.04733622872131574	64.1026	24	13	1
+GO:0045061	thymic T cell selection	0.04733622872131574	64.1026	24	13	1
+GO:0035162	embryonic hemopoiesis	0.04733622872131574	64.1026	24	13	1
+GO:0021871	forebrain regionalization	0.04733622872131574	64.1026	24	13	1
+GO:0061458	reproductive system development	0.04744126983715577	10.0553	306	13	2
+GO:0035239	tube morphogenesis	0.048130343229213196	5.2627	877	13	3
+GO:0065007	biological regulation	0.048130343229213196	1.4419	12804	13	12
+GO:0008045	motor neuron axon guidance	0.04847517696994864	61.5385	25	13	1
+GO:0032878	regulation of establishment or maintenance of cell polarity	0.04923671024875488	59.1716	26	13	1
+GO:0060065	uterus development	0.04923671024875488	59.1716	26	13	1
+GO:0010165	response to X-ray	0.04923671024875488	59.1716	26	13	1
+GO:0032753	positive regulation of interleukin-4 production	0.04923671024875488	59.1716	26	13	1
+GO:0021542	dentate gyrus development	0.04923671024875488	59.1716	26	13	1
+GO:0021846	cell proliferation in forebrain	0.04923671024875488	59.1716	26	13	1
+GO:0060485	mesenchyme development	0.04936475254164433	9.6455	319	13	2
+GO:0001822	kidney development	0.04946836780465985	9.6154	320	13	2

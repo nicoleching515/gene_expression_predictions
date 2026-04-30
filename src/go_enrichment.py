@@ -30,19 +30,25 @@ def extract_tf_genes_from_homer(homer_result_txt: Path, n: int = 20) -> list[str
     if not homer_result_txt.exists():
         return []
     try:
-        df = pd.read_csv(homer_result_txt, sep="\t", comment="#")
+        # comment=None required: HOMER column names contain "#" which breaks
+        # pandas' comment-stripping and mangles the header
+        df = pd.read_csv(homer_result_txt, sep="\t", comment=None)
         pval_col = next(
-            (c for c in df.columns if "p-value" in c.lower() or "pvalue" in c.lower()),
+            (c for c in df.columns
+             if re.fullmatch(r"p-?value", c.strip().lower())),
             None,
         )
         if pval_col is None:
             return []
         df = df.sort_values(pval_col).head(n)
+        # HOMER motif name format: "TFname(family)/experiment/Homer"
+        # Split on first "(" or "/" and take the leading token
         names = df.iloc[:, 0].str.split(r"[(/]").str[0].str.strip()
-        # Keep only plausible gene names: 2-10 chars, letters/digits
-        genes = [g for g in names if re.match(r"^[A-Za-z][A-Za-z0-9]{1,9}$", g)]
+        # Accept 2–15 char names: letters, digits, hyphens, dots (e.g. AP-1, Sox2, NF-kB)
+        genes = [g for g in names if re.match(r"^[A-Za-z][A-Za-z0-9\-\.]{1,14}$", g)]
         return list(dict.fromkeys(genes))  # deduplicate, preserve order
-    except Exception:
+    except Exception as e:
+        print(f"    [WARN] extract_tf_genes error: {e}")
         return []
 
 
@@ -62,17 +68,23 @@ def gprofile_query(genes: list[str], organism: str) -> pd.DataFrame:
         result = resp.json().get("result", [])
         if not result:
             return pd.DataFrame()
+        N_HUMAN_GENES = 20000  # approximate protein-coding gene count for fold enrichment
         rows = []
         for r in result:
+            q  = max(r.get("query_size", 1), 1)
+            ts = max(r.get("term_size", 1), 1)
+            i  = r.get("intersection_size", 0)
+            fe = (i / q) / (ts / N_HUMAN_GENES) if q > 0 and ts > 0 else 0.0
             rows.append({
-                "term_id":           r.get("native", ""),
-                "term_name":         r.get("name", ""),
-                "p_value":           r.get("p_value", 1.0),
-                "term_size":         r.get("term_size", 0),
-                "query_size":        r.get("query_size", 0),
-                "intersection_size": r.get("intersection_size", 0),
+                "term_id":        r.get("native", ""),
+                "description":    r.get("name", ""),
+                "p_adjust":       r.get("p_value", 1.0),
+                "fold_enrichment": round(fe, 4),
+                "term_size":      ts,
+                "query_size":     q,
+                "intersection_size": i,
             })
-        return pd.DataFrame(rows).sort_values("p_value")
+        return pd.DataFrame(rows).sort_values("p_adjust")
     except Exception as e:
         print(f"    [WARN] g:Profiler API error: {e}")
         return pd.DataFrame()

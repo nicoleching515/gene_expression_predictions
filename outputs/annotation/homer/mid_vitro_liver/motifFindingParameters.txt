@@ -1,0 +1,1 @@
+cmd = /workspace/gene_expression_predictions/outputs/annotation/homer/mid_vitro_liver.bed hg38 /workspace/gene_expression_predictions/outputs/annotation/homer/mid_vitro_liver -size 200 -mask -bg /workspace/gene_expression_predictions/data/windows.bed -p 6
