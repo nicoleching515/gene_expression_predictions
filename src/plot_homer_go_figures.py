@@ -371,11 +371,11 @@ def make_fig8_homer(annotation_dir: str, figures_dir: str,
             tick.set_fontweight("bold")
             tick.set_color("#B22222")
 
-    # Side block labels
-    mid_vivo  = n_vivo / 2 - 0.5
-    mid_vitro = n_vivo + len(layers) * len(PAIRS) / 2 - 0.5
-    for y, label, col in [(mid_vivo,  "In vivo\n(tissue)",    VIVO_COL),
-                           (mid_vitro, "In vitro\n(cell line)", VITRO_COL)]:
+    # Side block labels — SIDES = ["vitro", "vivo"], so vitro rows come first
+    mid_vitro = n_vivo / 2 - 0.5
+    mid_vivo  = n_vivo + len(layers) * len(PAIRS) / 2 - 0.5
+    for y, label, col in [(mid_vitro, "In vitro\n(cell line)", VITRO_COL),
+                           (mid_vivo,  "In vivo\n(tissue)",    VIVO_COL)]:
         ax.annotate(label,
                     xy=(1.01, 1 - (y + 0.5) / n_rows),
                     xycoords="axes fraction", fontsize=9,
@@ -406,17 +406,16 @@ def make_fig8_homer(annotation_dir: str, figures_dir: str,
     # ── Titles & caption ──────────────────────────────────────────────────────
     ax.set_title(
         "HOMER Known Motif Enrichment — Top Context-Divergent SAE Features\n"
-        "(findMotifsGenome.pl, hg38, -size 200 -mask; top-50 CDS features "
-        "per layer per condition)",
+        "(findMotifsGenome.pl, hg38, -size 200 -mask, genome-wide background; "
+        "top-50 CDS features per layer per condition)",
         fontsize=10, fontweight="bold", pad=10)
     ax.set_xlabel("Transcription factor motif", fontsize=9)
 
     fig.text(
         0.5, -0.02,
-        "Note: analysis restricted to chr8/chr9 windows; "
-        "genome-wide extension recommended to improve statistical power. "
         "Grey cells: p ≥ 0.2 (not nominally enriched). "
-        "Bubble size indicates fold enrichment (% target / % background).",
+        "Bubble size indicates fold enrichment (% target / % background). "
+        "Background: 100,000 genome-wide GC-matched random sequences (HOMER -genomeBg).",
         ha="center", fontsize=7.5, color="dimgrey",
         wrap=True)
 

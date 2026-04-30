@@ -1,1 +1,1 @@
-cmd = /workspace/gene_expression_predictions/outputs/annotation/homer/early_vivo_liver.bed hg38 /workspace/gene_expression_predictions/outputs/annotation/homer/early_vivo_liver -size 200 -mask -bg /workspace/gene_expression_predictions/data/windows.bed -p 6
+cmd = /workspace/gene_expression_predictions/outputs/annotation/homer/early_vivo_liver.bed hg38 /workspace/gene_expression_predictions/outputs/annotation/homer/early_vivo_liver -size 200 -mask -genomeBg -p 8

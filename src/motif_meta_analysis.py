@@ -544,7 +544,7 @@ def make_fig10(meta_df: pd.DataFrame, all_df: pd.DataFrame,
         "★ Fisher p < 0.05.  "
         "Null 95% CI derived from hypergeometric distribution "
         "(target peaks drawn at random from background windows).  "
-        "Analysis restricted to chr8/chr9; genome-wide extension recommended.",
+        "Background: 100,000 genome-wide GC-matched random sequences (HOMER -genomeBg, hg38).",
         ha="center", fontsize=7.5, color="dimgrey")
 
     for ext in ("pdf", "png"):

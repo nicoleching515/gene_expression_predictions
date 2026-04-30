@@ -1,1 +1,1 @@
-cmd = /workspace/gene_expression_predictions/outputs/annotation/homer/mid_vitro_lymph.bed hg38 /workspace/gene_expression_predictions/outputs/annotation/homer/mid_vitro_lymph -size 200 -mask -bg /workspace/gene_expression_predictions/data/windows.bed -p 6
+cmd = /workspace/gene_expression_predictions/outputs/annotation/homer/mid_vitro_lymph.bed hg38 /workspace/gene_expression_predictions/outputs/annotation/homer/mid_vitro_lymph -size 200 -mask -genomeBg -p 8
