@@ -2,41 +2,31 @@
 """
 src/plot_homer_go_figures.py
 ============================
-Generates two publication-quality figures from HOMER and rGREAT GO:BP outputs:
+Generates two publication-quality figures from HOMER and g:Profiler GO:BP outputs:
 
-  fig8_homer_motifs.pdf  --  Heatmap of -log10(p-value) for the top-N motifs
-                             across all 18 conditions (3 layers x 3 pairs x 2 contexts).
-                             Separate panels for vivo-enriched and vitro-enriched
-                             conditions for clean comparison.
+  fig8_homer_motifs.pdf  --  Heatmap of -log10(p-value) for top motifs across all
+                             18 conditions (3 layers x 3 pairs x 2 contexts).
+                             Significance tiers annotated: ★ q<0.05, † q<0.15.
+                             Bubble overlay shows fold enrichment (% target / % bg).
 
   fig9_go_enrichment.pdf --  Dot-plot of top GO:BP terms per layer x pair x side.
                              Dot size = fold enrichment, colour = -log10(FDR q-value).
-                             Faceted as 3 x 3 grid (layers x pairs).
+                             Faceted as 2 x 3 grid (sides x pairs).
 
 Usage:
     python3 src/plot_homer_go_figures.py \
         --annotation_dir outputs/annotation \
         --figures_dir    results/figures \
         --layers         "early mid late" \
-        --n_top_motifs   10 \
+        --n_top_motifs   15 \
         --n_top_go       10
-
-Expected directory layout (produced by run_annotation.sh v2):
-    outputs/annotation/
-        homer/
-            early_vitro_blood/knownResults.txt
-            early_vivo_blood/knownResults.txt
-            ...  (18 directories total)
-        go/
-            early_vitro_blood_go.tsv
-            early_vivo_blood_go.tsv
-            ...  (18 files total)
 """
 
 import argparse
 import os
 import re
 import warnings
+from collections import Counter
 from pathlib import Path
 
 import numpy as np
@@ -46,11 +36,11 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 from matplotlib.lines import Line2D
-import matplotlib.gridspec as gridspec
+from matplotlib.patches import FancyBboxPatch
 
 warnings.filterwarnings("ignore", category=UserWarning)
 
-# ── Colour palette ────────────────────────────────────────────────────────────
+# ── Colour palette ─────────────────────────────────────────────────────────────
 VITRO_COL = "#E04B4B"
 VIVO_COL  = "#3A7DC9"
 LAYERS    = ["early", "mid", "late"]
@@ -63,6 +53,9 @@ PAIR_LABELS  = {
     "lymph": "Lymph\n(GM12878/NaiveB)",
 }
 
+Q_SIG   = 0.05   # FDR threshold for ★
+Q_TREND = 0.15   # FDR threshold for †
+
 
 # =============================================================================
 # Parsers
@@ -70,54 +63,86 @@ PAIR_LABELS  = {
 
 def parse_homer_known(homer_dir: str, n: int = 10) -> pd.DataFrame:
     """
-    Parse HOMER knownResults.txt into a DataFrame with columns:
-        motif_name, log_pvalue (negative, so larger = more significant)
-    Returns empty DataFrame if file not found.
+    Parse HOMER knownResults.txt.
+    Returns: motif_name, pval, qval, neg_log_p, fold_enrichment
+    Sorted ascending by pval, deduplicated by TF name.
     """
     path = Path(homer_dir) / "knownResults.txt"
     if not path.exists():
-        return pd.DataFrame(columns=["motif_name", "neg_log_p"])
+        return pd.DataFrame(columns=["motif_name", "pval", "qval",
+                                     "neg_log_p", "fold_enrichment"])
     try:
-        # comment=None so column names containing "#" are not truncated
         df = pd.read_csv(path, sep="\t", comment=None)
-        # Normalise column names (HOMER uses varying capitalisations)
         df.columns = [c.strip().lower().replace(" ", "_") for c in df.columns]
-        # Find the p-value column
-        pcol = next((c for c in df.columns if "p-value" in c or "pvalue" in c
-                     or c == "p_value"), None)
-        if pcol is None:
-            return pd.DataFrame(columns=["motif_name", "neg_log_p"])
+
         namecol = df.columns[0]
-        df = df[[namecol, pcol]].copy()
-        df.columns = ["motif_name", "pval"]
+        pcol = next((c for c in df.columns
+                     if "p-value" in c or "pvalue" in c or c == "p_value"), None)
+        qcol = next((c for c in df.columns
+                     if "benjamini" in c or "q-value" in c or "qvalue" in c), None)
+        pct_t_col = next((c for c in df.columns
+                          if "%" in c and "target" in c), None)
+        pct_b_col = next((c for c in df.columns
+                          if "%" in c and "background" in c), None)
+
+        if pcol is None:
+            return pd.DataFrame(columns=["motif_name", "pval", "qval",
+                                         "neg_log_p", "fold_enrichment"])
+
+        keep = [namecol, pcol]
+        if qcol:     keep.append(qcol)
+        if pct_t_col: keep.append(pct_t_col)
+        if pct_b_col: keep.append(pct_b_col)
+
+        df = df[keep].copy()
+        rn = {namecol: "motif_name", pcol: "pval"}
+        if qcol:     rn[qcol]     = "qval"
+        if pct_t_col: rn[pct_t_col] = "pct_target"
+        if pct_b_col: rn[pct_b_col] = "pct_bg"
+        df = df.rename(columns=rn)
+
         df["motif_name"] = df["motif_name"].astype(str)
         df["pval"] = pd.to_numeric(df["pval"], errors="coerce")
-        df = df.dropna().sort_values("pval")
-        # Clean motif name: handle both HOMER format (SP1(Zf)/...) and
-        # g:Profiler format (Factor: SP1; motif: ...)
+        df["qval"] = pd.to_numeric(df.get("qval", pd.Series(dtype=float)),
+                                   errors="coerce") if "qval" in df.columns else np.nan
+
+        # Fold enrichment from % target / % background
+        if "pct_target" in df.columns and "pct_bg" in df.columns:
+            def _pct(s):
+                return pd.to_numeric(
+                    s.astype(str).str.rstrip("%"), errors="coerce")
+            pt = _pct(df["pct_target"])
+            pb = _pct(df["pct_bg"]).clip(lower=0.01)
+            df["fold_enrichment"] = pt / pb
+        else:
+            df["fold_enrichment"] = np.nan
+
+        df = df.dropna(subset=["pval"]).sort_values("pval")
+
         def _clean(name):
-            import re
             m = re.match(r'Factor:\s*([^;]+)', name)
             if m:
                 return m.group(1).strip()
             return name.split("(")[0].split("/")[0].strip()
+
         df["motif_name"] = df["motif_name"].apply(_clean)
-        # Deduplicate: keep best p-value per TF name
         df = df.drop_duplicates(subset="motif_name").head(n)
-        # Guard against log(0)
         df["pval"] = df["pval"].clip(lower=1e-300)
         df["neg_log_p"] = -np.log10(df["pval"])
-        return df[["motif_name", "neg_log_p"]].reset_index(drop=True)
+
+        return df[["motif_name", "pval", "qval",
+                   "neg_log_p", "fold_enrichment"]].reset_index(drop=True)
+
     except Exception as exc:
         print(f"  WARNING: could not parse {path}: {exc}")
-        return pd.DataFrame(columns=["motif_name", "neg_log_p"])
+        return pd.DataFrame(columns=["motif_name", "pval", "qval",
+                                     "neg_log_p", "fold_enrichment"])
 
 
 def parse_go_tsv(tsv_path: str, n: int = 10) -> pd.DataFrame:
     """
-    Parse rGREAT GO:BP TSV into a DataFrame with columns:
-        description, fold_enrichment, neg_log_q
-    Returns empty DataFrame if file not found.
+    Parse g:Profiler GO:BP TSV.
+    Returns: description, fold_enrichment, neg_log_q
     """
     path = Path(tsv_path)
     if not path.exists():
@@ -125,13 +150,10 @@ def parse_go_tsv(tsv_path: str, n: int = 10) -> pd.DataFrame:
     try:
         df = pd.read_csv(path, sep="\t")
         df.columns = [c.strip().lower().replace(" ", "_") for c in df.columns]
-        # Required columns
         if "description" not in df.columns:
             return pd.DataFrame(columns=["description", "fold_enrichment", "neg_log_q"])
-        # Find fold enrichment column
         fcol = next((c for c in df.columns
                      if "fold" in c or "enrichment" in c), None)
-        # Find adjusted p-value column
         qcol = next((c for c in df.columns
                      if "adjust" in c or "p_adjust" in c or "fdr" in c
                      or "q_value" in c), None)
@@ -144,7 +166,6 @@ def parse_go_tsv(tsv_path: str, n: int = 10) -> pd.DataFrame:
         df = df.dropna().sort_values("q").head(n)
         df["q"] = df["q"].clip(lower=1e-300)
         df["neg_log_q"] = -np.log10(df["q"])
-        # Truncate long GO term names
         df["description"] = df["description"].str[:45]
         return df[["description", "fold_enrichment", "neg_log_q"]].reset_index(drop=True)
     except Exception as exc:
@@ -153,47 +174,100 @@ def parse_go_tsv(tsv_path: str, n: int = 10) -> pd.DataFrame:
 
 
 # =============================================================================
-# Fig 8 — HOMER motif enrichment heatmap
+# Fig 8 — HOMER motif enrichment heatmap (improved)
 # =============================================================================
 
-def make_fig8_homer(annotation_dir: str, figures_dir: str,
-                    layers: list, n_top: int = 10) -> None:
+def _build_motif_priority_list(all_data: dict, n_top: int) -> list:
     """
-    Two-panel heatmap:
-      Left  panel: vivo conditions (3 layers x 3 pairs = 9 rows)
-      Right panel: vitro conditions (3 layers x 3 pairs = 9 rows)
-    Columns = top motifs (union of top-N across all conditions).
-    Colour = -log10(p-value); grey = not tested / not significant.
+    Build ordered motif list with three priority tiers:
+      1. Any motif FDR-significant (q < Q_SIG) in at least one condition
+      2. Any motif trending (Q_SIG <= q < Q_TREND) in at least one condition
+      3. Top motifs by frequency of appearance in per-condition top-5 lists
+    Within each tier, order by best -log10(p) across conditions.
+    Total capped at n_top.
+    """
+    # all_data: key -> {"motif": {"neg_log_p": float, "qval": float, "fold": float}}
+    best_nlp  = {}   # motif -> best neg_log_p across conditions
+    best_q    = {}   # motif -> best qval across conditions
+
+    for cond_dict in all_data.values():
+        for motif, vals in cond_dict.items():
+            nlp = vals["neg_log_p"]
+            q   = vals["qval"]
+            if motif not in best_nlp or nlp > best_nlp[motif]:
+                best_nlp[motif] = nlp
+            if motif not in best_q or (not np.isnan(q) and
+               (np.isnan(best_q.get(motif, np.nan)) or q < best_q[motif])):
+                best_q[motif] = q
+
+    tier1 = sorted(
+        [m for m, q in best_q.items() if not np.isnan(q) and q < Q_SIG],
+        key=lambda m: -best_nlp[m])
+    tier2 = sorted(
+        [m for m, q in best_q.items()
+         if not np.isnan(q) and Q_SIG <= q < Q_TREND and m not in tier1],
+        key=lambda m: -best_nlp[m])
+
+    # frequency tier: top-5 per condition by p-value
+    freq_counts: Counter = Counter()
+    for cond_dict in all_data.values():
+        top5 = sorted(cond_dict.keys(),
+                      key=lambda m: -cond_dict[m]["neg_log_p"])[:5]
+        freq_counts.update(top5)
+
+    already = set(tier1) | set(tier2)
+    tier3 = [m for m, _ in freq_counts.most_common()
+             if m not in already]
+
+    ordered = tier1 + tier2 + tier3
+    return ordered[:n_top]
+
+
+def make_fig8_homer(annotation_dir: str, figures_dir: str,
+                    layers: list, n_top: int = 15) -> None:
+    """
+    Heatmap of -log10(p-value) for top motifs across 18 conditions.
+
+    Improvements over v1:
+    - Top-5 motifs per condition (not just top-N by frequency)
+    - Priority union: q<0.05 motifs first, then q<0.15, then frequent
+    - Significance tier annotation: ★ q<0.05, † q<0.15
+    - Bubble overlay: circle size = fold enrichment (% target / % background)
+    - Colormap masked so p >= 0.2 cells are grey (not falsely coloured)
+    - Footer note on chr8/chr9 scope and genome-wide recommendation
     """
     homer_base = Path(annotation_dir) / "homer"
 
-    # ── Collect all data ─────────────────────────────────────────────────────
-    # Load many more motifs per condition than we'll display: this fills in
-    # cells for motifs that are significant but ranked outside the top-N,
-    # preventing the heatmap from appearing half-empty.
-    all_data = {}   # key: (layer, side, pair) -> {motif_name: neg_log_p}
+    # ── Load all data ──────────────────────────────────────────────────────────
+    all_data = {}
     for layer in layers:
         for side in SIDES:
             for pair in PAIRS:
-                tag   = f"{layer}_{side}_{pair}"
-                hdir  = homer_base / tag
-                df    = parse_homer_known(str(hdir), n=200)
-                all_data[(layer, side, pair)] = dict(
-                    zip(df["motif_name"], df["neg_log_p"])
-                ) if not df.empty else {}
+                tag  = f"{layer}_{side}_{pair}"
+                hdir = homer_base / tag
+                df   = parse_homer_known(str(hdir), n=200)
+                if df.empty:
+                    all_data[(layer, side, pair)] = {}
+                else:
+                    all_data[(layer, side, pair)] = {
+                        row["motif_name"]: {
+                            "neg_log_p":       row["neg_log_p"],
+                            "qval":            row["qval"],
+                            "fold_enrichment": row["fold_enrichment"],
+                        }
+                        for _, row in df.iterrows()
+                    }
 
-    # ── Build union motif list (top-N most frequently appearing) ─────────────
-    from collections import Counter
-    motif_counts: Counter = Counter()
-    for d in all_data.values():
-        motif_counts.update(d.keys())
-    if not motif_counts:
-        print("  WARNING: No HOMER results found. Saving empty placeholder for fig8.")
+    # ── Select motifs ──────────────────────────────────────────────────────────
+    top_motifs = _build_motif_priority_list(all_data, n_top)
+
+    if not top_motifs:
         fig, ax = plt.subplots(figsize=(8, 4))
-        ax.text(0.5, 0.5, "No HOMER motif results found.\n"
+        ax.text(0.5, 0.5,
+                "No HOMER motif results found.\n"
                 "Check outputs/annotation/homer/ for knownResults.txt files.",
-                ha="center", va="center", transform=ax.transAxes, fontsize=11,
-                color="grey")
+                ha="center", va="center", transform=ax.transAxes,
+                fontsize=11, color="grey")
         ax.axis("off")
         fig.suptitle("Fig 8 — HOMER Motif Enrichment (no data)", fontsize=12)
         for ext in ("pdf", "png"):
@@ -202,70 +276,149 @@ def make_fig8_homer(annotation_dir: str, figures_dir: str,
         plt.close(fig)
         return
 
-    top_motifs = [m for m, _ in motif_counts.most_common(n_top)]
-
-    # Row labels: "Early / Blood" etc.
+    # ── Build matrices (rows = conditions, cols = motifs) ─────────────────────
     row_labels = []
     row_keys   = []
     for side in SIDES:
         for layer in layers:
             for pair in PAIRS:
-                row_labels.append(f"{LAYER_LABELS[layer]} | {pair.capitalize()} ({side})")
+                row_labels.append(
+                    f"{LAYER_LABELS[layer]} | {pair.capitalize()} ({side})")
                 row_keys.append((layer, side, pair))
 
-    # Build matrix
-    mat = np.full((len(row_keys), len(top_motifs)), np.nan)
+    n_rows = len(row_keys)
+    n_cols = len(top_motifs)
+
+    mat_nlp  = np.full((n_rows, n_cols), np.nan)   # -log10(p)
+    mat_q    = np.full((n_rows, n_cols), np.nan)   # q-value
+    mat_fold = np.full((n_rows, n_cols), np.nan)   # fold enrichment
+
     for ri, key in enumerate(row_keys):
         for ci, motif in enumerate(top_motifs):
             if motif in all_data[key]:
-                mat[ri, ci] = all_data[key][motif]
+                v = all_data[key][motif]
+                mat_nlp[ri, ci]  = v["neg_log_p"]
+                mat_q[ri, ci]    = v["qval"]
+                mat_fold[ri, ci] = v["fold_enrichment"]
 
-    # ── Plot ─────────────────────────────────────────────────────────────────
-    fig_h = max(6, len(row_keys) * 0.45)
-    fig_w = max(10, len(top_motifs) * 0.85)
+    # Mask cells where p >= 0.2  (-log10(0.2) ≈ 0.7) so they appear grey
+    masked_nlp = np.where(mat_nlp >= -np.log10(0.2), mat_nlp, np.nan)
+
+    # ── Layout ────────────────────────────────────────────────────────────────
+    fig_h = max(7, n_rows * 0.50)
+    fig_w = max(12, n_cols * 0.95)
     fig, ax = plt.subplots(figsize=(fig_w, fig_h))
 
-    vmax = np.nanmax(mat) if not np.all(np.isnan(mat)) else 10.0
-    cmap = plt.cm.YlOrRd
-    cmap.set_bad(color="#E8E8E8")   # grey for NaN
-    im = ax.imshow(mat, aspect="auto", cmap=cmap, vmin=0, vmax=vmax,
-                   interpolation="nearest")
+    vmax = max(4.0, np.nanmax(masked_nlp)) if not np.all(np.isnan(masked_nlp)) else 4.0
+    cmap = plt.cm.YlOrRd.copy()
+    cmap.set_bad(color="#EBEBEB")   # grey for masked / no data
 
-    # Annotate cells with rounded values where significant (> -log10(0.05) ≈ 1.3)
-    for ri in range(mat.shape[0]):
-        for ci in range(mat.shape[1]):
-            if not np.isnan(mat[ri, ci]) and mat[ri, ci] > 1.3:
-                txt_col = "white" if mat[ri, ci] > vmax * 0.65 else "black"
-                ax.text(ci, ri, f"{mat[ri, ci]:.1f}",
-                        ha="center", va="center", fontsize=6.5,
-                        color=txt_col, fontweight="bold")
+    im = ax.imshow(masked_nlp, aspect="auto", cmap=cmap,
+                   vmin=0, vmax=vmax, interpolation="nearest")
 
-    # Dividing line between vivo and vitro blocks
+    # ── Bubble overlay: fold enrichment ───────────────────────────────────────
+    bubble_max_area = 140   # pt² for fold enrichment = 3×
+    for ri in range(n_rows):
+        for ci in range(n_cols):
+            fe = mat_fold[ri, ci]
+            if np.isnan(fe) or fe <= 0:
+                continue
+            area = min(bubble_max_area, (fe / 3.0) * bubble_max_area)
+            ax.scatter(ci, ri, s=area, color="steelblue", alpha=0.45,
+                       edgecolors="white", linewidths=0.4, zorder=3)
+
+    # ── Significance tier annotations ─────────────────────────────────────────
+    for ri in range(n_rows):
+        for ci in range(n_cols):
+            nlp = mat_nlp[ri, ci]
+            q   = mat_q[ri, ci]
+            if np.isnan(nlp) or nlp < -np.log10(0.2):
+                continue
+            txt_col = "white" if nlp > vmax * 0.65 else "black"
+            if not np.isnan(q) and q < Q_SIG:
+                # FDR-significant: bold value + star
+                label = f"{nlp:.1f}★"
+                ax.text(ci, ri, label, ha="center", va="center",
+                        fontsize=7, color=txt_col, fontweight="bold", zorder=4)
+            elif not np.isnan(q) and q < Q_TREND:
+                # Trending: value + dagger
+                label = f"{nlp:.1f}†"
+                ax.text(ci, ri, label, ha="center", va="center",
+                        fontsize=6.5, color=txt_col, fontstyle="italic", zorder=4)
+            else:
+                # Nominal only (p<0.2): show value, no marker
+                ax.text(ci, ri, f"{nlp:.1f}", ha="center", va="center",
+                        fontsize=6, color=txt_col, alpha=0.75, zorder=4)
+
+    # ── Dividing line between vivo / vitro blocks ─────────────────────────────
     n_vivo = len(layers) * len(PAIRS)
     ax.axhline(n_vivo - 0.5, color="white", lw=2.5)
 
-    ax.set_xticks(range(len(top_motifs)))
-    ax.set_xticklabels(top_motifs, rotation=45, ha="right", fontsize=8)
-    ax.set_yticks(range(len(row_keys)))
+    # ── Axes ──────────────────────────────────────────────────────────────────
+    ax.set_xticks(range(n_cols))
+    ax.set_xticklabels(top_motifs, rotation=45, ha="right", fontsize=8.5)
+    ax.set_yticks(range(n_rows))
     ax.set_yticklabels(row_labels, fontsize=7.5)
 
-    # Block labels on right
+    # Highlight FDR-significant motif column labels in bold
+    sig_motifs = set()
+    for cond_dict in all_data.values():
+        for motif, vals in cond_dict.items():
+            if not np.isnan(vals["qval"]) and vals["qval"] < Q_SIG:
+                sig_motifs.add(motif)
+    for tick, label in zip(ax.get_xticklabels(), top_motifs):
+        if label in sig_motifs:
+            tick.set_fontweight("bold")
+            tick.set_color("#B22222")
+
+    # Side block labels
     mid_vivo  = n_vivo / 2 - 0.5
     mid_vitro = n_vivo + len(layers) * len(PAIRS) / 2 - 0.5
-    for y, label, col in [(mid_vivo, "In vivo\n(tissue)", VIVO_COL),
+    for y, label, col in [(mid_vivo,  "In vivo\n(tissue)",    VIVO_COL),
                            (mid_vitro, "In vitro\n(cell line)", VITRO_COL)]:
-        ax.annotate(label, xy=(1.01, 1 - (y + 0.5) / len(row_keys)),
-                    xycoords="axes fraction", fontsize=9, color=col,
-                    fontweight="bold", ha="left", va="center")
+        ax.annotate(label,
+                    xy=(1.01, 1 - (y + 0.5) / n_rows),
+                    xycoords="axes fraction", fontsize=9,
+                    color=col, fontweight="bold",
+                    ha="left", va="center")
 
-    cb = fig.colorbar(im, ax=ax, fraction=0.02, pad=0.12)
-    cb.set_label("$-\\log_{10}(p\\text{-value})$", fontsize=10)
+    # ── Colourbar ─────────────────────────────────────────────────────────────
+    cb = fig.colorbar(im, ax=ax, fraction=0.02, pad=0.13)
+    cb.set_label("$-\\log_{10}(p$-value$)$", fontsize=9)
     cb.ax.tick_params(labelsize=8)
 
-    ax.set_title("HOMER Known Motif Enrichment — Top Context-Divergent SAE Features\n"
-                 "(top-50 CDS features per layer per condition; 200 bp windows, hg38)",
-                 fontsize=11, fontweight="bold", pad=10)
-    ax.set_xlabel("Transcription factor motif", fontsize=10)
+    # ── Legend ────────────────────────────────────────────────────────────────
+    legend_elements = [
+        Line2D([0], [0], marker="o", color="w", markerfacecolor="steelblue",
+               markersize=np.sqrt(bubble_max_area * (fe / 3.0)) * 0.5,
+               alpha=0.65, label=f"Fold enrichment ≈ {fe}×")
+        for fe in [1, 2, 3]
+    ] + [
+        Line2D([0], [0], linestyle="none", marker="$★$", color="#B22222",
+               markersize=8, label=f"★  FDR q < {Q_SIG}"),
+        Line2D([0], [0], linestyle="none", marker="$†$", color="dimgrey",
+               markersize=8, label=f"†  FDR q < {Q_TREND}"),
+    ]
+    ax.legend(handles=legend_elements, loc="upper left",
+              bbox_to_anchor=(0.0, -0.22), ncol=5,
+              fontsize=8, frameon=True, edgecolor="#CCCCCC")
+
+    # ── Titles & caption ──────────────────────────────────────────────────────
+    ax.set_title(
+        "HOMER Known Motif Enrichment — Top Context-Divergent SAE Features\n"
+        "(findMotifsGenome.pl, hg38, -size 200 -mask; top-50 CDS features "
+        "per layer per condition)",
+        fontsize=10, fontweight="bold", pad=10)
+    ax.set_xlabel("Transcription factor motif", fontsize=9)
+
+    fig.text(
+        0.5, -0.02,
+        "Note: analysis restricted to chr8/chr9 windows; "
+        "genome-wide extension recommended to improve statistical power. "
+        "Grey cells: p ≥ 0.2 (not nominally enriched). "
+        "Bubble size indicates fold enrichment (% target / % background).",
+        ha="center", fontsize=7.5, color="dimgrey",
+        wrap=True)
 
     fig.tight_layout()
     for ext in ("pdf", "png"):
@@ -276,16 +429,15 @@ def make_fig8_homer(annotation_dir: str, figures_dir: str,
 
 
 # =============================================================================
-# Fig 9 — GO:BP enrichment dot-plot
+# Fig 9 — GO:BP enrichment dot-plot (unchanged)
 # =============================================================================
 
 def make_fig9_go(annotation_dir: str, figures_dir: str,
                  layers: list, n_top: int = 10) -> None:
     """
     2-row x 3-column facet grid (sides x pairs).
-    Each facet: grouped dot-plot where each row is a unique GO:BP term and
-    each layer gets its own dot at a slight y-offset — making cross-layer
-    comparison direct.  Dot size = fold enrichment, colour = layer depth.
+    Each facet: grouped dot-plot; rows = GO:BP terms, dots = layers.
+    Dot size = fold enrichment, colour = layer depth.
     """
     go_dir = Path(annotation_dir) / "go"
 
@@ -294,7 +446,6 @@ def make_fig9_go(annotation_dir: str, figures_dir: str,
         "mid":   "#FFBE7A",
         "late":  "#FA7F6F",
     }
-    # Small y-offsets so dots for the same term don't overlap
     layer_offsets = {layers[i]: (i - (len(layers) - 1) / 2) * 0.22
                      for i in range(len(layers))}
 
@@ -307,7 +458,7 @@ def make_fig9_go(annotation_dir: str, figures_dir: str,
     )
     fig.suptitle(
         "GO:BP Enrichment — Top Context-Divergent SAE Features\n"
-        "(rGREAT; top-50 CDS features per layer per condition; FDR < 0.05)",
+        "(g:Profiler; top-50 CDS features per layer per condition; FDR < 0.05)",
         fontsize=12, fontweight="bold",
     )
 
@@ -319,7 +470,6 @@ def make_fig9_go(annotation_dir: str, figures_dir: str,
             for layer in layers:
                 tag      = f"{layer}_{side}_{pair}"
                 tsv_path = go_dir / f"{tag}_go.tsv"
-                # Load more than n_top so the union covers interesting terms
                 df = parse_go_tsv(str(tsv_path), n=n_top * 3)
                 if df.empty:
                     continue
@@ -329,24 +479,22 @@ def make_fig9_go(annotation_dir: str, figures_dir: str,
             if not all_terms_rows:
                 ax.text(0.5, 0.5, "No GO data", ha="center", va="center",
                         transform=ax.transAxes, fontsize=9, color="grey")
-                ax.set_title(f"{PAIR_LABELS[pair].replace(chr(10),' ')} / {side}",
-                             fontsize=9, fontweight="bold",
-                             color=VIVO_COL if side == "vivo" else VITRO_COL)
+                ax.set_title(
+                    f"{PAIR_LABELS[pair].replace(chr(10),' ')} / {side}",
+                    fontsize=9, fontweight="bold",
+                    color=VIVO_COL if side == "vivo" else VITRO_COL)
                 ax.axis("off")
                 continue
 
             any_data = True
             combined = pd.concat(all_terms_rows, ignore_index=True)
 
-            # Select top-n_top unique terms by best q across all layers,
-            # then order bottom-to-top so the most significant is at the top.
             term_best_q = combined.groupby("description")["neg_log_q"].max()
-            top_terms   = term_best_q.sort_values(ascending=False).head(n_top).index.tolist()
-            # y=0 is bottom; reverse list so most significant ends up at top
+            top_terms   = (term_best_q.sort_values(ascending=False)
+                           .head(n_top).index.tolist())
             term_to_y   = {term: i for i, term in enumerate(reversed(top_terms))}
 
             for term, y_pos in term_to_y.items():
-                # Alternating row shading for readability
                 shade = "#F4F4F4" if y_pos % 2 == 0 else "white"
                 ax.axhspan(y_pos - 0.48, y_pos + 0.48, color=shade, zorder=0)
 
@@ -385,21 +533,22 @@ def make_fig9_go(annotation_dir: str, figures_dir: str,
                 fontsize=9, fontweight="bold", color=title_col,
             )
 
-    # Shared legend: layer colours + dot-size key
     legend_handles = [
-        Line2D([0], [0], marker="o", color="w", markerfacecolor=layer_colors[l],
+        Line2D([0], [0], marker="o", color="w",
+               markerfacecolor=layer_colors[l],
                markersize=9, label=LAYER_LABELS[l])
         for l in layers
-    ]
-    size_handles = [
-        Line2D([0], [0], marker="o", color="w", markerfacecolor="#999999",
+    ] + [
+        Line2D([0], [0], marker="o", color="w",
+               markerfacecolor="#999999",
                markersize=np.sqrt(fe * 40) * 0.6,
                label=f"Fold enrichment = {fe}")
         for fe in [2, 5, 10]
     ]
-    fig.legend(handles=legend_handles + size_handles,
+    fig.legend(handles=legend_handles,
                loc="lower center", ncol=6, fontsize=8.5,
-               bbox_to_anchor=(0.5, -0.04), frameon=True, edgecolor="#CCCCCC")
+               bbox_to_anchor=(0.5, -0.04), frameon=True,
+               edgecolor="#CCCCCC")
 
     if not any_data:
         print("  WARNING: No GO results found. Saving empty placeholder for fig9.")
@@ -424,18 +573,12 @@ def make_fig9_go(annotation_dir: str, figures_dir: str,
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Generate HOMER motif and GO:BP enrichment figures."
-    )
-    parser.add_argument("--annotation_dir", required=True,
-                        help="Path to outputs/annotation/")
-    parser.add_argument("--figures_dir",    required=True,
-                        help="Path to results/figures/")
-    parser.add_argument("--layers",         default="early mid late",
-                        help="Space-separated list of layer names")
-    parser.add_argument("--n_top_motifs",   type=int, default=10,
-                        help="Top N motifs to show per condition")
-    parser.add_argument("--n_top_go",       type=int, default=10,
-                        help="Top N GO terms to show per condition")
+        description="Generate HOMER motif and GO:BP enrichment figures.")
+    parser.add_argument("--annotation_dir", required=True)
+    parser.add_argument("--figures_dir",    required=True)
+    parser.add_argument("--layers",         default="early mid late")
+    parser.add_argument("--n_top_motifs",   type=int, default=15)
+    parser.add_argument("--n_top_go",       type=int, default=10)
     args = parser.parse_args()
 
     layers = args.layers.split()
