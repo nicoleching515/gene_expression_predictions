@@ -1,0 +1,1 @@
+cmd = /workspace/gene_expression_predictions/outputs/annotation/homer_encode/peaks/HepG2_specific.bed hg38 /workspace/gene_expression_predictions/outputs/annotation/homer_encode/homer/HepG2_vitro_liver -size 200 -mask -genomeBg -p 8

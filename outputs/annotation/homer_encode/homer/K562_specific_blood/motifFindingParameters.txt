@@ -1,0 +1,1 @@
+cmd = outputs/annotation/homer_encode/peaks/K562_specific.bed hg38 outputs/annotation/homer_encode/homer/K562_specific_blood -size 200 -mask -genomeBg -p 8

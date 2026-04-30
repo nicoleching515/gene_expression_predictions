@@ -1,0 +1,1 @@
+cmd = /workspace/gene_expression_predictions/outputs/annotation/homer_encode/peaks/K562.bed hg38 /workspace/gene_expression_predictions/outputs/annotation/homer_encode/homer/K562_vitro_blood -size 200 -mask -genomeBg -p 8
