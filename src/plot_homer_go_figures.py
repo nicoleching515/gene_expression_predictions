@@ -168,13 +168,16 @@ def make_fig8_homer(annotation_dir: str, figures_dir: str,
     homer_base = Path(annotation_dir) / "homer"
 
     # ── Collect all data ─────────────────────────────────────────────────────
+    # Load many more motifs per condition than we'll display: this fills in
+    # cells for motifs that are significant but ranked outside the top-N,
+    # preventing the heatmap from appearing half-empty.
     all_data = {}   # key: (layer, side, pair) -> {motif_name: neg_log_p}
     for layer in layers:
         for side in SIDES:
             for pair in PAIRS:
                 tag   = f"{layer}_{side}_{pair}"
                 hdir  = homer_base / tag
-                df    = parse_homer_known(str(hdir), n=n_top)
+                df    = parse_homer_known(str(hdir), n=200)
                 all_data[(layer, side, pair)] = dict(
                     zip(df["motif_name"], df["neg_log_p"])
                 ) if not df.empty else {}
@@ -279,19 +282,21 @@ def make_fig8_homer(annotation_dir: str, figures_dir: str,
 def make_fig9_go(annotation_dir: str, figures_dir: str,
                  layers: list, n_top: int = 10) -> None:
     """
-    3-column x 2-row facet grid (pairs x sides).
-    Each facet: dot-plot of top GO:BP terms (y) vs. -log10(FDR q) (x),
-    dot size = fold enrichment, colour = layer depth.
-    Rows stacked per layer within each facet.
+    2-row x 3-column facet grid (sides x pairs).
+    Each facet: grouped dot-plot where each row is a unique GO:BP term and
+    each layer gets its own dot at a slight y-offset — making cross-layer
+    comparison direct.  Dot size = fold enrichment, colour = layer depth.
     """
     go_dir = Path(annotation_dir) / "go"
 
-    # Colour per layer
     layer_colors = {
         "early": "#8ECFC9",
         "mid":   "#FFBE7A",
         "late":  "#FA7F6F",
     }
+    # Small y-offsets so dots for the same term don't overlap
+    layer_offsets = {layers[i]: (i - (len(layers) - 1) / 2) * 0.22
+                     for i in range(len(layers))}
 
     any_data = False
 
@@ -312,9 +317,10 @@ def make_fig9_go(annotation_dir: str, figures_dir: str,
 
             all_terms_rows = []
             for layer in layers:
-                tag     = f"{layer}_{side}_{pair}"
+                tag      = f"{layer}_{side}_{pair}"
                 tsv_path = go_dir / f"{tag}_go.tsv"
-                df      = parse_go_tsv(str(tsv_path), n=n_top)
+                # Load more than n_top so the union covers interesting terms
+                df = parse_go_tsv(str(tsv_path), n=n_top * 3)
                 if df.empty:
                     continue
                 df["layer"] = layer
@@ -331,32 +337,40 @@ def make_fig9_go(annotation_dir: str, figures_dir: str,
 
             any_data = True
             combined = pd.concat(all_terms_rows, ignore_index=True)
-            # Union of unique GO terms across layers, ordered by best q
-            term_order = (combined.groupby("description")["neg_log_q"]
-                          .max().sort_values(ascending=True).index.tolist())
 
-            y_ticks = []
-            y_pos   = 0
-            layer_gap = 0.6  # vertical separation between layer groups
+            # Select top-n_top unique terms by best q across all layers,
+            # then order bottom-to-top so the most significant is at the top.
+            term_best_q = combined.groupby("description")["neg_log_q"].max()
+            top_terms   = term_best_q.sort_values(ascending=False).head(n_top).index.tolist()
+            # y=0 is bottom; reverse list so most significant ends up at top
+            term_to_y   = {term: i for i, term in enumerate(reversed(top_terms))}
 
-            for layer in layers:
-                sub = combined[combined["layer"] == layer].copy()
-                sub = sub.set_index("description").reindex(term_order).dropna()
-                col = layer_colors[layer]
+            for term, y_pos in term_to_y.items():
+                # Alternating row shading for readability
+                shade = "#F4F4F4" if y_pos % 2 == 0 else "white"
+                ax.axhspan(y_pos - 0.48, y_pos + 0.48, color=shade, zorder=0)
 
-                for _, row in sub.iterrows():
-                    y_ticks.append((y_pos, row.name))
-                    size = max(20, min(300, row["fold_enrichment"] * 40))
-                    ax.scatter(row["neg_log_q"], y_pos, s=size, color=col,
+                for layer in layers:
+                    sub = combined[
+                        (combined["layer"] == layer) &
+                        (combined["description"] == term)
+                    ]
+                    if sub.empty:
+                        continue
+                    row   = sub.iloc[0]
+                    size  = max(20, min(300, row["fold_enrichment"] * 40))
+                    y_dot = y_pos + layer_offsets[layer]
+                    ax.scatter(row["neg_log_q"], y_dot,
+                               s=size, color=layer_colors[layer],
                                edgecolors="white", linewidths=0.5,
-                               alpha=0.85, zorder=3)
-                    y_pos += 1
-                y_pos += layer_gap
+                               alpha=0.88, zorder=3)
 
-            if y_ticks:
-                ys, labs = zip(*y_ticks)
-                ax.set_yticks(list(ys))
-                ax.set_yticklabels(list(labs), fontsize=7)
+            ys   = list(term_to_y.values())
+            labs = list(term_to_y.keys())
+            ax.set_yticks(ys)
+            ax.set_yticklabels(labs, fontsize=7)
+            ax.set_ylim(-0.6, len(top_terms) - 0.4)
+
             ax.axvline(-np.log10(0.05), color="grey", lw=1, ls="--",
                        alpha=0.6, zorder=1)
             ax.set_xlabel("$-\\log_{10}$(FDR $q$)", fontsize=8)
@@ -366,11 +380,12 @@ def make_fig9_go(annotation_dir: str, figures_dir: str,
 
             title_col = VIVO_COL if side == "vivo" else VITRO_COL
             ax.set_title(
-                f"{PAIR_LABELS[pair].replace(chr(10),' ')} | {'In vivo' if side=='vivo' else 'In vitro'}",
+                f"{PAIR_LABELS[pair].replace(chr(10),' ')} | "
+                f"{'In vivo' if side == 'vivo' else 'In vitro'}",
                 fontsize=9, fontweight="bold", color=title_col,
             )
 
-    # Shared legend for layers and dot size
+    # Shared legend: layer colours + dot-size key
     legend_handles = [
         Line2D([0], [0], marker="o", color="w", markerfacecolor=layer_colors[l],
                markersize=9, label=LAYER_LABELS[l])
