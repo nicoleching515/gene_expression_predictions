@@ -25,6 +25,7 @@ Usage:
 import argparse
 import os
 import re
+import sys
 import warnings
 from collections import Counter
 from pathlib import Path
@@ -39,6 +40,9 @@ from matplotlib.lines import Line2D
 from matplotlib.patches import FancyBboxPatch
 
 warnings.filterwarnings("ignore", category=UserWarning)
+
+# Make src/ importable when script is run from repo root
+sys.path.insert(0, str(Path(__file__).parent))
 
 # ── Colour palette ─────────────────────────────────────────────────────────────
 VITRO_COL = "#E04B4B"
@@ -223,20 +227,55 @@ def _build_motif_priority_list(all_data: dict, n_top: int) -> list:
     return ordered[:n_top]
 
 
+def _load_homer_condition(hdir: str, n: int, source: str) -> pd.DataFrame:
+    """
+    Load motif enrichment for one condition, dispatching on source.
+
+    source: "known" | "denovo" | "auto_denovo" | "auto_known" | "merge"
+    """
+    if source == "known":
+        return parse_homer_known(hdir, n=n)
+    try:
+        from parse_homer_denovo import parse_homer_auto, parse_homer_denovo
+    except ImportError:
+        return parse_homer_known(hdir, n=n)
+
+    if source == "denovo":
+        return parse_homer_denovo(hdir, n=n)
+    elif source in ("auto_denovo", "auto"):
+        return parse_homer_auto(hdir, n=n, prefer="denovo")
+    elif source == "auto_known":
+        return parse_homer_auto(hdir, n=n, prefer="known")
+    elif source == "merge":
+        return parse_homer_auto(hdir, n=n, prefer="merge")
+    return parse_homer_known(hdir, n=n)
+
+
 def make_fig8_homer(annotation_dir: str, figures_dir: str,
-                    layers: list, n_top: int = 15) -> None:
+                    layers: list, n_top: int = 15,
+                    homer_source: str = "auto_denovo") -> None:
     """
     Heatmap of -log10(p-value) for top motifs across 18 conditions.
 
-    Improvements over v1:
-    - Top-5 motifs per condition (not just top-N by frequency)
-    - Priority union: q<0.05 motifs first, then q<0.15, then frequent
-    - Significance tier annotation: ★ q<0.05, † q<0.15
-    - Bubble overlay: circle size = fold enrichment (% target / % background)
-    - Colormap masked so p >= 0.2 cells are grey (not falsely coloured)
-    - Footer note on chr8/chr9 scope and genome-wide recommendation
+    Parameters
+    ----------
+    homer_source : str
+        Which HOMER result type to use:
+        "known"       – only knownResults.txt (previous behaviour)
+        "denovo"      – only homerResults.html de novo motifs
+        "auto_denovo" – prefer de novo, fall back to known  [default]
+        "auto_known"  – prefer known, fall back to de novo
+        "merge"       – union of both, deduplicated by name
     """
     homer_base = Path(annotation_dir) / "homer"
+
+    source_label = {
+        "known":       "Known TF database (knownResults.txt)",
+        "denovo":      "De novo discovered motifs (homerResults.html)",
+        "auto_denovo": "De novo motifs (fallback: known database)",
+        "auto_known":  "Known database (fallback: de novo)",
+        "merge":       "Merged de novo + known database",
+    }.get(homer_source, homer_source)
 
     # ── Load all data ──────────────────────────────────────────────────────────
     all_data = {}
@@ -244,8 +283,8 @@ def make_fig8_homer(annotation_dir: str, figures_dir: str,
         for side in SIDES:
             for pair in PAIRS:
                 tag  = f"{layer}_{side}_{pair}"
-                hdir = homer_base / tag
-                df   = parse_homer_known(str(hdir), n=200)
+                hdir = str(homer_base / tag)
+                df   = _load_homer_condition(hdir, n=200, source=homer_source)
                 if df.empty:
                     all_data[(layer, side, pair)] = {}
                 else:
@@ -405,17 +444,18 @@ def make_fig8_homer(annotation_dir: str, figures_dir: str,
 
     # ── Titles & caption ──────────────────────────────────────────────────────
     ax.set_title(
-        "HOMER Known Motif Enrichment — Top Context-Divergent SAE Features\n"
-        "(findMotifsGenome.pl, hg38, -size 200 -mask, genome-wide background; "
-        "top-50 CDS features per layer per condition)",
+        f"HOMER Motif Enrichment — Top Context-Divergent SAE Features\n"
+        f"({source_label}; findMotifsGenome.pl hg38 -size 200 -mask -genomeBg; "
+        f"top-50 CDS features per layer per condition)",
         fontsize=10, fontweight="bold", pad=10)
     ax.set_xlabel("Transcription factor motif", fontsize=9)
 
     fig.text(
         0.5, -0.02,
-        "Grey cells: p ≥ 0.2 (not nominally enriched). "
-        "Bubble size indicates fold enrichment (% target / % background). "
-        "Background: 100,000 genome-wide GC-matched random sequences (HOMER -genomeBg).",
+        f"Source: {source_label}. "
+        "Grey cells: p ≥ 0.2. "
+        "Bubble size = fold enrichment (% target / % background). "
+        "Background: 100,000 GC-matched random seqs (HOMER -genomeBg).",
         ha="center", fontsize=7.5, color="dimgrey",
         wrap=True)
 
@@ -578,14 +618,28 @@ def main():
     parser.add_argument("--layers",         default="early mid late")
     parser.add_argument("--n_top_motifs",   type=int, default=15)
     parser.add_argument("--n_top_go",       type=int, default=10)
+    parser.add_argument(
+        "--homer-source",
+        default="auto_denovo",
+        choices=["known", "denovo", "auto_denovo", "auto_known", "merge"],
+        help=(
+            "Which HOMER result type to use for Fig 8. "
+            "'denovo' uses homerResults.html (de novo discovered motifs); "
+            "'known' uses knownResults.txt (TF database matching); "
+            "'auto_denovo' prefers de novo, falls back to known [default]; "
+            "'merge' uses both combined."
+        ),
+    )
     args = parser.parse_args()
 
     layers = args.layers.split()
     os.makedirs(args.figures_dir, exist_ok=True)
 
+    print(f"Homer source mode: {args.homer_source}")
     print("Generating Fig 8: HOMER motif enrichment heatmap...")
     make_fig8_homer(args.annotation_dir, args.figures_dir,
-                    layers, n_top=args.n_top_motifs)
+                    layers, n_top=args.n_top_motifs,
+                    homer_source=args.homer_source)
 
     print("Generating Fig 9: GO:BP enrichment dot-plot...")
     make_fig9_go(args.annotation_dir, args.figures_dir,

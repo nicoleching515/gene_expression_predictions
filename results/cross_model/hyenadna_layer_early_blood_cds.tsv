@@ -1,0 +1,1025 @@
+feature_id	cds	vitro_mean	vivo_mean	t_stat	pval	pval_bonf	significant	pair	layer	model
+77	0.044340506	0.15099135	0.106650844	8.298401	4.3931073e-16	4.4985418e-13	True	blood	early	hyenadna
+1018	-0.04194653	0.12793136	0.16987789	-7.923149	8.463414e-15	8.666536e-12	True	blood	early	hyenadna
+521	0.038373332	0.074648716	0.036275383	7.876714	1.3042359e-14	1.3355376e-11	True	blood	early	hyenadna
+546	-0.008381516	0.29400826	0.30238977	-7.7918677	2.2499228e-14	2.303921e-11	True	blood	early	hyenadna
+313	0.03681712	0.19713187	0.16031475	7.318337	5.780869e-13	5.91961e-10	True	blood	early	hyenadna
+822	-0.039337635	0.12561886	0.1649565	-7.2143455	1.30623e-12	1.3375795e-09	True	blood	early	hyenadna
+740	0.029989257	0.20701593	0.17702667	6.820737	1.6754148e-11	1.7156248e-08	True	blood	early	hyenadna
+970	-0.03161654	0.19278032	0.22439685	-6.7786593	2.6036171e-11	2.666104e-08	True	blood	early	hyenadna
+828	0.039462186	0.124441184	0.084979	6.7357583	3.2166925e-11	3.293893e-08	True	blood	early	hyenadna
+526	0.00799188	0.34762153	0.33962965	6.582248	8.4253e-11	8.627507e-08	True	blood	early	hyenadna
+647	-0.02767758	0.21151991	0.2391975	-6.357904	3.7080397e-10	3.7970327e-07	True	blood	early	hyenadna
+282	0.034963973	0.105344355	0.07038038	6.347014	3.792197e-10	3.8832098e-07	True	blood	early	hyenadna
+356	-0.03230311	0.16884533	0.20114844	-6.3353877	4.153984e-10	4.2536797e-07	True	blood	early	hyenadna
+397	0.029208958	0.1990187	0.16980974	6.2705913	5.641217e-10	5.776606e-07	True	blood	early	hyenadna
+702	0.024463445	0.21359207	0.18912862	6.24331	6.5598293e-10	6.717265e-07	True	blood	early	hyenadna
+135	-0.031785592	0.15457584	0.18636143	-6.0800138	1.9274735e-09	1.9737329e-06	True	blood	early	hyenadna
+611	-0.029947162	0.16486955	0.19481671	-5.9370513	4.520904e-09	4.629406e-06	True	blood	early	hyenadna
+517	0.031396717	0.14782979	0.11643307	5.924983	4.6143662e-09	4.725111e-06	True	blood	early	hyenadna
+609	-0.027413152	0.05174139	0.07915454	-5.896125	5.323805e-09	5.4515763e-06	True	blood	early	hyenadna
+765	-0.032038942	0.13172634	0.16376528	-5.871908	6.4373906e-09	6.591888e-06	True	blood	early	hyenadna
+681	-0.029940337	0.09399432	0.12393466	-5.692468	1.7574967e-08	1.7996766e-05	True	blood	early	hyenadna
+340	0.025159063	0.05261899	0.027459929	5.5198627	4.806742e-08	4.922104e-05	True	blood	early	hyenadna
+781	0.026553404	0.07209881	0.045545403	5.2108626	2.455514e-07	0.00025144464	True	blood	early	hyenadna
+998	0.02074708	0.2247183	0.20397122	5.088649	4.409946e-07	0.00045157847	True	blood	early	hyenadna
+871	-0.026048258	0.13702764	0.1630759	-4.9356127	9.809789e-07	0.0010045224	True	blood	early	hyenadna
+453	-0.018461138	0.19989519	0.21835633	-4.8770313	1.3458299e-06	0.0013781298	True	blood	early	hyenadna
+396	0.026999012	0.12559964	0.098600626	4.7788386	2.106275e-06	0.0021568255	True	blood	early	hyenadna
+68	0.014026169	0.021678025	0.0076518557	4.684172	3.4407685e-06	0.003523347	True	blood	early	hyenadna
+26	-0.02111299	0.05991662	0.08102961	-4.3058505	1.859665e-05	0.019042969	True	blood	early	hyenadna
+824	-0.0040661097	0.29083064	0.29489675	-4.140781	3.885588e-05	0.03978842	True	blood	early	hyenadna
+606	-0.021073312	0.17572722	0.19680053	-4.0506587	5.629958e-05	0.05765077	False	blood	early	hyenadna
+706	-0.015229844	0.034681182	0.049911026	-3.8814178	0.00011156218	0.11423967	False	blood	early	hyenadna
+772	0.013376206	0.22179762	0.20842141	3.8809648	0.00011192511	0.11461131	False	blood	early	hyenadna
+535	-0.0063542426	0.26397774	0.27033198	-3.78113	0.000168916	0.17296998	False	blood	early	hyenadna
+245	-0.019817717	0.10052	0.12033772	-3.6979253	0.00023220872	0.23778173	False	blood	early	hyenadna
+505	0.0031427443	0.31422374	0.311081	3.671345	0.00025860954	0.26481616	False	blood	early	hyenadna
+48	-0.011580721	0.2428387	0.25441942	-3.6612408	0.0002697604	0.27623466	False	blood	early	hyenadna
+349	-0.013682365	0.03227365	0.045956016	-3.5627818	0.00038656313	0.39584064	False	blood	early	hyenadna
+334	-0.017005533	0.14995725	0.16696279	-3.359745	0.00081865117	0.8382988	False	blood	early	hyenadna
+346	-0.017742686	0.087046124	0.10478881	-3.3572426	0.0008239037	0.8436774	False	blood	early	hyenadna
+476	0.006993591	0.0101141855	0.0031205944	3.3456118	0.00087049353	0.8913854	False	blood	early	hyenadna
+141	-0.0031490624	0.26837215	0.2715212	-3.3055046	0.000998044	1.0	False	blood	early	hyenadna
+157	-0.006493628	0.25448734	0.26098096	-3.2837422	0.001076042	1.0	False	blood	early	hyenadna
+27	-0.014705744	0.049467828	0.06417357	-3.2810264	0.0010767526	1.0	False	blood	early	hyenadna
+506	0.013777293	0.04451048	0.030733187	3.2687266	0.001131052	1.0	False	blood	early	hyenadna
+136	-0.017274097	0.1208912	0.1381653	-3.2447417	0.0012253748	1.0	False	blood	early	hyenadna
+738	0.006412971	0.008508633	0.0020956623	3.1493034	0.001717797	1.0	False	blood	early	hyenadna
+11	0.008622345	0.018284323	0.009661978	3.0809546	0.0021469076	1.0	False	blood	early	hyenadna
+508	-0.011538759	0.20685208	0.21839084	-3.0677755	0.0022379009	1.0	False	blood	early	hyenadna
+907	0.0054967105	0.24647804	0.24098133	3.0317674	0.0025022966	1.0	False	blood	early	hyenadna
+391	-0.0008186103	0.0	0.0008186103	-3.0017178	0.0027106232	1.0	False	blood	early	hyenadna
+568	-0.00746426	0.23342267	0.24088693	-2.933523	0.003454508	1.0	False	blood	early	hyenadna
+664	0.0057205977	0.0090719	0.0033513017	2.8997514	0.003863225	1.0	False	blood	early	hyenadna
+102	0.0061842888	0.010526974	0.004342685	2.8752236	0.004170253	1.0	False	blood	early	hyenadna
+472	0.005445808	0.27156797	0.26612216	2.8307707	0.0047427886	1.0	False	blood	early	hyenadna
+969	-0.0067623965	0.010663427	0.017425824	-2.798465	0.0052380217	1.0	False	blood	early	hyenadna
+645	0.0043072607	0.0060807494	0.0017734886	2.6918592	0.007297508	1.0	False	blood	early	hyenadna
+633	-0.0006060678	0.0	0.0006060678	-2.648506	0.0081346305	1.0	False	blood	early	hyenadna
+549	-0.0042341575	0.004430567	0.008664724	-2.5626812	0.01053356	1.0	False	blood	early	hyenadna
+170	0.0069434047	0.24231303	0.23536962	2.545414	0.011088252	1.0	False	blood	early	hyenadna
+388	0.0036211433	0.0049170223	0.001295879	2.5064676	0.0124539975	1.0	False	blood	early	hyenadna
+450	-0.002610594	0.2599619	0.2625725	-2.4840543	0.013219861	1.0	False	blood	early	hyenadna
+806	-0.002986523	0.0024628125	0.0054493356	-2.4563625	0.014184375	1.0	False	blood	early	hyenadna
+657	-0.00051854405	0.0	0.00051854405	-2.45182	0.014280132	1.0	False	blood	early	hyenadna
+571	-0.011898473	0.14886925	0.16076772	-2.3538415	0.018828833	1.0	False	blood	early	hyenadna
+317	0.004555735	0.007990511	0.003434776	2.345074	0.019325051	1.0	False	blood	early	hyenadna
+556	-0.0030671656	0.26788485	0.27095202	-2.3019423	0.021587942	1.0	False	blood	early	hyenadna
+254	0.012287393	0.111422196	0.0991348	2.3019378	0.021597644	1.0	False	blood	early	hyenadna
+773	0.00643791	0.018712042	0.012274132	2.2750642	0.023197927	1.0	False	blood	early	hyenadna
+587	0.011860684	0.09401021	0.08214953	2.2705865	0.023442905	1.0	False	blood	early	hyenadna
+795	0.0029852523	0.0041232198	0.0011379675	2.2420864	0.025313057	1.0	False	blood	early	hyenadna
+153	-0.00045016373	0.0	0.00045016373	-2.2372127	0.025358438	1.0	False	blood	early	hyenadna
+298	0.0046219733	0.00940163	0.0047796564	2.2315748	0.025974292	1.0	False	blood	early	hyenadna
+426	-0.006326884	0.24407178	0.25039867	-2.2064862	0.027630918	1.0	False	blood	early	hyenadna
+24	0.008726448	0.22314852	0.21442208	2.1523967	0.031663258	1.0	False	blood	early	hyenadna
+610	0.0061383694	0.2255328	0.21939443	2.1382403	0.03276797	1.0	False	blood	early	hyenadna
+487	0.0053299107	0.013701772	0.008371862	2.1242204	0.034002792	1.0	False	blood	early	hyenadna
+466	0.009398311	0.18643293	0.17703462	2.1161563	0.034633145	1.0	False	blood	early	hyenadna
+309	-0.010540336	0.14799389	0.15853423	-2.0706055	0.038725846	1.0	False	blood	early	hyenadna
+459	-0.0045516193	0.25624737	0.260799	-2.0328429	0.042417236	1.0	False	blood	early	hyenadna
+461	-0.00037671122	0.0	0.00037671122	-1.9928104	0.046388514	1.0	False	blood	early	hyenadna
+932	-0.0031214356	0.2637967	0.26691812	-1.9610066	0.050232038	1.0	False	blood	early	hyenadna
+926	0.006324932	0.22980675	0.22348182	1.9226825	0.0548727	1.0	False	blood	early	hyenadna
+874	0.0027580755	0.0038920993	0.0011340238	1.8767009	0.0610406	1.0	False	blood	early	hyenadna
+951	0.005341623	0.019004775	0.013663152	1.8221115	0.06884674	1.0	False	blood	early	hyenadna
+950	0.0040697455	0.2511141	0.24704435	1.7161117	0.086511716	1.0	False	blood	early	hyenadna
+211	-0.006373383	0.03213692	0.038510304	-1.5975507	0.11051471	1.0	False	blood	early	hyenadna
+74	0.0012144399	0.0013112121	9.6772164e-05	1.5923455	0.11186739	1.0	False	blood	early	hyenadna
+573	0.002363551	0.004761328	0.002397777	1.5690057	0.11712396	1.0	False	blood	early	hyenadna
+261	-0.0049833655	0.21062414	0.21560751	-1.5609432	0.11896277	1.0	False	blood	early	hyenadna
+1	0.0033961814	0.010530058	0.007133877	1.5335087	0.12558797	1.0	False	blood	early	hyenadna
+625	0.0020655994	0.0022642468	0.0001986474	1.4901235	0.13674578	1.0	False	blood	early	hyenadna
+621	0.0020600208	0.0022592598	0.00019923897	1.4853088	0.13801563	1.0	False	blood	early	hyenadna
+184	-0.00413695	0.24825388	0.25239083	-1.4711334	0.14165524	1.0	False	blood	early	hyenadna
+303	0.0082690865	0.10745371	0.099184625	1.4658362	0.14309317	1.0	False	blood	early	hyenadna
+9	0.0014747027	0.0017106583	0.00023595557	1.4559565	0.1459481	1.0	False	blood	early	hyenadna
+901	0.0012824947	0.0017516613	0.00046916655	1.4212817	0.1557457	1.0	False	blood	early	hyenadna
+906	-0.00017544003	0.0	0.00017544003	-1.414212	0.15742165	1.0	False	blood	early	hyenadna
+807	-0.0001810224	0.0	0.0001810224	-1.4140998	0.15745458	1.0	False	blood	early	hyenadna
+501	0.0007912583	0.0007912583	0.0	1.4155111	0.15748881	1.0	False	blood	early	hyenadna
+407	0.00080784684	0.00080784684	0.0	1.4154222	0.15751484	1.0	False	blood	early	hyenadna
+106	-0.00018768074	0.0	0.00018768074	-1.4082447	0.1591804	1.0	False	blood	early	hyenadna
+971	-0.0017184615	0.3035753	0.30529377	-1.4075891	0.15958503	1.0	False	blood	early	hyenadna
+660	0.004200071	0.22597855	0.22177848	1.3949465	0.16340594	1.0	False	blood	early	hyenadna
+98	-0.00024235727	0.0	0.00024235727	-1.358761	0.1743424	1.0	False	blood	early	hyenadna
+552	0.00078528415	0.0008728659	8.7581764e-05	1.2591656	0.20848759	1.0	False	blood	early	hyenadna
+86	0.0007160142	0.0008008282	8.481405e-05	1.2516098	0.2112248	1.0	False	blood	early	hyenadna
+897	0.00087966694	0.0009851652	0.00010549832	1.2496569	0.2119366	1.0	False	blood	early	hyenadna
+63	0.00071983924	0.00080616947	8.633021e-05	1.2496566	0.21193674	1.0	False	blood	early	hyenadna
+46	0.00077540067	0.00086839433	9.299368e-05	1.2496563	0.2119368	1.0	False	blood	early	hyenadna
+193	0.00071977125	0.0008060933	8.632205e-05	1.2496563	0.2119368	1.0	False	blood	early	hyenadna
+636	0.00087266846	0.0009773275	0.00010465899	1.2496562	0.21193685	1.0	False	blood	early	hyenadna
+500	0.0007578593	0.0008487493	9.088995e-05	1.2496548	0.21193735	1.0	False	blood	early	hyenadna
+475	0.0017093851	0.0019143913	0.00020500628	1.2496547	0.21193738	1.0	False	blood	early	hyenadna
+78	0.0031605202	0.0035395608	0.0003790407	1.2496545	0.21193741	1.0	False	blood	early	hyenadna
+814	0.003650316	0.0040880977	0.0004377818	1.249654	0.21193762	1.0	False	blood	early	hyenadna
+933	0.0010203923	0.0011427677	0.00012237548	1.2496539	0.21193771	1.0	False	blood	early	hyenadna
+227	0.00096033356	0.0010755062	0.000115172654	1.2496533	0.21193786	1.0	False	blood	early	hyenadna
+231	0.0007371369	0.0008255416	8.840471e-05	1.2496532	0.2119379	1.0	False	blood	early	hyenadna
+342	0.0040338845	0.0045176675	0.00048378308	1.2496532	0.21193793	1.0	False	blood	early	hyenadna
+930	0.00073758006	0.0008260379	8.8457855e-05	1.249653	0.211938	1.0	False	blood	early	hyenadna
+737	0.00085810747	0.0009610202	0.000102912694	1.2496529	0.21193814	1.0	False	blood	early	hyenadna
+596	0.0011981099	0.001341799	0.00014368913	1.2496526	0.21193816	1.0	False	blood	early	hyenadna
+215	0.00073916407	0.0008278119	8.864782e-05	1.2496523	0.21193825	1.0	False	blood	early	hyenadna
+533	0.000790941	0.0008857984	9.485742e-05	1.2496512	0.21193865	1.0	False	blood	early	hyenadna
+429	0.0010916963	0.0012226233	0.00013092696	1.249651	0.21193878	1.0	False	blood	early	hyenadna
+693	0.0010728217	0.001201485	0.00012866333	1.2496507	0.21193884	1.0	False	blood	early	hyenadna
+17	0.0011370375	0.0012734022	0.00013636473	1.2496505	0.21193892	1.0	False	blood	early	hyenadna
+700	0.0016304535	0.0018259935	0.00019554002	1.2496501	0.2119391	1.0	False	blood	early	hyenadna
+71	0.00076231535	0.0008537397	9.142435e-05	1.2496501	0.21193911	1.0	False	blood	early	hyenadna
+304	0.00074034557	0.00082913507	8.878952e-05	1.2496499	0.21193916	1.0	False	blood	early	hyenadna
+97	0.00075048866	0.00084049464	9.000598e-05	1.2496496	0.21193929	1.0	False	blood	early	hyenadna
+60	0.0010384235	0.0011629615	0.00012453797	1.2496485	0.21193972	1.0	False	blood	early	hyenadna
+516	0.003579259	0.019841837	0.016262578	1.2167053	0.22409652	1.0	False	blood	early	hyenadna
+210	-0.0030592456	0.0126366485	0.015695894	-1.2097116	0.2267217	1.0	False	blood	early	hyenadna
+189	-0.0036471505	0.01817605	0.021823201	-1.1990368	0.2308453	1.0	False	blood	early	hyenadna
+687	-0.0027306508	0.009622292	0.0123529425	-1.16095	0.24599281	1.0	False	blood	early	hyenadna
+1005	0.005374491	0.18056072	0.17518623	1.0991088	0.27205285	1.0	False	blood	early	hyenadna
+1010	0.000801149	0.0012373939	0.00043624494	1.0829325	0.2792528	1.0	False	blood	early	hyenadna
+201	0.0011835521	0.0028210818	0.0016375297	1.0523813	0.2929939	1.0	False	blood	early	hyenadna
+223	-0.0020470321	0.25114462	0.25319165	-1.0017154	0.31675738	1.0	False	blood	early	hyenadna
+631	-9.398292e-05	0.0	9.398292e-05	-1.0000259	0.31739283	1.0	False	blood	early	hyenadna
+692	-9.9910125e-05	0.0	9.9910125e-05	-1.0000194	0.3173959	1.0	False	blood	early	hyenadna
+696	-0.00036790885	0.0	0.00036790885	-1.0000091	0.31740093	1.0	False	blood	early	hyenadna
+935	-9.0339825e-05	0.0	9.0339825e-05	-1.0000067	0.3174021	1.0	False	blood	early	hyenadna
+433	-0.00012756634	0.0	0.00012756634	-1.0000064	0.3174022	1.0	False	blood	early	hyenadna
+350	-8.7376546e-05	0.0	8.7376546e-05	-1.0000037	0.31740355	1.0	False	blood	early	hyenadna
+335	-8.697193e-05	0.0	8.697193e-05	-1.0000027	0.31740397	1.0	False	blood	early	hyenadna
+327	-9.509668e-05	0.0	9.509668e-05	-1.0000007	0.31740502	1.0	False	blood	early	hyenadna
+431	-0.000115915085	0.0	0.000115915085	-0.9999916	0.31740946	1.0	False	blood	early	hyenadna
+276	-0.00022926996	0.0	0.00022926996	-0.9999897	0.3174103	1.0	False	blood	early	hyenadna
+132	-0.0003208971	0.0	0.0003208971	-0.99998784	0.31741124	1.0	False	blood	early	hyenadna
+815	-0.00011245843	0.0	0.00011245843	-0.9999862	0.31741205	1.0	False	blood	early	hyenadna
+531	-0.00016303093	0.0	0.00016303093	-0.99998003	0.31741503	1.0	False	blood	early	hyenadna
+785	-0.00010665871	0.0	0.00010665871	-0.9999762	0.31741688	1.0	False	blood	early	hyenadna
+944	-0.00011126052	0.0	0.00011126052	-0.9999663	0.31742164	1.0	False	blood	early	hyenadna
+293	-0.00010572832	0.0	0.00010572832	-0.9999449	0.317432	1.0	False	blood	early	hyenadna
+543	0.0005617114	0.0005617114	0.0	1.0000046	0.3177512	1.0	False	blood	early	hyenadna
+151	0.0004051635	0.0004051635	0.0	1.0000012	0.31775287	1.0	False	blood	early	hyenadna
+918	0.00041323624	0.00041323624	0.0	0.99999803	0.31775442	1.0	False	blood	early	hyenadna
+553	0.0005703029	0.0005703029	0.0	0.9999954	0.3177557	1.0	False	blood	early	hyenadna
+527	0.0004998435	0.0004998435	0.0	0.9999921	0.31775725	1.0	False	blood	early	hyenadna
+55	0.00065179815	0.00065179815	0.0	0.99999034	0.31775814	1.0	False	blood	early	hyenadna
+1003	0.001957804	0.25225243	0.25029463	0.93444	0.35032663	1.0	False	blood	early	hyenadna
+796	0.0005421411	0.0008016077	0.0002594666	0.9254502	0.355089	1.0	False	blood	early	hyenadna
+701	0.0019420385	0.24369422	0.24175218	0.9138698	0.36107856	1.0	False	blood	early	hyenadna
+1002	0.0005354276	0.00082216476	0.00028673717	0.88629645	0.37579143	1.0	False	blood	early	hyenadna
+1001	-0.0014456059	0.0048827953	0.006328401	-0.8765909	0.38095182	1.0	False	blood	early	hyenadna
+866	0.0009842813	0.26869157	0.2677073	0.819354	0.41287827	1.0	False	blood	early	hyenadna
+718	0.00039193843	0.0004789475	8.7009066e-05	0.8051513	0.42106053	1.0	False	blood	early	hyenadna
+154	0.003656976	0.054140553	0.050483577	0.8018082	0.42290705	1.0	False	blood	early	hyenadna
+390	0.00037898181	0.0004684917	8.950987e-05	0.79457504	0.42718184	1.0	False	blood	early	hyenadna
+409	0.0012093624	0.0051181936	0.003908831	0.7637334	0.44527328	1.0	False	blood	early	hyenadna
+595	0.0003228211	0.00042266055	9.983944e-05	0.743328	0.45756987	1.0	False	blood	early	hyenadna
+893	0.00036001566	0.00047807774	0.000118062075	0.7310822	0.46500757	1.0	False	blood	early	hyenadna
+179	-0.0012824237	0.2443781	0.24566053	-0.723197	0.4697617	1.0	False	blood	early	hyenadna
+540	0.00029741324	0.00040000214	0.00010258891	0.7202202	0.47166067	1.0	False	blood	early	hyenadna
+294	-0.0023642778	0.22635658	0.22872086	-0.7165769	0.47386912	1.0	False	blood	early	hyenadna
+205	-0.00063246826	0.0016317681	0.0022642363	-0.6829939	0.49478653	1.0	False	blood	early	hyenadna
+320	0.00031861372	0.0004498592	0.00013124546	0.6799099	0.49680632	1.0	False	blood	early	hyenadna
+376	0.0010643932	0.0062715025	0.0052071093	0.61256605	0.5403501	1.0	False	blood	early	hyenadna
+797	0.00025665472	0.00043790395	0.00018124923	0.56250113	0.57397074	1.0	False	blood	early	hyenadna
+497	-0.00026964606	0.00041625317	0.0006858992	-0.5599208	0.5756647	1.0	False	blood	early	hyenadna
+648	0.0010561943	0.26718214	0.26612595	0.5588378	0.57638806	1.0	False	blood	early	hyenadna
+960	0.00023892194	0.00041001572	0.00017109378	0.558901	0.57642335	1.0	False	blood	early	hyenadna
+432	0.00032430686	0.00054963114	0.00022532427	0.54594666	0.58526677	1.0	False	blood	early	hyenadna
+924	-0.0029757693	0.113763385	0.116739154	-0.5350882	0.5927395	1.0	False	blood	early	hyenadna
+839	-0.00044170022	0.28451908	0.28496078	-0.4643006	0.6425485	1.0	False	blood	early	hyenadna
+145	0.0014114082	0.22248106	0.22106965	0.44817245	0.654146	1.0	False	blood	early	hyenadna
+736	0.00026908505	0.0007972707	0.0005281856	0.44620413	0.65558493	1.0	False	blood	early	hyenadna
+378	-0.00085987616	0.007578171	0.008438047	-0.42477614	0.67111206	1.0	False	blood	early	hyenadna
+371	0.00072257314	0.006451335	0.0057287617	0.41608024	0.6774672	1.0	False	blood	early	hyenadna
+32	-0.0008012559	0.008975616	0.009776872	-0.38450557	0.7007035	1.0	False	blood	early	hyenadna
+216	0.00015174065	0.00041436194	0.0002626213	0.34390816	0.7310186	1.0	False	blood	early	hyenadna
+690	-0.001387611	0.15894975	0.16033736	-0.27791053	0.78115344	1.0	False	blood	early	hyenadna
+249	-0.0012753308	0.1498218	0.15109713	-0.24789903	0.8042764	1.0	False	blood	early	hyenadna
+618	0.001199916	0.09213772	0.0909378	0.22636487	0.8209759	1.0	False	blood	early	hyenadna
+197	0.00093074143	0.14391813	0.14298739	0.18093531	0.85646415	1.0	False	blood	early	hyenadna
+697	-3.4121593e-05	0.00040160114	0.00043572273	-0.07645138	0.9390785	1.0	False	blood	early	hyenadna
+88	3.2652373e-05	0.00040517552	0.00037252315	0.07321056	0.94165695	1.0	False	blood	early	hyenadna
+319	-8.899812e-05	0.0036377737	0.0037267718	-0.066946976	0.9466406	1.0	False	blood	early	hyenadna
+172	-0.0002720803	0.12717786	0.12744994	-0.05182825	0.95867854	1.0	False	blood	early	hyenadna
+491	0.0001245439	0.22128873	0.22116418	0.0345872	0.9724181	1.0	False	blood	early	hyenadna
+0	0.0	0.0	0.0				False	blood	early	hyenadna
+2	0.0	0.0	0.0				False	blood	early	hyenadna
+3	0.0	0.0	0.0				False	blood	early	hyenadna
+4	0.0	0.0	0.0				False	blood	early	hyenadna
+5	0.0	0.0	0.0				False	blood	early	hyenadna
+6	0.0	0.0	0.0				False	blood	early	hyenadna
+7	0.0	0.0	0.0				False	blood	early	hyenadna
+8	0.0	0.0	0.0				False	blood	early	hyenadna
+10	0.0	0.0	0.0				False	blood	early	hyenadna
+12	0.0	0.0	0.0				False	blood	early	hyenadna
+13	0.0	0.0	0.0				False	blood	early	hyenadna
+14	0.0	0.0	0.0				False	blood	early	hyenadna
+15	0.0	0.0	0.0				False	blood	early	hyenadna
+16	0.0	0.0	0.0				False	blood	early	hyenadna
+18	0.0	0.0	0.0				False	blood	early	hyenadna
+19	0.0	0.0	0.0				False	blood	early	hyenadna
+20	0.0	0.0	0.0				False	blood	early	hyenadna
+21	0.0	0.0	0.0				False	blood	early	hyenadna
+22	0.0	0.0	0.0				False	blood	early	hyenadna
+23	0.0	0.0	0.0				False	blood	early	hyenadna
+25	0.0	0.0	0.0				False	blood	early	hyenadna
+28	0.0	0.0	0.0				False	blood	early	hyenadna
+29	0.0	0.0	0.0				False	blood	early	hyenadna
+30	0.0	0.0	0.0				False	blood	early	hyenadna
+31	0.0	0.0	0.0				False	blood	early	hyenadna
+33	0.0	0.0	0.0				False	blood	early	hyenadna
+34	0.0	0.0	0.0				False	blood	early	hyenadna
+35	0.0	0.0	0.0				False	blood	early	hyenadna
+36	0.0	0.0	0.0				False	blood	early	hyenadna
+37	0.0	0.0	0.0				False	blood	early	hyenadna
+38	0.0	0.0	0.0				False	blood	early	hyenadna
+39	0.0	0.0	0.0				False	blood	early	hyenadna
+40	0.0	0.0	0.0				False	blood	early	hyenadna
+41	0.0	0.0	0.0				False	blood	early	hyenadna
+42	0.0	0.0	0.0				False	blood	early	hyenadna
+43	0.0	0.0	0.0				False	blood	early	hyenadna
+44	0.0	0.0	0.0				False	blood	early	hyenadna
+45	0.0	0.0	0.0				False	blood	early	hyenadna
+47	0.0	0.0	0.0				False	blood	early	hyenadna
+49	0.0	0.0	0.0				False	blood	early	hyenadna
+50	0.0	0.0	0.0				False	blood	early	hyenadna
+51	0.0	0.0	0.0				False	blood	early	hyenadna
+52	0.0	0.0	0.0				False	blood	early	hyenadna
+53	0.0	0.0	0.0				False	blood	early	hyenadna
+54	0.0	0.0	0.0				False	blood	early	hyenadna
+56	0.0	0.0	0.0				False	blood	early	hyenadna
+57	0.0	0.0	0.0				False	blood	early	hyenadna
+58	0.0	0.0	0.0				False	blood	early	hyenadna
+59	0.0	0.0	0.0				False	blood	early	hyenadna
+61	0.0	0.0	0.0				False	blood	early	hyenadna
+62	0.0	0.0	0.0				False	blood	early	hyenadna
+64	0.0	0.0	0.0				False	blood	early	hyenadna
+65	0.0	0.0	0.0				False	blood	early	hyenadna
+66	0.0	0.0	0.0				False	blood	early	hyenadna
+67	0.0	0.0	0.0				False	blood	early	hyenadna
+69	0.0	0.0	0.0				False	blood	early	hyenadna
+70	0.0	0.0	0.0				False	blood	early	hyenadna
+72	0.0	0.0	0.0				False	blood	early	hyenadna
+73	0.0	0.0	0.0				False	blood	early	hyenadna
+75	0.0	0.0	0.0				False	blood	early	hyenadna
+76	0.0	0.0	0.0				False	blood	early	hyenadna
+79	0.0	0.0	0.0				False	blood	early	hyenadna
+80	0.0	0.0	0.0				False	blood	early	hyenadna
+81	0.0	0.0	0.0				False	blood	early	hyenadna
+82	0.0	0.0	0.0				False	blood	early	hyenadna
+83	0.0	0.0	0.0				False	blood	early	hyenadna
+84	0.0	0.0	0.0				False	blood	early	hyenadna
+85	0.0	0.0	0.0				False	blood	early	hyenadna
+87	0.0	0.0	0.0				False	blood	early	hyenadna
+89	0.0	0.0	0.0				False	blood	early	hyenadna
+90	0.0	0.0	0.0				False	blood	early	hyenadna
+91	0.0	0.0	0.0				False	blood	early	hyenadna
+92	0.0	0.0	0.0				False	blood	early	hyenadna
+93	0.0	0.0	0.0				False	blood	early	hyenadna
+94	0.0	0.0	0.0				False	blood	early	hyenadna
+95	0.0	0.0	0.0				False	blood	early	hyenadna
+96	0.0	0.0	0.0				False	blood	early	hyenadna
+99	0.0	0.0	0.0				False	blood	early	hyenadna
+100	0.0	0.0	0.0				False	blood	early	hyenadna
+101	0.0	0.0	0.0				False	blood	early	hyenadna
+103	0.0	0.0	0.0				False	blood	early	hyenadna
+104	0.0	0.0	0.0				False	blood	early	hyenadna
+105	0.0	0.0	0.0				False	blood	early	hyenadna
+107	0.0	0.0	0.0				False	blood	early	hyenadna
+108	0.0	0.0	0.0				False	blood	early	hyenadna
+109	0.0	0.0	0.0				False	blood	early	hyenadna
+110	0.0	0.0	0.0				False	blood	early	hyenadna
+111	0.0	0.0	0.0				False	blood	early	hyenadna
+112	0.0	0.0	0.0				False	blood	early	hyenadna
+113	0.0	0.0	0.0				False	blood	early	hyenadna
+114	0.0	0.0	0.0				False	blood	early	hyenadna
+115	0.0	0.0	0.0				False	blood	early	hyenadna
+116	0.0	0.0	0.0				False	blood	early	hyenadna
+117	0.0	0.0	0.0				False	blood	early	hyenadna
+118	0.0	0.0	0.0				False	blood	early	hyenadna
+119	0.0	0.0	0.0				False	blood	early	hyenadna
+120	0.0	0.0	0.0				False	blood	early	hyenadna
+121	0.0	0.0	0.0				False	blood	early	hyenadna
+122	0.0	0.0	0.0				False	blood	early	hyenadna
+123	0.0	0.0	0.0				False	blood	early	hyenadna
+124	0.0	0.0	0.0				False	blood	early	hyenadna
+125	0.0	0.0	0.0				False	blood	early	hyenadna
+126	0.0	0.0	0.0				False	blood	early	hyenadna
+127	0.0	0.0	0.0				False	blood	early	hyenadna
+128	0.0	0.0	0.0				False	blood	early	hyenadna
+129	0.0	0.0	0.0				False	blood	early	hyenadna
+130	0.0	0.0	0.0				False	blood	early	hyenadna
+131	0.0	0.0	0.0				False	blood	early	hyenadna
+133	0.0	0.0	0.0				False	blood	early	hyenadna
+134	0.0	0.0	0.0				False	blood	early	hyenadna
+137	0.0	0.0	0.0				False	blood	early	hyenadna
+138	0.0	0.0	0.0				False	blood	early	hyenadna
+139	0.0	0.0	0.0				False	blood	early	hyenadna
+140	0.0	0.0	0.0				False	blood	early	hyenadna
+142	0.0	0.0	0.0				False	blood	early	hyenadna
+143	0.0	0.0	0.0				False	blood	early	hyenadna
+144	0.0	0.0	0.0				False	blood	early	hyenadna
+146	0.0	0.0	0.0				False	blood	early	hyenadna
+147	0.0	0.0	0.0				False	blood	early	hyenadna
+148	0.0	0.0	0.0				False	blood	early	hyenadna
+149	0.0	0.0	0.0				False	blood	early	hyenadna
+150	0.0	0.0	0.0				False	blood	early	hyenadna
+152	0.0	0.0	0.0				False	blood	early	hyenadna
+155	0.0	0.0	0.0				False	blood	early	hyenadna
+156	0.0	0.0	0.0				False	blood	early	hyenadna
+158	0.0	0.0	0.0				False	blood	early	hyenadna
+159	0.0	0.0	0.0				False	blood	early	hyenadna
+160	0.0	0.0	0.0				False	blood	early	hyenadna
+161	0.0	0.0	0.0				False	blood	early	hyenadna
+162	0.0	0.0	0.0				False	blood	early	hyenadna
+163	0.0	0.0	0.0				False	blood	early	hyenadna
+164	0.0	0.0	0.0				False	blood	early	hyenadna
+165	0.0	0.0	0.0				False	blood	early	hyenadna
+166	0.0	0.0	0.0				False	blood	early	hyenadna
+167	0.0	0.0	0.0				False	blood	early	hyenadna
+168	0.0	0.0	0.0				False	blood	early	hyenadna
+169	0.0	0.0	0.0				False	blood	early	hyenadna
+171	0.0	0.0	0.0				False	blood	early	hyenadna
+173	0.0	0.0	0.0				False	blood	early	hyenadna
+174	0.0	0.0	0.0				False	blood	early	hyenadna
+175	0.0	0.0	0.0				False	blood	early	hyenadna
+176	0.0	0.0	0.0				False	blood	early	hyenadna
+177	0.0	0.0	0.0				False	blood	early	hyenadna
+178	0.0	0.0	0.0				False	blood	early	hyenadna
+180	0.0	0.0	0.0				False	blood	early	hyenadna
+181	0.0	0.0	0.0				False	blood	early	hyenadna
+182	0.0	0.0	0.0				False	blood	early	hyenadna
+183	0.0	0.0	0.0				False	blood	early	hyenadna
+185	0.0	0.0	0.0				False	blood	early	hyenadna
+186	0.0	0.0	0.0				False	blood	early	hyenadna
+187	0.0	0.0	0.0				False	blood	early	hyenadna
+188	0.0	0.0	0.0				False	blood	early	hyenadna
+190	0.0	0.0	0.0				False	blood	early	hyenadna
+191	0.0	0.0	0.0				False	blood	early	hyenadna
+192	0.0	0.0	0.0				False	blood	early	hyenadna
+194	0.0	0.0	0.0				False	blood	early	hyenadna
+195	0.0	0.0	0.0				False	blood	early	hyenadna
+196	0.0	0.0	0.0				False	blood	early	hyenadna
+198	0.0	0.0	0.0				False	blood	early	hyenadna
+199	0.0	0.0	0.0				False	blood	early	hyenadna
+200	0.0	0.0	0.0				False	blood	early	hyenadna
+202	0.0	0.0	0.0				False	blood	early	hyenadna
+203	0.0	0.0	0.0				False	blood	early	hyenadna
+204	0.0	0.0	0.0				False	blood	early	hyenadna
+206	0.0	0.0	0.0				False	blood	early	hyenadna
+207	0.0	0.0	0.0				False	blood	early	hyenadna
+208	0.0	0.0	0.0				False	blood	early	hyenadna
+209	0.0	0.0	0.0				False	blood	early	hyenadna
+212	0.0	0.0	0.0				False	blood	early	hyenadna
+213	0.0	0.0	0.0				False	blood	early	hyenadna
+214	0.0	0.0	0.0				False	blood	early	hyenadna
+217	0.0	0.0	0.0				False	blood	early	hyenadna
+218	0.0	0.0	0.0				False	blood	early	hyenadna
+219	0.0	0.0	0.0				False	blood	early	hyenadna
+220	0.0	0.0	0.0				False	blood	early	hyenadna
+221	0.0	0.0	0.0				False	blood	early	hyenadna
+222	0.0	0.0	0.0				False	blood	early	hyenadna
+224	0.0	0.0	0.0				False	blood	early	hyenadna
+225	0.0	0.0	0.0				False	blood	early	hyenadna
+226	0.0	0.0	0.0				False	blood	early	hyenadna
+228	0.0	0.0	0.0				False	blood	early	hyenadna
+229	0.0	0.0	0.0				False	blood	early	hyenadna
+230	0.0	0.0	0.0				False	blood	early	hyenadna
+232	0.0	0.0	0.0				False	blood	early	hyenadna
+233	0.0	0.0	0.0				False	blood	early	hyenadna
+234	0.0	0.0	0.0				False	blood	early	hyenadna
+235	0.0	0.0	0.0				False	blood	early	hyenadna
+236	0.0	0.0	0.0				False	blood	early	hyenadna
+237	0.0	0.0	0.0				False	blood	early	hyenadna
+238	0.0	0.0	0.0				False	blood	early	hyenadna
+239	0.0	0.0	0.0				False	blood	early	hyenadna
+240	0.0	0.0	0.0				False	blood	early	hyenadna
+241	0.0	0.0	0.0				False	blood	early	hyenadna
+242	0.0	0.0	0.0				False	blood	early	hyenadna
+243	0.0	0.0	0.0				False	blood	early	hyenadna
+244	0.0	0.0	0.0				False	blood	early	hyenadna
+246	0.0	0.0	0.0				False	blood	early	hyenadna
+247	0.0	0.0	0.0				False	blood	early	hyenadna
+248	0.0	0.0	0.0				False	blood	early	hyenadna
+250	0.0	0.0	0.0				False	blood	early	hyenadna
+251	0.0	0.0	0.0				False	blood	early	hyenadna
+252	0.0	0.0	0.0				False	blood	early	hyenadna
+253	0.0	0.0	0.0				False	blood	early	hyenadna
+255	0.0	0.0	0.0				False	blood	early	hyenadna
+256	0.0	0.0	0.0				False	blood	early	hyenadna
+257	0.0	0.0	0.0				False	blood	early	hyenadna
+258	0.0	0.0	0.0				False	blood	early	hyenadna
+259	0.0	0.0	0.0				False	blood	early	hyenadna
+260	0.0	0.0	0.0				False	blood	early	hyenadna
+262	0.0	0.0	0.0				False	blood	early	hyenadna
+263	0.0	0.0	0.0				False	blood	early	hyenadna
+264	0.0	0.0	0.0				False	blood	early	hyenadna
+265	0.0	0.0	0.0				False	blood	early	hyenadna
+266	0.0	0.0	0.0				False	blood	early	hyenadna
+267	0.0	0.0	0.0				False	blood	early	hyenadna
+268	0.0	0.0	0.0				False	blood	early	hyenadna
+269	0.0	0.0	0.0				False	blood	early	hyenadna
+270	0.0	0.0	0.0				False	blood	early	hyenadna
+271	0.0	0.0	0.0				False	blood	early	hyenadna
+272	0.0	0.0	0.0				False	blood	early	hyenadna
+273	0.0	0.0	0.0				False	blood	early	hyenadna
+274	0.0	0.0	0.0				False	blood	early	hyenadna
+275	0.0	0.0	0.0				False	blood	early	hyenadna
+277	0.0	0.0	0.0				False	blood	early	hyenadna
+278	0.0	0.0	0.0				False	blood	early	hyenadna
+279	0.0	0.0	0.0				False	blood	early	hyenadna
+280	0.0	0.0	0.0				False	blood	early	hyenadna
+281	0.0	0.0	0.0				False	blood	early	hyenadna
+283	0.0	0.0	0.0				False	blood	early	hyenadna
+284	0.0	0.0	0.0				False	blood	early	hyenadna
+285	0.0	0.0	0.0				False	blood	early	hyenadna
+286	0.0	0.0	0.0				False	blood	early	hyenadna
+287	0.0	0.0	0.0				False	blood	early	hyenadna
+288	0.0	0.0	0.0				False	blood	early	hyenadna
+289	0.0	0.0	0.0				False	blood	early	hyenadna
+290	0.0	0.0	0.0				False	blood	early	hyenadna
+291	0.0	0.0	0.0				False	blood	early	hyenadna
+292	0.0	0.0	0.0				False	blood	early	hyenadna
+295	0.0	0.0	0.0				False	blood	early	hyenadna
+296	0.0	0.0	0.0				False	blood	early	hyenadna
+297	0.0	0.0	0.0				False	blood	early	hyenadna
+299	0.0	0.0	0.0				False	blood	early	hyenadna
+300	0.0	0.0	0.0				False	blood	early	hyenadna
+301	0.0	0.0	0.0				False	blood	early	hyenadna
+302	0.0	0.0	0.0				False	blood	early	hyenadna
+305	0.0	0.0	0.0				False	blood	early	hyenadna
+306	0.0	0.0	0.0				False	blood	early	hyenadna
+307	0.0	0.0	0.0				False	blood	early	hyenadna
+308	0.0	0.0	0.0				False	blood	early	hyenadna
+310	0.0	0.0	0.0				False	blood	early	hyenadna
+311	0.0	0.0	0.0				False	blood	early	hyenadna
+312	0.0	0.0	0.0				False	blood	early	hyenadna
+314	0.0	0.0	0.0				False	blood	early	hyenadna
+315	0.0	0.0	0.0				False	blood	early	hyenadna
+316	0.0	0.0	0.0				False	blood	early	hyenadna
+318	0.0	0.0	0.0				False	blood	early	hyenadna
+321	0.0	0.0	0.0				False	blood	early	hyenadna
+322	0.0	0.0	0.0				False	blood	early	hyenadna
+323	0.0	0.0	0.0				False	blood	early	hyenadna
+324	0.0	0.0	0.0				False	blood	early	hyenadna
+325	0.0	0.0	0.0				False	blood	early	hyenadna
+326	0.0	0.0	0.0				False	blood	early	hyenadna
+328	0.0	0.0	0.0				False	blood	early	hyenadna
+329	0.0	0.0	0.0				False	blood	early	hyenadna
+330	0.0	0.0	0.0				False	blood	early	hyenadna
+331	0.0	0.0	0.0				False	blood	early	hyenadna
+332	0.0	0.0	0.0				False	blood	early	hyenadna
+333	0.0	0.0	0.0				False	blood	early	hyenadna
+336	0.0	0.0	0.0				False	blood	early	hyenadna
+337	0.0	0.0	0.0				False	blood	early	hyenadna
+338	0.0	0.0	0.0				False	blood	early	hyenadna
+339	0.0	0.0	0.0				False	blood	early	hyenadna
+341	0.0	0.0	0.0				False	blood	early	hyenadna
+343	0.0	0.0	0.0				False	blood	early	hyenadna
+344	0.0	0.0	0.0				False	blood	early	hyenadna
+345	0.0	0.0	0.0				False	blood	early	hyenadna
+347	0.0	0.0	0.0				False	blood	early	hyenadna
+348	0.0	0.0	0.0				False	blood	early	hyenadna
+351	0.0	0.0	0.0				False	blood	early	hyenadna
+352	0.0	0.0	0.0				False	blood	early	hyenadna
+353	0.0	0.0	0.0				False	blood	early	hyenadna
+354	0.0	0.0	0.0				False	blood	early	hyenadna
+355	0.0	0.0	0.0				False	blood	early	hyenadna
+357	0.0	0.0	0.0				False	blood	early	hyenadna
+358	0.0	0.0	0.0				False	blood	early	hyenadna
+359	0.0	0.0	0.0				False	blood	early	hyenadna
+360	0.0	0.0	0.0				False	blood	early	hyenadna
+361	0.0	0.0	0.0				False	blood	early	hyenadna
+362	0.0	0.0	0.0				False	blood	early	hyenadna
+363	0.0	0.0	0.0				False	blood	early	hyenadna
+364	0.0	0.0	0.0				False	blood	early	hyenadna
+365	0.0	0.0	0.0				False	blood	early	hyenadna
+366	0.0	0.0	0.0				False	blood	early	hyenadna
+367	0.0	0.0	0.0				False	blood	early	hyenadna
+368	0.0	0.0	0.0				False	blood	early	hyenadna
+369	0.0	0.0	0.0				False	blood	early	hyenadna
+370	0.0	0.0	0.0				False	blood	early	hyenadna
+372	0.0	0.0	0.0				False	blood	early	hyenadna
+373	0.0	0.0	0.0				False	blood	early	hyenadna
+374	0.0	0.0	0.0				False	blood	early	hyenadna
+375	0.0	0.0	0.0				False	blood	early	hyenadna
+377	0.0	0.0	0.0				False	blood	early	hyenadna
+379	0.0	0.0	0.0				False	blood	early	hyenadna
+380	0.0	0.0	0.0				False	blood	early	hyenadna
+381	0.0	0.0	0.0				False	blood	early	hyenadna
+382	0.0	0.0	0.0				False	blood	early	hyenadna
+383	0.0	0.0	0.0				False	blood	early	hyenadna
+384	0.0	0.0	0.0				False	blood	early	hyenadna
+385	0.0	0.0	0.0				False	blood	early	hyenadna
+386	0.0	0.0	0.0				False	blood	early	hyenadna
+387	0.0	0.0	0.0				False	blood	early	hyenadna
+389	0.0	0.0	0.0				False	blood	early	hyenadna
+392	0.0	0.0	0.0				False	blood	early	hyenadna
+393	0.0	0.0	0.0				False	blood	early	hyenadna
+394	0.0	0.0	0.0				False	blood	early	hyenadna
+395	0.0	0.0	0.0				False	blood	early	hyenadna
+398	0.0	0.0	0.0				False	blood	early	hyenadna
+399	0.0	0.0	0.0				False	blood	early	hyenadna
+400	0.0	0.0	0.0				False	blood	early	hyenadna
+401	0.0	0.0	0.0				False	blood	early	hyenadna
+402	0.0	0.0	0.0				False	blood	early	hyenadna
+403	0.0	0.0	0.0				False	blood	early	hyenadna
+404	0.0	0.0	0.0				False	blood	early	hyenadna
+405	0.0	0.0	0.0				False	blood	early	hyenadna
+406	0.0	0.0	0.0				False	blood	early	hyenadna
+408	0.0	0.0	0.0				False	blood	early	hyenadna
+410	0.0	0.0	0.0				False	blood	early	hyenadna
+411	0.0	0.0	0.0				False	blood	early	hyenadna
+412	0.0	0.0	0.0				False	blood	early	hyenadna
+413	0.0	0.0	0.0				False	blood	early	hyenadna
+414	0.0	0.0	0.0				False	blood	early	hyenadna
+415	0.0	0.0	0.0				False	blood	early	hyenadna
+416	0.0	0.0	0.0				False	blood	early	hyenadna
+417	0.0	0.0	0.0				False	blood	early	hyenadna
+418	0.0	0.0	0.0				False	blood	early	hyenadna
+419	0.0	0.0	0.0				False	blood	early	hyenadna
+420	0.0	0.0	0.0				False	blood	early	hyenadna
+421	0.0	0.0	0.0				False	blood	early	hyenadna
+422	0.0	0.0	0.0				False	blood	early	hyenadna
+423	0.0	0.0	0.0				False	blood	early	hyenadna
+424	0.0	0.0	0.0				False	blood	early	hyenadna
+425	0.0	0.0	0.0				False	blood	early	hyenadna
+427	0.0	0.0	0.0				False	blood	early	hyenadna
+428	0.0	0.0	0.0				False	blood	early	hyenadna
+430	0.0	0.0	0.0				False	blood	early	hyenadna
+434	0.0	0.0	0.0				False	blood	early	hyenadna
+435	0.0	0.0	0.0				False	blood	early	hyenadna
+436	0.0	0.0	0.0				False	blood	early	hyenadna
+437	0.0	0.0	0.0				False	blood	early	hyenadna
+438	0.0	0.0	0.0				False	blood	early	hyenadna
+439	0.0	0.0	0.0				False	blood	early	hyenadna
+440	0.0	0.0	0.0				False	blood	early	hyenadna
+441	0.0	0.0	0.0				False	blood	early	hyenadna
+442	0.0	0.0	0.0				False	blood	early	hyenadna
+443	0.0	0.0	0.0				False	blood	early	hyenadna
+444	0.0	0.0	0.0				False	blood	early	hyenadna
+445	0.0	0.0	0.0				False	blood	early	hyenadna
+446	0.0	0.0	0.0				False	blood	early	hyenadna
+447	0.0	0.0	0.0				False	blood	early	hyenadna
+448	0.0	0.0	0.0				False	blood	early	hyenadna
+449	0.0	0.0	0.0				False	blood	early	hyenadna
+451	0.0	0.0	0.0				False	blood	early	hyenadna
+452	0.0	0.0	0.0				False	blood	early	hyenadna
+454	0.0	0.0	0.0				False	blood	early	hyenadna
+455	0.0	0.0	0.0				False	blood	early	hyenadna
+456	0.0	0.0	0.0				False	blood	early	hyenadna
+457	0.0	0.0	0.0				False	blood	early	hyenadna
+458	0.0	0.0	0.0				False	blood	early	hyenadna
+460	0.0	0.0	0.0				False	blood	early	hyenadna
+462	0.0	0.0	0.0				False	blood	early	hyenadna
+463	0.0	0.0	0.0				False	blood	early	hyenadna
+464	0.0	0.0	0.0				False	blood	early	hyenadna
+465	0.0	0.0	0.0				False	blood	early	hyenadna
+467	0.0	0.0	0.0				False	blood	early	hyenadna
+468	0.0	0.0	0.0				False	blood	early	hyenadna
+469	0.0	0.0	0.0				False	blood	early	hyenadna
+470	0.0	0.0	0.0				False	blood	early	hyenadna
+471	0.0	0.0	0.0				False	blood	early	hyenadna
+473	0.0	0.0	0.0				False	blood	early	hyenadna
+474	0.0	0.0	0.0				False	blood	early	hyenadna
+477	0.0	0.0	0.0				False	blood	early	hyenadna
+478	0.0	0.0	0.0				False	blood	early	hyenadna
+479	0.0	0.0	0.0				False	blood	early	hyenadna
+480	0.0	0.0	0.0				False	blood	early	hyenadna
+481	0.0	0.0	0.0				False	blood	early	hyenadna
+482	0.0	0.0	0.0				False	blood	early	hyenadna
+483	0.0	0.0	0.0				False	blood	early	hyenadna
+484	0.0	0.0	0.0				False	blood	early	hyenadna
+485	0.0	0.0	0.0				False	blood	early	hyenadna
+486	0.0	0.0	0.0				False	blood	early	hyenadna
+488	0.0	0.0	0.0				False	blood	early	hyenadna
+489	0.0	0.0	0.0				False	blood	early	hyenadna
+490	0.0	0.0	0.0				False	blood	early	hyenadna
+492	0.0	0.0	0.0				False	blood	early	hyenadna
+493	0.0	0.0	0.0				False	blood	early	hyenadna
+494	0.0	0.0	0.0				False	blood	early	hyenadna
+495	0.0	0.0	0.0				False	blood	early	hyenadna
+496	0.0	0.0	0.0				False	blood	early	hyenadna
+498	0.0	0.0	0.0				False	blood	early	hyenadna
+499	0.0	0.0	0.0				False	blood	early	hyenadna
+502	0.0	0.0	0.0				False	blood	early	hyenadna
+503	0.0	0.0	0.0				False	blood	early	hyenadna
+504	0.0	0.0	0.0				False	blood	early	hyenadna
+507	0.0	0.0	0.0				False	blood	early	hyenadna
+509	0.0	0.0	0.0				False	blood	early	hyenadna
+510	0.0	0.0	0.0				False	blood	early	hyenadna
+511	0.0	0.0	0.0				False	blood	early	hyenadna
+512	0.0	0.0	0.0				False	blood	early	hyenadna
+513	0.0	0.0	0.0				False	blood	early	hyenadna
+514	0.0	0.0	0.0				False	blood	early	hyenadna
+515	0.0	0.0	0.0				False	blood	early	hyenadna
+518	0.0	0.0	0.0				False	blood	early	hyenadna
+519	0.0	0.0	0.0				False	blood	early	hyenadna
+520	0.0	0.0	0.0				False	blood	early	hyenadna
+522	0.0	0.0	0.0				False	blood	early	hyenadna
+523	0.0	0.0	0.0				False	blood	early	hyenadna
+524	0.0	0.0	0.0				False	blood	early	hyenadna
+525	0.0	0.0	0.0				False	blood	early	hyenadna
+528	0.0	0.0	0.0				False	blood	early	hyenadna
+529	0.0	0.0	0.0				False	blood	early	hyenadna
+530	0.0	0.0	0.0				False	blood	early	hyenadna
+532	0.0	0.0	0.0				False	blood	early	hyenadna
+534	0.0	0.0	0.0				False	blood	early	hyenadna
+536	0.0	0.0	0.0				False	blood	early	hyenadna
+537	0.0	0.0	0.0				False	blood	early	hyenadna
+538	0.0	0.0	0.0				False	blood	early	hyenadna
+539	0.0	0.0	0.0				False	blood	early	hyenadna
+541	0.0	0.0	0.0				False	blood	early	hyenadna
+542	0.0	0.0	0.0				False	blood	early	hyenadna
+544	0.0	0.0	0.0				False	blood	early	hyenadna
+545	0.0	0.0	0.0				False	blood	early	hyenadna
+547	0.0	0.0	0.0				False	blood	early	hyenadna
+548	0.0	0.0	0.0				False	blood	early	hyenadna
+550	0.0	0.0	0.0				False	blood	early	hyenadna
+551	0.0	0.0	0.0				False	blood	early	hyenadna
+554	0.0	0.0	0.0				False	blood	early	hyenadna
+555	0.0	0.0	0.0				False	blood	early	hyenadna
+557	0.0	0.0	0.0				False	blood	early	hyenadna
+558	0.0	0.0	0.0				False	blood	early	hyenadna
+559	0.0	0.0	0.0				False	blood	early	hyenadna
+560	0.0	0.0	0.0				False	blood	early	hyenadna
+561	0.0	0.0	0.0				False	blood	early	hyenadna
+562	0.0	0.0	0.0				False	blood	early	hyenadna
+563	0.0	0.0	0.0				False	blood	early	hyenadna
+564	0.0	0.0	0.0				False	blood	early	hyenadna
+565	0.0	0.0	0.0				False	blood	early	hyenadna
+566	0.0	0.0	0.0				False	blood	early	hyenadna
+567	0.0	0.0	0.0				False	blood	early	hyenadna
+569	0.0	0.0	0.0				False	blood	early	hyenadna
+570	0.0	0.0	0.0				False	blood	early	hyenadna
+572	0.0	0.0	0.0				False	blood	early	hyenadna
+574	0.0	0.0	0.0				False	blood	early	hyenadna
+575	0.0	0.0	0.0				False	blood	early	hyenadna
+576	0.0	0.0	0.0				False	blood	early	hyenadna
+577	0.0	0.0	0.0				False	blood	early	hyenadna
+578	0.0	0.0	0.0				False	blood	early	hyenadna
+579	0.0	0.0	0.0				False	blood	early	hyenadna
+580	0.0	0.0	0.0				False	blood	early	hyenadna
+581	0.0	0.0	0.0				False	blood	early	hyenadna
+582	0.0	0.0	0.0				False	blood	early	hyenadna
+583	0.0	0.0	0.0				False	blood	early	hyenadna
+584	0.0	0.0	0.0				False	blood	early	hyenadna
+585	0.0	0.0	0.0				False	blood	early	hyenadna
+586	0.0	0.0	0.0				False	blood	early	hyenadna
+588	0.0	0.0	0.0				False	blood	early	hyenadna
+589	0.0	0.0	0.0				False	blood	early	hyenadna
+590	0.0	0.0	0.0				False	blood	early	hyenadna
+591	0.0	0.0	0.0				False	blood	early	hyenadna
+592	0.0	0.0	0.0				False	blood	early	hyenadna
+593	0.0	0.0	0.0				False	blood	early	hyenadna
+594	0.0	0.0	0.0				False	blood	early	hyenadna
+597	0.0	0.0	0.0				False	blood	early	hyenadna
+598	0.0	0.0	0.0				False	blood	early	hyenadna
+599	0.0	0.0	0.0				False	blood	early	hyenadna
+600	0.0	0.0	0.0				False	blood	early	hyenadna
+601	0.0	0.0	0.0				False	blood	early	hyenadna
+602	0.0	0.0	0.0				False	blood	early	hyenadna
+603	0.0	0.0	0.0				False	blood	early	hyenadna
+604	0.0	0.0	0.0				False	blood	early	hyenadna
+605	0.0	0.0	0.0				False	blood	early	hyenadna
+607	0.0	0.0	0.0				False	blood	early	hyenadna
+608	0.0	0.0	0.0				False	blood	early	hyenadna
+612	0.0	0.0	0.0				False	blood	early	hyenadna
+613	0.0	0.0	0.0				False	blood	early	hyenadna
+614	0.0	0.0	0.0				False	blood	early	hyenadna
+615	0.0	0.0	0.0				False	blood	early	hyenadna
+616	0.0	0.0	0.0				False	blood	early	hyenadna
+617	0.0	0.0	0.0				False	blood	early	hyenadna
+619	0.0	0.0	0.0				False	blood	early	hyenadna
+620	0.0	0.0	0.0				False	blood	early	hyenadna
+622	0.0	0.0	0.0				False	blood	early	hyenadna
+623	0.0	0.0	0.0				False	blood	early	hyenadna
+624	0.0	0.0	0.0				False	blood	early	hyenadna
+626	0.0	0.0	0.0				False	blood	early	hyenadna
+627	0.0	0.0	0.0				False	blood	early	hyenadna
+628	0.0	0.0	0.0				False	blood	early	hyenadna
+629	0.0	0.0	0.0				False	blood	early	hyenadna
+630	0.0	0.0	0.0				False	blood	early	hyenadna
+632	0.0	0.0	0.0				False	blood	early	hyenadna
+634	0.0	0.0	0.0				False	blood	early	hyenadna
+635	0.0	0.0	0.0				False	blood	early	hyenadna
+637	0.0	0.0	0.0				False	blood	early	hyenadna
+638	0.0	0.0	0.0				False	blood	early	hyenadna
+639	0.0	0.0	0.0				False	blood	early	hyenadna
+640	0.0	0.0	0.0				False	blood	early	hyenadna
+641	0.0	0.0	0.0				False	blood	early	hyenadna
+642	0.0	0.0	0.0				False	blood	early	hyenadna
+643	0.0	0.0	0.0				False	blood	early	hyenadna
+644	0.0	0.0	0.0				False	blood	early	hyenadna
+646	0.0	0.0	0.0				False	blood	early	hyenadna
+649	0.0	0.0	0.0				False	blood	early	hyenadna
+650	0.0	0.0	0.0				False	blood	early	hyenadna
+651	0.0	0.0	0.0				False	blood	early	hyenadna
+652	0.0	0.0	0.0				False	blood	early	hyenadna
+653	0.0	0.0	0.0				False	blood	early	hyenadna
+654	0.0	0.0	0.0				False	blood	early	hyenadna
+655	0.0	0.0	0.0				False	blood	early	hyenadna
+656	0.0	0.0	0.0				False	blood	early	hyenadna
+658	0.0	0.0	0.0				False	blood	early	hyenadna
+659	0.0	0.0	0.0				False	blood	early	hyenadna
+661	0.0	0.0	0.0				False	blood	early	hyenadna
+662	0.0	0.0	0.0				False	blood	early	hyenadna
+663	0.0	0.0	0.0				False	blood	early	hyenadna
+665	0.0	0.0	0.0				False	blood	early	hyenadna
+666	0.0	0.0	0.0				False	blood	early	hyenadna
+667	0.0	0.0	0.0				False	blood	early	hyenadna
+668	0.0	0.0	0.0				False	blood	early	hyenadna
+669	0.0	0.0	0.0				False	blood	early	hyenadna
+670	0.0	0.0	0.0				False	blood	early	hyenadna
+671	0.0	0.0	0.0				False	blood	early	hyenadna
+672	0.0	0.0	0.0				False	blood	early	hyenadna
+673	0.0	0.0	0.0				False	blood	early	hyenadna
+674	0.0	0.0	0.0				False	blood	early	hyenadna
+675	0.0	0.0	0.0				False	blood	early	hyenadna
+676	0.0	0.0	0.0				False	blood	early	hyenadna
+677	0.0	0.0	0.0				False	blood	early	hyenadna
+678	0.0	0.0	0.0				False	blood	early	hyenadna
+679	0.0	0.0	0.0				False	blood	early	hyenadna
+680	0.0	0.0	0.0				False	blood	early	hyenadna
+682	0.0	0.0	0.0				False	blood	early	hyenadna
+683	0.0	0.0	0.0				False	blood	early	hyenadna
+684	0.0	0.0	0.0				False	blood	early	hyenadna
+685	0.0	0.0	0.0				False	blood	early	hyenadna
+686	0.0	0.0	0.0				False	blood	early	hyenadna
+688	0.0	0.0	0.0				False	blood	early	hyenadna
+689	0.0	0.0	0.0				False	blood	early	hyenadna
+691	0.0	0.0	0.0				False	blood	early	hyenadna
+694	0.0	0.0	0.0				False	blood	early	hyenadna
+695	0.0	0.0	0.0				False	blood	early	hyenadna
+698	0.0	0.0	0.0				False	blood	early	hyenadna
+699	0.0	0.0	0.0				False	blood	early	hyenadna
+703	0.0	0.0	0.0				False	blood	early	hyenadna
+704	0.0	0.0	0.0				False	blood	early	hyenadna
+705	0.0	0.0	0.0				False	blood	early	hyenadna
+707	0.0	0.0	0.0				False	blood	early	hyenadna
+708	0.0	0.0	0.0				False	blood	early	hyenadna
+709	0.0	0.0	0.0				False	blood	early	hyenadna
+710	0.0	0.0	0.0				False	blood	early	hyenadna
+711	0.0	0.0	0.0				False	blood	early	hyenadna
+712	0.0	0.0	0.0				False	blood	early	hyenadna
+713	0.0	0.0	0.0				False	blood	early	hyenadna
+714	0.0	0.0	0.0				False	blood	early	hyenadna
+715	0.0	0.0	0.0				False	blood	early	hyenadna
+716	0.0	0.0	0.0				False	blood	early	hyenadna
+717	0.0	0.0	0.0				False	blood	early	hyenadna
+719	0.0	0.0	0.0				False	blood	early	hyenadna
+720	0.0	0.0	0.0				False	blood	early	hyenadna
+721	0.0	0.0	0.0				False	blood	early	hyenadna
+722	0.0	0.0	0.0				False	blood	early	hyenadna
+723	0.0	0.0	0.0				False	blood	early	hyenadna
+724	0.0	0.0	0.0				False	blood	early	hyenadna
+725	0.0	0.0	0.0				False	blood	early	hyenadna
+726	0.0	0.0	0.0				False	blood	early	hyenadna
+727	0.0	0.0	0.0				False	blood	early	hyenadna
+728	0.0	0.0	0.0				False	blood	early	hyenadna
+729	0.0	0.0	0.0				False	blood	early	hyenadna
+730	0.0	0.0	0.0				False	blood	early	hyenadna
+731	0.0	0.0	0.0				False	blood	early	hyenadna
+732	0.0	0.0	0.0				False	blood	early	hyenadna
+733	0.0	0.0	0.0				False	blood	early	hyenadna
+734	0.0	0.0	0.0				False	blood	early	hyenadna
+735	0.0	0.0	0.0				False	blood	early	hyenadna
+739	0.0	0.0	0.0				False	blood	early	hyenadna
+741	0.0	0.0	0.0				False	blood	early	hyenadna
+742	0.0	0.0	0.0				False	blood	early	hyenadna
+743	0.0	0.0	0.0				False	blood	early	hyenadna
+744	0.0	0.0	0.0				False	blood	early	hyenadna
+745	0.0	0.0	0.0				False	blood	early	hyenadna
+746	0.0	0.0	0.0				False	blood	early	hyenadna
+747	0.0	0.0	0.0				False	blood	early	hyenadna
+748	0.0	0.0	0.0				False	blood	early	hyenadna
+749	0.0	0.0	0.0				False	blood	early	hyenadna
+750	0.0	0.0	0.0				False	blood	early	hyenadna
+751	0.0	0.0	0.0				False	blood	early	hyenadna
+752	0.0	0.0	0.0				False	blood	early	hyenadna
+753	0.0	0.0	0.0				False	blood	early	hyenadna
+754	0.0	0.0	0.0				False	blood	early	hyenadna
+755	0.0	0.0	0.0				False	blood	early	hyenadna
+756	0.0	0.0	0.0				False	blood	early	hyenadna
+757	0.0	0.0	0.0				False	blood	early	hyenadna
+758	0.0	0.0	0.0				False	blood	early	hyenadna
+759	0.0	0.0	0.0				False	blood	early	hyenadna
+760	0.0	0.0	0.0				False	blood	early	hyenadna
+761	0.0	0.0	0.0				False	blood	early	hyenadna
+762	0.0	0.0	0.0				False	blood	early	hyenadna
+763	0.0	0.0	0.0				False	blood	early	hyenadna
+764	0.0	0.0	0.0				False	blood	early	hyenadna
+766	0.0	0.0	0.0				False	blood	early	hyenadna
+767	0.0	0.0	0.0				False	blood	early	hyenadna
+768	0.0	0.0	0.0				False	blood	early	hyenadna
+769	0.0	0.0	0.0				False	blood	early	hyenadna
+770	0.0	0.0	0.0				False	blood	early	hyenadna
+771	0.0	0.0	0.0				False	blood	early	hyenadna
+774	0.0	0.0	0.0				False	blood	early	hyenadna
+775	0.0	0.0	0.0				False	blood	early	hyenadna
+776	0.0	0.0	0.0				False	blood	early	hyenadna
+777	0.0	0.0	0.0				False	blood	early	hyenadna
+778	0.0	0.0	0.0				False	blood	early	hyenadna
+779	0.0	0.0	0.0				False	blood	early	hyenadna
+780	0.0	0.0	0.0				False	blood	early	hyenadna
+782	0.0	0.0	0.0				False	blood	early	hyenadna
+783	0.0	0.0	0.0				False	blood	early	hyenadna
+784	0.0	0.0	0.0				False	blood	early	hyenadna
+786	0.0	0.0	0.0				False	blood	early	hyenadna
+787	0.0	0.0	0.0				False	blood	early	hyenadna
+788	0.0	0.0	0.0				False	blood	early	hyenadna
+789	0.0	0.0	0.0				False	blood	early	hyenadna
+790	0.0	0.0	0.0				False	blood	early	hyenadna
+791	0.0	0.0	0.0				False	blood	early	hyenadna
+792	0.0	0.0	0.0				False	blood	early	hyenadna
+793	0.0	0.0	0.0				False	blood	early	hyenadna
+794	0.0	0.0	0.0				False	blood	early	hyenadna
+798	0.0	0.0	0.0				False	blood	early	hyenadna
+799	0.0	0.0	0.0				False	blood	early	hyenadna
+800	0.0	0.0	0.0				False	blood	early	hyenadna
+801	0.0	0.0	0.0				False	blood	early	hyenadna
+802	0.0	0.0	0.0				False	blood	early	hyenadna
+803	0.0	0.0	0.0				False	blood	early	hyenadna
+804	0.0	0.0	0.0				False	blood	early	hyenadna
+805	0.0	0.0	0.0				False	blood	early	hyenadna
+808	0.0	0.0	0.0				False	blood	early	hyenadna
+809	0.0	0.0	0.0				False	blood	early	hyenadna
+810	0.0	0.0	0.0				False	blood	early	hyenadna
+811	0.0	0.0	0.0				False	blood	early	hyenadna
+812	0.0	0.0	0.0				False	blood	early	hyenadna
+813	0.0	0.0	0.0				False	blood	early	hyenadna
+816	0.0	0.0	0.0				False	blood	early	hyenadna
+817	0.0	0.0	0.0				False	blood	early	hyenadna
+818	0.0	0.0	0.0				False	blood	early	hyenadna
+819	0.0	0.0	0.0				False	blood	early	hyenadna
+820	0.0	0.0	0.0				False	blood	early	hyenadna
+821	0.0	0.0	0.0				False	blood	early	hyenadna
+823	0.0	0.0	0.0				False	blood	early	hyenadna
+825	0.0	0.0	0.0				False	blood	early	hyenadna
+826	0.0	0.0	0.0				False	blood	early	hyenadna
+827	0.0	0.0	0.0				False	blood	early	hyenadna
+829	0.0	0.0	0.0				False	blood	early	hyenadna
+830	0.0	0.0	0.0				False	blood	early	hyenadna
+831	0.0	0.0	0.0				False	blood	early	hyenadna
+832	0.0	0.0	0.0				False	blood	early	hyenadna
+833	0.0	0.0	0.0				False	blood	early	hyenadna
+834	0.0	0.0	0.0				False	blood	early	hyenadna
+835	0.0	0.0	0.0				False	blood	early	hyenadna
+836	0.0	0.0	0.0				False	blood	early	hyenadna
+837	0.0	0.0	0.0				False	blood	early	hyenadna
+838	0.0	0.0	0.0				False	blood	early	hyenadna
+840	0.0	0.0	0.0				False	blood	early	hyenadna
+841	0.0	0.0	0.0				False	blood	early	hyenadna
+842	0.0	0.0	0.0				False	blood	early	hyenadna
+843	0.0	0.0	0.0				False	blood	early	hyenadna
+844	0.0	0.0	0.0				False	blood	early	hyenadna
+845	0.0	0.0	0.0				False	blood	early	hyenadna
+846	0.0	0.0	0.0				False	blood	early	hyenadna
+847	0.0	0.0	0.0				False	blood	early	hyenadna
+848	0.0	0.0	0.0				False	blood	early	hyenadna
+849	0.0	0.0	0.0				False	blood	early	hyenadna
+850	0.0	0.0	0.0				False	blood	early	hyenadna
+851	0.0	0.0	0.0				False	blood	early	hyenadna
+852	0.0	0.0	0.0				False	blood	early	hyenadna
+853	0.0	0.0	0.0				False	blood	early	hyenadna
+854	0.0	0.0	0.0				False	blood	early	hyenadna
+855	0.0	0.0	0.0				False	blood	early	hyenadna
+856	0.0	0.0	0.0				False	blood	early	hyenadna
+857	0.0	0.0	0.0				False	blood	early	hyenadna
+858	0.0	0.0	0.0				False	blood	early	hyenadna
+859	0.0	0.0	0.0				False	blood	early	hyenadna
+860	0.0	0.0	0.0				False	blood	early	hyenadna
+861	0.0	0.0	0.0				False	blood	early	hyenadna
+862	0.0	0.0	0.0				False	blood	early	hyenadna
+863	0.0	0.0	0.0				False	blood	early	hyenadna
+864	0.0	0.0	0.0				False	blood	early	hyenadna
+865	0.0	0.0	0.0				False	blood	early	hyenadna
+867	0.0	0.0	0.0				False	blood	early	hyenadna
+868	0.0	0.0	0.0				False	blood	early	hyenadna
+869	0.0	0.0	0.0				False	blood	early	hyenadna
+870	0.0	0.0	0.0				False	blood	early	hyenadna
+872	0.0	0.0	0.0				False	blood	early	hyenadna
+873	0.0	0.0	0.0				False	blood	early	hyenadna
+875	0.0	0.0	0.0				False	blood	early	hyenadna
+876	0.0	0.0	0.0				False	blood	early	hyenadna
+877	0.0	0.0	0.0				False	blood	early	hyenadna
+878	0.0	0.0	0.0				False	blood	early	hyenadna
+879	0.0	0.0	0.0				False	blood	early	hyenadna
+880	0.0	0.0	0.0				False	blood	early	hyenadna
+881	0.0	0.0	0.0				False	blood	early	hyenadna
+882	0.0	0.0	0.0				False	blood	early	hyenadna
+883	0.0	0.0	0.0				False	blood	early	hyenadna
+884	0.0	0.0	0.0				False	blood	early	hyenadna
+885	0.0	0.0	0.0				False	blood	early	hyenadna
+886	0.0	0.0	0.0				False	blood	early	hyenadna
+887	0.0	0.0	0.0				False	blood	early	hyenadna
+888	0.0	0.0	0.0				False	blood	early	hyenadna
+889	0.0	0.0	0.0				False	blood	early	hyenadna
+890	0.0	0.0	0.0				False	blood	early	hyenadna
+891	0.0	0.0	0.0				False	blood	early	hyenadna
+892	0.0	0.0	0.0				False	blood	early	hyenadna
+894	0.0	0.0	0.0				False	blood	early	hyenadna
+895	0.0	0.0	0.0				False	blood	early	hyenadna
+896	0.0	0.0	0.0				False	blood	early	hyenadna
+898	0.0	0.0	0.0				False	blood	early	hyenadna
+899	0.0	0.0	0.0				False	blood	early	hyenadna
+900	0.0	0.0	0.0				False	blood	early	hyenadna
+902	0.0	0.0	0.0				False	blood	early	hyenadna
+903	0.0	0.0	0.0				False	blood	early	hyenadna
+904	0.0	0.0	0.0				False	blood	early	hyenadna
+905	0.0	0.0	0.0				False	blood	early	hyenadna
+908	0.0	0.0	0.0				False	blood	early	hyenadna
+909	0.0	0.0	0.0				False	blood	early	hyenadna
+910	0.0	0.0	0.0				False	blood	early	hyenadna
+911	0.0	0.0	0.0				False	blood	early	hyenadna
+912	0.0	0.0	0.0				False	blood	early	hyenadna
+913	0.0	0.0	0.0				False	blood	early	hyenadna
+914	0.0	0.0	0.0				False	blood	early	hyenadna
+915	0.0	0.0	0.0				False	blood	early	hyenadna
+916	0.0	0.0	0.0				False	blood	early	hyenadna
+917	0.0	0.0	0.0				False	blood	early	hyenadna
+919	0.0	0.0	0.0				False	blood	early	hyenadna
+920	0.0	0.0	0.0				False	blood	early	hyenadna
+921	0.0	0.0	0.0				False	blood	early	hyenadna
+922	0.0	0.0	0.0				False	blood	early	hyenadna
+923	0.0	0.0	0.0				False	blood	early	hyenadna
+925	0.0	0.0	0.0				False	blood	early	hyenadna
+927	0.0	0.0	0.0				False	blood	early	hyenadna
+928	0.0	0.0	0.0				False	blood	early	hyenadna
+929	0.0	0.0	0.0				False	blood	early	hyenadna
+931	0.0	0.0	0.0				False	blood	early	hyenadna
+934	0.0	0.0	0.0				False	blood	early	hyenadna
+936	0.0	0.0	0.0				False	blood	early	hyenadna
+937	0.0	0.0	0.0				False	blood	early	hyenadna
+938	0.0	0.0	0.0				False	blood	early	hyenadna
+939	0.0	0.0	0.0				False	blood	early	hyenadna
+940	0.0	0.0	0.0				False	blood	early	hyenadna
+941	0.0	0.0	0.0				False	blood	early	hyenadna
+942	0.0	0.0	0.0				False	blood	early	hyenadna
+943	0.0	0.0	0.0				False	blood	early	hyenadna
+945	0.0	0.0	0.0				False	blood	early	hyenadna
+946	0.0	0.0	0.0				False	blood	early	hyenadna
+947	0.0	0.0	0.0				False	blood	early	hyenadna
+948	0.0	0.0	0.0				False	blood	early	hyenadna
+949	0.0	0.0	0.0				False	blood	early	hyenadna
+952	0.0	0.0	0.0				False	blood	early	hyenadna
+953	0.0	0.0	0.0				False	blood	early	hyenadna
+954	0.0	0.0	0.0				False	blood	early	hyenadna
+955	0.0	0.0	0.0				False	blood	early	hyenadna
+956	0.0	0.0	0.0				False	blood	early	hyenadna
+957	0.0	0.0	0.0				False	blood	early	hyenadna
+958	0.0	0.0	0.0				False	blood	early	hyenadna
+959	0.0	0.0	0.0				False	blood	early	hyenadna
+961	0.0	0.0	0.0				False	blood	early	hyenadna
+962	0.0	0.0	0.0				False	blood	early	hyenadna
+963	0.0	0.0	0.0				False	blood	early	hyenadna
+964	0.0	0.0	0.0				False	blood	early	hyenadna
+965	0.0	0.0	0.0				False	blood	early	hyenadna
+966	0.0	0.0	0.0				False	blood	early	hyenadna
+967	0.0	0.0	0.0				False	blood	early	hyenadna
+968	0.0	0.0	0.0				False	blood	early	hyenadna
+972	0.0	0.0	0.0				False	blood	early	hyenadna
+973	0.0	0.0	0.0				False	blood	early	hyenadna
+974	0.0	0.0	0.0				False	blood	early	hyenadna
+975	0.0	0.0	0.0				False	blood	early	hyenadna
+976	0.0	0.0	0.0				False	blood	early	hyenadna
+977	0.0	0.0	0.0				False	blood	early	hyenadna
+978	0.0	0.0	0.0				False	blood	early	hyenadna
+979	0.0	0.0	0.0				False	blood	early	hyenadna
+980	0.0	0.0	0.0				False	blood	early	hyenadna
+981	0.0	0.0	0.0				False	blood	early	hyenadna
+982	0.0	0.0	0.0				False	blood	early	hyenadna
+983	0.0	0.0	0.0				False	blood	early	hyenadna
+984	0.0	0.0	0.0				False	blood	early	hyenadna
+985	0.0	0.0	0.0				False	blood	early	hyenadna
+986	0.0	0.0	0.0				False	blood	early	hyenadna
+987	0.0	0.0	0.0				False	blood	early	hyenadna
+988	0.0	0.0	0.0				False	blood	early	hyenadna
+989	0.0	0.0	0.0				False	blood	early	hyenadna
+990	0.0	0.0	0.0				False	blood	early	hyenadna
+991	0.0	0.0	0.0				False	blood	early	hyenadna
+992	0.0	0.0	0.0				False	blood	early	hyenadna
+993	0.0	0.0	0.0				False	blood	early	hyenadna
+994	0.0	0.0	0.0				False	blood	early	hyenadna
+995	0.0	0.0	0.0				False	blood	early	hyenadna
+996	0.0	0.0	0.0				False	blood	early	hyenadna
+997	0.0	0.0	0.0				False	blood	early	hyenadna
+999	0.0	0.0	0.0				False	blood	early	hyenadna
+1000	0.0	0.0	0.0				False	blood	early	hyenadna
+1004	0.0	0.0	0.0				False	blood	early	hyenadna
+1006	0.0	0.0	0.0				False	blood	early	hyenadna
+1007	0.0	0.0	0.0				False	blood	early	hyenadna
+1008	0.0	0.0	0.0				False	blood	early	hyenadna
+1009	0.0	0.0	0.0				False	blood	early	hyenadna
+1011	0.0	0.0	0.0				False	blood	early	hyenadna
+1012	0.0	0.0	0.0				False	blood	early	hyenadna
+1013	0.0	0.0	0.0				False	blood	early	hyenadna
+1014	0.0	0.0	0.0				False	blood	early	hyenadna
+1015	0.0	0.0	0.0				False	blood	early	hyenadna
+1016	0.0	0.0	0.0				False	blood	early	hyenadna
+1017	0.0	0.0	0.0				False	blood	early	hyenadna
+1019	0.0	0.0	0.0				False	blood	early	hyenadna
+1020	0.0	0.0	0.0				False	blood	early	hyenadna
+1021	0.0	0.0	0.0				False	blood	early	hyenadna
+1022	0.0	0.0	0.0				False	blood	early	hyenadna
+1023	0.0	0.0	0.0				False	blood	early	hyenadna

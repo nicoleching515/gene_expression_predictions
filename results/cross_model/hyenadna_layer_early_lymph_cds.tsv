@@ -1,0 +1,1025 @@
+feature_id	cds	vitro_mean	vivo_mean	t_stat	pval	pval_bonf	significant	pair	layer	model
+317	-0.0044798013	0.0024401573	0.0069199586	-2.062248	0.03974089	1.0	False	lymph	early	hyenadna
+303	-0.013684146	0.091023475	0.10470762	-2.0143576	0.04440686	1.0	False	lymph	early	hyenadna
+740	-0.011444107	0.17308725	0.18453136	-1.9680188	0.049485154	1.0	False	lymph	early	hyenadna
+371	0.0033646377	0.006804489	0.0034398513	1.9288993	0.05407154	1.0	False	lymph	early	hyenadna
+1010	0.0005030197	0.0005030197	0.0	1.7330215	0.0833231	1.0	False	lymph	early	hyenadna
+516	0.0054131933	0.01865594	0.013242748	1.7080077	0.08806719	1.0	False	lymph	early	hyenadna
+506	-0.007839913	0.028960535	0.036800448	-1.6407229	0.101395346	1.0	False	lymph	early	hyenadna
+397	-0.010214984	0.16489802	0.175113	-1.6309329	0.10339535	1.0	False	lymph	early	hyenadna
+969	0.0055729114	0.023086986	0.017514074	1.5172203	0.12966493	1.0	False	lymph	early	hyenadna
+609	0.0091587305	0.084963635	0.075804904	1.4611213	0.1444762	1.0	False	lymph	early	hyenadna
+48	0.0047080815	0.25795394	0.25324586	1.4590292	0.14510898	1.0	False	lymph	early	hyenadna
+772	-0.0065128803	0.20434764	0.21086052	-1.4210892	0.15575974	1.0	False	lymph	early	hyenadna
+216	0.00032794892	0.00032794892	0.0	1.4147449	0.15737681	1.0	False	lymph	early	hyenadna
+807	0.0003513707	0.0003513707	0.0	1.4147233	0.15738316	1.0	False	lymph	early	hyenadna
+697	0.0003355173	0.0003355173	0.0	1.4146601	0.1574017	1.0	False	lymph	early	hyenadna
+327	0.00034870172	0.00034870172	0.0	1.413358	0.15778393	1.0	False	lymph	early	hyenadna
+282	-0.008395977	0.06389837	0.07229435	-1.3465796	0.17861886	1.0	False	lymph	early	hyenadna
+450	0.0018290579	0.26300684	0.26117778	1.3166438	0.18858433	1.0	False	lymph	early	hyenadna
+68	-0.0032133493	0.0049481415	0.008161491	-1.3107263	0.1905337	1.0	False	lymph	early	hyenadna
+313	-0.008609429	0.15601647	0.1646259	-1.3035307	0.19286507	1.0	False	lymph	early	hyenadna
+472	0.004033953	0.2668438	0.26280984	1.2914532	0.1971266	1.0	False	lymph	early	hyenadna
+261	-0.0044831485	0.2134743	0.21795745	-1.2906595	0.19725709	1.0	False	lymph	early	hyenadna
+459	0.0037742853	0.26215836	0.25838408	1.2853738	0.19922014	1.0	False	lymph	early	hyenadna
+309	0.00796248	0.15612613	0.14816365	1.2721335	0.20381215	1.0	False	lymph	early	hyenadna
+738	-0.0026178476	0.002490582	0.0051084296	-1.2258167	0.22087507	1.0	False	lymph	early	hyenadna
+647	0.0051581264	0.24439554	0.23923741	1.2174766	0.22391674	1.0	False	lymph	early	hyenadna
+136	0.0077061355	0.14412837	0.13642223	1.1926049	0.23348543	1.0	False	lymph	early	hyenadna
+475	-0.0023203876	0.00039249327	0.002712881	-1.186545	0.23608148	1.0	False	lymph	early	hyenadna
+737	-0.0011648295	0.00019703075	0.0013618602	-1.1865449	0.23608154	1.0	False	lymph	early	hyenadna
+71	-0.0010347974	0.00017503584	0.0012098332	-1.1865422	0.23608261	1.0	False	lymph	early	hyenadna
+429	-0.0014819122	0.00025066527	0.0017325775	-1.1865423	0.23608261	1.0	False	lymph	early	hyenadna
+533	-0.001073655	0.0001816086	0.0012552636	-1.1865414	0.23608285	1.0	False	lymph	early	hyenadna
+63	-0.0009771386	0.00016528288	0.0011424215	-1.1865411	0.23608297	1.0	False	lymph	early	hyenadna
+97	-0.0010187434	0.0001723203	0.0011910637	-1.1865408	0.23608309	1.0	False	lymph	early	hyenadna
+596	-0.0016263624	0.00027509898	0.0019014614	-1.186541	0.23608309	1.0	False	lymph	early	hyenadna
+193	-0.0009770462	0.00016526725	0.0011423135	-1.1865404	0.23608328	1.0	False	lymph	early	hyenadna
+500	-0.0010287486	0.0001740127	0.0012027613	-1.1865401	0.23608342	1.0	False	lymph	early	hyenadna
+1002	-0.0009965261	0.00016856227	0.0011650884	-1.1865398	0.23608348	1.0	False	lymph	early	hyenadna
+74	-0.0010953272	0.00018527445	0.0012806016	-1.1865394	0.2360837	1.0	False	lymph	early	hyenadna
+304	-0.0010049747	0.00016999133	0.001174966	-1.1865389	0.23608388	1.0	False	lymph	early	hyenadna
+60	-0.0014095977	0.00023843326	0.001648031	-1.1865382	0.23608409	1.0	False	lymph	early	hyenadna
+933	-0.0013851213	0.00023429308	0.0016194143	-1.1865382	0.23608416	1.0	False	lymph	early	hyenadna
+46	-0.0010525599	0.00017804037	0.0012306003	-1.1865377	0.23608427	1.0	False	lymph	early	hyenadna
+78	-0.0042902166	0.0007256896	0.0050159064	-1.1865379	0.23608439	1.0	False	lymph	early	hyenadna
+636	-0.001184595	0.00020037411	0.0013849692	-1.1865364	0.23608486	1.0	False	lymph	early	hyenadna
+700	-0.0022132427	0.00037436973	0.0025876125	-1.1865362	0.23608494	1.0	False	lymph	early	hyenadna
+342	-0.005475756	0.0009262234	0.0064019794	-1.1865363	0.23608495	1.0	False	lymph	early	hyenadna
+930	-0.0010012207	0.00016935634	0.001170577	-1.1865355	0.23608518	1.0	False	lymph	early	hyenadna
+625	-0.002248414	0.00038031893	0.002628733	-1.1865355	0.23608525	1.0	False	lymph	early	hyenadna
+215	-0.0010033709	0.00016972005	0.0011730909	-1.1865352	0.23608536	1.0	False	lymph	early	hyenadna
+231	-0.0010006191	0.00016925459	0.0011698738	-1.1865349	0.23608541	1.0	False	lymph	early	hyenadna
+227	-0.0013035953	0.00022050296	0.0015240982	-1.1865342	0.23608571	1.0	False	lymph	early	hyenadna
+897	-0.0011940951	0.00020198103	0.0013960762	-1.1865342	0.23608574	1.0	False	lymph	early	hyenadna
+17	-0.0015434602	0.0002610761	0.0018045363	-1.1865338	0.23608592	1.0	False	lymph	early	hyenadna
+693	-0.0014562912	0.00024633144	0.0017026226	-1.1865337	0.23608603	1.0	False	lymph	early	hyenadna
+814	-0.0049550845	0.00083815196	0.0057932367	-1.1865323	0.23608647	1.0	False	lymph	early	hyenadna
+621	-0.0022551098	0.00038145154	0.0026365614	-1.1865323	0.2360865	1.0	False	lymph	early	hyenadna
+461	-0.0009633304	0.00016887694	0.0011322073	-1.1788306	0.23913318	1.0	False	lymph	early	hyenadna
+170	0.0046578497	0.2356039	0.23094605	1.152331	0.24968392	1.0	False	lymph	early	hyenadna
+172	0.0072551146	0.13200767	0.12475256	1.1227623	0.26197326	1.0	False	lymph	early	hyenadna
+907	0.0029393733	0.24141088	0.23847151	1.1016271	0.27109686	1.0	False	lymph	early	hyenadna
+294	-0.0040045828	0.2248836	0.22888818	-1.0821952	0.27957395	1.0	False	lymph	early	hyenadna
+141	0.001478821	0.27211058	0.27063176	1.0820317	0.27977806	1.0	False	lymph	early	hyenadna
+201	-0.00128729	0.0009846747	0.0022719647	-1.07216	0.28418067	1.0	False	lymph	early	hyenadna
+781	-0.005671259	0.04012082	0.04579208	-1.0603594	0.2894086	1.0	False	lymph	early	hyenadna
+254	-0.0068686604	0.0938714	0.10074006	-1.0576783	0.290614	1.0	False	lymph	early	hyenadna
+491	0.0046564043	0.2229108	0.2182544	1.0558573	0.29148728	1.0	False	lymph	early	hyenadna
+9	-0.0013759749	0.00042496144	0.0018009363	-1.0515172	0.29361016	1.0	False	lymph	early	hyenadna
+932	0.002318561	0.26715958	0.26484102	1.0261624	0.30529287	1.0	False	lymph	early	hyenadna
+505	-0.000992626	0.31033114	0.31132376	-1.0171839	0.30949315	1.0	False	lymph	early	hyenadna
+319	0.0013861435	0.0036573296	0.002271186	1.0114295	0.3121246	1.0	False	lymph	early	hyenadna
+906	0.000163405	0.000163405	0.0	1.0000066	0.3174888	1.0	False	lymph	early	hyenadna
+350	0.00017466619	0.00017466619	0.0	1.0000066	0.3174888	1.0	False	lymph	early	hyenadna
+407	0.000162661	0.000162661	0.0	1.0000006	0.31749165	1.0	False	lymph	early	hyenadna
+390	0.00017137047	0.00017137047	0.0	0.99999714	0.31749335	1.0	False	lymph	early	hyenadna
+936	0.00016716732	0.00016716732	0.0	0.9999967	0.31749353	1.0	False	lymph	early	hyenadna
+797	0.0001796118	0.0001796118	0.0	0.9999889	0.31749734	1.0	False	lymph	early	hyenadna
+960	-0.00056673144	0.0	0.00056673144	-1.0000027	0.31793725	1.0	False	lymph	early	hyenadna
+340	-0.0044195857	0.023815496	0.028235082	-0.99674237	0.31930056	1.0	False	lymph	early	hyenadna
+736	-0.0008337204	0.00032979978	0.0011635202	-0.9760967	0.32954228	1.0	False	lymph	early	hyenadna
+517	-0.0064370334	0.11299943	0.119436465	-0.9728669	0.33099386	1.0	False	lymph	early	hyenadna
+396	-0.006499782	0.09059794	0.097097725	-0.9627252	0.33606312	1.0	False	lymph	early	hyenadna
+223	0.0028726459	0.25410318	0.25123054	0.96173	0.33658963	1.0	False	lymph	early	hyenadna
+606	0.0058279634	0.19944912	0.19362116	0.94731194	0.34385934	1.0	False	lymph	early	hyenadna
+571	0.0056496114	0.16398656	0.15833695	0.93293536	0.35122165	1.0	False	lymph	early	hyenadna
+660	0.003789857	0.22110052	0.21731067	0.8704999	0.38439462	1.0	False	lymph	early	hyenadna
+376	-0.0019375617	0.0055146525	0.007452214	-0.86294454	0.3885351	1.0	False	lymph	early	hyenadna
+453	-0.0027058572	0.21948844	0.2221943	-0.84891623	0.39623564	1.0	False	lymph	early	hyenadna
+971	0.0017724633	0.30589345	0.304121	0.84402466	0.39903873	1.0	False	lymph	early	hyenadna
+901	-0.0008366856	0.00052361673	0.0013603023	-0.8305619	0.40664783	1.0	False	lymph	early	hyenadna
+822	0.005201012	0.16883837	0.16363735	0.82588947	0.40918362	1.0	False	lymph	early	hyenadna
+549	-0.0022326345	0.008077681	0.0103103155	-0.8173763	0.41406035	1.0	False	lymph	early	hyenadna
+535	0.0015492141	0.27196094	0.27041173	0.80230755	0.422737	1.0	False	lymph	early	hyenadna
+102	-0.0015954617	0.0042309547	0.0058264164	-0.7955822	0.42661265	1.0	False	lymph	early	hyenadna
+874	-0.00096843496	0.0010332543	0.0020016893	-0.78631383	0.43206218	1.0	False	lymph	early	hyenadna
+409	-0.0014795957	0.0035599053	0.005039501	-0.7636558	0.44540638	1.0	False	lymph	early	hyenadna
+706	0.004143089	0.054111503	0.049968414	0.76204437	0.4463145	1.0	False	lymph	early	hyenadna
+866	0.0011231899	0.2673311	0.2662079	0.75917673	0.44813016	1.0	False	lymph	early	hyenadna
+795	-0.0006468591	0.0005073618	0.0011542209	-0.7468438	0.45551693	1.0	False	lymph	early	hyenadna
+26	0.004734233	0.081954904	0.07722067	0.7353791	0.46238554	1.0	False	lymph	early	hyenadna
+378	-0.0019834843	0.0077840304	0.009767515	-0.72041494	0.4715693	1.0	False	lymph	early	hyenadna
+765	0.0046334714	0.16390719	0.15927371	0.71993196	0.47184134	1.0	False	lymph	early	hyenadna
+298	-0.0013657301	0.003893023	0.005258753	-0.71391886	0.47557393	1.0	False	lymph	early	hyenadna
+926	0.0031146705	0.22297147	0.2198568	0.71075344	0.47751105	1.0	False	lymph	early	hyenadna
+334	0.0042024553	0.16824862	0.16404617	0.69883275	0.48492268	1.0	False	lymph	early	hyenadna
+189	0.0028695296	0.024840875	0.021971345	0.69194347	0.4892211	1.0	False	lymph	early	hyenadna
+687	-0.0023593	0.013249526	0.015608826	-0.6760435	0.49928573	1.0	False	lymph	early	hyenadna
+664	0.0011143943	0.004565908	0.0034515138	0.67581177	0.4993801	1.0	False	lymph	early	hyenadna
+179	0.0015412271	0.24560453	0.2440633	0.6495516	0.5162284	1.0	False	lymph	early	hyenadna
+210	-0.0023868997	0.017624542	0.020011442	-0.6375719	0.5239972	1.0	False	lymph	early	hyenadna
+950	0.002052173	0.24739562	0.24534345	0.6318249	0.5277504	1.0	False	lymph	early	hyenadna
+824	0.00064364076	0.29556057	0.29491693	0.6296522	0.52916884	1.0	False	lymph	early	hyenadna
+998	-0.0036002398	0.1985321	0.20213234	-0.62870306	0.5297715	1.0	False	lymph	early	hyenadna
+1018	0.0035731941	0.17444219	0.170869	0.6111298	0.54133916	1.0	False	lymph	early	hyenadna
+346	0.0040403903	0.10800305	0.10396266	0.606371	0.5444893	1.0	False	lymph	early	hyenadna
+645	-0.00074903073	0.0015294448	0.0022784756	-0.6023135	0.54721403	1.0	False	lymph	early	hyenadna
+702	-0.0031576604	0.18746065	0.1906183	-0.5718778	0.5676101	1.0	False	lymph	early	hyenadna
+391	-0.0006895249	0.0012489457	0.0019384706	-0.5675455	0.570584	1.0	False	lymph	early	hyenadna
+806	-0.001269233	0.0059118187	0.0071810517	-0.55911255	0.57630193	1.0	False	lymph	early	hyenadna
+1003	0.0016874522	0.25158292	0.24989547	0.5490586	0.5831836	1.0	False	lymph	early	hyenadna
+205	0.00063941325	0.002355772	0.0017163588	0.54638785	0.5849677	1.0	False	lymph	early	hyenadna
+681	-0.0035326257	0.12093462	0.124467246	-0.5436714	0.58686113	1.0	False	lymph	early	hyenadna
+690	-0.0032150596	0.15896569	0.16218075	-0.53278923	0.5943662	1.0	False	lymph	early	hyenadna
+618	-0.0033707991	0.08955045	0.09292125	-0.51898044	0.603959	1.0	False	lymph	early	hyenadna
+197	0.0032442808	0.14163351	0.13838923	0.5082501	0.6114579	1.0	False	lymph	early	hyenadna
+145	0.002013296	0.22243826	0.22042497	0.49214205	0.6227987	1.0	False	lymph	early	hyenadna
+249	0.0029944927	0.15563643	0.15264194	0.47781447	0.6329505	1.0	False	lymph	early	hyenadna
+154	0.0025999025	0.053896874	0.05129697	0.46683294	0.640781	1.0	False	lymph	early	hyenadna
+951	0.0014720662	0.0147290435	0.013256977	0.4659156	0.6414321	1.0	False	lymph	early	hyenadna
+556	0.0009314716	0.27047473	0.26954326	0.4509124	0.6522271	1.0	False	lymph	early	hyenadna
+970	-0.0019628704	0.22684956	0.22881243	-0.4439181	0.65725255	1.0	False	lymph	early	hyenadna
+1	-0.0010117218	0.0058831926	0.0068949144	-0.441218	0.6592181	1.0	False	lymph	early	hyenadna
+871	0.0026097	0.16623071	0.16362101	0.42773664	0.6689908	1.0	False	lymph	early	hyenadna
+924	-0.002796352	0.116037816	0.11883417	-0.4146247	0.6785598	1.0	False	lymph	early	hyenadna
+77	-0.002711296	0.09992643	0.10263772	-0.4071048	0.6840712	1.0	False	lymph	early	hyenadna
+211	-0.002288103	0.044442054	0.046730157	-0.40374112	0.68654346	1.0	False	lymph	early	hyenadna
+648	0.0012154281	0.26746508	0.26624966	0.4035149	0.6867128	1.0	False	lymph	early	hyenadna
+796	0.00026046077	0.0008255966	0.00056513585	0.38599148	0.6996133	1.0	False	lymph	early	hyenadna
+487	0.000844792	0.007430288	0.006585496	0.37438866	0.70823604	1.0	False	lymph	early	hyenadna
+657	-0.00033584906	0.0008279059	0.001163755	-0.372659	0.70954573	1.0	False	lymph	early	hyenadna
+546	0.00045207143	0.30339164	0.30293956	0.36877298	0.7124278	1.0	False	lymph	early	hyenadna
+356	0.0020507872	0.20078084	0.19873005	0.36661905	0.7140286	1.0	False	lymph	early	hyenadna
+497	-0.00031371304	0.0008192341	0.0011329472	-0.35659218	0.72153234	1.0	False	lymph	early	hyenadna
+633	-0.00021813734	0.00034451293	0.00056265027	-0.355801	0.72212917	1.0	False	lymph	early	hyenadna
+466	0.002013877	0.17566894	0.17365506	0.35282224	0.7243416	1.0	False	lymph	early	hyenadna
+135	0.0018715262	0.19222975	0.19035822	0.3321088	0.73992026	1.0	False	lymph	early	hyenadna
+526	-0.0004824698	0.3383899	0.33887237	-0.3256588	0.7447941	1.0	False	lymph	early	hyenadna
+521	0.0014832877	0.034692764	0.033209477	0.31988707	0.74915934	1.0	False	lymph	early	hyenadna
+157	0.00057038665	0.2615477	0.26097733	0.30368695	0.7614661	1.0	False	lymph	early	hyenadna
+245	-0.0019967929	0.12431925	0.12631604	-0.30092728	0.76357037	1.0	False	lymph	early	hyenadna
+32	-0.0007471312	0.008498621	0.009245752	-0.29303455	0.7695962	1.0	False	lymph	early	hyenadna
+610	0.0011178255	0.21867606	0.21755823	0.26879957	0.78817534	1.0	False	lymph	early	hyenadna
+839	-0.00031027198	0.2850217	0.28533196	-0.25126752	0.8016901	1.0	False	lymph	early	hyenadna
+828	-0.0014514402	0.07857589	0.08002733	-0.21640414	0.8287446	1.0	False	lymph	early	hyenadna
+184	0.00074356794	0.2512547	0.25051114	0.2055163	0.837237	1.0	False	lymph	early	hyenadna
+701	0.00047884881	0.2402942	0.23981535	0.17770259	0.859019	1.0	False	lymph	early	hyenadna
+349	-0.00094431266	0.049652345	0.05059666	-0.17275034	0.8629038	1.0	False	lymph	early	hyenadna
+611	0.00085143745	0.1948905	0.19403906	0.15869302	0.8739625	1.0	False	lymph	early	hyenadna
+388	0.00010372797	0.0006685181	0.00056479016	0.15809336	0.8744303	1.0	False	lymph	early	hyenadna
+11	0.00035127718	0.008501377	0.0081501	0.1439493	0.8855864	1.0	False	lymph	early	hyenadna
+508	0.00055232644	0.21774656	0.21719423	0.13759841	0.89060247	1.0	False	lymph	early	hyenadna
+426	0.0004939735	0.2509132	0.25041923	0.13514778	0.8925398	1.0	False	lymph	early	hyenadna
+1001	0.00025324244	0.0077809803	0.007527738	0.103392944	0.9176839	1.0	False	lymph	early	hyenadna
+1005	0.00050869584	0.17077124	0.17026255	0.082377955	0.9343729	1.0	False	lymph	early	hyenadna
+568	-0.00021205842	0.24229795	0.24251	-0.08060251	0.9357834	1.0	False	lymph	early	hyenadna
+587	0.00034918636	0.07961924	0.07927005	0.056125853	0.9552595	1.0	False	lymph	early	hyenadna
+476	5.5153854e-05	0.0023840715	0.0023289176	0.041705947	0.9667462	1.0	False	lymph	early	hyenadna
+27	0.00025143474	0.06916938	0.068917945	0.041517626	0.9668966	1.0	False	lymph	early	hyenadna
+573	-6.231712e-05	0.004383572	0.004445889	-0.032994393	0.9736901	1.0	False	lymph	early	hyenadna
+24	-0.00014190376	0.21194525	0.21208715	-0.027252061	0.97826767	1.0	False	lymph	early	hyenadna
+773	6.078463e-05	0.013953051	0.013892266	0.019448109	0.9844898	1.0	False	lymph	early	hyenadna
+0	0.0	0.0	0.0				False	lymph	early	hyenadna
+2	0.0	0.0	0.0				False	lymph	early	hyenadna
+3	0.0	0.0	0.0				False	lymph	early	hyenadna
+4	0.0	0.0	0.0				False	lymph	early	hyenadna
+5	0.0	0.0	0.0				False	lymph	early	hyenadna
+6	0.0	0.0	0.0				False	lymph	early	hyenadna
+7	0.0	0.0	0.0				False	lymph	early	hyenadna
+8	0.0	0.0	0.0				False	lymph	early	hyenadna
+10	0.0	0.0	0.0				False	lymph	early	hyenadna
+12	0.0	0.0	0.0				False	lymph	early	hyenadna
+13	0.0	0.0	0.0				False	lymph	early	hyenadna
+14	0.0	0.0	0.0				False	lymph	early	hyenadna
+15	0.0	0.0	0.0				False	lymph	early	hyenadna
+16	0.0	0.0	0.0				False	lymph	early	hyenadna
+18	0.0	0.0	0.0				False	lymph	early	hyenadna
+19	0.0	0.0	0.0				False	lymph	early	hyenadna
+20	0.0	0.0	0.0				False	lymph	early	hyenadna
+21	0.0	0.0	0.0				False	lymph	early	hyenadna
+22	0.0	0.0	0.0				False	lymph	early	hyenadna
+23	0.0	0.0	0.0				False	lymph	early	hyenadna
+25	0.0	0.0	0.0				False	lymph	early	hyenadna
+28	0.0	0.0	0.0				False	lymph	early	hyenadna
+29	0.0	0.0	0.0				False	lymph	early	hyenadna
+30	0.0	0.0	0.0				False	lymph	early	hyenadna
+31	0.0	0.0	0.0				False	lymph	early	hyenadna
+33	0.0	0.0	0.0				False	lymph	early	hyenadna
+34	0.0	0.0	0.0				False	lymph	early	hyenadna
+35	0.0	0.0	0.0				False	lymph	early	hyenadna
+36	0.0	0.0	0.0				False	lymph	early	hyenadna
+37	0.0	0.0	0.0				False	lymph	early	hyenadna
+38	0.0	0.0	0.0				False	lymph	early	hyenadna
+39	0.0	0.0	0.0				False	lymph	early	hyenadna
+40	0.0	0.0	0.0				False	lymph	early	hyenadna
+41	0.0	0.0	0.0				False	lymph	early	hyenadna
+42	0.0	0.0	0.0				False	lymph	early	hyenadna
+43	0.0	0.0	0.0				False	lymph	early	hyenadna
+44	0.0	0.0	0.0				False	lymph	early	hyenadna
+45	0.0	0.0	0.0				False	lymph	early	hyenadna
+47	0.0	0.0	0.0				False	lymph	early	hyenadna
+49	0.0	0.0	0.0				False	lymph	early	hyenadna
+50	0.0	0.0	0.0				False	lymph	early	hyenadna
+51	0.0	0.0	0.0				False	lymph	early	hyenadna
+52	0.0	0.0	0.0				False	lymph	early	hyenadna
+53	0.0	0.0	0.0				False	lymph	early	hyenadna
+54	0.0	0.0	0.0				False	lymph	early	hyenadna
+55	0.0	0.0	0.0				False	lymph	early	hyenadna
+56	0.0	0.0	0.0				False	lymph	early	hyenadna
+57	0.0	0.0	0.0				False	lymph	early	hyenadna
+58	0.0	0.0	0.0				False	lymph	early	hyenadna
+59	0.0	0.0	0.0				False	lymph	early	hyenadna
+61	0.0	0.0	0.0				False	lymph	early	hyenadna
+62	0.0	0.0	0.0				False	lymph	early	hyenadna
+64	0.0	0.0	0.0				False	lymph	early	hyenadna
+65	0.0	0.0	0.0				False	lymph	early	hyenadna
+66	0.0	0.0	0.0				False	lymph	early	hyenadna
+67	0.0	0.0	0.0				False	lymph	early	hyenadna
+69	0.0	0.0	0.0				False	lymph	early	hyenadna
+70	0.0	0.0	0.0				False	lymph	early	hyenadna
+72	0.0	0.0	0.0				False	lymph	early	hyenadna
+73	0.0	0.0	0.0				False	lymph	early	hyenadna
+75	0.0	0.0	0.0				False	lymph	early	hyenadna
+76	0.0	0.0	0.0				False	lymph	early	hyenadna
+79	0.0	0.0	0.0				False	lymph	early	hyenadna
+80	0.0	0.0	0.0				False	lymph	early	hyenadna
+81	0.0	0.0	0.0				False	lymph	early	hyenadna
+82	0.0	0.0	0.0				False	lymph	early	hyenadna
+83	0.0	0.0	0.0				False	lymph	early	hyenadna
+84	0.0	0.0	0.0				False	lymph	early	hyenadna
+85	0.0	0.0	0.0				False	lymph	early	hyenadna
+86	0.0	0.0	0.0				False	lymph	early	hyenadna
+87	0.0	0.0	0.0				False	lymph	early	hyenadna
+88	0.0	0.0	0.0				False	lymph	early	hyenadna
+89	0.0	0.0	0.0				False	lymph	early	hyenadna
+90	0.0	0.0	0.0				False	lymph	early	hyenadna
+91	0.0	0.0	0.0				False	lymph	early	hyenadna
+92	0.0	0.0	0.0				False	lymph	early	hyenadna
+93	0.0	0.0	0.0				False	lymph	early	hyenadna
+94	0.0	0.0	0.0				False	lymph	early	hyenadna
+95	0.0	0.0	0.0				False	lymph	early	hyenadna
+96	0.0	0.0	0.0				False	lymph	early	hyenadna
+98	0.0	0.0	0.0				False	lymph	early	hyenadna
+99	0.0	0.0	0.0				False	lymph	early	hyenadna
+100	0.0	0.0	0.0				False	lymph	early	hyenadna
+101	0.0	0.0	0.0				False	lymph	early	hyenadna
+103	0.0	0.0	0.0				False	lymph	early	hyenadna
+104	0.0	0.0	0.0				False	lymph	early	hyenadna
+105	0.0	0.0	0.0				False	lymph	early	hyenadna
+106	0.0	0.0	0.0				False	lymph	early	hyenadna
+107	0.0	0.0	0.0				False	lymph	early	hyenadna
+108	0.0	0.0	0.0				False	lymph	early	hyenadna
+109	0.0	0.0	0.0				False	lymph	early	hyenadna
+110	0.0	0.0	0.0				False	lymph	early	hyenadna
+111	0.0	0.0	0.0				False	lymph	early	hyenadna
+112	0.0	0.0	0.0				False	lymph	early	hyenadna
+113	0.0	0.0	0.0				False	lymph	early	hyenadna
+114	0.0	0.0	0.0				False	lymph	early	hyenadna
+115	0.0	0.0	0.0				False	lymph	early	hyenadna
+116	0.0	0.0	0.0				False	lymph	early	hyenadna
+117	0.0	0.0	0.0				False	lymph	early	hyenadna
+118	0.0	0.0	0.0				False	lymph	early	hyenadna
+119	0.0	0.0	0.0				False	lymph	early	hyenadna
+120	0.0	0.0	0.0				False	lymph	early	hyenadna
+121	0.0	0.0	0.0				False	lymph	early	hyenadna
+122	0.0	0.0	0.0				False	lymph	early	hyenadna
+123	0.0	0.0	0.0				False	lymph	early	hyenadna
+124	0.0	0.0	0.0				False	lymph	early	hyenadna
+125	0.0	0.0	0.0				False	lymph	early	hyenadna
+126	0.0	0.0	0.0				False	lymph	early	hyenadna
+127	0.0	0.0	0.0				False	lymph	early	hyenadna
+128	0.0	0.0	0.0				False	lymph	early	hyenadna
+129	0.0	0.0	0.0				False	lymph	early	hyenadna
+130	0.0	0.0	0.0				False	lymph	early	hyenadna
+131	0.0	0.0	0.0				False	lymph	early	hyenadna
+132	0.0	0.0	0.0				False	lymph	early	hyenadna
+133	0.0	0.0	0.0				False	lymph	early	hyenadna
+134	0.0	0.0	0.0				False	lymph	early	hyenadna
+137	0.0	0.0	0.0				False	lymph	early	hyenadna
+138	0.0	0.0	0.0				False	lymph	early	hyenadna
+139	0.0	0.0	0.0				False	lymph	early	hyenadna
+140	0.0	0.0	0.0				False	lymph	early	hyenadna
+142	0.0	0.0	0.0				False	lymph	early	hyenadna
+143	0.0	0.0	0.0				False	lymph	early	hyenadna
+144	0.0	0.0	0.0				False	lymph	early	hyenadna
+146	0.0	0.0	0.0				False	lymph	early	hyenadna
+147	0.0	0.0	0.0				False	lymph	early	hyenadna
+148	0.0	0.0	0.0				False	lymph	early	hyenadna
+149	0.0	0.0	0.0				False	lymph	early	hyenadna
+150	0.0	0.0	0.0				False	lymph	early	hyenadna
+151	0.0	0.0	0.0				False	lymph	early	hyenadna
+152	0.0	0.0	0.0				False	lymph	early	hyenadna
+153	0.0	0.0	0.0				False	lymph	early	hyenadna
+155	0.0	0.0	0.0				False	lymph	early	hyenadna
+156	0.0	0.0	0.0				False	lymph	early	hyenadna
+158	0.0	0.0	0.0				False	lymph	early	hyenadna
+159	0.0	0.0	0.0				False	lymph	early	hyenadna
+160	0.0	0.0	0.0				False	lymph	early	hyenadna
+161	0.0	0.0	0.0				False	lymph	early	hyenadna
+162	0.0	0.0	0.0				False	lymph	early	hyenadna
+163	0.0	0.0	0.0				False	lymph	early	hyenadna
+164	0.0	0.0	0.0				False	lymph	early	hyenadna
+165	0.0	0.0	0.0				False	lymph	early	hyenadna
+166	0.0	0.0	0.0				False	lymph	early	hyenadna
+167	0.0	0.0	0.0				False	lymph	early	hyenadna
+168	0.0	0.0	0.0				False	lymph	early	hyenadna
+169	0.0	0.0	0.0				False	lymph	early	hyenadna
+171	0.0	0.0	0.0				False	lymph	early	hyenadna
+173	0.0	0.0	0.0				False	lymph	early	hyenadna
+174	0.0	0.0	0.0				False	lymph	early	hyenadna
+175	0.0	0.0	0.0				False	lymph	early	hyenadna
+176	0.0	0.0	0.0				False	lymph	early	hyenadna
+177	0.0	0.0	0.0				False	lymph	early	hyenadna
+178	0.0	0.0	0.0				False	lymph	early	hyenadna
+180	0.0	0.0	0.0				False	lymph	early	hyenadna
+181	0.0	0.0	0.0				False	lymph	early	hyenadna
+182	0.0	0.0	0.0				False	lymph	early	hyenadna
+183	0.0	0.0	0.0				False	lymph	early	hyenadna
+185	0.0	0.0	0.0				False	lymph	early	hyenadna
+186	0.0	0.0	0.0				False	lymph	early	hyenadna
+187	0.0	0.0	0.0				False	lymph	early	hyenadna
+188	0.0	0.0	0.0				False	lymph	early	hyenadna
+190	0.0	0.0	0.0				False	lymph	early	hyenadna
+191	0.0	0.0	0.0				False	lymph	early	hyenadna
+192	0.0	0.0	0.0				False	lymph	early	hyenadna
+194	0.0	0.0	0.0				False	lymph	early	hyenadna
+195	0.0	0.0	0.0				False	lymph	early	hyenadna
+196	0.0	0.0	0.0				False	lymph	early	hyenadna
+198	0.0	0.0	0.0				False	lymph	early	hyenadna
+199	0.0	0.0	0.0				False	lymph	early	hyenadna
+200	0.0	0.0	0.0				False	lymph	early	hyenadna
+202	0.0	0.0	0.0				False	lymph	early	hyenadna
+203	0.0	0.0	0.0				False	lymph	early	hyenadna
+204	0.0	0.0	0.0				False	lymph	early	hyenadna
+206	0.0	0.0	0.0				False	lymph	early	hyenadna
+207	0.0	0.0	0.0				False	lymph	early	hyenadna
+208	0.0	0.0	0.0				False	lymph	early	hyenadna
+209	0.0	0.0	0.0				False	lymph	early	hyenadna
+212	0.0	0.0	0.0				False	lymph	early	hyenadna
+213	0.0	0.0	0.0				False	lymph	early	hyenadna
+214	0.0	0.0	0.0				False	lymph	early	hyenadna
+217	0.0	0.0	0.0				False	lymph	early	hyenadna
+218	0.0	0.0	0.0				False	lymph	early	hyenadna
+219	0.0	0.0	0.0				False	lymph	early	hyenadna
+220	0.0	0.0	0.0				False	lymph	early	hyenadna
+221	0.0	0.0	0.0				False	lymph	early	hyenadna
+222	0.0	0.0	0.0				False	lymph	early	hyenadna
+224	0.0	0.0	0.0				False	lymph	early	hyenadna
+225	0.0	0.0	0.0				False	lymph	early	hyenadna
+226	0.0	0.0	0.0				False	lymph	early	hyenadna
+228	0.0	0.0	0.0				False	lymph	early	hyenadna
+229	0.0	0.0	0.0				False	lymph	early	hyenadna
+230	0.0	0.0	0.0				False	lymph	early	hyenadna
+232	0.0	0.0	0.0				False	lymph	early	hyenadna
+233	0.0	0.0	0.0				False	lymph	early	hyenadna
+234	0.0	0.0	0.0				False	lymph	early	hyenadna
+235	0.0	0.0	0.0				False	lymph	early	hyenadna
+236	0.0	0.0	0.0				False	lymph	early	hyenadna
+237	0.0	0.0	0.0				False	lymph	early	hyenadna
+238	0.0	0.0	0.0				False	lymph	early	hyenadna
+239	0.0	0.0	0.0				False	lymph	early	hyenadna
+240	0.0	0.0	0.0				False	lymph	early	hyenadna
+241	0.0	0.0	0.0				False	lymph	early	hyenadna
+242	0.0	0.0	0.0				False	lymph	early	hyenadna
+243	0.0	0.0	0.0				False	lymph	early	hyenadna
+244	0.0	0.0	0.0				False	lymph	early	hyenadna
+246	0.0	0.0	0.0				False	lymph	early	hyenadna
+247	0.0	0.0	0.0				False	lymph	early	hyenadna
+248	0.0	0.0	0.0				False	lymph	early	hyenadna
+250	0.0	0.0	0.0				False	lymph	early	hyenadna
+251	0.0	0.0	0.0				False	lymph	early	hyenadna
+252	0.0	0.0	0.0				False	lymph	early	hyenadna
+253	0.0	0.0	0.0				False	lymph	early	hyenadna
+255	0.0	0.0	0.0				False	lymph	early	hyenadna
+256	0.0	0.0	0.0				False	lymph	early	hyenadna
+257	0.0	0.0	0.0				False	lymph	early	hyenadna
+258	0.0	0.0	0.0				False	lymph	early	hyenadna
+259	0.0	0.0	0.0				False	lymph	early	hyenadna
+260	0.0	0.0	0.0				False	lymph	early	hyenadna
+262	0.0	0.0	0.0				False	lymph	early	hyenadna
+263	0.0	0.0	0.0				False	lymph	early	hyenadna
+264	0.0	0.0	0.0				False	lymph	early	hyenadna
+265	0.0	0.0	0.0				False	lymph	early	hyenadna
+266	0.0	0.0	0.0				False	lymph	early	hyenadna
+267	0.0	0.0	0.0				False	lymph	early	hyenadna
+268	0.0	0.0	0.0				False	lymph	early	hyenadna
+269	0.0	0.0	0.0				False	lymph	early	hyenadna
+270	0.0	0.0	0.0				False	lymph	early	hyenadna
+271	0.0	0.0	0.0				False	lymph	early	hyenadna
+272	0.0	0.0	0.0				False	lymph	early	hyenadna
+273	0.0	0.0	0.0				False	lymph	early	hyenadna
+274	0.0	0.0	0.0				False	lymph	early	hyenadna
+275	0.0	0.0	0.0				False	lymph	early	hyenadna
+276	0.0	0.0	0.0				False	lymph	early	hyenadna
+277	0.0	0.0	0.0				False	lymph	early	hyenadna
+278	0.0	0.0	0.0				False	lymph	early	hyenadna
+279	0.0	0.0	0.0				False	lymph	early	hyenadna
+280	0.0	0.0	0.0				False	lymph	early	hyenadna
+281	0.0	0.0	0.0				False	lymph	early	hyenadna
+283	0.0	0.0	0.0				False	lymph	early	hyenadna
+284	0.0	0.0	0.0				False	lymph	early	hyenadna
+285	0.0	0.0	0.0				False	lymph	early	hyenadna
+286	0.0	0.0	0.0				False	lymph	early	hyenadna
+287	0.0	0.0	0.0				False	lymph	early	hyenadna
+288	0.0	0.0	0.0				False	lymph	early	hyenadna
+289	0.0	0.0	0.0				False	lymph	early	hyenadna
+290	0.0	0.0	0.0				False	lymph	early	hyenadna
+291	0.0	0.0	0.0				False	lymph	early	hyenadna
+292	0.0	0.0	0.0				False	lymph	early	hyenadna
+293	0.0	0.0	0.0				False	lymph	early	hyenadna
+295	0.0	0.0	0.0				False	lymph	early	hyenadna
+296	0.0	0.0	0.0				False	lymph	early	hyenadna
+297	0.0	0.0	0.0				False	lymph	early	hyenadna
+299	0.0	0.0	0.0				False	lymph	early	hyenadna
+300	0.0	0.0	0.0				False	lymph	early	hyenadna
+301	0.0	0.0	0.0				False	lymph	early	hyenadna
+302	0.0	0.0	0.0				False	lymph	early	hyenadna
+305	0.0	0.0	0.0				False	lymph	early	hyenadna
+306	0.0	0.0	0.0				False	lymph	early	hyenadna
+307	0.0	0.0	0.0				False	lymph	early	hyenadna
+308	0.0	0.0	0.0				False	lymph	early	hyenadna
+310	0.0	0.0	0.0				False	lymph	early	hyenadna
+311	0.0	0.0	0.0				False	lymph	early	hyenadna
+312	0.0	0.0	0.0				False	lymph	early	hyenadna
+314	0.0	0.0	0.0				False	lymph	early	hyenadna
+315	0.0	0.0	0.0				False	lymph	early	hyenadna
+316	0.0	0.0	0.0				False	lymph	early	hyenadna
+318	0.0	0.0	0.0				False	lymph	early	hyenadna
+320	0.0	0.0	0.0				False	lymph	early	hyenadna
+321	0.0	0.0	0.0				False	lymph	early	hyenadna
+322	0.0	0.0	0.0				False	lymph	early	hyenadna
+323	0.0	0.0	0.0				False	lymph	early	hyenadna
+324	0.0	0.0	0.0				False	lymph	early	hyenadna
+325	0.0	0.0	0.0				False	lymph	early	hyenadna
+326	0.0	0.0	0.0				False	lymph	early	hyenadna
+328	0.0	0.0	0.0				False	lymph	early	hyenadna
+329	0.0	0.0	0.0				False	lymph	early	hyenadna
+330	0.0	0.0	0.0				False	lymph	early	hyenadna
+331	0.0	0.0	0.0				False	lymph	early	hyenadna
+332	0.0	0.0	0.0				False	lymph	early	hyenadna
+333	0.0	0.0	0.0				False	lymph	early	hyenadna
+335	0.0	0.0	0.0				False	lymph	early	hyenadna
+336	0.0	0.0	0.0				False	lymph	early	hyenadna
+337	0.0	0.0	0.0				False	lymph	early	hyenadna
+338	0.0	0.0	0.0				False	lymph	early	hyenadna
+339	0.0	0.0	0.0				False	lymph	early	hyenadna
+341	0.0	0.0	0.0				False	lymph	early	hyenadna
+343	0.0	0.0	0.0				False	lymph	early	hyenadna
+344	0.0	0.0	0.0				False	lymph	early	hyenadna
+345	0.0	0.0	0.0				False	lymph	early	hyenadna
+347	0.0	0.0	0.0				False	lymph	early	hyenadna
+348	0.0	0.0	0.0				False	lymph	early	hyenadna
+351	0.0	0.0	0.0				False	lymph	early	hyenadna
+352	0.0	0.0	0.0				False	lymph	early	hyenadna
+353	0.0	0.0	0.0				False	lymph	early	hyenadna
+354	0.0	0.0	0.0				False	lymph	early	hyenadna
+355	0.0	0.0	0.0				False	lymph	early	hyenadna
+357	0.0	0.0	0.0				False	lymph	early	hyenadna
+358	0.0	0.0	0.0				False	lymph	early	hyenadna
+359	0.0	0.0	0.0				False	lymph	early	hyenadna
+360	0.0	0.0	0.0				False	lymph	early	hyenadna
+361	0.0	0.0	0.0				False	lymph	early	hyenadna
+362	0.0	0.0	0.0				False	lymph	early	hyenadna
+363	0.0	0.0	0.0				False	lymph	early	hyenadna
+364	0.0	0.0	0.0				False	lymph	early	hyenadna
+365	0.0	0.0	0.0				False	lymph	early	hyenadna
+366	0.0	0.0	0.0				False	lymph	early	hyenadna
+367	0.0	0.0	0.0				False	lymph	early	hyenadna
+368	0.0	0.0	0.0				False	lymph	early	hyenadna
+369	0.0	0.0	0.0				False	lymph	early	hyenadna
+370	0.0	0.0	0.0				False	lymph	early	hyenadna
+372	0.0	0.0	0.0				False	lymph	early	hyenadna
+373	0.0	0.0	0.0				False	lymph	early	hyenadna
+374	0.0	0.0	0.0				False	lymph	early	hyenadna
+375	0.0	0.0	0.0				False	lymph	early	hyenadna
+377	0.0	0.0	0.0				False	lymph	early	hyenadna
+379	0.0	0.0	0.0				False	lymph	early	hyenadna
+380	0.0	0.0	0.0				False	lymph	early	hyenadna
+381	0.0	0.0	0.0				False	lymph	early	hyenadna
+382	0.0	0.0	0.0				False	lymph	early	hyenadna
+383	0.0	0.0	0.0				False	lymph	early	hyenadna
+384	0.0	0.0	0.0				False	lymph	early	hyenadna
+385	0.0	0.0	0.0				False	lymph	early	hyenadna
+386	0.0	0.0	0.0				False	lymph	early	hyenadna
+387	0.0	0.0	0.0				False	lymph	early	hyenadna
+389	0.0	0.0	0.0				False	lymph	early	hyenadna
+392	0.0	0.0	0.0				False	lymph	early	hyenadna
+393	0.0	0.0	0.0				False	lymph	early	hyenadna
+394	0.0	0.0	0.0				False	lymph	early	hyenadna
+395	0.0	0.0	0.0				False	lymph	early	hyenadna
+398	0.0	0.0	0.0				False	lymph	early	hyenadna
+399	0.0	0.0	0.0				False	lymph	early	hyenadna
+400	0.0	0.0	0.0				False	lymph	early	hyenadna
+401	0.0	0.0	0.0				False	lymph	early	hyenadna
+402	0.0	0.0	0.0				False	lymph	early	hyenadna
+403	0.0	0.0	0.0				False	lymph	early	hyenadna
+404	0.0	0.0	0.0				False	lymph	early	hyenadna
+405	0.0	0.0	0.0				False	lymph	early	hyenadna
+406	0.0	0.0	0.0				False	lymph	early	hyenadna
+408	0.0	0.0	0.0				False	lymph	early	hyenadna
+410	0.0	0.0	0.0				False	lymph	early	hyenadna
+411	0.0	0.0	0.0				False	lymph	early	hyenadna
+412	0.0	0.0	0.0				False	lymph	early	hyenadna
+413	0.0	0.0	0.0				False	lymph	early	hyenadna
+414	0.0	0.0	0.0				False	lymph	early	hyenadna
+415	0.0	0.0	0.0				False	lymph	early	hyenadna
+416	0.0	0.0	0.0				False	lymph	early	hyenadna
+417	0.0	0.0	0.0				False	lymph	early	hyenadna
+418	0.0	0.0	0.0				False	lymph	early	hyenadna
+419	0.0	0.0	0.0				False	lymph	early	hyenadna
+420	0.0	0.0	0.0				False	lymph	early	hyenadna
+421	0.0	0.0	0.0				False	lymph	early	hyenadna
+422	0.0	0.0	0.0				False	lymph	early	hyenadna
+423	0.0	0.0	0.0				False	lymph	early	hyenadna
+424	0.0	0.0	0.0				False	lymph	early	hyenadna
+425	0.0	0.0	0.0				False	lymph	early	hyenadna
+427	0.0	0.0	0.0				False	lymph	early	hyenadna
+428	0.0	0.0	0.0				False	lymph	early	hyenadna
+430	0.0	0.0	0.0				False	lymph	early	hyenadna
+431	0.0	0.0	0.0				False	lymph	early	hyenadna
+432	0.0	0.0	0.0				False	lymph	early	hyenadna
+433	0.0	0.0	0.0				False	lymph	early	hyenadna
+434	0.0	0.0	0.0				False	lymph	early	hyenadna
+435	0.0	0.0	0.0				False	lymph	early	hyenadna
+436	0.0	0.0	0.0				False	lymph	early	hyenadna
+437	0.0	0.0	0.0				False	lymph	early	hyenadna
+438	0.0	0.0	0.0				False	lymph	early	hyenadna
+439	0.0	0.0	0.0				False	lymph	early	hyenadna
+440	0.0	0.0	0.0				False	lymph	early	hyenadna
+441	0.0	0.0	0.0				False	lymph	early	hyenadna
+442	0.0	0.0	0.0				False	lymph	early	hyenadna
+443	0.0	0.0	0.0				False	lymph	early	hyenadna
+444	0.0	0.0	0.0				False	lymph	early	hyenadna
+445	0.0	0.0	0.0				False	lymph	early	hyenadna
+446	0.0	0.0	0.0				False	lymph	early	hyenadna
+447	0.0	0.0	0.0				False	lymph	early	hyenadna
+448	0.0	0.0	0.0				False	lymph	early	hyenadna
+449	0.0	0.0	0.0				False	lymph	early	hyenadna
+451	0.0	0.0	0.0				False	lymph	early	hyenadna
+452	0.0	0.0	0.0				False	lymph	early	hyenadna
+454	0.0	0.0	0.0				False	lymph	early	hyenadna
+455	0.0	0.0	0.0				False	lymph	early	hyenadna
+456	0.0	0.0	0.0				False	lymph	early	hyenadna
+457	0.0	0.0	0.0				False	lymph	early	hyenadna
+458	0.0	0.0	0.0				False	lymph	early	hyenadna
+460	0.0	0.0	0.0				False	lymph	early	hyenadna
+462	0.0	0.0	0.0				False	lymph	early	hyenadna
+463	0.0	0.0	0.0				False	lymph	early	hyenadna
+464	0.0	0.0	0.0				False	lymph	early	hyenadna
+465	0.0	0.0	0.0				False	lymph	early	hyenadna
+467	0.0	0.0	0.0				False	lymph	early	hyenadna
+468	0.0	0.0	0.0				False	lymph	early	hyenadna
+469	0.0	0.0	0.0				False	lymph	early	hyenadna
+470	0.0	0.0	0.0				False	lymph	early	hyenadna
+471	0.0	0.0	0.0				False	lymph	early	hyenadna
+473	0.0	0.0	0.0				False	lymph	early	hyenadna
+474	0.0	0.0	0.0				False	lymph	early	hyenadna
+477	0.0	0.0	0.0				False	lymph	early	hyenadna
+478	0.0	0.0	0.0				False	lymph	early	hyenadna
+479	0.0	0.0	0.0				False	lymph	early	hyenadna
+480	0.0	0.0	0.0				False	lymph	early	hyenadna
+481	0.0	0.0	0.0				False	lymph	early	hyenadna
+482	0.0	0.0	0.0				False	lymph	early	hyenadna
+483	0.0	0.0	0.0				False	lymph	early	hyenadna
+484	0.0	0.0	0.0				False	lymph	early	hyenadna
+485	0.0	0.0	0.0				False	lymph	early	hyenadna
+486	0.0	0.0	0.0				False	lymph	early	hyenadna
+488	0.0	0.0	0.0				False	lymph	early	hyenadna
+489	0.0	0.0	0.0				False	lymph	early	hyenadna
+490	0.0	0.0	0.0				False	lymph	early	hyenadna
+492	0.0	0.0	0.0				False	lymph	early	hyenadna
+493	0.0	0.0	0.0				False	lymph	early	hyenadna
+494	0.0	0.0	0.0				False	lymph	early	hyenadna
+495	0.0	0.0	0.0				False	lymph	early	hyenadna
+496	0.0	0.0	0.0				False	lymph	early	hyenadna
+498	0.0	0.0	0.0				False	lymph	early	hyenadna
+499	0.0	0.0	0.0				False	lymph	early	hyenadna
+501	0.0	0.0	0.0				False	lymph	early	hyenadna
+502	0.0	0.0	0.0				False	lymph	early	hyenadna
+503	0.0	0.0	0.0				False	lymph	early	hyenadna
+504	0.0	0.0	0.0				False	lymph	early	hyenadna
+507	0.0	0.0	0.0				False	lymph	early	hyenadna
+509	0.0	0.0	0.0				False	lymph	early	hyenadna
+510	0.0	0.0	0.0				False	lymph	early	hyenadna
+511	0.0	0.0	0.0				False	lymph	early	hyenadna
+512	0.0	0.0	0.0				False	lymph	early	hyenadna
+513	0.0	0.0	0.0				False	lymph	early	hyenadna
+514	0.0	0.0	0.0				False	lymph	early	hyenadna
+515	0.0	0.0	0.0				False	lymph	early	hyenadna
+518	0.0	0.0	0.0				False	lymph	early	hyenadna
+519	0.0	0.0	0.0				False	lymph	early	hyenadna
+520	0.0	0.0	0.0				False	lymph	early	hyenadna
+522	0.0	0.0	0.0				False	lymph	early	hyenadna
+523	0.0	0.0	0.0				False	lymph	early	hyenadna
+524	0.0	0.0	0.0				False	lymph	early	hyenadna
+525	0.0	0.0	0.0				False	lymph	early	hyenadna
+527	0.0	0.0	0.0				False	lymph	early	hyenadna
+528	0.0	0.0	0.0				False	lymph	early	hyenadna
+529	0.0	0.0	0.0				False	lymph	early	hyenadna
+530	0.0	0.0	0.0				False	lymph	early	hyenadna
+531	0.0	0.0	0.0				False	lymph	early	hyenadna
+532	0.0	0.0	0.0				False	lymph	early	hyenadna
+534	0.0	0.0	0.0				False	lymph	early	hyenadna
+536	0.0	0.0	0.0				False	lymph	early	hyenadna
+537	0.0	0.0	0.0				False	lymph	early	hyenadna
+538	0.0	0.0	0.0				False	lymph	early	hyenadna
+539	0.0	0.0	0.0				False	lymph	early	hyenadna
+540	0.0	0.0	0.0				False	lymph	early	hyenadna
+541	0.0	0.0	0.0				False	lymph	early	hyenadna
+542	0.0	0.0	0.0				False	lymph	early	hyenadna
+543	0.0	0.0	0.0				False	lymph	early	hyenadna
+544	0.0	0.0	0.0				False	lymph	early	hyenadna
+545	0.0	0.0	0.0				False	lymph	early	hyenadna
+547	0.0	0.0	0.0				False	lymph	early	hyenadna
+548	0.0	0.0	0.0				False	lymph	early	hyenadna
+550	0.0	0.0	0.0				False	lymph	early	hyenadna
+551	0.0	0.0	0.0				False	lymph	early	hyenadna
+552	0.0	0.0	0.0				False	lymph	early	hyenadna
+553	0.0	0.0	0.0				False	lymph	early	hyenadna
+554	0.0	0.0	0.0				False	lymph	early	hyenadna
+555	0.0	0.0	0.0				False	lymph	early	hyenadna
+557	0.0	0.0	0.0				False	lymph	early	hyenadna
+558	0.0	0.0	0.0				False	lymph	early	hyenadna
+559	0.0	0.0	0.0				False	lymph	early	hyenadna
+560	0.0	0.0	0.0				False	lymph	early	hyenadna
+561	0.0	0.0	0.0				False	lymph	early	hyenadna
+562	0.0	0.0	0.0				False	lymph	early	hyenadna
+563	0.0	0.0	0.0				False	lymph	early	hyenadna
+564	0.0	0.0	0.0				False	lymph	early	hyenadna
+565	0.0	0.0	0.0				False	lymph	early	hyenadna
+566	0.0	0.0	0.0				False	lymph	early	hyenadna
+567	0.0	0.0	0.0				False	lymph	early	hyenadna
+569	0.0	0.0	0.0				False	lymph	early	hyenadna
+570	0.0	0.0	0.0				False	lymph	early	hyenadna
+572	0.0	0.0	0.0				False	lymph	early	hyenadna
+574	0.0	0.0	0.0				False	lymph	early	hyenadna
+575	0.0	0.0	0.0				False	lymph	early	hyenadna
+576	0.0	0.0	0.0				False	lymph	early	hyenadna
+577	0.0	0.0	0.0				False	lymph	early	hyenadna
+578	0.0	0.0	0.0				False	lymph	early	hyenadna
+579	0.0	0.0	0.0				False	lymph	early	hyenadna
+580	0.0	0.0	0.0				False	lymph	early	hyenadna
+581	0.0	0.0	0.0				False	lymph	early	hyenadna
+582	0.0	0.0	0.0				False	lymph	early	hyenadna
+583	0.0	0.0	0.0				False	lymph	early	hyenadna
+584	0.0	0.0	0.0				False	lymph	early	hyenadna
+585	0.0	0.0	0.0				False	lymph	early	hyenadna
+586	0.0	0.0	0.0				False	lymph	early	hyenadna
+588	0.0	0.0	0.0				False	lymph	early	hyenadna
+589	0.0	0.0	0.0				False	lymph	early	hyenadna
+590	0.0	0.0	0.0				False	lymph	early	hyenadna
+591	0.0	0.0	0.0				False	lymph	early	hyenadna
+592	0.0	0.0	0.0				False	lymph	early	hyenadna
+593	0.0	0.0	0.0				False	lymph	early	hyenadna
+594	0.0	0.0	0.0				False	lymph	early	hyenadna
+595	0.0	0.0	0.0				False	lymph	early	hyenadna
+597	0.0	0.0	0.0				False	lymph	early	hyenadna
+598	0.0	0.0	0.0				False	lymph	early	hyenadna
+599	0.0	0.0	0.0				False	lymph	early	hyenadna
+600	0.0	0.0	0.0				False	lymph	early	hyenadna
+601	0.0	0.0	0.0				False	lymph	early	hyenadna
+602	0.0	0.0	0.0				False	lymph	early	hyenadna
+603	0.0	0.0	0.0				False	lymph	early	hyenadna
+604	0.0	0.0	0.0				False	lymph	early	hyenadna
+605	0.0	0.0	0.0				False	lymph	early	hyenadna
+607	0.0	0.0	0.0				False	lymph	early	hyenadna
+608	0.0	0.0	0.0				False	lymph	early	hyenadna
+612	0.0	0.0	0.0				False	lymph	early	hyenadna
+613	0.0	0.0	0.0				False	lymph	early	hyenadna
+614	0.0	0.0	0.0				False	lymph	early	hyenadna
+615	0.0	0.0	0.0				False	lymph	early	hyenadna
+616	0.0	0.0	0.0				False	lymph	early	hyenadna
+617	0.0	0.0	0.0				False	lymph	early	hyenadna
+619	0.0	0.0	0.0				False	lymph	early	hyenadna
+620	0.0	0.0	0.0				False	lymph	early	hyenadna
+622	0.0	0.0	0.0				False	lymph	early	hyenadna
+623	0.0	0.0	0.0				False	lymph	early	hyenadna
+624	0.0	0.0	0.0				False	lymph	early	hyenadna
+626	0.0	0.0	0.0				False	lymph	early	hyenadna
+627	0.0	0.0	0.0				False	lymph	early	hyenadna
+628	0.0	0.0	0.0				False	lymph	early	hyenadna
+629	0.0	0.0	0.0				False	lymph	early	hyenadna
+630	0.0	0.0	0.0				False	lymph	early	hyenadna
+631	0.0	0.0	0.0				False	lymph	early	hyenadna
+632	0.0	0.0	0.0				False	lymph	early	hyenadna
+634	0.0	0.0	0.0				False	lymph	early	hyenadna
+635	0.0	0.0	0.0				False	lymph	early	hyenadna
+637	0.0	0.0	0.0				False	lymph	early	hyenadna
+638	0.0	0.0	0.0				False	lymph	early	hyenadna
+639	0.0	0.0	0.0				False	lymph	early	hyenadna
+640	0.0	0.0	0.0				False	lymph	early	hyenadna
+641	0.0	0.0	0.0				False	lymph	early	hyenadna
+642	0.0	0.0	0.0				False	lymph	early	hyenadna
+643	0.0	0.0	0.0				False	lymph	early	hyenadna
+644	0.0	0.0	0.0				False	lymph	early	hyenadna
+646	0.0	0.0	0.0				False	lymph	early	hyenadna
+649	0.0	0.0	0.0				False	lymph	early	hyenadna
+650	0.0	0.0	0.0				False	lymph	early	hyenadna
+651	0.0	0.0	0.0				False	lymph	early	hyenadna
+652	0.0	0.0	0.0				False	lymph	early	hyenadna
+653	0.0	0.0	0.0				False	lymph	early	hyenadna
+654	0.0	0.0	0.0				False	lymph	early	hyenadna
+655	0.0	0.0	0.0				False	lymph	early	hyenadna
+656	0.0	0.0	0.0				False	lymph	early	hyenadna
+658	0.0	0.0	0.0				False	lymph	early	hyenadna
+659	0.0	0.0	0.0				False	lymph	early	hyenadna
+661	0.0	0.0	0.0				False	lymph	early	hyenadna
+662	0.0	0.0	0.0				False	lymph	early	hyenadna
+663	0.0	0.0	0.0				False	lymph	early	hyenadna
+665	0.0	0.0	0.0				False	lymph	early	hyenadna
+666	0.0	0.0	0.0				False	lymph	early	hyenadna
+667	0.0	0.0	0.0				False	lymph	early	hyenadna
+668	0.0	0.0	0.0				False	lymph	early	hyenadna
+669	0.0	0.0	0.0				False	lymph	early	hyenadna
+670	0.0	0.0	0.0				False	lymph	early	hyenadna
+671	0.0	0.0	0.0				False	lymph	early	hyenadna
+672	0.0	0.0	0.0				False	lymph	early	hyenadna
+673	0.0	0.0	0.0				False	lymph	early	hyenadna
+674	0.0	0.0	0.0				False	lymph	early	hyenadna
+675	0.0	0.0	0.0				False	lymph	early	hyenadna
+676	0.0	0.0	0.0				False	lymph	early	hyenadna
+677	0.0	0.0	0.0				False	lymph	early	hyenadna
+678	0.0	0.0	0.0				False	lymph	early	hyenadna
+679	0.0	0.0	0.0				False	lymph	early	hyenadna
+680	0.0	0.0	0.0				False	lymph	early	hyenadna
+682	0.0	0.0	0.0				False	lymph	early	hyenadna
+683	0.0	0.0	0.0				False	lymph	early	hyenadna
+684	0.0	0.0	0.0				False	lymph	early	hyenadna
+685	0.0	0.0	0.0				False	lymph	early	hyenadna
+686	0.0	0.0	0.0				False	lymph	early	hyenadna
+688	0.0	0.0	0.0				False	lymph	early	hyenadna
+689	0.0	0.0	0.0				False	lymph	early	hyenadna
+691	0.0	0.0	0.0				False	lymph	early	hyenadna
+692	0.0	0.0	0.0				False	lymph	early	hyenadna
+694	0.0	0.0	0.0				False	lymph	early	hyenadna
+695	0.0	0.0	0.0				False	lymph	early	hyenadna
+696	0.0	0.0	0.0				False	lymph	early	hyenadna
+698	0.0	0.0	0.0				False	lymph	early	hyenadna
+699	0.0	0.0	0.0				False	lymph	early	hyenadna
+703	0.0	0.0	0.0				False	lymph	early	hyenadna
+704	0.0	0.0	0.0				False	lymph	early	hyenadna
+705	0.0	0.0	0.0				False	lymph	early	hyenadna
+707	0.0	0.0	0.0				False	lymph	early	hyenadna
+708	0.0	0.0	0.0				False	lymph	early	hyenadna
+709	0.0	0.0	0.0				False	lymph	early	hyenadna
+710	0.0	0.0	0.0				False	lymph	early	hyenadna
+711	0.0	0.0	0.0				False	lymph	early	hyenadna
+712	0.0	0.0	0.0				False	lymph	early	hyenadna
+713	0.0	0.0	0.0				False	lymph	early	hyenadna
+714	0.0	0.0	0.0				False	lymph	early	hyenadna
+715	0.0	0.0	0.0				False	lymph	early	hyenadna
+716	0.0	0.0	0.0				False	lymph	early	hyenadna
+717	0.0	0.0	0.0				False	lymph	early	hyenadna
+718	0.0	0.0	0.0				False	lymph	early	hyenadna
+719	0.0	0.0	0.0				False	lymph	early	hyenadna
+720	0.0	0.0	0.0				False	lymph	early	hyenadna
+721	0.0	0.0	0.0				False	lymph	early	hyenadna
+722	0.0	0.0	0.0				False	lymph	early	hyenadna
+723	0.0	0.0	0.0				False	lymph	early	hyenadna
+724	0.0	0.0	0.0				False	lymph	early	hyenadna
+725	0.0	0.0	0.0				False	lymph	early	hyenadna
+726	0.0	0.0	0.0				False	lymph	early	hyenadna
+727	0.0	0.0	0.0				False	lymph	early	hyenadna
+728	0.0	0.0	0.0				False	lymph	early	hyenadna
+729	0.0	0.0	0.0				False	lymph	early	hyenadna
+730	0.0	0.0	0.0				False	lymph	early	hyenadna
+731	0.0	0.0	0.0				False	lymph	early	hyenadna
+732	0.0	0.0	0.0				False	lymph	early	hyenadna
+733	0.0	0.0	0.0				False	lymph	early	hyenadna
+734	0.0	0.0	0.0				False	lymph	early	hyenadna
+735	0.0	0.0	0.0				False	lymph	early	hyenadna
+739	0.0	0.0	0.0				False	lymph	early	hyenadna
+741	0.0	0.0	0.0				False	lymph	early	hyenadna
+742	0.0	0.0	0.0				False	lymph	early	hyenadna
+743	0.0	0.0	0.0				False	lymph	early	hyenadna
+744	0.0	0.0	0.0				False	lymph	early	hyenadna
+745	0.0	0.0	0.0				False	lymph	early	hyenadna
+746	0.0	0.0	0.0				False	lymph	early	hyenadna
+747	0.0	0.0	0.0				False	lymph	early	hyenadna
+748	0.0	0.0	0.0				False	lymph	early	hyenadna
+749	0.0	0.0	0.0				False	lymph	early	hyenadna
+750	0.0	0.0	0.0				False	lymph	early	hyenadna
+751	0.0	0.0	0.0				False	lymph	early	hyenadna
+752	0.0	0.0	0.0				False	lymph	early	hyenadna
+753	0.0	0.0	0.0				False	lymph	early	hyenadna
+754	0.0	0.0	0.0				False	lymph	early	hyenadna
+755	0.0	0.0	0.0				False	lymph	early	hyenadna
+756	0.0	0.0	0.0				False	lymph	early	hyenadna
+757	0.0	0.0	0.0				False	lymph	early	hyenadna
+758	0.0	0.0	0.0				False	lymph	early	hyenadna
+759	0.0	0.0	0.0				False	lymph	early	hyenadna
+760	0.0	0.0	0.0				False	lymph	early	hyenadna
+761	0.0	0.0	0.0				False	lymph	early	hyenadna
+762	0.0	0.0	0.0				False	lymph	early	hyenadna
+763	0.0	0.0	0.0				False	lymph	early	hyenadna
+764	0.0	0.0	0.0				False	lymph	early	hyenadna
+766	0.0	0.0	0.0				False	lymph	early	hyenadna
+767	0.0	0.0	0.0				False	lymph	early	hyenadna
+768	0.0	0.0	0.0				False	lymph	early	hyenadna
+769	0.0	0.0	0.0				False	lymph	early	hyenadna
+770	0.0	0.0	0.0				False	lymph	early	hyenadna
+771	0.0	0.0	0.0				False	lymph	early	hyenadna
+774	0.0	0.0	0.0				False	lymph	early	hyenadna
+775	0.0	0.0	0.0				False	lymph	early	hyenadna
+776	0.0	0.0	0.0				False	lymph	early	hyenadna
+777	0.0	0.0	0.0				False	lymph	early	hyenadna
+778	0.0	0.0	0.0				False	lymph	early	hyenadna
+779	0.0	0.0	0.0				False	lymph	early	hyenadna
+780	0.0	0.0	0.0				False	lymph	early	hyenadna
+782	0.0	0.0	0.0				False	lymph	early	hyenadna
+783	0.0	0.0	0.0				False	lymph	early	hyenadna
+784	0.0	0.0	0.0				False	lymph	early	hyenadna
+785	0.0	0.0	0.0				False	lymph	early	hyenadna
+786	0.0	0.0	0.0				False	lymph	early	hyenadna
+787	0.0	0.0	0.0				False	lymph	early	hyenadna
+788	0.0	0.0	0.0				False	lymph	early	hyenadna
+789	0.0	0.0	0.0				False	lymph	early	hyenadna
+790	0.0	0.0	0.0				False	lymph	early	hyenadna
+791	0.0	0.0	0.0				False	lymph	early	hyenadna
+792	0.0	0.0	0.0				False	lymph	early	hyenadna
+793	0.0	0.0	0.0				False	lymph	early	hyenadna
+794	0.0	0.0	0.0				False	lymph	early	hyenadna
+798	0.0	0.0	0.0				False	lymph	early	hyenadna
+799	0.0	0.0	0.0				False	lymph	early	hyenadna
+800	0.0	0.0	0.0				False	lymph	early	hyenadna
+801	0.0	0.0	0.0				False	lymph	early	hyenadna
+802	0.0	0.0	0.0				False	lymph	early	hyenadna
+803	0.0	0.0	0.0				False	lymph	early	hyenadna
+804	0.0	0.0	0.0				False	lymph	early	hyenadna
+805	0.0	0.0	0.0				False	lymph	early	hyenadna
+808	0.0	0.0	0.0				False	lymph	early	hyenadna
+809	0.0	0.0	0.0				False	lymph	early	hyenadna
+810	0.0	0.0	0.0				False	lymph	early	hyenadna
+811	0.0	0.0	0.0				False	lymph	early	hyenadna
+812	0.0	0.0	0.0				False	lymph	early	hyenadna
+813	0.0	0.0	0.0				False	lymph	early	hyenadna
+815	0.0	0.0	0.0				False	lymph	early	hyenadna
+816	0.0	0.0	0.0				False	lymph	early	hyenadna
+817	0.0	0.0	0.0				False	lymph	early	hyenadna
+818	0.0	0.0	0.0				False	lymph	early	hyenadna
+819	0.0	0.0	0.0				False	lymph	early	hyenadna
+820	0.0	0.0	0.0				False	lymph	early	hyenadna
+821	0.0	0.0	0.0				False	lymph	early	hyenadna
+823	0.0	0.0	0.0				False	lymph	early	hyenadna
+825	0.0	0.0	0.0				False	lymph	early	hyenadna
+826	0.0	0.0	0.0				False	lymph	early	hyenadna
+827	0.0	0.0	0.0				False	lymph	early	hyenadna
+829	0.0	0.0	0.0				False	lymph	early	hyenadna
+830	0.0	0.0	0.0				False	lymph	early	hyenadna
+831	0.0	0.0	0.0				False	lymph	early	hyenadna
+832	0.0	0.0	0.0				False	lymph	early	hyenadna
+833	0.0	0.0	0.0				False	lymph	early	hyenadna
+834	0.0	0.0	0.0				False	lymph	early	hyenadna
+835	0.0	0.0	0.0				False	lymph	early	hyenadna
+836	0.0	0.0	0.0				False	lymph	early	hyenadna
+837	0.0	0.0	0.0				False	lymph	early	hyenadna
+838	0.0	0.0	0.0				False	lymph	early	hyenadna
+840	0.0	0.0	0.0				False	lymph	early	hyenadna
+841	0.0	0.0	0.0				False	lymph	early	hyenadna
+842	0.0	0.0	0.0				False	lymph	early	hyenadna
+843	0.0	0.0	0.0				False	lymph	early	hyenadna
+844	0.0	0.0	0.0				False	lymph	early	hyenadna
+845	0.0	0.0	0.0				False	lymph	early	hyenadna
+846	0.0	0.0	0.0				False	lymph	early	hyenadna
+847	0.0	0.0	0.0				False	lymph	early	hyenadna
+848	0.0	0.0	0.0				False	lymph	early	hyenadna
+849	0.0	0.0	0.0				False	lymph	early	hyenadna
+850	0.0	0.0	0.0				False	lymph	early	hyenadna
+851	0.0	0.0	0.0				False	lymph	early	hyenadna
+852	0.0	0.0	0.0				False	lymph	early	hyenadna
+853	0.0	0.0	0.0				False	lymph	early	hyenadna
+854	0.0	0.0	0.0				False	lymph	early	hyenadna
+855	0.0	0.0	0.0				False	lymph	early	hyenadna
+856	0.0	0.0	0.0				False	lymph	early	hyenadna
+857	0.0	0.0	0.0				False	lymph	early	hyenadna
+858	0.0	0.0	0.0				False	lymph	early	hyenadna
+859	0.0	0.0	0.0				False	lymph	early	hyenadna
+860	0.0	0.0	0.0				False	lymph	early	hyenadna
+861	0.0	0.0	0.0				False	lymph	early	hyenadna
+862	0.0	0.0	0.0				False	lymph	early	hyenadna
+863	0.0	0.0	0.0				False	lymph	early	hyenadna
+864	0.0	0.0	0.0				False	lymph	early	hyenadna
+865	0.0	0.0	0.0				False	lymph	early	hyenadna
+867	0.0	0.0	0.0				False	lymph	early	hyenadna
+868	0.0	0.0	0.0				False	lymph	early	hyenadna
+869	0.0	0.0	0.0				False	lymph	early	hyenadna
+870	0.0	0.0	0.0				False	lymph	early	hyenadna
+872	0.0	0.0	0.0				False	lymph	early	hyenadna
+873	0.0	0.0	0.0				False	lymph	early	hyenadna
+875	0.0	0.0	0.0				False	lymph	early	hyenadna
+876	0.0	0.0	0.0				False	lymph	early	hyenadna
+877	0.0	0.0	0.0				False	lymph	early	hyenadna
+878	0.0	0.0	0.0				False	lymph	early	hyenadna
+879	0.0	0.0	0.0				False	lymph	early	hyenadna
+880	0.0	0.0	0.0				False	lymph	early	hyenadna
+881	0.0	0.0	0.0				False	lymph	early	hyenadna
+882	0.0	0.0	0.0				False	lymph	early	hyenadna
+883	0.0	0.0	0.0				False	lymph	early	hyenadna
+884	0.0	0.0	0.0				False	lymph	early	hyenadna
+885	0.0	0.0	0.0				False	lymph	early	hyenadna
+886	0.0	0.0	0.0				False	lymph	early	hyenadna
+887	0.0	0.0	0.0				False	lymph	early	hyenadna
+888	0.0	0.0	0.0				False	lymph	early	hyenadna
+889	0.0	0.0	0.0				False	lymph	early	hyenadna
+890	0.0	0.0	0.0				False	lymph	early	hyenadna
+891	0.0	0.0	0.0				False	lymph	early	hyenadna
+892	0.0	0.0	0.0				False	lymph	early	hyenadna
+893	0.0	0.0	0.0				False	lymph	early	hyenadna
+894	0.0	0.0	0.0				False	lymph	early	hyenadna
+895	0.0	0.0	0.0				False	lymph	early	hyenadna
+896	0.0	0.0	0.0				False	lymph	early	hyenadna
+898	0.0	0.0	0.0				False	lymph	early	hyenadna
+899	0.0	0.0	0.0				False	lymph	early	hyenadna
+900	0.0	0.0	0.0				False	lymph	early	hyenadna
+902	0.0	0.0	0.0				False	lymph	early	hyenadna
+903	0.0	0.0	0.0				False	lymph	early	hyenadna
+904	0.0	0.0	0.0				False	lymph	early	hyenadna
+905	0.0	0.0	0.0				False	lymph	early	hyenadna
+908	0.0	0.0	0.0				False	lymph	early	hyenadna
+909	0.0	0.0	0.0				False	lymph	early	hyenadna
+910	0.0	0.0	0.0				False	lymph	early	hyenadna
+911	0.0	0.0	0.0				False	lymph	early	hyenadna
+912	0.0	0.0	0.0				False	lymph	early	hyenadna
+913	0.0	0.0	0.0				False	lymph	early	hyenadna
+914	0.0	0.0	0.0				False	lymph	early	hyenadna
+915	0.0	0.0	0.0				False	lymph	early	hyenadna
+916	0.0	0.0	0.0				False	lymph	early	hyenadna
+917	0.0	0.0	0.0				False	lymph	early	hyenadna
+918	0.0	0.0	0.0				False	lymph	early	hyenadna
+919	0.0	0.0	0.0				False	lymph	early	hyenadna
+920	0.0	0.0	0.0				False	lymph	early	hyenadna
+921	0.0	0.0	0.0				False	lymph	early	hyenadna
+922	0.0	0.0	0.0				False	lymph	early	hyenadna
+923	0.0	0.0	0.0				False	lymph	early	hyenadna
+925	0.0	0.0	0.0				False	lymph	early	hyenadna
+927	0.0	0.0	0.0				False	lymph	early	hyenadna
+928	0.0	0.0	0.0				False	lymph	early	hyenadna
+929	0.0	0.0	0.0				False	lymph	early	hyenadna
+931	0.0	0.0	0.0				False	lymph	early	hyenadna
+934	0.0	0.0	0.0				False	lymph	early	hyenadna
+935	0.0	0.0	0.0				False	lymph	early	hyenadna
+937	0.0	0.0	0.0				False	lymph	early	hyenadna
+938	0.0	0.0	0.0				False	lymph	early	hyenadna
+939	0.0	0.0	0.0				False	lymph	early	hyenadna
+940	0.0	0.0	0.0				False	lymph	early	hyenadna
+941	0.0	0.0	0.0				False	lymph	early	hyenadna
+942	0.0	0.0	0.0				False	lymph	early	hyenadna
+943	0.0	0.0	0.0				False	lymph	early	hyenadna
+944	0.0	0.0	0.0				False	lymph	early	hyenadna
+945	0.0	0.0	0.0				False	lymph	early	hyenadna
+946	0.0	0.0	0.0				False	lymph	early	hyenadna
+947	0.0	0.0	0.0				False	lymph	early	hyenadna
+948	0.0	0.0	0.0				False	lymph	early	hyenadna
+949	0.0	0.0	0.0				False	lymph	early	hyenadna
+952	0.0	0.0	0.0				False	lymph	early	hyenadna
+953	0.0	0.0	0.0				False	lymph	early	hyenadna
+954	0.0	0.0	0.0				False	lymph	early	hyenadna
+955	0.0	0.0	0.0				False	lymph	early	hyenadna
+956	0.0	0.0	0.0				False	lymph	early	hyenadna
+957	0.0	0.0	0.0				False	lymph	early	hyenadna
+958	0.0	0.0	0.0				False	lymph	early	hyenadna
+959	0.0	0.0	0.0				False	lymph	early	hyenadna
+961	0.0	0.0	0.0				False	lymph	early	hyenadna
+962	0.0	0.0	0.0				False	lymph	early	hyenadna
+963	0.0	0.0	0.0				False	lymph	early	hyenadna
+964	0.0	0.0	0.0				False	lymph	early	hyenadna
+965	0.0	0.0	0.0				False	lymph	early	hyenadna
+966	0.0	0.0	0.0				False	lymph	early	hyenadna
+967	0.0	0.0	0.0				False	lymph	early	hyenadna
+968	0.0	0.0	0.0				False	lymph	early	hyenadna
+972	0.0	0.0	0.0				False	lymph	early	hyenadna
+973	0.0	0.0	0.0				False	lymph	early	hyenadna
+974	0.0	0.0	0.0				False	lymph	early	hyenadna
+975	0.0	0.0	0.0				False	lymph	early	hyenadna
+976	0.0	0.0	0.0				False	lymph	early	hyenadna
+977	0.0	0.0	0.0				False	lymph	early	hyenadna
+978	0.0	0.0	0.0				False	lymph	early	hyenadna
+979	0.0	0.0	0.0				False	lymph	early	hyenadna
+980	0.0	0.0	0.0				False	lymph	early	hyenadna
+981	0.0	0.0	0.0				False	lymph	early	hyenadna
+982	0.0	0.0	0.0				False	lymph	early	hyenadna
+983	0.0	0.0	0.0				False	lymph	early	hyenadna
+984	0.0	0.0	0.0				False	lymph	early	hyenadna
+985	0.0	0.0	0.0				False	lymph	early	hyenadna
+986	0.0	0.0	0.0				False	lymph	early	hyenadna
+987	0.0	0.0	0.0				False	lymph	early	hyenadna
+988	0.0	0.0	0.0				False	lymph	early	hyenadna
+989	0.0	0.0	0.0				False	lymph	early	hyenadna
+990	0.0	0.0	0.0				False	lymph	early	hyenadna
+991	0.0	0.0	0.0				False	lymph	early	hyenadna
+992	0.0	0.0	0.0				False	lymph	early	hyenadna
+993	0.0	0.0	0.0				False	lymph	early	hyenadna
+994	0.0	0.0	0.0				False	lymph	early	hyenadna
+995	0.0	0.0	0.0				False	lymph	early	hyenadna
+996	0.0	0.0	0.0				False	lymph	early	hyenadna
+997	0.0	0.0	0.0				False	lymph	early	hyenadna
+999	0.0	0.0	0.0				False	lymph	early	hyenadna
+1000	0.0	0.0	0.0				False	lymph	early	hyenadna
+1004	0.0	0.0	0.0				False	lymph	early	hyenadna
+1006	0.0	0.0	0.0				False	lymph	early	hyenadna
+1007	0.0	0.0	0.0				False	lymph	early	hyenadna
+1008	0.0	0.0	0.0				False	lymph	early	hyenadna
+1009	0.0	0.0	0.0				False	lymph	early	hyenadna
+1011	0.0	0.0	0.0				False	lymph	early	hyenadna
+1012	0.0	0.0	0.0				False	lymph	early	hyenadna
+1013	0.0	0.0	0.0				False	lymph	early	hyenadna
+1014	0.0	0.0	0.0				False	lymph	early	hyenadna
+1015	0.0	0.0	0.0				False	lymph	early	hyenadna
+1016	0.0	0.0	0.0				False	lymph	early	hyenadna
+1017	0.0	0.0	0.0				False	lymph	early	hyenadna
+1019	0.0	0.0	0.0				False	lymph	early	hyenadna
+1020	0.0	0.0	0.0				False	lymph	early	hyenadna
+1021	0.0	0.0	0.0				False	lymph	early	hyenadna
+1022	0.0	0.0	0.0				False	lymph	early	hyenadna
+1023	0.0	0.0	0.0				False	lymph	early	hyenadna

@@ -6,31 +6,33 @@ seed: 42
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
 paths:
-  workspace:    /workspace
-  project:      /workspace/project
-  data:         /workspace/project/data
-  atac_raw:     /workspace/project/data/atac         # bigWig files (placeholder)
-  atac_processed: /workspace/project/data/atac_processed  # .npy arrays
-  genome:       /workspace/project/data/genome
-  windows_bed:  /workspace/project/data/windows.bed
-  eval_genes:   /workspace/project/data/eval_genes.tsv
-  activations:  /workspace/project/activations
-  saes:         /workspace/project/saes
-  results:      /workspace/project/results
-  outputs:      /workspace/outputs
-  logs:         /workspace/project/logs
+  workspace:    /workspace/gene_expression_predictions
+  project:      /workspace/gene_expression_predictions
+  data:         /workspace/gene_expression_predictions/data
+  atac_raw:     /workspace/gene_expression_predictions/data/atac
+  atac_processed: /workspace/gene_expression_predictions/data/atac_processed
+  genome:       /workspace/gene_expression_predictions/data/genome
+  windows_bed:  /workspace/gene_expression_predictions/data/windows.bed
+  eval_genes:   /workspace/gene_expression_predictions/data/eval_genes.tsv
+  activations:  /workspace/gene_expression_predictions/activations
+  saes:         /workspace/gene_expression_predictions/saes
+  results:      /workspace/gene_expression_predictions/results
+  outputs:      /workspace/gene_expression_predictions/outputs
+  logs:         /workspace/gene_expression_predictions/logs
   checkpoint:   /workspace/epibert_models/pretrained/model1/ckpt-45
   checkpoint_m2: /workspace/epibert_models/pretrained/model2/ckpt-45
   checkpoint_ft: /workspace/epibert_models/fine_tuned/ckpt-16
 
 # ── BAM file mapping ─────────────────────────────────────────────────────────
+# ENCODE GRCh38 BAMs (ENCFF804MXV, ENCFF939JOT, ENCFF415FEC, ENCFF974NEA, ENCFF298OEW)
+# HSC: GSE74912 SRR2920466 aligned to hg38 via bowtie2
 bam_files:
-  K562:         "/workspace/K562-ATAC.bam"
-  HepG2:        "/workspace/HepG2-ATAC.bam"
-  GM12878:      "/workspace/GM12878-ATAC.bam"
-  HSC:          "/workspace/Hemapoetic Stem Cell-ATAC.bam"
-  Liver:        "/workspace/Liver Tissue-ATAC.bam"
-  NaiveB:       "/workspace/Naive B Cell-ATAC.bam"
+  K562:         "/workspace/atac_bams/K562-ATAC.bam"
+  HepG2:        "/workspace/atac_bams/HepG2-ATAC.bam"
+  GM12878:      "/workspace/atac_bams/GM12878-ATAC.bam"
+  HSC:          "/workspace/atac_bams/HSC-ATAC.bam"
+  Liver:        "/workspace/atac_bams/Liver-ATAC.bam"
+  NaiveB:       "/workspace/atac_bams/NaiveB-ATAC.bam"
 
 # ── Context pairs ─────────────────────────────────────────────────────────────
 pairs:
@@ -52,8 +54,10 @@ all_conditions: [K562, HepG2, GM12878, HSC, Liver, NaiveB]
 
 # ── Genomic windows ───────────────────────────────────────────────────────────
 windows:
-  chromosomes: [chr8, chr9]
-  n_windows: 10000
+  chromosomes: [chr1, chr2, chr3, chr4, chr5, chr6, chr7, chr8, chr9,
+                chr10, chr11, chr12, chr13, chr14, chr15, chr16, chr17,
+                chr18, chr19, chr20, chr21, chr22, chrX]
+  n_windows: 9004
   window_bp: 131072        # 128 * 1024; divisible by 128 → 1024 output bins
   blacklist_url: "https://github.com/Boyle-Lab/Blacklist/raw/master/lists/hg38-blacklist.v2.bed.gz"
 
@@ -129,3 +133,72 @@ steering:
 figures:
   dpi: 300
   formats: [pdf, png]
+
+# ── Multi-model settings (Phase 12) ───────────────────────────────────────────
+multi_model:
+  models:
+    epibert:
+      enabled: true
+      # Uses existing EpiBERT checkpoints in epibert_models/
+      hidden_dim: 1024
+      num_layers: 8
+      hook_layers:
+        early: 2    # L//4
+        mid:   4    # L//2
+        late:  6    # 3L//4
+
+    enformer:
+      enabled: true
+      pretrained: "EleutherAI/enformer-official-rough"
+      local_path: "models/enformer-official-rough"   # populated by copy_models_to_workspace.py
+      hidden_dim: 1536   # EnformerConfig().dim = 1536 (not 3072)
+      num_layers: 11
+      hook_layers:
+        early: 2
+        mid:   5
+        late:  8
+      # Input: 196,608 bp window (centre-crop from 131,072 bp windows)
+      seq_len: 196608
+      batch_size: 4   # A100 80GB has headroom; conv stem reduces seq 128x before transformer
+
+    hyenadna:
+      enabled: true
+      pretrained: "LongSafari/hyenadna-medium-160k-seqlen-hf"
+      local_path: "models/hyenadna-medium-160k"
+      hidden_dim: 256
+      num_layers: 8
+      hook_layers:
+        early: 1    # L//4
+        mid:   3    # L//2
+        late:  5    # 3L//4
+      # Input: up to 160k bp; we use 4096 bp for speed
+      max_seq_len: 4096
+      batch_size: 16  # 2x increase; 131k-bp inputs but A100 has ample headroom
+
+    nucleotide_transformer:
+      enabled: true
+      pretrained: "InstaDeepAI/nucleotide-transformer-500m-human-ref"
+      local_path: "models/nucleotide-transformer-v1-500m-human-ref"
+      hidden_dim: 1280   # ESM2-based, actual hidden size resolved dynamically
+      num_layers: 33     # resolved dynamically after load
+      hook_layers:
+        early: 8    # L//4
+        mid:  16    # L//2
+        late: 24    # 3L//4
+      # k=6 tokenisation: 512 tokens × 6bp = 3,072 bp; fits within pos limit
+      max_tokens: 512
+      batch_size: 16  # 4x increase; 512-token inputs are small, batching wins easily
+  # SAE settings for non-EpiBERT models (expansion factor applied to each model's hidden_dim)
+  sae:
+    expansion: 8   # d_latent = expansion × hidden_dim
+    k: 64
+    lr: 3.0e-4
+    batch_size: 4096
+    steps: 50000
+
+# ── HOMER motif source preference (Phase 12) ──────────────────────────────────
+homer:
+  source: "auto_denovo"    # prefer de novo, fall back to known
+  # Options: known | denovo | auto_denovo | auto_known | merge
+  n_denovo: 25             # number of de novo motifs for findMotifsGenome.pl -S
+  run_script: "run_homer_with_denovo.sh"

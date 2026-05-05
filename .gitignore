@@ -1,0 +1,49 @@
+# ── Large binary data (never commit) ──────────────────────────────────────────
+*.tmp
+*-ATAC.bam.tmp
+
+/data/genome/
+/data/*.bam
+/data/*.bai
+/data/atac/
+/data/atac_processed/
+/data/hg38-blacklist.v2.bed
+
+# Activation tensors (large; reproduced by collect_activations_multimodel.py)
+/activations/
+
+# Trained SAE checkpoints (large; reproduced by cross_model_analysis.py)
+/saes/
+
+# Downloaded model weights (reproduced by copy_models_to_workspace.py)
+/models/
+
+# ── Runtime / logs ────────────────────────────────────────────────────────────
+/logs/
+nohup.out
+*.log
+
+# ── Python cache ──────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Figures & results (reproducible outputs — optional to commit) ─────────────
+# Uncomment to exclude generated figures from the repo:
+# /results/figures/
+# /results/cross_model/
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.jupyter/
+
+# ── OS / editor ───────────────────────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo

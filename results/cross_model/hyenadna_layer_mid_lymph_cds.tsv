@@ -1,0 +1,1025 @@
+feature_id	cds	vitro_mean	vivo_mean	t_stat	pval	pval_bonf	significant	pair	layer	model
+716	0.032423772	0.08186245	0.049438678	3.4345903	0.0006256766	0.64069283	False	lymph	mid	hyenadna
+1022	0.0067572044	0.009441693	0.002684489	2.510462	0.012187447	1.0	False	lymph	mid	hyenadna
+191	0.009937123	0.01816109	0.008223967	2.3384767	0.019577833	1.0	False	lymph	mid	hyenadna
+510	0.009535112	0.017721532	0.0081864195	2.2615383	0.023963094	1.0	False	lymph	mid	hyenadna
+395	0.024315923	0.09623998	0.07192405	2.2133317	0.02720113	1.0	False	lymph	mid	hyenadna
+49	0.004181032	0.0055263406	0.0013453086	2.0983295	0.03606677	1.0	False	lymph	mid	hyenadna
+255	0.0017090575	0.0017090575	0.0	1.9844934	0.047405615	1.0	False	lymph	mid	hyenadna
+287	0.01522607	0.049195103	0.033969034	1.9519576	0.051327165	1.0	False	lymph	mid	hyenadna
+105	0.022652932	0.112025045	0.08937211	1.9309058	0.053915385	1.0	False	lymph	mid	hyenadna
+576	-0.026554972	0.38839936	0.41495433	-1.9044349	0.057291042	1.0	False	lymph	mid	hyenadna
+28	-0.0068046656	0.0017326346	0.0085373	-1.9058937	0.057323877	1.0	False	lymph	mid	hyenadna
+53	0.022265047	0.112367965	0.09010292	1.9012752	0.05769486	1.0	False	lymph	mid	hyenadna
+896	0.019614145	0.09023632	0.070622176	1.8488929	0.06490729	1.0	False	lymph	mid	hyenadna
+699	-0.0076804208	0.0047295457	0.012409966	-1.7794976	0.07580038	1.0	False	lymph	mid	hyenadna
+765	0.0011673332	0.0011673332	0.0	1.7333406	0.08326639	1.0	False	lymph	mid	hyenadna
+169	0.0011708842	0.0011708842	0.0	1.7333406	0.08326639	1.0	False	lymph	mid	hyenadna
+239	0.0011769008	0.0011769008	0.0	1.7332453	0.08328331	1.0	False	lymph	mid	hyenadna
+738	0.0011817605	0.0011817605	0.0	1.7332314	0.083285786	1.0	False	lymph	mid	hyenadna
+432	0.001202177	0.001202177	0.0	1.7330109	0.083325006	1.0	False	lymph	mid	hyenadna
+175	0.0136283	0.050523974	0.036895674	1.6894835	0.0915676	1.0	False	lymph	mid	hyenadna
+202	-0.0052264174	0.0015769156	0.0068033333	-1.6710474	0.09542609	1.0	False	lymph	mid	hyenadna
+44	-0.023420066	0.3667024	0.39012247	-1.6572782	0.09794833	1.0	False	lymph	mid	hyenadna
+529	-0.0062613557	0.004703961	0.010965317	-1.537039	0.124937	1.0	False	lymph	mid	hyenadna
+460	0.0137152225	0.061288778	0.047573555	1.5310588	0.12621503	1.0	False	lymph	mid	hyenadna
+466	-0.00434188	0.001201255	0.005543135	-1.5252266	0.12793002	1.0	False	lymph	mid	hyenadna
+133	0.008827973	0.027828546	0.019000573	1.4868025	0.13749631	1.0	False	lymph	mid	hyenadna
+571	-0.008402116	0.011691886	0.020094002	-1.4732609	0.14128701	1.0	False	lymph	mid	hyenadna
+62	0.019496158	0.1460961	0.12659994	1.4725087	0.14136827	1.0	False	lymph	mid	hyenadna
+166	-0.021193564	0.3894705	0.41066405	-1.4289087	0.15351894	1.0	False	lymph	mid	hyenadna
+550	0.015631296	0.09435916	0.078727864	1.4180956	0.15663189	1.0	False	lymph	mid	hyenadna
+478	0.0007765086	0.0007765086	0.0	1.4147538	0.15737423	1.0	False	lymph	mid	hyenadna
+727	0.0007881481	0.0007881481	0.0	1.4147284	0.15738167	1.0	False	lymph	mid	hyenadna
+690	0.00078312674	0.00078312674	0.0	1.4147189	0.15738447	1.0	False	lymph	mid	hyenadna
+342	0.00078784965	0.00078784965	0.0	1.4146161	0.15741459	1.0	False	lymph	mid	hyenadna
+372	-0.017651044	0.09479179	0.112442836	-1.4055471	0.1603826	1.0	False	lymph	mid	hyenadna
+492	-0.0044675255	0.0023795716	0.006847097	-1.3973354	0.16297823	1.0	False	lymph	mid	hyenadna
+196	-0.012779955	0.042743675	0.05552363	-1.366482	0.17232703	1.0	False	lymph	mid	hyenadna
+176	-0.0085392	0.016294116	0.024833316	-1.3663349	0.17240149	1.0	False	lymph	mid	hyenadna
+120	-0.0032612851	0.00078442105	0.0040457062	-1.3618175	0.17396946	1.0	False	lymph	mid	hyenadna
+187	0.009203434	0.56744516	0.5582417	1.3351597	0.18240231	1.0	False	lymph	mid	hyenadna
+938	0.019274414	0.1943632	0.1750888	1.3161576	0.18859412	1.0	False	lymph	mid	hyenadna
+387	0.0060072606	0.016930977	0.010923716	1.3076316	0.19139539	1.0	False	lymph	mid	hyenadna
+806	-0.017916359	0.12214392	0.14006028	-1.2915232	0.19701956	1.0	False	lymph	mid	hyenadna
+1014	0.015004009	0.48206875	0.46706474	1.2478225	0.21259047	1.0	False	lymph	mid	hyenadna
+546	-0.01549083	0.45500016	0.470491	-1.2419233	0.21471016	1.0	False	lymph	mid	hyenadna
+965	-0.016315833	0.11122486	0.1275407	-1.2404027	0.2153111	1.0	False	lymph	mid	hyenadna
+318	-0.005888683	0.009035174	0.014923857	-1.2221915	0.22218001	1.0	False	lymph	mid	hyenadna
+45	-0.016867459	0.13476977	0.15163723	-1.2158923	0.22450085	1.0	False	lymph	mid	hyenadna
+477	0.0021914728	0.003554653	0.0013631801	1.2148598	0.22470209	1.0	False	lymph	mid	hyenadna
+143	0.011400871	0.06727682	0.05587595	1.1928707	0.23334374	1.0	False	lymph	mid	hyenadna
+456	-0.0066683325	0.0011279476	0.00779628	-1.186545	0.2360815	1.0	False	lymph	mid	hyenadna
+648	-0.0024392214	0.00041259394	0.0028518152	-1.1865426	0.23608238	1.0	False	lymph	mid	hyenadna
+68	-0.0023942885	0.0004049936	0.002799282	-1.1865425	0.23608246	1.0	False	lymph	mid	hyenadna
+710	-0.002326616	0.00039354683	0.002720163	-1.1865414	0.23608293	1.0	False	lymph	mid	hyenadna
+463	-0.0027007186	0.0004568262	0.0031575449	-1.1865389	0.23608385	1.0	False	lymph	mid	hyenadna
+859	-0.0023436376	0.000396426	0.0027400637	-1.1865373	0.23608457	1.0	False	lymph	mid	hyenadna
+809	-0.0025229317	0.00042675357	0.0029496853	-1.1865373	0.2360846	1.0	False	lymph	mid	hyenadna
+566	-0.0026318121	0.0004451707	0.003076983	-1.1865338	0.23608586	1.0	False	lymph	mid	hyenadna
+23	-0.0023584452	0.00039893066	0.0027573758	-1.1865327	0.23608637	1.0	False	lymph	mid	hyenadna
+450	-0.0023208293	0.00039256795	0.0027133971	-1.1865311	0.236087	1.0	False	lymph	mid	hyenadna
+844	0.011950985	0.07570403	0.063753046	1.1709918	0.24202235	1.0	False	lymph	mid	hyenadna
+383	0.009770729	0.05316164	0.04339091	1.144065	0.25300163	1.0	False	lymph	mid	hyenadna
+237	-0.0043599955	0.0051393076	0.009499303	-1.1369292	0.2560986	1.0	False	lymph	mid	hyenadna
+853	-0.0048136865	0.0063875183	0.011201205	-1.1367952	0.2561502	1.0	False	lymph	mid	hyenadna
+416	-0.0114231855	0.05603487	0.067458056	-1.1350747	0.25680754	1.0	False	lymph	mid	hyenadna
+182	-0.0062866695	0.013256902	0.019543571	-1.1186205	0.2637943	1.0	False	lymph	mid	hyenadna
+1000	-0.016168177	0.37298846	0.38915664	-1.1129867	0.26613408	1.0	False	lymph	mid	hyenadna
+439	0.007257104	0.6694177	0.6621606	1.0959284	0.2736157	1.0	False	lymph	mid	hyenadna
+146	-0.010991253	0.056835666	0.06782692	-1.0860416	0.2779064	1.0	False	lymph	mid	hyenadna
+451	-0.003006803	0.0016444444	0.0046512475	-1.0694455	0.2854302	1.0	False	lymph	mid	hyenadna
+308	0.0059258584	0.023529109	0.01760325	1.0489541	0.2945585	1.0	False	lymph	mid	hyenadna
+126	-0.0055143824	0.0114322	0.016946582	-1.0448222	0.29656804	1.0	False	lymph	mid	hyenadna
+205	-0.0034072555	0.0035378158	0.0069450713	-1.0302336	0.30339706	1.0	False	lymph	mid	hyenadna
+249	-0.013741173	0.122253604	0.13599478	-1.0195379	0.30835515	1.0	False	lymph	mid	hyenadna
+108	0.008368973	0.048041996	0.039673023	1.0170274	0.30950573	1.0	False	lymph	mid	hyenadna
+513	0.013529912	0.14575265	0.13222274	1.0101267	0.31281596	1.0	False	lymph	mid	hyenadna
+74	0.012031138	0.10653833	0.094507195	1.0068135	0.31440058	1.0	False	lymph	mid	hyenadna
+386	0.0004035584	0.0004035584	0.0	1.0000207	0.31748194	1.0	False	lymph	mid	hyenadna
+261	0.00039924754	0.00039924754	0.0	1.000013	0.31748563	1.0	False	lymph	mid	hyenadna
+37	0.0003977498	0.0003977498	0.0	1.000012	0.31748608	1.0	False	lymph	mid	hyenadna
+842	0.00039963462	0.00039963462	0.0	1.0000068	0.3174887	1.0	False	lymph	mid	hyenadna
+103	0.00038950576	0.00038950576	0.0	1.000006	0.31748906	1.0	False	lymph	mid	hyenadna
+579	0.0003920295	0.0003920295	0.0	1.0000044	0.3174898	1.0	False	lymph	mid	hyenadna
+488	0.0003899192	0.0003899192	0.0	1.0000039	0.3174901	1.0	False	lymph	mid	hyenadna
+286	0.000387838	0.000387838	0.0	1.0000035	0.3174903	1.0	False	lymph	mid	hyenadna
+197	0.0003921124	0.0003921124	0.0	1.0000029	0.31749055	1.0	False	lymph	mid	hyenadna
+995	0.00039038912	0.00039038912	0.0	1.0000024	0.3174908	1.0	False	lymph	mid	hyenadna
+981	0.00038798607	0.00038798607	0.0	1.0000005	0.31749177	1.0	False	lymph	mid	hyenadna
+130	0.00038760056	0.00038760056	0.0	1.0000005	0.31749177	1.0	False	lymph	mid	hyenadna
+231	0.00038971234	0.00038971234	0.0	1.0000004	0.31749177	1.0	False	lymph	mid	hyenadna
+568	0.0003885528	0.0003885528	0.0	1.0000004	0.31749177	1.0	False	lymph	mid	hyenadna
+284	0.00047487277	0.00047487277	0.0	0.9999991	0.31749237	1.0	False	lymph	mid	hyenadna
+592	-0.0013507071	0.0	0.0013507071	-1.0000026	0.31793734	1.0	False	lymph	mid	hyenadna
+164	-0.0015664726	0.0	0.0015664726	-1.0000008	0.31793818	1.0	False	lymph	mid	hyenadna
+661	-0.0013568671	0.0	0.0013568671	-0.99999946	0.3179389	1.0	False	lymph	mid	hyenadna
+723	-0.0037337625	0.004815556	0.008549319	-0.99964064	0.31795502	1.0	False	lymph	mid	hyenadna
+349	-0.0049825665	0.008907472	0.013890038	-0.9952522	0.32006204	1.0	False	lymph	mid	hyenadna
+673	-0.0021292777	0.0008133991	0.002942677	-0.98712564	0.32411635	1.0	False	lymph	mid	hyenadna
+775	0.010600209	0.52116686	0.51056665	0.9728587	0.33102363	1.0	False	lymph	mid	hyenadna
+894	0.012401894	0.13389738	0.121495485	0.9583608	0.33824164	1.0	False	lymph	mid	hyenadna
+542	0.0127832	0.14630273	0.13351953	0.95139784	0.34176058	1.0	False	lymph	mid	hyenadna
+365	-0.011913352	0.10080204	0.11271539	-0.9498164	0.34258533	1.0	False	lymph	mid	hyenadna
+1001	0.009553343	0.49500665	0.4854533	0.9460812	0.34449112	1.0	False	lymph	mid	hyenadna
+22	0.006061673	0.579885	0.57382333	0.926447	0.35462078	1.0	False	lymph	mid	hyenadna
+876	-0.0026819743	0.00275592	0.0054378943	-0.92449325	0.35567206	1.0	False	lymph	mid	hyenadna
+856	0.014058158	0.2532201	0.23916195	0.90446764	0.36609477	1.0	False	lymph	mid	hyenadna
+988	-0.008447528	0.04804721	0.05649474	-0.891825	0.3728501	1.0	False	lymph	mid	hyenadna
+977	-0.012113124	0.3974982	0.4096113	-0.86908215	0.38512868	1.0	False	lymph	mid	hyenadna
+163	-0.0028814422	0.0040537645	0.0069352067	-0.8626627	0.3887173	1.0	False	lymph	mid	hyenadna
+721	0.012564138	0.19043325	0.17786911	0.86181754	0.3891145	1.0	False	lymph	mid	hyenadna
+935	-0.010094851	0.4643194	0.47441426	-0.8528173	0.39407557	1.0	False	lymph	mid	hyenadna
+443	-0.013224274	0.21169257	0.22491685	-0.84200686	0.40011042	1.0	False	lymph	mid	hyenadna
+599	0.0013954127	0.0027398774	0.0013444647	0.82293075	0.41076866	1.0	False	lymph	mid	hyenadna
+42	-0.0020606222	0.0020428968	0.004103519	-0.81340617	0.4163681	1.0	False	lymph	mid	hyenadna
+919	0.008462653	0.078362264	0.06989961	0.8080261	0.41937217	1.0	False	lymph	mid	hyenadna
+454	0.0056298375	0.034139775	0.028509937	0.80235785	0.42262998	1.0	False	lymph	mid	hyenadna
+737	0.011819497	0.19561566	0.18379617	0.7980079	0.42516536	1.0	False	lymph	mid	hyenadna
+936	-0.0027089156	0.004362382	0.0070712976	-0.7939517	0.4275818	1.0	False	lymph	mid	hyenadna
+785	-0.009902805	0.4646083	0.47451112	-0.78975344	0.42996186	1.0	False	lymph	mid	hyenadna
+602	-0.0041299565	0.012014939	0.016144896	-0.78012717	0.4356468	1.0	False	lymph	mid	hyenadna
+499	-0.005214991	0.0216381	0.02685309	-0.7795552	0.43597168	1.0	False	lymph	mid	hyenadna
+224	-0.011408925	0.4164244	0.42783332	-0.7746398	0.4388428	1.0	False	lymph	mid	hyenadna
+651	-0.012001559	0.23714001	0.24914157	-0.7654724	0.4442796	1.0	False	lymph	mid	hyenadna
+403	-0.008883953	0.4565028	0.46538675	-0.74470353	0.4567244	1.0	False	lymph	mid	hyenadna
+485	-0.011285275	0.3388996	0.3501849	-0.7387572	0.46032858	1.0	False	lymph	mid	hyenadna
+33	-0.010824144	0.17552662	0.18635076	-0.7379719	0.4608111	1.0	False	lymph	mid	hyenadna
+878	0.0057543777	0.041417986	0.03566361	0.7378444	0.46087113	1.0	False	lymph	mid	hyenadna
+711	0.0026454963	0.009505672	0.006860176	0.73315763	0.4637012	1.0	False	lymph	mid	hyenadna
+507	-0.0026513804	0.0055941604	0.008245541	-0.7242804	0.46920332	1.0	False	lymph	mid	hyenadna
+181	0.006926786	0.06409195	0.057165165	0.7234503	0.46966317	1.0	False	lymph	mid	hyenadna
+801	0.01070255	0.37463355	0.363931	0.7110909	0.4772977	1.0	False	lymph	mid	hyenadna
+970	-0.0053289104	0.027989144	0.033318054	-0.7068903	0.47991544	1.0	False	lymph	mid	hyenadna
+1007	-0.0071790367	0.06296667	0.070145704	-0.69727844	0.48589784	1.0	False	lymph	mid	hyenadna
+552	-0.0009905373	0.00038816038	0.0013786977	-0.6915702	0.48956543	1.0	False	lymph	mid	hyenadna
+348	-0.00096565357	0.00038839187	0.0013540455	-0.68551725	0.49337023	1.0	False	lymph	mid	hyenadna
+167	-0.0009809281	0.0003954083	0.0013763364	-0.6850007	0.49369568	1.0	False	lymph	mid	hyenadna
+433	-0.004111329	0.018010668	0.022121998	-0.6814812	0.49583903	1.0	False	lymph	mid	hyenadna
+282	-0.00095472834	0.00039185965	0.001346588	-0.68075866	0.49637246	1.0	False	lymph	mid	hyenadna
+657	-0.0052448735	0.030394353	0.035639226	-0.6794866	0.4970964	1.0	False	lymph	mid	hyenadna
+704	-0.008293912	0.09730349	0.1055974	-0.6768058	0.49878633	1.0	False	lymph	mid	hyenadna
+914	-0.00890246	0.4205558	0.42945826	-0.6635595	0.50721186	1.0	False	lymph	mid	hyenadna
+434	-0.00988391	0.3532064	0.3630903	-0.66132325	0.50864625	1.0	False	lymph	mid	hyenadna
+4	-0.009845793	0.35259926	0.36244506	-0.6604863	0.50918365	1.0	False	lymph	mid	hyenadna
+50	-0.003323825	0.012021535	0.01534536	-0.65710425	0.51137877	1.0	False	lymph	mid	hyenadna
+955	0.0018257196	0.0059356373	0.0041099177	0.64847785	0.5168784	1.0	False	lymph	mid	hyenadna
+551	-0.0019174537	0.0035421366	0.0054595903	-0.64706844	0.51786363	1.0	False	lymph	mid	hyenadna
+274	-0.0019424469	0.0035951198	0.0055375667	-0.6461747	0.5184417	1.0	False	lymph	mid	hyenadna
+370	-0.0045541786	0.026691822	0.031246	-0.64417803	0.51971036	1.0	False	lymph	mid	hyenadna
+942	-0.0019019637	0.0035429741	0.005444938	-0.6432968	0.52030516	1.0	False	lymph	mid	hyenadna
+25	-0.0021723388	0.004772376	0.0069447146	-0.64249474	0.5208215	1.0	False	lymph	mid	hyenadna
+377	0.0064470544	0.07635943	0.069912374	0.6166956	0.53765357	1.0	False	lymph	mid	hyenadna
+626	-0.00871551	0.14289415	0.15160966	-0.612733	0.54027903	1.0	False	lymph	mid	hyenadna
+627	-0.004577879	0.030812405	0.035390284	-0.6089105	0.5428159	1.0	False	lymph	mid	hyenadna
+494	-0.004856348	0.034388974	0.039245322	-0.60647434	0.5444334	1.0	False	lymph	mid	hyenadna
+858	0.0009972317	0.0023464656	0.0013492339	0.60303617	0.54665315	1.0	False	lymph	mid	hyenadna
+718	-0.005549751	0.048726216	0.054275967	-0.5990303	0.5493787	1.0	False	lymph	mid	hyenadna
+948	0.0069625974	0.4892749	0.4823123	0.59532815	0.5518461	1.0	False	lymph	mid	hyenadna
+961	0.009227946	0.25916237	0.24993442	0.5931934	0.5532666	1.0	False	lymph	mid	hyenadna
+600	-0.0076696873	0.43790647	0.44557616	-0.5858	0.55821717	1.0	False	lymph	mid	hyenadna
+982	0.0028991047	0.016675958	0.013776854	0.5802161	0.5619625	1.0	False	lymph	mid	hyenadna
+209	-0.0076275766	0.43536392	0.4429915	-0.57247263	0.5672039	1.0	False	lymph	mid	hyenadna
+230	0.008404851	0.18812805	0.1797232	0.57086384	0.56829554	1.0	False	lymph	mid	hyenadna
+1003	-0.007997304	0.37769186	0.38568917	-0.5694941	0.5692237	1.0	False	lymph	mid	hyenadna
+670	0.0009653461	0.0023614424	0.0013960963	0.5693202	0.56930125	1.0	False	lymph	mid	hyenadna
+226	0.008822754	0.25386655	0.2450438	0.5688413	0.5696681	1.0	False	lymph	mid	hyenadna
+816	0.0065945685	0.45237464	0.44578007	0.55025375	0.58234584	1.0	False	lymph	mid	hyenadna
+407	0.005956173	0.51056206	0.5046059	0.5418794	0.58810014	1.0	False	lymph	mid	hyenadna
+323	-0.0011042802	0.0015849856	0.0026892659	-0.5367082	0.5916959	1.0	False	lymph	mid	hyenadna
+471	-0.0013977266	0.0027540713	0.004151798	-0.5360132	0.59217054	1.0	False	lymph	mid	hyenadna
+173	-0.0075274706	0.16324943	0.1707769	-0.5287706	0.5971543	1.0	False	lymph	mid	hyenadna
+472	-0.0017221379	0.005103408	0.006825546	-0.51440734	0.6071697	1.0	False	lymph	mid	hyenadna
+694	-0.0061638355	0.4816231	0.48778695	-0.51235086	0.60858226	1.0	False	lymph	mid	hyenadna
+553	-0.00500682	0.4800591	0.4850659	-0.5042634	0.61424804	1.0	False	lymph	mid	hyenadna
+257	0.0025124196	0.01637704	0.01386462	0.50114685	0.6164328	1.0	False	lymph	mid	hyenadna
+573	0.0058161914	0.47358382	0.46776763	0.4885761	0.6253179	1.0	False	lymph	mid	hyenadna
+761	-0.006757319	0.39085296	0.39761028	-0.4624717	0.6439026	1.0	False	lymph	mid	hyenadna
+967	-0.0030494835	0.024200514	0.027249997	-0.45727968	0.6476356	1.0	False	lymph	mid	hyenadna
+889	0.0049896836	0.084387966	0.07939828	0.4543823	0.6497085	1.0	False	lymph	mid	hyenadna
+625	0.0017662644	0.6996597	0.69789344	0.4478083	0.6544739	1.0	False	lymph	mid	hyenadna
+629	-0.0042462796	0.053149313	0.057395592	-0.44416714	0.65708	1.0	False	lymph	mid	hyenadna
+545	0.006677896	0.22304375	0.21636586	0.43895945	0.66084266	1.0	False	lymph	mid	hyenadna
+511	-0.0018122662	0.009100435	0.0109127015	-0.42527515	0.67079246	1.0	False	lymph	mid	hyenadna
+693	0.0035717003	0.047252316	0.043680616	0.4215521	0.6734928	1.0	False	lymph	mid	hyenadna
+964	-0.0051784515	0.4488444	0.45402285	-0.41950312	0.6749912	1.0	False	lymph	mid	hyenadna
+14	0.0024029016	0.5582332	0.5558303	0.4123317	0.68024176	1.0	False	lymph	mid	hyenadna
+840	0.0025820937	0.025925277	0.023343183	0.40614948	0.6847667	1.0	False	lymph	mid	hyenadna
+957	-0.0005986803	0.00079126406	0.0013899443	-0.39958444	0.6896278	1.0	False	lymph	mid	hyenadna
+339	-0.0005729997	0.00077609555	0.0013490953	-0.39344594	0.69415164	1.0	False	lymph	mid	hyenadna
+793	-0.00057404884	0.0007777553	0.0013518041	-0.393369	0.69420844	1.0	False	lymph	mid	hyenadna
+87	-0.0008255092	0.001962153	0.0027876622	-0.38292783	0.70192206	1.0	False	lymph	mid	hyenadna
+671	0.0027354956	0.5872778	0.58454233	0.37431553	0.708306	1.0	False	lymph	mid	hyenadna
+937	0.0006011153	0.0019557937	0.0013546784	0.37294504	0.7092967	1.0	False	lymph	mid	hyenadna
+641	-0.005388066	0.17001651	0.17540458	-0.36789423	0.7130778	1.0	False	lymph	mid	hyenadna
+55	-0.0031983815	0.044599272	0.047797654	-0.3677303	0.713202	1.0	False	lymph	mid	hyenadna
+331	-0.0015050368	0.008348327	0.009853364	-0.36574548	0.7146878	1.0	False	lymph	mid	hyenadna
+588	-0.0007434867	0.0019656199	0.0027091065	-0.35321593	0.7240601	1.0	False	lymph	mid	hyenadna
+522	0.00528726	0.28524587	0.2799586	0.3381339	0.7353757	1.0	False	lymph	mid	hyenadna
+418	0.0016739154	0.015535886	0.013861971	0.33617836	0.7368445	1.0	False	lymph	mid	hyenadna
+113	-0.0024269447	0.030447595	0.03287454	-0.33115503	0.7406417	1.0	False	lymph	mid	hyenadna
+406	-0.005101621	0.32353744	0.32863906	-0.33070275	0.7409798	1.0	False	lymph	mid	hyenadna
+502	0.0019456856	0.022477595	0.02053191	0.32617575	0.74439687	1.0	False	lymph	mid	hyenadna
+923	-0.003215313	0.4880729	0.49128821	-0.32126683	0.74811393	1.0	False	lymph	mid	hyenadna
+540	0.004256755	0.14098312	0.13672636	0.3130714	0.7543302	1.0	False	lymph	mid	hyenadna
+916	-0.0037774444	0.4881618	0.49193925	-0.3037896	0.76139003	1.0	False	lymph	mid	hyenadna
+850	-0.0022951402	0.033041753	0.035336893	-0.30372316	0.7614423	1.0	False	lymph	mid	hyenadna
+565	0.003780529	0.11451228	0.11073175	0.29868907	0.7652761	1.0	False	lymph	mid	hyenadna
+208	-0.0034064949	0.48735368	0.49076018	-0.2854577	0.77538717	1.0	False	lymph	mid	hyenadna
+244	-0.0033198297	0.47530153	0.47862136	-0.28516442	0.7756109	1.0	False	lymph	mid	hyenadna
+674	-0.004470527	0.25849643	0.26296696	-0.28474498	0.7759341	1.0	False	lymph	mid	hyenadna
+837	0.0035090744	0.42855757	0.4250485	0.2668062	0.7897073	1.0	False	lymph	mid	hyenadna
+766	-0.0029643476	0.086987875	0.08995222	-0.25217742	0.800988	1.0	False	lymph	mid	hyenadna
+258	-0.0038393587	0.24483787	0.24867722	-0.24936435	0.8031609	1.0	False	lymph	mid	hyenadna
+516	0.003480345	0.40036207	0.39688173	0.24602214	0.80574644	1.0	False	lymph	mid	hyenadna
+991	-0.0027285516	0.47513333	0.47786188	-0.23265426	0.816105	1.0	False	lymph	mid	hyenadna
+920	0.00300619	0.4608389	0.45783272	0.22513197	0.82195175	1.0	False	lymph	mid	hyenadna
+409	0.0030810386	0.16864713	0.16556609	0.21706468	0.82822853	1.0	False	lymph	mid	hyenadna
+949	-0.0023534298	3.4296944	3.4320478	-0.20866309	0.8347841	1.0	False	lymph	mid	hyenadna
+496	-0.0007710322	0.0074884244	0.008259457	-0.20504878	0.8376036	1.0	False	lymph	mid	hyenadna
+134	0.0024851263	0.45846242	0.4559773	0.19805065	0.84307015	1.0	False	lymph	mid	hyenadna
+405	0.00080102496	0.010339366	0.009538341	0.19524074	0.8452656	1.0	False	lymph	mid	hyenadna
+312	0.0022674203	0.51154727	0.50927985	0.18786895	0.8510422	1.0	False	lymph	mid	hyenadna
+60	0.0008878922	0.014555851	0.013667959	0.18192042	0.85570276	1.0	False	lymph	mid	hyenadna
+562	-0.002211541	0.46463695	0.4668485	-0.1809999	0.85642594	1.0	False	lymph	mid	hyenadna
+347	0.002584815	0.1767662	0.17418139	0.17725128	0.85936826	1.0	False	lymph	mid	hyenadna
+399	-0.0012368951	0.028020479	0.029257374	-0.17612801	0.8602515	1.0	False	lymph	mid	hyenadna
+789	-0.0022461414	2.6865034	2.6887496	-0.16446514	0.8694225	1.0	False	lymph	mid	hyenadna
+319	-0.000664223	0.01016614	0.010830363	-0.15528312	0.87664944	1.0	False	lymph	mid	hyenadna
+992	-0.0005334597	0.0064296587	0.0069631184	-0.15297888	0.87846583	1.0	False	lymph	mid	hyenadna
+888	-0.0014839768	0.53724414	0.5387281	-0.14235204	0.8868486	1.0	False	lymph	mid	hyenadna
+517	0.0012750998	0.054555845	0.053280745	0.13832411	0.89002836	1.0	False	lymph	mid	hyenadna
+315	-0.0010989383	0.039033953	0.04013289	-0.13514051	0.8925446	1.0	False	lymph	mid	hyenadna
+561	-0.0007914547	0.019306356	0.02009781	-0.13261397	0.89454216	1.0	False	lymph	mid	hyenadna
+659	-0.0012537837	0.50106364	0.5023174	-0.11922292	0.90513694	1.0	False	lymph	mid	hyenadna
+763	0.0016590804	0.15677984	0.15512076	0.11888194	0.9054071	1.0	False	lymph	mid	hyenadna
+296	-0.00038060918	0.007874333	0.0082549425	-0.1007544	0.91977847	1.0	False	lymph	mid	hyenadna
+1018	-0.00056116283	0.024536172	0.025097335	-0.08566174	0.931763	1.0	False	lymph	mid	hyenadna
+83	-0.0002973685	0.0079294285	0.008226797	-0.07880782	0.9372111	1.0	False	lymph	mid	hyenadna
+401	0.0008645505	0.09903215	0.0981676	0.07282481	0.94196874	1.0	False	lymph	mid	hyenadna
+558	-0.0009507537	0.3714327	0.37238345	-0.06435706	0.94870645	1.0	False	lymph	mid	hyenadna
+998	-0.000713706	0.15254001	0.15325372	-0.051140167	0.9592302	1.0	False	lymph	mid	hyenadna
+822	0.00073063374	0.20907323	0.2083426	0.04856776	0.9612793	1.0	False	lymph	mid	hyenadna
+589	0.00022554584	0.01652025	0.016294705	0.042780768	0.9658899	1.0	False	lymph	mid	hyenadna
+682	-0.000446707	0.4510058	0.4514525	-0.03421766	0.9727146	1.0	False	lymph	mid	hyenadna
+985	0.00050613284	0.27851662	0.2780105	0.032772783	0.9738662	1.0	False	lymph	mid	hyenadna
+185	-0.000385724	0.12373877	0.1241245	-0.029196605	0.9767171	1.0	False	lymph	mid	hyenadna
+637	-0.00030951202	0.09138832	0.091697834	-0.026741967	0.9786741	1.0	False	lymph	mid	hyenadna
+976	0.0002733469	0.49801663	0.49774328	0.02424633	0.98066396	1.0	False	lymph	mid	hyenadna
+531	-0.00027101487	0.082690686	0.0829617	-0.024224687	0.9806812	1.0	False	lymph	mid	hyenadna
+482	-0.00023625791	0.06798307	0.06821933	-0.022841647	0.98178387	1.0	False	lymph	mid	hyenadna
+814	-0.00025248528	0.4185055	0.41875798	-0.019015651	0.9848347	1.0	False	lymph	mid	hyenadna
+238	0.00022852421	0.11688372	0.11665519	0.01799156	0.9856513	1.0	False	lymph	mid	hyenadna
+719	-0.00025252998	0.19127807	0.1915306	-0.016996183	0.98644507	1.0	False	lymph	mid	hyenadna
+725	5.713431e-06	0.002761207	0.0027554936	0.0025886307	0.9979354	1.0	False	lymph	mid	hyenadna
+880	-8.022413e-06	0.008218687	0.008226709	-0.0021212017	0.9983082	1.0	False	lymph	mid	hyenadna
+0	0.0	0.0	0.0				False	lymph	mid	hyenadna
+1	0.0	0.0	0.0				False	lymph	mid	hyenadna
+2	0.0	0.0	0.0				False	lymph	mid	hyenadna
+3	0.0	0.0	0.0				False	lymph	mid	hyenadna
+5	0.0	0.0	0.0				False	lymph	mid	hyenadna
+6	0.0	0.0	0.0				False	lymph	mid	hyenadna
+7	0.0	0.0	0.0				False	lymph	mid	hyenadna
+8	0.0	0.0	0.0				False	lymph	mid	hyenadna
+9	0.0	0.0	0.0				False	lymph	mid	hyenadna
+10	0.0	0.0	0.0				False	lymph	mid	hyenadna
+11	0.0	0.0	0.0				False	lymph	mid	hyenadna
+12	0.0	0.0	0.0				False	lymph	mid	hyenadna
+13	0.0	0.0	0.0				False	lymph	mid	hyenadna
+15	0.0	0.0	0.0				False	lymph	mid	hyenadna
+16	0.0	0.0	0.0				False	lymph	mid	hyenadna
+17	0.0	0.0	0.0				False	lymph	mid	hyenadna
+18	0.0	0.0	0.0				False	lymph	mid	hyenadna
+19	0.0	0.0	0.0				False	lymph	mid	hyenadna
+20	0.0	0.0	0.0				False	lymph	mid	hyenadna
+21	0.0	0.0	0.0				False	lymph	mid	hyenadna
+24	0.0	0.0	0.0				False	lymph	mid	hyenadna
+26	0.0	0.0	0.0				False	lymph	mid	hyenadna
+27	0.0	0.0	0.0				False	lymph	mid	hyenadna
+29	0.0	0.0	0.0				False	lymph	mid	hyenadna
+30	0.0	0.0	0.0				False	lymph	mid	hyenadna
+31	0.0	0.0	0.0				False	lymph	mid	hyenadna
+32	0.0	0.0	0.0				False	lymph	mid	hyenadna
+34	0.0	0.0	0.0				False	lymph	mid	hyenadna
+35	0.0	0.0	0.0				False	lymph	mid	hyenadna
+36	0.0	0.0	0.0				False	lymph	mid	hyenadna
+38	0.0	0.0	0.0				False	lymph	mid	hyenadna
+39	0.0	0.0	0.0				False	lymph	mid	hyenadna
+40	0.0	0.0	0.0				False	lymph	mid	hyenadna
+41	0.0	0.0	0.0				False	lymph	mid	hyenadna
+43	0.0	0.0	0.0				False	lymph	mid	hyenadna
+46	0.0	0.0	0.0				False	lymph	mid	hyenadna
+47	0.0	0.0	0.0				False	lymph	mid	hyenadna
+48	0.0	0.0	0.0				False	lymph	mid	hyenadna
+51	0.0	0.0	0.0				False	lymph	mid	hyenadna
+52	0.0	0.0	0.0				False	lymph	mid	hyenadna
+54	0.0	0.0	0.0				False	lymph	mid	hyenadna
+56	0.0	0.0	0.0				False	lymph	mid	hyenadna
+57	0.0	0.0	0.0				False	lymph	mid	hyenadna
+58	0.0	0.0	0.0				False	lymph	mid	hyenadna
+59	0.0	0.0	0.0				False	lymph	mid	hyenadna
+61	0.0	0.0	0.0				False	lymph	mid	hyenadna
+63	0.0	0.0	0.0				False	lymph	mid	hyenadna
+64	0.0	0.0	0.0				False	lymph	mid	hyenadna
+65	0.0	0.0	0.0				False	lymph	mid	hyenadna
+66	0.0	0.0	0.0				False	lymph	mid	hyenadna
+67	0.0	0.0	0.0				False	lymph	mid	hyenadna
+69	0.0	0.0	0.0				False	lymph	mid	hyenadna
+70	0.0	0.0	0.0				False	lymph	mid	hyenadna
+71	0.0	0.0	0.0				False	lymph	mid	hyenadna
+72	0.0	0.0	0.0				False	lymph	mid	hyenadna
+73	0.0	0.0	0.0				False	lymph	mid	hyenadna
+75	0.0	0.0	0.0				False	lymph	mid	hyenadna
+76	0.0	0.0	0.0				False	lymph	mid	hyenadna
+77	0.0	0.0	0.0				False	lymph	mid	hyenadna
+78	0.0	0.0	0.0				False	lymph	mid	hyenadna
+79	0.0	0.0	0.0				False	lymph	mid	hyenadna
+80	0.0	0.0	0.0				False	lymph	mid	hyenadna
+81	0.0	0.0	0.0				False	lymph	mid	hyenadna
+82	0.0	0.0	0.0				False	lymph	mid	hyenadna
+84	0.0	0.0	0.0				False	lymph	mid	hyenadna
+85	0.0	0.0	0.0				False	lymph	mid	hyenadna
+86	0.0	0.0	0.0				False	lymph	mid	hyenadna
+88	0.0	0.0	0.0				False	lymph	mid	hyenadna
+89	0.0	0.0	0.0				False	lymph	mid	hyenadna
+90	0.0	0.0	0.0				False	lymph	mid	hyenadna
+91	0.0	0.0	0.0				False	lymph	mid	hyenadna
+92	0.0	0.0	0.0				False	lymph	mid	hyenadna
+93	0.0	0.0	0.0				False	lymph	mid	hyenadna
+94	0.0	0.0	0.0				False	lymph	mid	hyenadna
+95	0.0	0.0	0.0				False	lymph	mid	hyenadna
+96	0.0	0.0	0.0				False	lymph	mid	hyenadna
+97	0.0	0.0	0.0				False	lymph	mid	hyenadna
+98	0.0	0.0	0.0				False	lymph	mid	hyenadna
+99	0.0	0.0	0.0				False	lymph	mid	hyenadna
+100	0.0	0.0	0.0				False	lymph	mid	hyenadna
+101	0.0	0.0	0.0				False	lymph	mid	hyenadna
+102	0.0	0.0	0.0				False	lymph	mid	hyenadna
+104	0.0	0.0	0.0				False	lymph	mid	hyenadna
+106	0.0	0.0	0.0				False	lymph	mid	hyenadna
+107	0.0	0.0	0.0				False	lymph	mid	hyenadna
+109	0.0	0.0	0.0				False	lymph	mid	hyenadna
+110	0.0	0.0	0.0				False	lymph	mid	hyenadna
+111	0.0	0.0	0.0				False	lymph	mid	hyenadna
+112	0.0	0.0	0.0				False	lymph	mid	hyenadna
+114	0.0	0.0	0.0				False	lymph	mid	hyenadna
+115	0.0	0.0	0.0				False	lymph	mid	hyenadna
+116	0.0	0.0	0.0				False	lymph	mid	hyenadna
+117	0.0	0.0	0.0				False	lymph	mid	hyenadna
+118	0.0	0.0	0.0				False	lymph	mid	hyenadna
+119	0.0	0.0	0.0				False	lymph	mid	hyenadna
+121	0.0	0.0	0.0				False	lymph	mid	hyenadna
+122	0.0	0.0	0.0				False	lymph	mid	hyenadna
+123	0.0	0.0	0.0				False	lymph	mid	hyenadna
+124	0.0	0.0	0.0				False	lymph	mid	hyenadna
+125	0.0	0.0	0.0				False	lymph	mid	hyenadna
+127	0.0	0.0	0.0				False	lymph	mid	hyenadna
+128	0.0	0.0	0.0				False	lymph	mid	hyenadna
+129	0.0	0.0	0.0				False	lymph	mid	hyenadna
+131	0.0	0.0	0.0				False	lymph	mid	hyenadna
+132	0.0	0.0	0.0				False	lymph	mid	hyenadna
+135	0.0	0.0	0.0				False	lymph	mid	hyenadna
+136	0.0	0.0	0.0				False	lymph	mid	hyenadna
+137	0.0	0.0	0.0				False	lymph	mid	hyenadna
+138	0.0	0.0	0.0				False	lymph	mid	hyenadna
+139	0.0	0.0	0.0				False	lymph	mid	hyenadna
+140	0.0	0.0	0.0				False	lymph	mid	hyenadna
+141	0.0	0.0	0.0				False	lymph	mid	hyenadna
+142	0.0	0.0	0.0				False	lymph	mid	hyenadna
+144	0.0	0.0	0.0				False	lymph	mid	hyenadna
+145	0.0	0.0	0.0				False	lymph	mid	hyenadna
+147	0.0	0.0	0.0				False	lymph	mid	hyenadna
+148	0.0	0.0	0.0				False	lymph	mid	hyenadna
+149	0.0	0.0	0.0				False	lymph	mid	hyenadna
+150	0.0	0.0	0.0				False	lymph	mid	hyenadna
+151	0.0	0.0	0.0				False	lymph	mid	hyenadna
+152	0.0	0.0	0.0				False	lymph	mid	hyenadna
+153	0.0	0.0	0.0				False	lymph	mid	hyenadna
+154	0.0	0.0	0.0				False	lymph	mid	hyenadna
+155	0.0	0.0	0.0				False	lymph	mid	hyenadna
+156	0.0	0.0	0.0				False	lymph	mid	hyenadna
+157	0.0	0.0	0.0				False	lymph	mid	hyenadna
+158	0.0	0.0	0.0				False	lymph	mid	hyenadna
+159	0.0	0.0	0.0				False	lymph	mid	hyenadna
+160	0.0	0.0	0.0				False	lymph	mid	hyenadna
+161	0.0	0.0	0.0				False	lymph	mid	hyenadna
+162	0.0	0.0	0.0				False	lymph	mid	hyenadna
+165	0.0	0.0	0.0				False	lymph	mid	hyenadna
+168	0.0	0.0	0.0				False	lymph	mid	hyenadna
+170	0.0	0.0	0.0				False	lymph	mid	hyenadna
+171	0.0	0.0	0.0				False	lymph	mid	hyenadna
+172	0.0	0.0	0.0				False	lymph	mid	hyenadna
+174	0.0	0.0	0.0				False	lymph	mid	hyenadna
+177	0.0	0.0	0.0				False	lymph	mid	hyenadna
+178	0.0	0.0	0.0				False	lymph	mid	hyenadna
+179	0.0	0.0	0.0				False	lymph	mid	hyenadna
+180	0.0	0.0	0.0				False	lymph	mid	hyenadna
+183	0.0	0.0	0.0				False	lymph	mid	hyenadna
+184	0.0	0.0	0.0				False	lymph	mid	hyenadna
+186	0.0	0.0	0.0				False	lymph	mid	hyenadna
+188	0.0	0.0	0.0				False	lymph	mid	hyenadna
+189	0.0	0.0	0.0				False	lymph	mid	hyenadna
+190	0.0	0.0	0.0				False	lymph	mid	hyenadna
+192	0.0	0.0	0.0				False	lymph	mid	hyenadna
+193	0.0	0.0	0.0				False	lymph	mid	hyenadna
+194	0.0	0.0	0.0				False	lymph	mid	hyenadna
+195	0.0	0.0	0.0				False	lymph	mid	hyenadna
+198	0.0	0.0	0.0				False	lymph	mid	hyenadna
+199	0.0	0.0	0.0				False	lymph	mid	hyenadna
+200	0.0	0.0	0.0				False	lymph	mid	hyenadna
+201	0.0	0.0	0.0				False	lymph	mid	hyenadna
+203	0.0	0.0	0.0				False	lymph	mid	hyenadna
+204	0.0	0.0	0.0				False	lymph	mid	hyenadna
+206	0.0	0.0	0.0				False	lymph	mid	hyenadna
+207	0.0	0.0	0.0				False	lymph	mid	hyenadna
+210	0.0	0.0	0.0				False	lymph	mid	hyenadna
+211	0.0	0.0	0.0				False	lymph	mid	hyenadna
+212	0.0	0.0	0.0				False	lymph	mid	hyenadna
+213	0.0	0.0	0.0				False	lymph	mid	hyenadna
+214	0.0	0.0	0.0				False	lymph	mid	hyenadna
+215	0.0	0.0	0.0				False	lymph	mid	hyenadna
+216	0.0	0.0	0.0				False	lymph	mid	hyenadna
+217	0.0	0.0	0.0				False	lymph	mid	hyenadna
+218	0.0	0.0	0.0				False	lymph	mid	hyenadna
+219	0.0	0.0	0.0				False	lymph	mid	hyenadna
+220	0.0	0.0	0.0				False	lymph	mid	hyenadna
+221	0.0	0.0	0.0				False	lymph	mid	hyenadna
+222	0.0	0.0	0.0				False	lymph	mid	hyenadna
+223	0.0	0.0	0.0				False	lymph	mid	hyenadna
+225	0.0	0.0	0.0				False	lymph	mid	hyenadna
+227	0.0	0.0	0.0				False	lymph	mid	hyenadna
+228	0.0	0.0	0.0				False	lymph	mid	hyenadna
+229	0.0	0.0	0.0				False	lymph	mid	hyenadna
+232	0.0	0.0	0.0				False	lymph	mid	hyenadna
+233	0.0	0.0	0.0				False	lymph	mid	hyenadna
+234	0.0	0.0	0.0				False	lymph	mid	hyenadna
+235	0.0	0.0	0.0				False	lymph	mid	hyenadna
+236	0.0	0.0	0.0				False	lymph	mid	hyenadna
+240	0.0	0.0	0.0				False	lymph	mid	hyenadna
+241	0.0	0.0	0.0				False	lymph	mid	hyenadna
+242	0.0	0.0	0.0				False	lymph	mid	hyenadna
+243	0.0	0.0	0.0				False	lymph	mid	hyenadna
+245	0.0	0.0	0.0				False	lymph	mid	hyenadna
+246	0.0	0.0	0.0				False	lymph	mid	hyenadna
+247	0.0	0.0	0.0				False	lymph	mid	hyenadna
+248	0.0	0.0	0.0				False	lymph	mid	hyenadna
+250	0.0	0.0	0.0				False	lymph	mid	hyenadna
+251	0.0	0.0	0.0				False	lymph	mid	hyenadna
+252	0.0	0.0	0.0				False	lymph	mid	hyenadna
+253	0.0	0.0	0.0				False	lymph	mid	hyenadna
+254	0.0	0.0	0.0				False	lymph	mid	hyenadna
+256	0.0	0.0	0.0				False	lymph	mid	hyenadna
+259	0.0	0.0	0.0				False	lymph	mid	hyenadna
+260	0.0	0.0	0.0				False	lymph	mid	hyenadna
+262	0.0	0.0	0.0				False	lymph	mid	hyenadna
+263	0.0	0.0	0.0				False	lymph	mid	hyenadna
+264	0.0	0.0	0.0				False	lymph	mid	hyenadna
+265	0.0	0.0	0.0				False	lymph	mid	hyenadna
+266	0.0	0.0	0.0				False	lymph	mid	hyenadna
+267	0.0	0.0	0.0				False	lymph	mid	hyenadna
+268	0.0	0.0	0.0				False	lymph	mid	hyenadna
+269	0.0	0.0	0.0				False	lymph	mid	hyenadna
+270	0.0	0.0	0.0				False	lymph	mid	hyenadna
+271	0.0	0.0	0.0				False	lymph	mid	hyenadna
+272	0.0	0.0	0.0				False	lymph	mid	hyenadna
+273	0.0	0.0	0.0				False	lymph	mid	hyenadna
+275	0.0	0.0	0.0				False	lymph	mid	hyenadna
+276	0.0	0.0	0.0				False	lymph	mid	hyenadna
+277	0.0	0.0	0.0				False	lymph	mid	hyenadna
+278	0.0	0.0	0.0				False	lymph	mid	hyenadna
+279	0.0	0.0	0.0				False	lymph	mid	hyenadna
+280	0.0	0.0	0.0				False	lymph	mid	hyenadna
+281	0.0	0.0	0.0				False	lymph	mid	hyenadna
+283	0.0	0.0	0.0				False	lymph	mid	hyenadna
+285	0.0	0.0	0.0				False	lymph	mid	hyenadna
+288	0.0	0.0	0.0				False	lymph	mid	hyenadna
+289	0.0	0.0	0.0				False	lymph	mid	hyenadna
+290	0.0	0.0	0.0				False	lymph	mid	hyenadna
+291	0.0	0.0	0.0				False	lymph	mid	hyenadna
+292	0.0	0.0	0.0				False	lymph	mid	hyenadna
+293	0.0	0.0	0.0				False	lymph	mid	hyenadna
+294	0.0	0.0	0.0				False	lymph	mid	hyenadna
+295	0.0	0.0	0.0				False	lymph	mid	hyenadna
+297	0.0	0.0	0.0				False	lymph	mid	hyenadna
+298	0.0	0.0	0.0				False	lymph	mid	hyenadna
+299	0.0	0.0	0.0				False	lymph	mid	hyenadna
+300	0.0	0.0	0.0				False	lymph	mid	hyenadna
+301	0.0	0.0	0.0				False	lymph	mid	hyenadna
+302	0.0	0.0	0.0				False	lymph	mid	hyenadna
+303	0.0	0.0	0.0				False	lymph	mid	hyenadna
+304	0.0	0.0	0.0				False	lymph	mid	hyenadna
+305	0.0	0.0	0.0				False	lymph	mid	hyenadna
+306	0.0	0.0	0.0				False	lymph	mid	hyenadna
+307	0.0	0.0	0.0				False	lymph	mid	hyenadna
+309	0.0	0.0	0.0				False	lymph	mid	hyenadna
+310	0.0	0.0	0.0				False	lymph	mid	hyenadna
+311	0.0	0.0	0.0				False	lymph	mid	hyenadna
+313	0.0	0.0	0.0				False	lymph	mid	hyenadna
+314	0.0	0.0	0.0				False	lymph	mid	hyenadna
+316	0.0	0.0	0.0				False	lymph	mid	hyenadna
+317	0.0	0.0	0.0				False	lymph	mid	hyenadna
+320	0.0	0.0	0.0				False	lymph	mid	hyenadna
+321	0.0	0.0	0.0				False	lymph	mid	hyenadna
+322	0.0	0.0	0.0				False	lymph	mid	hyenadna
+324	0.0	0.0	0.0				False	lymph	mid	hyenadna
+325	0.0	0.0	0.0				False	lymph	mid	hyenadna
+326	0.0	0.0	0.0				False	lymph	mid	hyenadna
+327	0.0	0.0	0.0				False	lymph	mid	hyenadna
+328	0.0	0.0	0.0				False	lymph	mid	hyenadna
+329	0.0	0.0	0.0				False	lymph	mid	hyenadna
+330	0.0	0.0	0.0				False	lymph	mid	hyenadna
+332	0.0	0.0	0.0				False	lymph	mid	hyenadna
+333	0.0	0.0	0.0				False	lymph	mid	hyenadna
+334	0.0	0.0	0.0				False	lymph	mid	hyenadna
+335	0.0	0.0	0.0				False	lymph	mid	hyenadna
+336	0.0	0.0	0.0				False	lymph	mid	hyenadna
+337	0.0	0.0	0.0				False	lymph	mid	hyenadna
+338	0.0	0.0	0.0				False	lymph	mid	hyenadna
+340	0.0	0.0	0.0				False	lymph	mid	hyenadna
+341	0.0	0.0	0.0				False	lymph	mid	hyenadna
+343	0.0	0.0	0.0				False	lymph	mid	hyenadna
+344	0.0	0.0	0.0				False	lymph	mid	hyenadna
+345	0.0	0.0	0.0				False	lymph	mid	hyenadna
+346	0.0	0.0	0.0				False	lymph	mid	hyenadna
+350	0.0	0.0	0.0				False	lymph	mid	hyenadna
+351	0.0	0.0	0.0				False	lymph	mid	hyenadna
+352	0.0	0.0	0.0				False	lymph	mid	hyenadna
+353	0.0	0.0	0.0				False	lymph	mid	hyenadna
+354	0.0	0.0	0.0				False	lymph	mid	hyenadna
+355	0.0	0.0	0.0				False	lymph	mid	hyenadna
+356	0.0	0.0	0.0				False	lymph	mid	hyenadna
+357	0.0	0.0	0.0				False	lymph	mid	hyenadna
+358	0.0	0.0	0.0				False	lymph	mid	hyenadna
+359	0.0	0.0	0.0				False	lymph	mid	hyenadna
+360	0.0	0.0	0.0				False	lymph	mid	hyenadna
+361	0.0	0.0	0.0				False	lymph	mid	hyenadna
+362	0.0	0.0	0.0				False	lymph	mid	hyenadna
+363	0.0	0.0	0.0				False	lymph	mid	hyenadna
+364	0.0	0.0	0.0				False	lymph	mid	hyenadna
+366	0.0	0.0	0.0				False	lymph	mid	hyenadna
+367	0.0	0.0	0.0				False	lymph	mid	hyenadna
+368	0.0	0.0	0.0				False	lymph	mid	hyenadna
+369	0.0	0.0	0.0				False	lymph	mid	hyenadna
+371	0.0	0.0	0.0				False	lymph	mid	hyenadna
+373	0.0	0.0	0.0				False	lymph	mid	hyenadna
+374	0.0	0.0	0.0				False	lymph	mid	hyenadna
+375	0.0	0.0	0.0				False	lymph	mid	hyenadna
+376	0.0	0.0	0.0				False	lymph	mid	hyenadna
+378	0.0	0.0	0.0				False	lymph	mid	hyenadna
+379	0.0	0.0	0.0				False	lymph	mid	hyenadna
+380	0.0	0.0	0.0				False	lymph	mid	hyenadna
+381	0.0	0.0	0.0				False	lymph	mid	hyenadna
+382	0.0	0.0	0.0				False	lymph	mid	hyenadna
+384	0.0	0.0	0.0				False	lymph	mid	hyenadna
+385	0.0	0.0	0.0				False	lymph	mid	hyenadna
+388	0.0	0.0	0.0				False	lymph	mid	hyenadna
+389	0.0	0.0	0.0				False	lymph	mid	hyenadna
+390	0.0	0.0	0.0				False	lymph	mid	hyenadna
+391	0.0	0.0	0.0				False	lymph	mid	hyenadna
+392	0.0	0.0	0.0				False	lymph	mid	hyenadna
+393	0.0	0.0	0.0				False	lymph	mid	hyenadna
+394	0.0	0.0	0.0				False	lymph	mid	hyenadna
+396	0.0	0.0	0.0				False	lymph	mid	hyenadna
+397	0.0	0.0	0.0				False	lymph	mid	hyenadna
+398	0.0	0.0	0.0				False	lymph	mid	hyenadna
+400	0.0	0.0	0.0				False	lymph	mid	hyenadna
+402	0.0	0.0	0.0				False	lymph	mid	hyenadna
+404	0.0	0.0	0.0				False	lymph	mid	hyenadna
+408	0.0	0.0	0.0				False	lymph	mid	hyenadna
+410	0.0	0.0	0.0				False	lymph	mid	hyenadna
+411	0.0	0.0	0.0				False	lymph	mid	hyenadna
+412	0.0	0.0	0.0				False	lymph	mid	hyenadna
+413	0.0	0.0	0.0				False	lymph	mid	hyenadna
+414	0.0	0.0	0.0				False	lymph	mid	hyenadna
+415	0.0	0.0	0.0				False	lymph	mid	hyenadna
+417	0.0	0.0	0.0				False	lymph	mid	hyenadna
+419	0.0	0.0	0.0				False	lymph	mid	hyenadna
+420	0.0	0.0	0.0				False	lymph	mid	hyenadna
+421	0.0	0.0	0.0				False	lymph	mid	hyenadna
+422	0.0	0.0	0.0				False	lymph	mid	hyenadna
+423	0.0	0.0	0.0				False	lymph	mid	hyenadna
+424	0.0	0.0	0.0				False	lymph	mid	hyenadna
+425	0.0	0.0	0.0				False	lymph	mid	hyenadna
+426	0.0	0.0	0.0				False	lymph	mid	hyenadna
+427	0.0	0.0	0.0				False	lymph	mid	hyenadna
+428	0.0	0.0	0.0				False	lymph	mid	hyenadna
+429	0.0	0.0	0.0				False	lymph	mid	hyenadna
+430	0.0	0.0	0.0				False	lymph	mid	hyenadna
+431	0.0	0.0	0.0				False	lymph	mid	hyenadna
+435	0.0	0.0	0.0				False	lymph	mid	hyenadna
+436	0.0	0.0	0.0				False	lymph	mid	hyenadna
+437	0.0	0.0	0.0				False	lymph	mid	hyenadna
+438	0.0	0.0	0.0				False	lymph	mid	hyenadna
+440	0.0	0.0	0.0				False	lymph	mid	hyenadna
+441	0.0	0.0	0.0				False	lymph	mid	hyenadna
+442	0.0	0.0	0.0				False	lymph	mid	hyenadna
+444	0.0	0.0	0.0				False	lymph	mid	hyenadna
+445	0.0	0.0	0.0				False	lymph	mid	hyenadna
+446	0.0	0.0	0.0				False	lymph	mid	hyenadna
+447	0.0	0.0	0.0				False	lymph	mid	hyenadna
+448	0.0	0.0	0.0				False	lymph	mid	hyenadna
+449	0.0	0.0	0.0				False	lymph	mid	hyenadna
+452	0.0	0.0	0.0				False	lymph	mid	hyenadna
+453	0.0	0.0	0.0				False	lymph	mid	hyenadna
+455	0.0	0.0	0.0				False	lymph	mid	hyenadna
+457	0.0	0.0	0.0				False	lymph	mid	hyenadna
+458	0.0	0.0	0.0				False	lymph	mid	hyenadna
+459	0.0	0.0	0.0				False	lymph	mid	hyenadna
+461	0.0	0.0	0.0				False	lymph	mid	hyenadna
+462	0.0	0.0	0.0				False	lymph	mid	hyenadna
+464	0.0	0.0	0.0				False	lymph	mid	hyenadna
+465	0.0	0.0	0.0				False	lymph	mid	hyenadna
+467	0.0	0.0	0.0				False	lymph	mid	hyenadna
+468	0.0	0.0	0.0				False	lymph	mid	hyenadna
+469	0.0	0.0	0.0				False	lymph	mid	hyenadna
+470	0.0	0.0	0.0				False	lymph	mid	hyenadna
+473	0.0	0.0	0.0				False	lymph	mid	hyenadna
+474	0.0	0.0	0.0				False	lymph	mid	hyenadna
+475	0.0	0.0	0.0				False	lymph	mid	hyenadna
+476	0.0	0.0	0.0				False	lymph	mid	hyenadna
+479	0.0	0.0	0.0				False	lymph	mid	hyenadna
+480	0.0	0.0	0.0				False	lymph	mid	hyenadna
+481	0.0	0.0	0.0				False	lymph	mid	hyenadna
+483	0.0	0.0	0.0				False	lymph	mid	hyenadna
+484	0.0	0.0	0.0				False	lymph	mid	hyenadna
+486	0.0	0.0	0.0				False	lymph	mid	hyenadna
+487	0.0	0.0	0.0				False	lymph	mid	hyenadna
+489	0.0	0.0	0.0				False	lymph	mid	hyenadna
+490	0.0	0.0	0.0				False	lymph	mid	hyenadna
+491	0.0	0.0	0.0				False	lymph	mid	hyenadna
+493	0.0	0.0	0.0				False	lymph	mid	hyenadna
+495	0.0	0.0	0.0				False	lymph	mid	hyenadna
+497	0.0	0.0	0.0				False	lymph	mid	hyenadna
+498	0.0	0.0	0.0				False	lymph	mid	hyenadna
+500	0.0	0.0	0.0				False	lymph	mid	hyenadna
+501	0.0	0.0	0.0				False	lymph	mid	hyenadna
+503	0.0	0.0	0.0				False	lymph	mid	hyenadna
+504	0.0	0.0	0.0				False	lymph	mid	hyenadna
+505	0.0	0.0	0.0				False	lymph	mid	hyenadna
+506	0.0	0.0	0.0				False	lymph	mid	hyenadna
+508	0.0	0.0	0.0				False	lymph	mid	hyenadna
+509	0.0	0.0	0.0				False	lymph	mid	hyenadna
+512	0.0	0.0	0.0				False	lymph	mid	hyenadna
+514	0.0	0.0	0.0				False	lymph	mid	hyenadna
+515	0.0	0.0	0.0				False	lymph	mid	hyenadna
+518	0.0	0.0	0.0				False	lymph	mid	hyenadna
+519	0.0	0.0	0.0				False	lymph	mid	hyenadna
+520	0.0	0.0	0.0				False	lymph	mid	hyenadna
+521	0.0	0.0	0.0				False	lymph	mid	hyenadna
+523	0.0	0.0	0.0				False	lymph	mid	hyenadna
+524	0.0	0.0	0.0				False	lymph	mid	hyenadna
+525	0.0	0.0	0.0				False	lymph	mid	hyenadna
+526	0.0	0.0	0.0				False	lymph	mid	hyenadna
+527	0.0	0.0	0.0				False	lymph	mid	hyenadna
+528	0.0	0.0	0.0				False	lymph	mid	hyenadna
+530	0.0	0.0	0.0				False	lymph	mid	hyenadna
+532	0.0	0.0	0.0				False	lymph	mid	hyenadna
+533	0.0	0.0	0.0				False	lymph	mid	hyenadna
+534	0.0	0.0	0.0				False	lymph	mid	hyenadna
+535	0.0	0.0	0.0				False	lymph	mid	hyenadna
+536	0.0	0.0	0.0				False	lymph	mid	hyenadna
+537	0.0	0.0	0.0				False	lymph	mid	hyenadna
+538	0.0	0.0	0.0				False	lymph	mid	hyenadna
+539	0.0	0.0	0.0				False	lymph	mid	hyenadna
+541	0.0	0.0	0.0				False	lymph	mid	hyenadna
+543	0.0	0.0	0.0				False	lymph	mid	hyenadna
+544	0.0	0.0	0.0				False	lymph	mid	hyenadna
+547	0.0	0.0	0.0				False	lymph	mid	hyenadna
+548	0.0	0.0	0.0				False	lymph	mid	hyenadna
+549	0.0	0.0	0.0				False	lymph	mid	hyenadna
+554	0.0	0.0	0.0				False	lymph	mid	hyenadna
+555	0.0	0.0	0.0				False	lymph	mid	hyenadna
+556	0.0	0.0	0.0				False	lymph	mid	hyenadna
+557	0.0	0.0	0.0				False	lymph	mid	hyenadna
+559	0.0	0.0	0.0				False	lymph	mid	hyenadna
+560	0.0	0.0	0.0				False	lymph	mid	hyenadna
+563	0.0	0.0	0.0				False	lymph	mid	hyenadna
+564	0.0	0.0	0.0				False	lymph	mid	hyenadna
+567	0.0	0.0	0.0				False	lymph	mid	hyenadna
+569	0.0	0.0	0.0				False	lymph	mid	hyenadna
+570	0.0	0.0	0.0				False	lymph	mid	hyenadna
+572	0.0	0.0	0.0				False	lymph	mid	hyenadna
+574	0.0	0.0	0.0				False	lymph	mid	hyenadna
+575	0.0	0.0	0.0				False	lymph	mid	hyenadna
+577	0.0	0.0	0.0				False	lymph	mid	hyenadna
+578	0.0	0.0	0.0				False	lymph	mid	hyenadna
+580	0.0	0.0	0.0				False	lymph	mid	hyenadna
+581	0.0	0.0	0.0				False	lymph	mid	hyenadna
+582	0.0	0.0	0.0				False	lymph	mid	hyenadna
+583	0.0	0.0	0.0				False	lymph	mid	hyenadna
+584	0.0	0.0	0.0				False	lymph	mid	hyenadna
+585	0.0	0.0	0.0				False	lymph	mid	hyenadna
+586	0.0	0.0	0.0				False	lymph	mid	hyenadna
+587	0.0	0.0	0.0				False	lymph	mid	hyenadna
+590	0.0	0.0	0.0				False	lymph	mid	hyenadna
+591	0.0	0.0	0.0				False	lymph	mid	hyenadna
+593	0.0	0.0	0.0				False	lymph	mid	hyenadna
+594	0.0	0.0	0.0				False	lymph	mid	hyenadna
+595	0.0	0.0	0.0				False	lymph	mid	hyenadna
+596	0.0	0.0	0.0				False	lymph	mid	hyenadna
+597	0.0	0.0	0.0				False	lymph	mid	hyenadna
+598	0.0	0.0	0.0				False	lymph	mid	hyenadna
+601	0.0	0.0	0.0				False	lymph	mid	hyenadna
+603	0.0	0.0	0.0				False	lymph	mid	hyenadna
+604	0.0	0.0	0.0				False	lymph	mid	hyenadna
+605	0.0	0.0	0.0				False	lymph	mid	hyenadna
+606	0.0	0.0	0.0				False	lymph	mid	hyenadna
+607	0.0	0.0	0.0				False	lymph	mid	hyenadna
+608	0.0	0.0	0.0				False	lymph	mid	hyenadna
+609	0.0	0.0	0.0				False	lymph	mid	hyenadna
+610	0.0	0.0	0.0				False	lymph	mid	hyenadna
+611	0.0	0.0	0.0				False	lymph	mid	hyenadna
+612	0.0	0.0	0.0				False	lymph	mid	hyenadna
+613	0.0	0.0	0.0				False	lymph	mid	hyenadna
+614	0.0	0.0	0.0				False	lymph	mid	hyenadna
+615	0.0	0.0	0.0				False	lymph	mid	hyenadna
+616	0.0	0.0	0.0				False	lymph	mid	hyenadna
+617	0.0	0.0	0.0				False	lymph	mid	hyenadna
+618	0.0	0.0	0.0				False	lymph	mid	hyenadna
+619	0.0	0.0	0.0				False	lymph	mid	hyenadna
+620	0.0	0.0	0.0				False	lymph	mid	hyenadna
+621	0.0	0.0	0.0				False	lymph	mid	hyenadna
+622	0.0	0.0	0.0				False	lymph	mid	hyenadna
+623	0.0	0.0	0.0				False	lymph	mid	hyenadna
+624	0.0	0.0	0.0				False	lymph	mid	hyenadna
+628	0.0	0.0	0.0				False	lymph	mid	hyenadna
+630	0.0	0.0	0.0				False	lymph	mid	hyenadna
+631	0.0	0.0	0.0				False	lymph	mid	hyenadna
+632	0.0	0.0	0.0				False	lymph	mid	hyenadna
+633	0.0	0.0	0.0				False	lymph	mid	hyenadna
+634	0.0	0.0	0.0				False	lymph	mid	hyenadna
+635	0.0	0.0	0.0				False	lymph	mid	hyenadna
+636	0.0	0.0	0.0				False	lymph	mid	hyenadna
+638	0.0	0.0	0.0				False	lymph	mid	hyenadna
+639	0.0	0.0	0.0				False	lymph	mid	hyenadna
+640	0.0	0.0	0.0				False	lymph	mid	hyenadna
+642	0.0	0.0	0.0				False	lymph	mid	hyenadna
+643	0.0	0.0	0.0				False	lymph	mid	hyenadna
+644	0.0	0.0	0.0				False	lymph	mid	hyenadna
+645	0.0	0.0	0.0				False	lymph	mid	hyenadna
+646	0.0	0.0	0.0				False	lymph	mid	hyenadna
+647	0.0	0.0	0.0				False	lymph	mid	hyenadna
+649	0.0	0.0	0.0				False	lymph	mid	hyenadna
+650	0.0	0.0	0.0				False	lymph	mid	hyenadna
+652	0.0	0.0	0.0				False	lymph	mid	hyenadna
+653	0.0	0.0	0.0				False	lymph	mid	hyenadna
+654	0.0	0.0	0.0				False	lymph	mid	hyenadna
+655	0.0	0.0	0.0				False	lymph	mid	hyenadna
+656	0.0	0.0	0.0				False	lymph	mid	hyenadna
+658	0.0	0.0	0.0				False	lymph	mid	hyenadna
+660	0.0	0.0	0.0				False	lymph	mid	hyenadna
+662	0.0	0.0	0.0				False	lymph	mid	hyenadna
+663	0.0	0.0	0.0				False	lymph	mid	hyenadna
+664	0.0	0.0	0.0				False	lymph	mid	hyenadna
+665	0.0	0.0	0.0				False	lymph	mid	hyenadna
+666	0.0	0.0	0.0				False	lymph	mid	hyenadna
+667	0.0	0.0	0.0				False	lymph	mid	hyenadna
+668	0.0	0.0	0.0				False	lymph	mid	hyenadna
+669	0.0	0.0	0.0				False	lymph	mid	hyenadna
+672	0.0	0.0	0.0				False	lymph	mid	hyenadna
+675	0.0	0.0	0.0				False	lymph	mid	hyenadna
+676	0.0	0.0	0.0				False	lymph	mid	hyenadna
+677	0.0	0.0	0.0				False	lymph	mid	hyenadna
+678	0.0	0.0	0.0				False	lymph	mid	hyenadna
+679	0.0	0.0	0.0				False	lymph	mid	hyenadna
+680	0.0	0.0	0.0				False	lymph	mid	hyenadna
+681	0.0	0.0	0.0				False	lymph	mid	hyenadna
+683	0.0	0.0	0.0				False	lymph	mid	hyenadna
+684	0.0	0.0	0.0				False	lymph	mid	hyenadna
+685	0.0	0.0	0.0				False	lymph	mid	hyenadna
+686	0.0	0.0	0.0				False	lymph	mid	hyenadna
+687	0.0	0.0	0.0				False	lymph	mid	hyenadna
+688	0.0	0.0	0.0				False	lymph	mid	hyenadna
+689	0.0	0.0	0.0				False	lymph	mid	hyenadna
+691	0.0	0.0	0.0				False	lymph	mid	hyenadna
+692	0.0	0.0	0.0				False	lymph	mid	hyenadna
+695	0.0	0.0	0.0				False	lymph	mid	hyenadna
+696	0.0	0.0	0.0				False	lymph	mid	hyenadna
+697	0.0	0.0	0.0				False	lymph	mid	hyenadna
+698	0.0	0.0	0.0				False	lymph	mid	hyenadna
+700	0.0	0.0	0.0				False	lymph	mid	hyenadna
+701	0.0	0.0	0.0				False	lymph	mid	hyenadna
+702	0.0	0.0	0.0				False	lymph	mid	hyenadna
+703	0.0	0.0	0.0				False	lymph	mid	hyenadna
+705	0.0	0.0	0.0				False	lymph	mid	hyenadna
+706	0.0	0.0	0.0				False	lymph	mid	hyenadna
+707	0.0	0.0	0.0				False	lymph	mid	hyenadna
+708	0.0	0.0	0.0				False	lymph	mid	hyenadna
+709	0.0	0.0	0.0				False	lymph	mid	hyenadna
+712	0.0	0.0	0.0				False	lymph	mid	hyenadna
+713	0.0	0.0	0.0				False	lymph	mid	hyenadna
+714	0.0	0.0	0.0				False	lymph	mid	hyenadna
+715	0.0	0.0	0.0				False	lymph	mid	hyenadna
+717	0.0	0.0	0.0				False	lymph	mid	hyenadna
+720	0.0	0.0	0.0				False	lymph	mid	hyenadna
+722	0.0	0.0	0.0				False	lymph	mid	hyenadna
+724	0.0	0.0	0.0				False	lymph	mid	hyenadna
+726	0.0	0.0	0.0				False	lymph	mid	hyenadna
+728	0.0	0.0	0.0				False	lymph	mid	hyenadna
+729	0.0	0.0	0.0				False	lymph	mid	hyenadna
+730	0.0	0.0	0.0				False	lymph	mid	hyenadna
+731	0.0	0.0	0.0				False	lymph	mid	hyenadna
+732	0.0	0.0	0.0				False	lymph	mid	hyenadna
+733	0.0	0.0	0.0				False	lymph	mid	hyenadna
+734	0.0	0.0	0.0				False	lymph	mid	hyenadna
+735	0.0	0.0	0.0				False	lymph	mid	hyenadna
+736	0.0	0.0	0.0				False	lymph	mid	hyenadna
+739	0.0	0.0	0.0				False	lymph	mid	hyenadna
+740	0.0	0.0	0.0				False	lymph	mid	hyenadna
+741	0.0	0.0	0.0				False	lymph	mid	hyenadna
+742	0.0	0.0	0.0				False	lymph	mid	hyenadna
+743	0.0	0.0	0.0				False	lymph	mid	hyenadna
+744	0.0	0.0	0.0				False	lymph	mid	hyenadna
+745	0.0	0.0	0.0				False	lymph	mid	hyenadna
+746	0.0	0.0	0.0				False	lymph	mid	hyenadna
+747	0.0	0.0	0.0				False	lymph	mid	hyenadna
+748	0.0	0.0	0.0				False	lymph	mid	hyenadna
+749	0.0	0.0	0.0				False	lymph	mid	hyenadna
+750	0.0	0.0	0.0				False	lymph	mid	hyenadna
+751	0.0	0.0	0.0				False	lymph	mid	hyenadna
+752	0.0	0.0	0.0				False	lymph	mid	hyenadna
+753	0.0	0.0	0.0				False	lymph	mid	hyenadna
+754	0.0	0.0	0.0				False	lymph	mid	hyenadna
+755	0.0	0.0	0.0				False	lymph	mid	hyenadna
+756	0.0	0.0	0.0				False	lymph	mid	hyenadna
+757	0.0	0.0	0.0				False	lymph	mid	hyenadna
+758	0.0	0.0	0.0				False	lymph	mid	hyenadna
+759	0.0	0.0	0.0				False	lymph	mid	hyenadna
+760	0.0	0.0	0.0				False	lymph	mid	hyenadna
+762	0.0	0.0	0.0				False	lymph	mid	hyenadna
+764	0.0	0.0	0.0				False	lymph	mid	hyenadna
+767	0.0	0.0	0.0				False	lymph	mid	hyenadna
+768	0.0	0.0	0.0				False	lymph	mid	hyenadna
+769	0.0	0.0	0.0				False	lymph	mid	hyenadna
+770	0.0	0.0	0.0				False	lymph	mid	hyenadna
+771	0.0	0.0	0.0				False	lymph	mid	hyenadna
+772	0.0	0.0	0.0				False	lymph	mid	hyenadna
+773	0.0	0.0	0.0				False	lymph	mid	hyenadna
+774	0.0	0.0	0.0				False	lymph	mid	hyenadna
+776	0.0	0.0	0.0				False	lymph	mid	hyenadna
+777	0.0	0.0	0.0				False	lymph	mid	hyenadna
+778	0.0	0.0	0.0				False	lymph	mid	hyenadna
+779	0.0	0.0	0.0				False	lymph	mid	hyenadna
+780	0.0	0.0	0.0				False	lymph	mid	hyenadna
+781	0.0	0.0	0.0				False	lymph	mid	hyenadna
+782	0.0	0.0	0.0				False	lymph	mid	hyenadna
+783	0.0	0.0	0.0				False	lymph	mid	hyenadna
+784	0.0	0.0	0.0				False	lymph	mid	hyenadna
+786	0.0	0.0	0.0				False	lymph	mid	hyenadna
+787	0.0	0.0	0.0				False	lymph	mid	hyenadna
+788	0.0	0.0	0.0				False	lymph	mid	hyenadna
+790	0.0	0.0	0.0				False	lymph	mid	hyenadna
+791	0.0	0.0	0.0				False	lymph	mid	hyenadna
+792	0.0	0.0	0.0				False	lymph	mid	hyenadna
+794	0.0	0.0	0.0				False	lymph	mid	hyenadna
+795	0.0	0.0	0.0				False	lymph	mid	hyenadna
+796	0.0	0.0	0.0				False	lymph	mid	hyenadna
+797	0.0	0.0	0.0				False	lymph	mid	hyenadna
+798	0.0	0.0	0.0				False	lymph	mid	hyenadna
+799	0.0	0.0	0.0				False	lymph	mid	hyenadna
+800	0.0	0.0	0.0				False	lymph	mid	hyenadna
+802	0.0	0.0	0.0				False	lymph	mid	hyenadna
+803	0.0	0.0	0.0				False	lymph	mid	hyenadna
+804	0.0	0.0	0.0				False	lymph	mid	hyenadna
+805	0.0	0.0	0.0				False	lymph	mid	hyenadna
+807	0.0	0.0	0.0				False	lymph	mid	hyenadna
+808	0.0	0.0	0.0				False	lymph	mid	hyenadna
+810	0.0	0.0	0.0				False	lymph	mid	hyenadna
+811	0.0	0.0	0.0				False	lymph	mid	hyenadna
+812	0.0	0.0	0.0				False	lymph	mid	hyenadna
+813	0.0	0.0	0.0				False	lymph	mid	hyenadna
+815	0.0	0.0	0.0				False	lymph	mid	hyenadna
+817	0.0	0.0	0.0				False	lymph	mid	hyenadna
+818	0.0	0.0	0.0				False	lymph	mid	hyenadna
+819	0.0	0.0	0.0				False	lymph	mid	hyenadna
+820	0.0	0.0	0.0				False	lymph	mid	hyenadna
+821	0.0	0.0	0.0				False	lymph	mid	hyenadna
+823	0.0	0.0	0.0				False	lymph	mid	hyenadna
+824	0.0	0.0	0.0				False	lymph	mid	hyenadna
+825	0.0	0.0	0.0				False	lymph	mid	hyenadna
+826	0.0	0.0	0.0				False	lymph	mid	hyenadna
+827	0.0	0.0	0.0				False	lymph	mid	hyenadna
+828	0.0	0.0	0.0				False	lymph	mid	hyenadna
+829	0.0	0.0	0.0				False	lymph	mid	hyenadna
+830	0.0	0.0	0.0				False	lymph	mid	hyenadna
+831	0.0	0.0	0.0				False	lymph	mid	hyenadna
+832	0.0	0.0	0.0				False	lymph	mid	hyenadna
+833	0.0	0.0	0.0				False	lymph	mid	hyenadna
+834	0.0	0.0	0.0				False	lymph	mid	hyenadna
+835	0.0	0.0	0.0				False	lymph	mid	hyenadna
+836	0.0	0.0	0.0				False	lymph	mid	hyenadna
+838	0.0	0.0	0.0				False	lymph	mid	hyenadna
+839	0.0	0.0	0.0				False	lymph	mid	hyenadna
+841	0.0	0.0	0.0				False	lymph	mid	hyenadna
+843	0.0	0.0	0.0				False	lymph	mid	hyenadna
+845	0.0	0.0	0.0				False	lymph	mid	hyenadna
+846	0.0	0.0	0.0				False	lymph	mid	hyenadna
+847	0.0	0.0	0.0				False	lymph	mid	hyenadna
+848	0.0	0.0	0.0				False	lymph	mid	hyenadna
+849	0.0	0.0	0.0				False	lymph	mid	hyenadna
+851	0.0	0.0	0.0				False	lymph	mid	hyenadna
+852	0.0	0.0	0.0				False	lymph	mid	hyenadna
+854	0.0	0.0	0.0				False	lymph	mid	hyenadna
+855	0.0	0.0	0.0				False	lymph	mid	hyenadna
+857	0.0	0.0	0.0				False	lymph	mid	hyenadna
+860	0.0	0.0	0.0				False	lymph	mid	hyenadna
+861	0.0	0.0	0.0				False	lymph	mid	hyenadna
+862	0.0	0.0	0.0				False	lymph	mid	hyenadna
+863	0.0	0.0	0.0				False	lymph	mid	hyenadna
+864	0.0	0.0	0.0				False	lymph	mid	hyenadna
+865	0.0	0.0	0.0				False	lymph	mid	hyenadna
+866	0.0	0.0	0.0				False	lymph	mid	hyenadna
+867	0.0	0.0	0.0				False	lymph	mid	hyenadna
+868	0.0	0.0	0.0				False	lymph	mid	hyenadna
+869	0.0	0.0	0.0				False	lymph	mid	hyenadna
+870	0.0	0.0	0.0				False	lymph	mid	hyenadna
+871	0.0	0.0	0.0				False	lymph	mid	hyenadna
+872	0.0	0.0	0.0				False	lymph	mid	hyenadna
+873	0.0	0.0	0.0				False	lymph	mid	hyenadna
+874	0.0	0.0	0.0				False	lymph	mid	hyenadna
+875	0.0	0.0	0.0				False	lymph	mid	hyenadna
+877	0.0	0.0	0.0				False	lymph	mid	hyenadna
+879	0.0	0.0	0.0				False	lymph	mid	hyenadna
+881	0.0	0.0	0.0				False	lymph	mid	hyenadna
+882	0.0	0.0	0.0				False	lymph	mid	hyenadna
+883	0.0	0.0	0.0				False	lymph	mid	hyenadna
+884	0.0	0.0	0.0				False	lymph	mid	hyenadna
+885	0.0	0.0	0.0				False	lymph	mid	hyenadna
+886	0.0	0.0	0.0				False	lymph	mid	hyenadna
+887	0.0	0.0	0.0				False	lymph	mid	hyenadna
+890	0.0	0.0	0.0				False	lymph	mid	hyenadna
+891	0.0	0.0	0.0				False	lymph	mid	hyenadna
+892	0.0	0.0	0.0				False	lymph	mid	hyenadna
+893	0.0	0.0	0.0				False	lymph	mid	hyenadna
+895	0.0	0.0	0.0				False	lymph	mid	hyenadna
+897	0.0	0.0	0.0				False	lymph	mid	hyenadna
+898	0.0	0.0	0.0				False	lymph	mid	hyenadna
+899	0.0	0.0	0.0				False	lymph	mid	hyenadna
+900	0.0	0.0	0.0				False	lymph	mid	hyenadna
+901	0.0	0.0	0.0				False	lymph	mid	hyenadna
+902	0.0	0.0	0.0				False	lymph	mid	hyenadna
+903	0.0	0.0	0.0				False	lymph	mid	hyenadna
+904	0.0	0.0	0.0				False	lymph	mid	hyenadna
+905	0.0	0.0	0.0				False	lymph	mid	hyenadna
+906	0.0	0.0	0.0				False	lymph	mid	hyenadna
+907	0.0	0.0	0.0				False	lymph	mid	hyenadna
+908	0.0	0.0	0.0				False	lymph	mid	hyenadna
+909	0.0	0.0	0.0				False	lymph	mid	hyenadna
+910	0.0	0.0	0.0				False	lymph	mid	hyenadna
+911	0.0	0.0	0.0				False	lymph	mid	hyenadna
+912	0.0	0.0	0.0				False	lymph	mid	hyenadna
+913	0.0	0.0	0.0				False	lymph	mid	hyenadna
+915	0.0	0.0	0.0				False	lymph	mid	hyenadna
+917	0.0	0.0	0.0				False	lymph	mid	hyenadna
+918	0.0	0.0	0.0				False	lymph	mid	hyenadna
+921	0.0	0.0	0.0				False	lymph	mid	hyenadna
+922	0.0	0.0	0.0				False	lymph	mid	hyenadna
+924	0.0	0.0	0.0				False	lymph	mid	hyenadna
+925	0.0	0.0	0.0				False	lymph	mid	hyenadna
+926	0.0	0.0	0.0				False	lymph	mid	hyenadna
+927	0.0	0.0	0.0				False	lymph	mid	hyenadna
+928	0.0	0.0	0.0				False	lymph	mid	hyenadna
+929	0.0	0.0	0.0				False	lymph	mid	hyenadna
+930	0.0	0.0	0.0				False	lymph	mid	hyenadna
+931	0.0	0.0	0.0				False	lymph	mid	hyenadna
+932	0.0	0.0	0.0				False	lymph	mid	hyenadna
+933	0.0	0.0	0.0				False	lymph	mid	hyenadna
+934	0.0	0.0	0.0				False	lymph	mid	hyenadna
+939	0.0	0.0	0.0				False	lymph	mid	hyenadna
+940	0.0	0.0	0.0				False	lymph	mid	hyenadna
+941	0.0	0.0	0.0				False	lymph	mid	hyenadna
+943	0.0	0.0	0.0				False	lymph	mid	hyenadna
+944	0.0	0.0	0.0				False	lymph	mid	hyenadna
+945	0.0	0.0	0.0				False	lymph	mid	hyenadna
+946	0.0	0.0	0.0				False	lymph	mid	hyenadna
+947	0.0	0.0	0.0				False	lymph	mid	hyenadna
+950	0.0	0.0	0.0				False	lymph	mid	hyenadna
+951	0.0	0.0	0.0				False	lymph	mid	hyenadna
+952	0.0	0.0	0.0				False	lymph	mid	hyenadna
+953	0.0	0.0	0.0				False	lymph	mid	hyenadna
+954	0.0	0.0	0.0				False	lymph	mid	hyenadna
+956	0.0	0.0	0.0				False	lymph	mid	hyenadna
+958	0.0	0.0	0.0				False	lymph	mid	hyenadna
+959	0.0	0.0	0.0				False	lymph	mid	hyenadna
+960	0.0	0.0	0.0				False	lymph	mid	hyenadna
+962	0.0	0.0	0.0				False	lymph	mid	hyenadna
+963	0.0	0.0	0.0				False	lymph	mid	hyenadna
+966	0.0	0.0	0.0				False	lymph	mid	hyenadna
+968	0.0	0.0	0.0				False	lymph	mid	hyenadna
+969	0.0	0.0	0.0				False	lymph	mid	hyenadna
+971	0.0	0.0	0.0				False	lymph	mid	hyenadna
+972	0.0	0.0	0.0				False	lymph	mid	hyenadna
+973	0.0	0.0	0.0				False	lymph	mid	hyenadna
+974	0.0	0.0	0.0				False	lymph	mid	hyenadna
+975	0.0	0.0	0.0				False	lymph	mid	hyenadna
+978	0.0	0.0	0.0				False	lymph	mid	hyenadna
+979	0.0	0.0	0.0				False	lymph	mid	hyenadna
+980	0.0	0.0	0.0				False	lymph	mid	hyenadna
+983	0.0	0.0	0.0				False	lymph	mid	hyenadna
+984	0.0	0.0	0.0				False	lymph	mid	hyenadna
+986	0.0	0.0	0.0				False	lymph	mid	hyenadna
+987	0.0	0.0	0.0				False	lymph	mid	hyenadna
+989	0.0	0.0	0.0				False	lymph	mid	hyenadna
+990	0.0	0.0	0.0				False	lymph	mid	hyenadna
+993	0.0	0.0	0.0				False	lymph	mid	hyenadna
+994	0.0	0.0	0.0				False	lymph	mid	hyenadna
+996	0.0	0.0	0.0				False	lymph	mid	hyenadna
+997	0.0	0.0	0.0				False	lymph	mid	hyenadna
+999	0.0	0.0	0.0				False	lymph	mid	hyenadna
+1002	0.0	0.0	0.0				False	lymph	mid	hyenadna
+1004	0.0	0.0	0.0				False	lymph	mid	hyenadna
+1005	0.0	0.0	0.0				False	lymph	mid	hyenadna
+1006	0.0	0.0	0.0				False	lymph	mid	hyenadna
+1008	0.0	0.0	0.0				False	lymph	mid	hyenadna
+1009	0.0	0.0	0.0				False	lymph	mid	hyenadna
+1010	0.0	0.0	0.0				False	lymph	mid	hyenadna
+1011	0.0	0.0	0.0				False	lymph	mid	hyenadna
+1012	0.0	0.0	0.0				False	lymph	mid	hyenadna
+1013	0.0	0.0	0.0				False	lymph	mid	hyenadna
+1015	0.0	0.0	0.0				False	lymph	mid	hyenadna
+1016	0.0	0.0	0.0				False	lymph	mid	hyenadna
+1017	0.0	0.0	0.0				False	lymph	mid	hyenadna
+1019	0.0	0.0	0.0				False	lymph	mid	hyenadna
+1020	0.0	0.0	0.0				False	lymph	mid	hyenadna
+1021	0.0	0.0	0.0				False	lymph	mid	hyenadna
+1023	0.0	0.0	0.0				False	lymph	mid	hyenadna

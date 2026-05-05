@@ -1,0 +1,1 @@
+cmd = /workspace/gene_expression_predictions/results/cross_model/top_windows_bed/top100_enformer_late_blood.bed hg38 /workspace/gene_expression_predictions/results/homer_sae/enformer_late_blood -size 200 -p 4 -nomotif -bg /workspace/gene_expression_predictions/results/homer_sae/bg_blood.bed

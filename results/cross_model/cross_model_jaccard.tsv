@@ -1,0 +1,10 @@
+model_1	model_2	layer	pair	jaccard	n_shared	n_union
+enformer	hyenadna	early	blood	0.0	0	35
+enformer	nucleotide_transformer	early	blood	0.0	0	25
+enformer	hyenadna	mid	blood	0.0	0	36
+enformer	nucleotide_transformer	mid	blood	0.0	0	54
+enformer	hyenadna	late	blood	0.0	0	100
+enformer	nucleotide_transformer	late	blood	0.0	0	73
+hyenadna	nucleotide_transformer	early	blood	0.0	0	50
+hyenadna	nucleotide_transformer	mid	blood	0.0	0	82
+hyenadna	nucleotide_transformer	late	blood	0.0	0	73
